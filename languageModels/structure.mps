@@ -21,6 +21,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -154,6 +155,7 @@
   <node concept="1TIwiD" id="6aAUpg3pUa4">
     <property role="TrG5h" value="LambdaExpression" />
     <property role="3GE5qa" value="expression" />
+    <property role="34LRSv" value="\lam" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFe5m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -177,7 +179,9 @@
   <node concept="1TIwiD" id="6aAUpg3pUpe">
     <property role="TrG5h" value="ApplicationExpression" />
     <property role="3GE5qa" value="expression" />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <property role="34LRSv" value=" " />
+    <property role="R4oN_" value="Function application" />
+    <ref role="1TJDcQ" node="6aAUpg3pU9x" resolve="AbstractBinOpExpression" />
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUph">
     <property role="TrG5h" value="VariableExpression" />
@@ -194,6 +198,7 @@
     <property role="TrG5h" value="TupleExpression" />
     <property role="3GE5qa" value="expression" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Tuple" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="7nfIx2ucngN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -228,7 +233,7 @@
   <node concept="1TIwiD" id="6aAUpg3pUr$">
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="Variable" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs3isP" resolve="AbstractVariable" />
     <node concept="PrWs8" id="KzXl40AQZ5" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
@@ -236,7 +241,7 @@
   <node concept="1TIwiD" id="Z42ctSV31q">
     <property role="TrG5h" value="Sheet" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="Z42ctSV7V9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
@@ -252,7 +257,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="def" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="PrWs8" id="KzXl40C4QO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -262,10 +267,10 @@
     <property role="TrG5h" value="AbstractArgument" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
   </node>
   <node concept="PlHQZ" id="6dbcPfPFe95">
-    <property role="3GE5qa" value="arguments" />
+    <property role="3GE5qa" value="abstract" />
     <property role="TrG5h" value="ITypedArgument" />
     <node concept="1TJgyj" id="6aAUpg3pUqZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -292,7 +297,7 @@
     <property role="TrG5h" value="AbstractClause" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
   </node>
   <node concept="AxPO7" id="6dbcPfPFKEh">
     <property role="TrG5h" value="ArrowSwitch" />
@@ -338,7 +343,7 @@
     <property role="TrG5h" value="AbstractClauseName" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKJD">
     <property role="3GE5qa" value="clause" />
@@ -364,6 +369,7 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="ArrowExpression" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="Non-dependent function type" />
     <ref role="1TJDcQ" node="6aAUpg3pU9x" resolve="AbstractBinOpExpression" />
     <node concept="PrWs8" id="6dbcPfPFKXw" role="PzmwI">
       <ref role="PrY4T" node="6dbcPfPFe95" resolve="ITypedArgument" />
@@ -375,7 +381,7 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="LeveledUniverse" />
     <property role="34LRSv" value="\" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6aAUpg3pU9E" resolve="Literal" />
     <node concept="1TJgyi" id="6dbcPfPFKYB" role="1TKVEl">
       <property role="TrG5h" value="level" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -441,7 +447,7 @@
   <node concept="1TIwiD" id="6dbcPfPFLjf">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="Precedence" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyi" id="6dbcPfPFLkt" role="1TKVEl">
       <property role="TrG5h" value="associativity" />
       <ref role="AX2Wp" node="6dbcPfPFLky" resolve="AssociativitySwitch" />
@@ -541,7 +547,8 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="BracketExpression" />
     <property role="34LRSv" value="(" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="R4oN_" value="Bracket" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="7nfIx2ucogY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
@@ -560,7 +567,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40_P0r">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="abstract" />
     <property role="TrG5h" value="HasArguments" />
     <node concept="1TJgyj" id="KzXl40_P0s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -568,29 +575,35 @@
       <property role="20kJfa" value="args" />
       <ref role="20lvS9" node="6dbcPfPFe7A" resolve="AbstractArgument" />
     </node>
+    <node concept="PrWs8" id="1rh2nYs7uk7" role="PrDN$">
+      <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="KzXl40_QXs">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="Expression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="PrWs8" id="KzXl40_QXt" role="PzmwI">
       <ref role="PrY4T" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40ALRS">
     <property role="TrG5h" value="IValidIdentifier" />
+    <property role="3GE5qa" value="abstract" />
     <node concept="PrWs8" id="KzXl40ALSg" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40ALSd">
     <property role="TrG5h" value="IValidFunctionalSymbol" />
+    <property role="3GE5qa" value="abstract" />
     <node concept="PrWs8" id="KzXl40ALSe" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40AYsE">
     <property role="TrG5h" value="HasPrecedence" />
+    <property role="3GE5qa" value="abstract" />
     <node concept="1TJgyj" id="KzXl40AiPr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="precedence" />
@@ -602,7 +615,7 @@
     <property role="TrG5h" value="ImplicitExplicitSwitch" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <property role="PDuV0" value="false" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
     <node concept="M4N5e" id="KzXl40BdOu" role="M5hS2">
       <property role="1uS6qo" value="(" />
       <property role="1uS6qv" value="false" />
@@ -611,6 +624,25 @@
       <property role="1uS6qo" value="{" />
       <property role="1uS6qv" value="true" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1rh2nYs3isP">
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="AbstractVariable" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+  </node>
+  <node concept="1TIwiD" id="1rh2nYs79n8">
+    <property role="TrG5h" value="BaseVcConcept" />
+    <property role="3GE5qa" value="abstract" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1rh2nYs7ujX" role="PzmwI">
+      <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1rh2nYs7gK9">
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="IVcConcept" />
   </node>
 </model>
 

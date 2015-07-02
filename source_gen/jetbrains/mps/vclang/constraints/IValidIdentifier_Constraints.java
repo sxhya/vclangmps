@@ -28,10 +28,10 @@ public class IValidIdentifier_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return REGEXP_ucw9xl_a0a0a1a1a0b0a1a1.matcher((SPropertyOperations.getString(propertyValue))).matches();
+        return (SPropertyOperations.getString(propertyValue)).equals("_") || REGEXP_ucw9xl_a0a0a0b0b0a1a0b0b.matcher((SPropertyOperations.getString(propertyValue))).matches();
       }
     });
     return properties;
   }
-  private static Pattern REGEXP_ucw9xl_a0a0a1a1a0b0a1a1 = Pattern.compile("\\p{Alpha}\\p{Alnum}*?", 0);
+  private static Pattern REGEXP_ucw9xl_a0a0a0b0b0a1a0b0b = Pattern.compile("[\\p{Alpha}_][\\p{Alnum}_\\-\\']*?", 0);
 }

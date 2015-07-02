@@ -5,6 +5,7 @@ package jetbrains.mps.vclang.behavior;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public interface HasArguments_BehaviorDescriptor extends IVcConcept_BehaviorDescriptor {
+public interface IVcConcept_BehaviorDescriptor {
+  public List<SNode> virtual_doProcessScopeRequest_1644105782651573969(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor);
   public List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor);
 }

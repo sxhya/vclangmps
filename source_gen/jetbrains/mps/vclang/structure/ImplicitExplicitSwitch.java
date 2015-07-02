@@ -7,15 +7,15 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum ImplicitExplicitSwitch {
-  false_fd78xi_a("(", "false"),
-  true_fd78xi_b("{", "true");
+  false_fd78xi_a("(", false),
+  true_fd78xi_b("{", true);
 
   private String myName;
   public String getName() {
     return this.myName;
   }
   public String getValueAsString() {
-    return this.myValue;
+    return "" + this.myValue;
   }
   public static List<ImplicitExplicitSwitch> getConstants() {
     List<ImplicitExplicitSwitch> list = ListSequence.fromList(new LinkedList<ImplicitExplicitSwitch>());
@@ -38,12 +38,12 @@ public enum ImplicitExplicitSwitch {
     }
     return ImplicitExplicitSwitch.getDefault();
   }
-  private String myValue;
-  ImplicitExplicitSwitch(String name, String value) {
+  private boolean myValue;
+  ImplicitExplicitSwitch(String name, boolean value) {
     this.myName = name;
     this.myValue = value;
   }
-  public String getValue() {
+  public boolean getValue() {
     return this.myValue;
   }
 }

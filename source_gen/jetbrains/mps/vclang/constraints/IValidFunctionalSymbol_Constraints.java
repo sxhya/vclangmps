@@ -28,12 +28,12 @@ public class IValidFunctionalSymbol_Constraints extends BaseConstraintsDescripto
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return (REGEXP_4aozki_a0a0a0a1a1a0b0a1a1.matcher((SPropertyOperations.getString(propertyValue))).matches()) || REGEXP_4aozki_a0a0a0b0b0a1a0b0b.matcher((SPropertyOperations.getString(propertyValue))).matches();
+        return REGEXP_4aozki_a0a0a0b0b0a1a0b0b_0.matcher((SPropertyOperations.getString(propertyValue))).matches() || REGEXP_4aozki_a0a0a0b0b0a1a0b0b.matcher((SPropertyOperations.getString(propertyValue))).matches();
 
       }
     });
     return properties;
   }
-  private static Pattern REGEXP_4aozki_a0a0a0a1a1a0b0a1a1 = Pattern.compile("\\p{Alpha}\\p{Alnum}*?", 0);
   private static Pattern REGEXP_4aozki_a0a0a0b0b0a1a0b0b = Pattern.compile("[~!@#\\$%\\^&\\*\\\\\\-\\+=<>\\?/:\\|]+", 0);
+  private static Pattern REGEXP_4aozki_a0a0a0b0b0a1a0b0b_0 = Pattern.compile("[\\p{Alpha}_][\\p{Alnum}_\\-\\']*?", 0);
 }
