@@ -4,49 +4,41 @@ package jetbrains.mps.vclang.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 
 public class HasArguments_Behavior {
   public static void init(SNode thisNode) {
   }
   public static List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
-    System.err.println("Entering HasArguments appendToScope from " + BehaviorReflection.invokeVirtual(String.class, requestSender, "virtual_getPresentation_1213877396640", new Object[]{}));
     if (descriptor instanceof ReferentVariableRequestDescriptor) {
-      System.err.println("Descriptor ok");
       ReferentVariableRequestDescriptor rdesc = (ReferentVariableRequestDescriptor) descriptor;
       List<SNode> visibleArguments;
       if (ListSequence.fromList(((List<SNode>) SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args")))).contains(requestSender)) {
-        System.err.println("Called from within args");
         visibleArguments = (List<SNode>) SNodeOperations.getPrevSiblings(requestSender, false);
       } else {
-        System.err.println("Called not from within args");
         visibleArguments = SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"));
       }
-      System.err.println("Found " + ListSequence.fromList(visibleArguments).count() + " visible arguments");
       List<SNode> result = new ArrayList<SNode>();
       for (SNode arg : ListSequence.fromList(visibleArguments)) {
         {
-          SNode concept_a0g0b0a;
+          SNode concept_a0e0a0a;
           {
-            SNode node_a0g0b0a = arg;
-            concept_a0g0b0a = SNodeOperations.getConceptDeclaration(node_a0g0b0a);
+            SNode node_a0e0a0a = arg;
+            concept_a0e0a0a = SNodeOperations.getConceptDeclaration(node_a0e0a0a);
           }
-          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0g0b0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
+          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0e0a0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
             for (SNode var : ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames")))) {
-              System.err.println("Adding descriptor for variable: " + SPropertyOperations.getString(var, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
               BehaviorReflection.invokeVirtual(Void.class, var, "virtual_addVariable_1644105782651964639", new Object[]{descriptor, result});
             }
           }
         }
       }
-      System.err.println("Added desciptors:" + ListSequence.fromList(result).count());
       if (descriptor.isChildrenFirst()) {
         result = ListSequence.fromList(result).reversedList();
       }
