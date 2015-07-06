@@ -7,4 +7,5 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public interface HasArguments_BehaviorDescriptor extends IVcConcept_BehaviorDescriptor {
   public List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor);
+  public List<SNode> virtual_getExplicitArguments_7364609393484886616(SNode thisNode);
 }

@@ -10,8 +10,10 @@ import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
 import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.util.regex.Pattern;
 
 public class IValidFunctionalSymbol_Constraints extends BaseConstraintsDescriptor {
   public IValidFunctionalSymbol_Constraints() {
@@ -28,12 +30,9 @@ public class IValidFunctionalSymbol_Constraints extends BaseConstraintsDescripto
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return REGEXP_4aozki_a0a0a0b0b0a1a0b0b_0.matcher((SPropertyOperations.getString(propertyValue))).matches() || REGEXP_4aozki_a0a0a0b0b0a1a0b0b.matcher((SPropertyOperations.getString(propertyValue))).matches();
-
+        return BehaviorReflection.invokeVirtualStatic(Boolean.TYPE, SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), "virtual_isCorrectVarName_7364609393485206679", new Object[]{(SPropertyOperations.getString(propertyValue))}) || BehaviorReflection.invokeVirtualStatic(Boolean.TYPE, SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1e0dL, "jetbrains.mps.vclang.structure.IValidFunctionalSymbol")), "virtual_isCorrectFunctionalSymbol_7364609393485262972", new Object[]{(SPropertyOperations.getString(propertyValue))});
       }
     });
     return properties;
   }
-  private static Pattern REGEXP_4aozki_a0a0a0b0b0a1a0b0b = Pattern.compile("[~!@#\\$%\\^&\\*\\\\\\-\\+=<>\\?/:\\|]+", 0);
-  private static Pattern REGEXP_4aozki_a0a0a0b0b0a1a0b0b_0 = Pattern.compile("[\\p{Alpha}_][\\p{Alnum}_\\-\\']*?", 0);
 }

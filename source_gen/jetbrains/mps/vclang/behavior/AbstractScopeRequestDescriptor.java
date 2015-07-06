@@ -4,7 +4,7 @@ package jetbrains.mps.vclang.behavior;
 
 
 public abstract class AbstractScopeRequestDescriptor {
-  private boolean myOrder = false;
+  protected boolean myOrder = false;
   public boolean isChildrenFirst() {
     return myOrder;
   }

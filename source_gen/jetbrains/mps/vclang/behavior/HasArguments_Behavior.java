@@ -4,48 +4,63 @@ package jetbrains.mps.vclang.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class HasArguments_Behavior {
   public static void init(SNode thisNode) {
   }
   public static List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
+    List<SNode> result = BehaviorReflection.invokeSuper((Class<List<SNode>>) ((Class) Object.class), thisNode, "jetbrains.mps.vclang.structure.IVcConcept", "virtual_appendToScope_1644105782651590016", new Object[]{requestSender, descriptor});
     if (descriptor instanceof ReferentVariableRequestDescriptor) {
-      ReferentVariableRequestDescriptor rdesc = (ReferentVariableRequestDescriptor) descriptor;
       List<SNode> visibleArguments;
       if (ListSequence.fromList(((List<SNode>) SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args")))).contains(requestSender)) {
         visibleArguments = (List<SNode>) SNodeOperations.getPrevSiblings(requestSender, false);
       } else {
         visibleArguments = SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"));
       }
-      List<SNode> result = new ArrayList<SNode>();
       for (SNode arg : ListSequence.fromList(visibleArguments)) {
         {
-          SNode concept_a0e0a0a;
+          SNode concept_a0c0b0a;
           {
-            SNode node_a0e0a0a = arg;
-            concept_a0e0a0a = SNodeOperations.getConceptDeclaration(node_a0e0a0a);
+            SNode node_a0c0b0a = arg;
+            concept_a0c0b0a = SNodeOperations.getConceptDeclaration(node_a0c0b0a);
           }
-          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0e0a0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
+          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0c0b0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
             for (SNode var : ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames")))) {
               BehaviorReflection.invokeVirtual(Void.class, var, "virtual_addVariable_1644105782651964639", new Object[]{descriptor, result});
             }
           }
         }
       }
-      if (descriptor.isChildrenFirst()) {
-        result = ListSequence.fromList(result).reversedList();
-      }
-      return result;
-    } else {
-      return new ArrayList<SNode>();
     }
-
+    return result;
+  }
+  public static List<SNode> virtual_getExplicitArguments_7364609393484886616(SNode thisNode) {
+    List<SNode> result = new ArrayList<SNode>();
+    for (SNode arg : ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args")))) {
+      {
+        SNode concept_a0b0b;
+        {
+          SNode node_a0b0b = arg;
+          concept_a0b0b = SNodeOperations.getConceptDeclaration(node_a0b0b);
+        }
+        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0b0b), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
+          {
+            SNode tele = (SNode) arg;
+            if (!((SPropertyOperations.getBoolean_def(tele, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0xc23f551009d041dL, "isImplicit"), "false")))) {
+              ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getChildren(tele, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames"))));
+            }
+          }
+        }
+      }
+    }
+    return result;
   }
 }

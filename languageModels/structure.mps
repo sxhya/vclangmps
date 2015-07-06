@@ -419,7 +419,7 @@
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="DefFunction" />
     <property role="34LRSv" value="\function" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <ref role="1TJDcQ" node="7nfIx2ubIap" resolve="AbstractConstructor" />
     <node concept="1TJgyi" id="6dbcPfPG4xP" role="1TKVEl">
       <property role="TrG5h" value="arrow" />
       <ref role="AX2Wp" node="6dbcPfPFKEh" resolve="ArrowSwitch" />
@@ -433,12 +433,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
-    </node>
-    <node concept="PrWs8" id="KzXl40AjC0" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
-    </node>
-    <node concept="PrWs8" id="KzXl40AY$Z" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
     </node>
     <node concept="PrWs8" id="KzXl40AQZi" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
@@ -479,7 +473,7 @@
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="DefType" />
     <property role="34LRSv" value="\data" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <ref role="1TJDcQ" node="7nfIx2ubIap" resolve="AbstractConstructor" />
     <node concept="1TJgyj" id="7nfIx2ubXxc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
@@ -491,12 +485,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7nfIx2ubIap" resolve="AbstractConstructor" />
     </node>
-    <node concept="PrWs8" id="KzXl40Ap_K" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
-    </node>
-    <node concept="PrWs8" id="KzXl40AY_7" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
-    </node>
     <node concept="PrWs8" id="KzXl40BR2Y" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
@@ -507,18 +495,18 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="PrWs8" id="22zU9Mzizg9" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    </node>
+    <node concept="PrWs8" id="22zU9Mzizi4" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ubIaq">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="Constructor" />
     <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="7nfIx2ubIap" resolve="AbstractConstructor" />
-    <node concept="PrWs8" id="KzXl40_P0u" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
-    </node>
-    <node concept="PrWs8" id="KzXl40AY$R" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
-    </node>
     <node concept="PrWs8" id="KzXl40BR37" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
@@ -531,7 +519,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="function" />
-      <ref role="20lvS9" node="6dbcPfPFLfE" resolve="DefFunction" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ucmVD">
@@ -635,6 +623,8 @@
   <node concept="1TIwiD" id="1rh2nYs79n8">
     <property role="TrG5h" value="BaseVcConcept" />
     <property role="3GE5qa" value="abstract" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1rh2nYs7ujX" role="PzmwI">
       <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />

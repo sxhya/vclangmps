@@ -11,7 +11,9 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.util.regex.Pattern;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class IValidIdentifier_Constraints extends BaseConstraintsDescriptor {
   public IValidIdentifier_Constraints() {
@@ -28,10 +30,9 @@ public class IValidIdentifier_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return (SPropertyOperations.getString(propertyValue)).equals("_") || REGEXP_ucw9xl_a0a0a0b0b0a1a0b0b.matcher((SPropertyOperations.getString(propertyValue))).matches();
+        return (SPropertyOperations.getString(propertyValue)).equals("_") || BehaviorReflection.invokeVirtualStatic(Boolean.TYPE, SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), "virtual_isCorrectVarName_7364609393485206679", new Object[]{(SPropertyOperations.getString(propertyValue))});
       }
     });
     return properties;
   }
-  private static Pattern REGEXP_ucw9xl_a0a0a0b0b0a1a0b0b = Pattern.compile("[\\p{Alpha}_][\\p{Alnum}_\\-\\']*?", 0);
 }

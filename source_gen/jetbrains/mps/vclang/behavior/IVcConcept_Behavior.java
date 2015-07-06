@@ -15,10 +15,21 @@ public class IVcConcept_Behavior {
   }
   public static List<SNode> virtual_doProcessScopeRequest_1644105782651573969(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
     List<SNode> parentNodes = (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x16d1097f9c1d0c09L, "jetbrains.mps.vclang.structure.IVcConcept")) ? BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), ((SNode) SNodeOperations.getParent(thisNode)), "virtual_doProcessScopeRequest_1644105782651573969", new Object[]{thisNode, descriptor}) : new ArrayList<SNode>());
+    System.err.println("Processing scope request; conceptFqName=" + SNodeOperations.getConcept(thisNode).getName() + " Node=" + BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_getPresentation_1213877396640", new Object[]{}));
     List<SNode> myNodes = BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), thisNode, "virtual_appendToScope_1644105782651590016", new Object[]{requestSender, descriptor});
+    if (myNodes == null) {
+      System.err.println("Returned null");
+    } else {
+      System.err.println("Append to scope call returned " + ListSequence.fromList(myNodes).count());
+      for (SNode f : ListSequence.fromList(myNodes)) {
+        System.err.print(BehaviorReflection.invokeVirtual(String.class, f, "virtual_getPresentation_1213877396640", new Object[]{}) + " ");
+      }
+      System.err.println();
+    }
+    System.err.println("Append to scope call returned " + ListSequence.fromList(myNodes).count());
     List<SNode> result = new ArrayList<SNode>();
     if (descriptor.isChildrenFirst()) {
-      ListSequence.fromList(result).addSequence(ListSequence.fromList(myNodes));
+      ListSequence.fromList(result).addSequence(ListSequence.fromList(myNodes).reversedList());
       ListSequence.fromList(result).addSequence(ListSequence.fromList(parentNodes));
     } else {
       ListSequence.fromList(result).addSequence(ListSequence.fromList(parentNodes));
@@ -27,6 +38,7 @@ public class IVcConcept_Behavior {
     return result;
   }
   public static List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
+    System.err.println("Called dummy appendToScope; conceptFqName=" + SNodeOperations.getConcept(thisNode).getName());
     return new ArrayList<SNode>();
   }
 }

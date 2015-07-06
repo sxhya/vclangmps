@@ -6,7 +6,7 @@ import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class BaseVcConcept_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IVcConcept_BehaviorDescriptor {
+public abstract class BaseVcConcept_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IVcConcept_BehaviorDescriptor {
   public BaseVcConcept_BehaviorDescriptor() {
   }
   public List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
