@@ -118,11 +118,6 @@
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6aAUpg3pU9B">
-    <property role="TrG5h" value="DefCallExpression" />
-    <property role="3GE5qa" value="expression" />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="6aAUpg3pU9E">
     <property role="TrG5h" value="Literal" />
     <property role="3GE5qa" value="literal" />
