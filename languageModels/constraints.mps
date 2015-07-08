@@ -6,6 +6,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -89,6 +90,7 @@
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -177,7 +179,7 @@
                       <node concept="2OqwBi" id="1rh2nYs8R4k" role="10QFUP">
                         <node concept="1PxgMI" id="1rh2nYs8QuG" role="2Oq$k0">
                           <ref role="1PxNhF" to="51uy:1rh2nYs7gK9" resolve="IVcConcept" />
-                          <node concept="21POm0" id="1rh2nYs8Px7" role="1PxMeX" />
+                          <node concept="3kakTB" id="4AGmMAPY9Pr" role="1PxMeX" />
                         </node>
                         <node concept="2qgKlT" id="1rh2nYs8Rux" role="2OqNvi">
                           <ref role="37wK5l" to="hhlq:1rh2nYs7drh" resolve="doProcessScopeRequest" />
@@ -426,6 +428,15 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="4AGmMAPVwGj">
+    <property role="3GE5qa" value="arguments" />
+    <ref role="1M2myG" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+  </node>
+  <node concept="1M2fIO" id="4AGmMAPWIuC">
+    <property role="3GE5qa" value="arguments" />
+    <ref role="1M2myG" to="51uy:6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="1MND4H" to="51uy:6aAUpg3pUr$" resolve="Variable" />
   </node>
 </model>
 

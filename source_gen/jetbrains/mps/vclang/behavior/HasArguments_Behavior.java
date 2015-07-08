@@ -18,6 +18,7 @@ public class HasArguments_Behavior {
   }
   public static List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
     List<SNode> result = BehaviorReflection.invokeSuper((Class<List<SNode>>) ((Class) Object.class), thisNode, "jetbrains.mps.vclang.structure.IVcConcept", "virtual_appendToScope_1644105782651590016", new Object[]{requestSender, descriptor});
+
     if (descriptor instanceof ReferentVariableRequestDescriptor) {
       List<SNode> visibleArguments;
       if (ListSequence.fromList(((List<SNode>) SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args")))).contains(requestSender)) {
@@ -27,15 +28,18 @@ public class HasArguments_Behavior {
       }
       for (SNode arg : ListSequence.fromList(visibleArguments)) {
         {
-          SNode concept_a0c0b0a;
+          SNode concept_a0c0c0a;
           {
-            SNode node_a0c0b0a = arg;
-            concept_a0c0b0a = SNodeOperations.getConceptDeclaration(node_a0c0b0a);
+            SNode node_a0c0c0a = arg;
+            concept_a0c0c0a = SNodeOperations.getConceptDeclaration(node_a0c0c0a);
           }
-          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0c0b0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
+          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0c0c0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
             for (SNode var : ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames")))) {
               BehaviorReflection.invokeVirtual(Void.class, var, "virtual_addVariable_1644105782651964639", new Object[]{descriptor, result});
             }
+          }
+          if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0c0c0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable"))) {
+            BehaviorReflection.invokeVirtual(Void.class, SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable")), "virtual_addVariable_1644105782651964639", new Object[]{descriptor, result});
           }
         }
       }
@@ -58,6 +62,9 @@ public class HasArguments_Behavior {
               ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getChildren(tele, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames"))));
             }
           }
+        }
+        if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0b0b), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable"))) {
+          ListSequence.fromList(result).addElement(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable")));
         }
       }
     }

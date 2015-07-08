@@ -4,16 +4,16 @@ package jetbrains.mps.vclang.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import java.util.ArrayList;
 
 public class Clause_Behavior {
   public static void init(SNode thisNode) {
   }
   public static List<SNode> virtual_appendToScope_1644105782651590016(SNode thisNode, SNode requestSender, AbstractScopeRequestDescriptor descriptor) {
-    if (descriptor instanceof ReferentVariableRequestDescriptor && requestSender == SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0b47L, "clauseExpression"))) {
+    if (descriptor instanceof ReferentVariableRequestDescriptor) {
       return BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0bc1L, "clauseName")), "virtual_appendToScope_1644105782651590016", new Object[]{requestSender, descriptor});
     } else {
       return new ArrayList<SNode>();
