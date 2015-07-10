@@ -7,8 +7,6 @@ import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import java.util.List;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public class DefFunction_Behavior {
   public static void init(SNode thisNode) {
@@ -29,10 +27,5 @@ public class DefFunction_Behavior {
   }
   public static boolean virtual_isInfix_7364609393485304660(SNode thisNode) {
     return BehaviorReflection.invokeVirtualStatic(Boolean.TYPE, SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1e0dL, "jetbrains.mps.vclang.structure.IValidFunctionalSymbol")), "virtual_isCorrectFunctionalSymbol_7364609393485262972", new Object[]{SPropertyOperations.getString(thisNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))});
-  }
-  public static void virtual_addFunctionalSymbolToScope_2351979189869651664(SNode thisNode, List<SNode> result, FunctorScopeRequestDescriptor desc) {
-    if (!(desc.getIsInfix()) || ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), thisNode, "virtual_getExplicitArguments_7364609393484886616", new Object[]{})).count() >= 2) {
-      ListSequence.fromList(result).addElement(thisNode);
-    }
   }
 }

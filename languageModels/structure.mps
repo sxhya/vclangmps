@@ -75,6 +75,9 @@
       <property role="20kJfa" value="clauses" />
       <ref role="20lvS9" node="6dbcPfPFKFe" resolve="Clause" />
     </node>
+    <node concept="PrWs8" id="1$0zzZHXl30" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6aAUpg3pIVR">
     <property role="TrG5h" value="AbstractExpression" />
@@ -226,7 +229,7 @@
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="Variable" />
     <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
-    <node concept="PrWs8" id="KzXl40AQZ5" role="PzmwI">
+    <node concept="PrWs8" id="1$0zzZHVZHE" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
   </node>
@@ -242,6 +245,9 @@
     </node>
     <node concept="PrWs8" id="Z42ctSVdkO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1$0zzZHWjid" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="Z42ctSV7V8">
@@ -328,6 +334,9 @@
     </node>
     <node concept="PrWs8" id="6dbcPfPFKG8" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1$0zzZHVbof" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKJ4">
@@ -550,6 +559,9 @@
     </node>
     <node concept="PrWs8" id="1rh2nYs7uk7" role="PrDN$">
       <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
+    </node>
+    <node concept="PrWs8" id="1$0zzZHX8iB" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="KzXl40_QXs">

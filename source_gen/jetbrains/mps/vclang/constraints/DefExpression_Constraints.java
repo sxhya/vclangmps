@@ -11,17 +11,14 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
+import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.vclang.behavior.FunctorScopeRequestDescriptor;
-import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.scope.EmptyScope;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class DefExpression_Constraints extends BaseConstraintsDescriptor {
@@ -39,31 +36,22 @@ public class DefExpression_Constraints extends BaseConstraintsDescriptor {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseReferenceScopeProvider() {
-          @Override
-          public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            FunctorScopeRequestDescriptor desc = new FunctorScopeRequestDescriptor(false, true);
-            List<SNode> result = null;
-            {
-              SNode concept_c0a0a0a0b0a1a0b0b_1;
-              {
-                SNode node_c0a0a0a0b0a1a0b0b_1 = _context.getEnclosingNode();
-                concept_c0a0a0a0b0a1a0b0b_1 = SNodeOperations.getConceptDeclaration(node_c0a0a0a0b0a1a0b0b_1);
-              }
-              if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_c0a0a0a0b0a1a0b0b_1), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x16d1097f9c1d0c09L, "jetbrains.mps.vclang.structure.IVcConcept"))) {
-                result = (List<SNode>) BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), SNodeOperations.cast(_context.getEnclosingNode(), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x16d1097f9c1d0c09L, "jetbrains.mps.vclang.structure.IVcConcept")), "virtual_doProcessScopeRequest_1644105782651573969", new Object[]{_context.getReferenceNode(), desc});
-              }
-            }
-            return result;
-          }
+        return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_fykuca_a0a1a0a0a1a0b0a1a1;
+            return breakingNode_fykuca_a0a0a0a0a1a0b0a1a1;
+          }
+          @Override
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.vclang.structure.Definition"));
+              return (scope == null ? new EmptyScope() : scope);
+            }
           }
         };
       }
     });
     return references;
   }
-  private static SNodePointer breakingNode_fykuca_a0a1a0a0a1a0b0a1a1 = new SNodePointer("r:bd85b79a-a945-409a-98fb-1701c45b7d02(jetbrains.mps.vclang.constraints)", "1776419984602737724");
+  private static SNodePointer breakingNode_fykuca_a0a0a0a0a1a0b0a1a1 = new SNodePointer("r:bd85b79a-a945-409a-98fb-1701c45b7d02(jetbrains.mps.vclang.constraints)", "1801596256174803937");
 }
