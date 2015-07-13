@@ -46,6 +46,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -92,11 +93,13 @@
     <node concept="1TJgyj" id="7nfIx2ucmHC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="leftArg" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
     <node concept="1TJgyj" id="7nfIx2ucmHE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rightArg" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
   </node>
@@ -110,12 +113,16 @@
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="args" />
       <ref role="20lvS9" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+      <ref role="20ksaX" node="KzXl40_P0s" />
     </node>
     <node concept="1TJgyj" id="6aAUpg3pXe2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="codomain" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
+    </node>
+    <node concept="PrWs8" id="6FOQVYN5nsD" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pU9E">
@@ -452,7 +459,7 @@
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="6dbcPfPFLkz" role="M5hS2">
-      <property role="1uS6qo" value="infix" />
+      <property role="1uS6qo" value="infixr" />
       <property role="1uS6qv" value="0" />
     </node>
     <node concept="M4N5e" id="6dbcPfPFLna" role="M5hS2">
@@ -460,7 +467,7 @@
       <property role="1uS6qv" value="1" />
     </node>
     <node concept="M4N5e" id="6dbcPfPFLlP" role="M5hS2">
-      <property role="1uS6qo" value="infixr" />
+      <property role="1uS6qo" value="infix" />
       <property role="1uS6qv" value="2" />
     </node>
   </node>

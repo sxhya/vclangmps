@@ -16,9 +16,9 @@ import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.scope.EmptyScope;
+import jetbrains.mps.vclang.actions.BinaryScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class BinOpExpression_Constraints extends BaseConstraintsDescriptor {
@@ -43,15 +43,12 @@ public class BinOpExpression_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            {
-              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.vclang.structure.Definition"));
-              return (scope == null ? new EmptyScope() : scope);
-            }
+            return new BinaryScope(Scope.getScope(SNodeOperations.getParent(_context.getContextNode()), _context.getContextNode(), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition").getDeclarationNode()));
           }
         };
       }
     });
     return references;
   }
-  private static SNodePointer breakingNode_wfqdcr_a0a0a0a0a1a0b0a1a1 = new SNodePointer("r:bd85b79a-a945-409a-98fb-1701c45b7d02(jetbrains.mps.vclang.constraints)", "1801596256174559268");
+  private static SNodePointer breakingNode_wfqdcr_a0a0a0a0a1a0b0a1a1 = new SNodePointer("r:bd85b79a-a945-409a-98fb-1701c45b7d02(jetbrains.mps.vclang.constraints)", "7707026478727007613");
 }
