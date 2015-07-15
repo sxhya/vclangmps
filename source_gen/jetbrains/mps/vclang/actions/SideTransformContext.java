@@ -17,13 +17,27 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 
 public class SideTransformContext {
   private SNode dummy = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
-  private SNode newBranch = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
+  private SNode myBranch = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
   private SNode root;
   private int index = -1;
   private List<SideTransformContext.AbstractAtom> lexems;
   private SideTransformContext.SideSwitch mySide;
 
   public SideTransformContext(SNode sourceNode, SideTransformContext.SideSwitch side) {
+    mySide = side;
+    initContext(sourceNode);
+  }
+  public SideTransformContext(SNode sourceNode, SideTransformContext.SideSwitch side, SNode branch) {
+    mySide = side;
+    myBranch = branch;
+    initContext(sourceNode);
+  }
+
+  public boolean isValid() {
+    return index != -1;
+  }
+
+  private void initContext(SNode sourceNode) {
     root = SideTransformContext.findTransformRoot(sourceNode);
     lexems = SideTransformContext.linearize(root, true);
     for (int i = 0; i < ListSequence.fromList(lexems).count(); i++) {
@@ -33,11 +47,6 @@ public class SideTransformContext {
         break;
       }
     }
-    mySide = side;
-  }
-
-  public boolean isValid() {
-    return index != -1;
   }
 
   public SNode doSideTransform(SNode raw) {
@@ -45,23 +54,25 @@ public class SideTransformContext {
       SNodeOperations.replaceWithAnother(root, dummy);
       if (mySide.equals(SideTransformContext.SideSwitch.RIGHT)) {
         ListSequence.fromList(lexems).insertElement(index + 1, new SideTransformContext.Operation(raw));
-        ListSequence.fromList(lexems).insertElement(index + 2, new SideTransformContext.Atom(newBranch));
+        ListSequence.fromList(lexems).insertElement(index + 2, new SideTransformContext.Atom(myBranch));
       } else if (mySide.equals(SideTransformContext.SideSwitch.LEFT)) {
-        ListSequence.fromList(lexems).insertElement(index, new SideTransformContext.Atom(newBranch));
+        ListSequence.fromList(lexems).insertElement(index, new SideTransformContext.Atom(myBranch));
         ListSequence.fromList(lexems).insertElement(index + 1, new SideTransformContext.Operation(raw));
       }
       for (SideTransformContext.AbstractAtom lexem : ListSequence.fromList(lexems)) {
         lexem.detachMe();
       }
       SNodeOperations.replaceWithAnother(this.dummy, SideTransformContext.reconstructRoot(lexems));
-      return newBranch;
+      return myBranch;
     }
     return null;
   }
 
   private static SNode findTransformRoot(SNode expr) {
-    while (!(BehaviorReflection.invokeVirtual(Boolean.TYPE, expr, "virtual_isSurroundedWithBraces_2724597730929429700", new Object[]{})) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"))) {
+    boolean flag = true;
+    while ((!(BehaviorReflection.invokeVirtual(Boolean.TYPE, expr, "virtual_isSurroundedWithBraces_2724597730929429700", new Object[]{})) || flag) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"))) {
       expr = SNodeOperations.cast(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"));
+      flag = false;
     }
     return expr;
   }
