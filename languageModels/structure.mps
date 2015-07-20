@@ -113,8 +113,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="args" />
-      <ref role="20lvS9" node="6dbcPfPFe7A" resolve="AbstractArgument" />
       <ref role="20ksaX" node="KzXl40_P0s" />
+      <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
     </node>
     <node concept="1TJgyj" id="6aAUpg3pXe2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -382,9 +382,6 @@
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="Non-dependent function type" />
     <ref role="1TJDcQ" node="6aAUpg3pU9x" resolve="AbstractBinOpExpression" />
-    <node concept="PrWs8" id="6dbcPfPFKXw" role="PzmwI">
-      <ref role="PrY4T" node="6dbcPfPFe95" resolve="ITypedArgument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKYA">
     <property role="3GE5qa" value="literal" />
@@ -587,6 +584,8 @@
   <node concept="1TIwiD" id="KzXl40_QXs">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="Expression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="PrWs8" id="KzXl40_QXt" role="PzmwI">
       <ref role="PrY4T" node="6aAUpg3pIVR" resolve="AbstractExpression" />
