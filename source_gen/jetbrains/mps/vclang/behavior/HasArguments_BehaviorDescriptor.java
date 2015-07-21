@@ -5,7 +5,9 @@ package jetbrains.mps.vclang.behavior;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
+import com.jetbrains.jetpad.vclang.term.Abstract;
 
 public interface HasArguments_BehaviorDescriptor extends IVcConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public List<SNode> virtual_getArguments_1801596256174391532(SNode thisNode, boolean onlyExplicit);
+  public List<Abstract.Argument> virtual_getSourceArguments_6698694374041979929(SNode thisNode);
 }

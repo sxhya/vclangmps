@@ -14,6 +14,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.scopes.runtime.CompositeWithParentScope;
+import com.jetbrains.jetpad.vclang.term.Abstract;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class HasArguments_Behavior {
   public static void init(SNode thisNode) {
@@ -30,7 +32,7 @@ public class HasArguments_Behavior {
         if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(concept_a0b0a), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))) {
           {
             SNode tele = (SNode) arg;
-            if (!((SPropertyOperations.getBoolean_def(tele, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0xc23f551009d041dL, "isImplicit"), "false"))) || !((onlyExplicit))) {
+            if (!((SPropertyOperations.getBoolean_def(tele, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0xc23f551009d041dL, "isImplicit"), "false"))) || !((onlyExplicit))) {
               ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getChildren(tele, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames"))));
             }
           }
@@ -48,5 +50,20 @@ public class HasArguments_Behavior {
       return CompositeWithParentScope.from(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), thisNode, "virtual_getArguments_1801596256174391532", new Object[]{false}), thisNode, kind);
     }
     return BehaviorReflection.invokeSuper(Scope.class, thisNode, "jetbrains.mps.lang.core.structure.ScopeProvider", "virtual_getScope_3734116213129936182", new Object[]{kind, child});
+  }
+  public static List<Abstract.Argument> virtual_getSourceArguments_6698694374041979929(SNode thisNode) {
+    List<Abstract.Argument> result = ListSequence.fromList(new ArrayList<Abstract.Argument>());
+    for (SNode arg : ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args")))) {
+      if (SNodeOperations.isInstanceOf(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")) && (SLinkOperations.getTarget(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0x62a6e9940367a6bfL, "typeExpr")) == null)) {
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(arg, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, 0x62a6e9940367a6e2L, "varNames"))).select(new ISelector<SNode, Abstract.Argument>() {
+          public Abstract.Argument select(SNode it) {
+            return BehaviorReflection.invokeVirtual(Abstract.Argument.class, it, "virtual_toSourceArgument_7330199235213968318", new Object[]{});
+          }
+        }));
+      } else {
+        ListSequence.fromList(result).addElement(BehaviorReflection.invokeVirtual(Abstract.Argument.class, arg, "virtual_toSourceArgument_7330199235213968318", new Object[]{}));
+      }
+    }
+    return result;
   }
 }

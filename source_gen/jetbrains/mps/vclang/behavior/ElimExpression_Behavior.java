@@ -14,6 +14,7 @@ import java.util.HashSet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import com.jetbrains.jetpad.vclang.term.Abstract;
 
 public class ElimExpression_Behavior {
   public static void init(SNode thisNode) {
@@ -23,5 +24,8 @@ public class ElimExpression_Behavior {
       return new FilteringByNameScope(SetSequence.fromSetAndArray(new HashSet<String>(), SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eec3L, 0x634b3353f5af09c8L, "expression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, 0x75cfba109e3185ceL, "var")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))), ScopeUtils.lazyParentScope(thisNode, kind));
     }
     return BehaviorReflection.invokeSuper(Scope.class, thisNode, "jetbrains.mps.lang.core.structure.ScopeProvider", "virtual_getScope_3734116213129936182", new Object[]{kind, child});
+  }
+  public static Abstract.Expression virtual_toSourceExpression_7330199235213689458(SNode thisNode) {
+    return null;
   }
 }

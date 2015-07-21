@@ -18,7 +18,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
-import jetbrains.mps.vclang.behavior.AbstractConstructor_Behavior;
+import jetbrains.mps.vclang.behavior.Definition_Behavior;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
@@ -93,7 +93,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a1a0(SNode node, EditorContext editorContext) {
-    return AbstractConstructor_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
+    return Definition_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
   }
   private EditorCell createProperty_xlrcx7_c0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
@@ -121,7 +121,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a3a0(SNode node, EditorContext editorContext) {
-    return AbstractConstructor_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
+    return Definition_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
   }
   private EditorCell createCollection_xlrcx7_a0_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
@@ -145,7 +145,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a0a0(SNode node, EditorContext editorContext) {
-    return AbstractConstructor_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
+    return Definition_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
   }
   private EditorCell createProperty_xlrcx7_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
@@ -154,7 +154,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("NAP_property_name_1");
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new NameAndPrecedence.AbstractConstructor_generic_cellMenu_xlrcx7_a0b0a()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new NameAndPrecedence.Definition_generic_cellMenu_xlrcx7_a0b0a()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -163,8 +163,8 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  public static class AbstractConstructor_generic_cellMenu_xlrcx7_a0b0a extends AbstractCellMenuPart_Generic_Group {
-    public AbstractConstructor_generic_cellMenu_xlrcx7_a0b0a() {
+  public static class Definition_generic_cellMenu_xlrcx7_a0b0a extends AbstractCellMenuPart_Generic_Group {
+    public Definition_generic_cellMenu_xlrcx7_a0b0a() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
       return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)", "AssociativitySwitch"));
@@ -196,6 +196,6 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a2a0(SNode node, EditorContext editorContext) {
-    return AbstractConstructor_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
+    return Definition_Behavior.call_shouldBeSurroundedWithBraces_2890544147306555285(node);
   }
 }

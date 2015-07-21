@@ -8,6 +8,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import com.jetbrains.jetpad.vclang.term.Abstract;
 
 public class BinOpExpression_Behavior {
   public static void init(SNode thisNode) {
@@ -25,5 +26,8 @@ public class BinOpExpression_Behavior {
       return SPropertyOperations.getInteger_def(precedence, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af14cfL, 0x634b3353f5af151dL, "associativity"), "0");
     }
     return BehaviorReflection.invokeSuper(Integer.TYPE, thisNode, "jetbrains.mps.vclang.structure.AbstractBinOpExpression", "virtual_getAssociativity_7707026478727627484", new Object[]{});
+  }
+  public static Abstract.Expression virtual_toSourceExpression_7330199235213689458(SNode thisNode) {
+    return new BinOpExpressionAdapter_(thisNode);
   }
 }

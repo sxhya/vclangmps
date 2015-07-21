@@ -6,9 +6,6 @@ import jetbrains.mps.scope.FilteringScope;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.scope.Scope;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 
 public class BinaryScope extends FilteringScope {
 
@@ -17,11 +14,6 @@ public class BinaryScope extends FilteringScope {
   }
   @Override
   public boolean isExcluded(SNode node) {
-    /*
-      if (SNodeOperations.isInstanceOf(node, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")) && !((BehaviorReflection.invokeVirtual(Boolean.TYPE, SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")), "virtual_isBinary_7707026478726581331", new Object[]{})))) {
-        return true;
-      }
-    */
     return false;
   }
 }

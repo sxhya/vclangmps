@@ -4,6 +4,7 @@ package jetbrains.mps.vclang.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
+import com.jetbrains.jetpad.vclang.term.Abstract;
 
 public class ApplicationExpression_Behavior {
   public static void init(SNode thisNode) {
@@ -13,5 +14,8 @@ public class ApplicationExpression_Behavior {
   }
   public static int virtual_getAssociativity_7707026478727627484(SNode thisNode) {
     return Integer.parseInt(SEnumOperations.getEnumMemberValue(SEnumOperations.getEnumMember(SEnumOperations.getEnum("r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)", "AssociativitySwitch"), "1")));
+  }
+  public static Abstract.Expression virtual_toSourceExpression_7330199235213689458(SNode thisNode) {
+    return new ApplicationExpressionAdapter(thisNode);
   }
 }
