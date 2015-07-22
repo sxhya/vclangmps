@@ -37,6 +37,23 @@ public class SideTransformContext {
     return index != -1;
   }
 
+  public SNode getTransformRoot() {
+    return root;
+  }
+
+  public SNode getFirstNode() {
+    if (ListSequence.fromList(lexems).count() > 0 && ListSequence.fromList(lexems).first() instanceof SideTransformContext.Atom) {
+      return ((SideTransformContext.Atom) ListSequence.fromList(lexems).first()).expr;
+    }
+    return null;
+  }
+  public SNode getLastNode() {
+    if (ListSequence.fromList(lexems).count() > 0 && ListSequence.fromList(lexems).last() instanceof SideTransformContext.Atom) {
+      return ((SideTransformContext.Atom) ListSequence.fromList(lexems).last()).expr;
+    }
+    return null;
+  }
+
   private void initContext(SNode sourceNode) {
     root = SideTransformContext.findTransformRoot(sourceNode);
     lexems = SideTransformContext.linearize(root, true);

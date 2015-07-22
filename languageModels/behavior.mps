@@ -1639,20 +1639,16 @@
     <ref role="13h7C2" to="51uy:6aAUpg3pU9$" resolve="PiExpression" />
     <node concept="13hLZK" id="6FOQVYN5nJz" role="13h7CW">
       <node concept="3clFbS" id="6FOQVYN5nJ$" role="2VODD2">
-        <node concept="3clFbF" id="6FOQVYN5nJA" role="3cqZAp">
-          <node concept="2OqwBi" id="6FOQVYN5oX7" role="3clFbG">
-            <node concept="2OqwBi" id="6FOQVYN5nMS" role="2Oq$k0">
-              <node concept="13iPFW" id="6FOQVYN5nJ_" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6FOQVYN5o57" role="2OqNvi">
-                <ref role="3TtcxE" to="51uy:6aAUpg3pXd4" />
-              </node>
+        <node concept="3cpWs8" id="5FayNcg4PuF" role="3cqZAp">
+          <node concept="3cpWsn" id="5FayNcg4PuI" role="3cpWs9">
+            <property role="TrG5h" value="ta" />
+            <node concept="3Tqbb2" id="5FayNcg4PuD" role="1tU5fm">
+              <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
             </node>
-            <node concept="TSZUe" id="6FOQVYN5qo7" role="2OqNvi">
-              <node concept="2ShNRf" id="6FOQVYN5qta" role="25WWJ7">
-                <node concept="3zrR0B" id="6FOQVYN5rkM" role="2ShVmc">
-                  <node concept="3Tqbb2" id="6FOQVYN5rkO" role="3zrR0E">
-                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
-                  </node>
+            <node concept="2ShNRf" id="6FOQVYN5qta" role="33vP2m">
+              <node concept="3zrR0B" id="6FOQVYN5rkM" role="2ShVmc">
+                <node concept="3Tqbb2" id="6FOQVYN5rkO" role="3zrR0E">
+                  <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
                 </node>
               </node>
             </node>
@@ -5932,6 +5928,66 @@
         </node>
         <node concept="3clFbF" id="5NQyKEZLaRF" role="3cqZAp">
           <node concept="10Nm6u" id="5NQyKEZLaRD" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="5FayNcg3wrq" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getExpression" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="5FayNcg3wrr" role="1B3o_S" />
+      <node concept="3uibUv" id="5FayNcg3wrt" role="3clF45">
+        <ref role="3uigEE" to="up44:~Abstract$Expression" resolve="Abstract.Expression" />
+      </node>
+      <node concept="3clFbS" id="5FayNcg3wrv" role="3clF47">
+        <node concept="3SKdUt" id="5FayNcg3xL5" role="3cqZAp">
+          <node concept="3SKdUq" id="5FayNcg3xNh" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement this" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FayNcg3xSk" role="3cqZAp">
+          <node concept="10Nm6u" id="5FayNcg3xSi" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="5FayNcg3HCi" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getName" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="5FayNcg3HCj" role="1B3o_S" />
+      <node concept="3uibUv" id="5FayNcg3HCl" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="5FayNcg3HCn" role="3clF47">
+        <node concept="3SKdUt" id="5FayNcg3HMy" role="3cqZAp">
+          <node concept="3SKdUq" id="5FayNcg3HMz" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement this" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FayNcg3HCp" role="3cqZAp">
+          <node concept="10Nm6u" id="5FayNcg3HCo" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="5FayNcg3HCq" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getFixity" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="5FayNcg3HCr" role="1B3o_S" />
+      <node concept="3uibUv" id="5FayNcg3HCt" role="3clF45">
+        <ref role="3uigEE" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+      </node>
+      <node concept="3clFbS" id="5FayNcg3HCv" role="3clF47">
+        <node concept="3SKdUt" id="5FayNcg3HMZ" role="3cqZAp">
+          <node concept="3SKdUq" id="5FayNcg3HN0" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement this" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FayNcg3HCx" role="3cqZAp">
+          <node concept="10Nm6u" id="5FayNcg3HCw" role="3clFbG" />
         </node>
       </node>
     </node>

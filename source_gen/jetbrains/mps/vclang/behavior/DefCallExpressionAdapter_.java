@@ -16,6 +16,18 @@ public class DefCallExpressionAdapter_ extends ExpressionAdapter implements Abst
     // TODO: Implement this 
     return null;
   }
+  public Abstract.Expression getExpression() {
+    // TODO: Implement this 
+    return null;
+  }
+  public String getName() {
+    // TODO: Implement this 
+    return null;
+  }
+  public Abstract.Definition.Fixity getFixity() {
+    // TODO: Implement this 
+    return null;
+  }
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitDefCall(this, params);
   }
