@@ -11,6 +11,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.scopes.runtime.CompositeWithParentScope;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import java.util.List;
+import com.jetbrains.jetpad.vclang.term.Abstract;
 
 public class Clause_Behavior {
   public static void init(SNode thisNode) {
@@ -20,5 +21,8 @@ public class Clause_Behavior {
       return CompositeWithParentScope.from(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), SNodeOperations.cast(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0bc1L, "clauseName")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0c7fL, "jetbrains.mps.vclang.structure.NamedClause")), "virtual_getArguments_1801596256174391532", new Object[]{false}), thisNode, kind);
     }
     return BehaviorReflection.invokeSuper(Scope.class, thisNode, "jetbrains.mps.lang.core.structure.ScopeProvider", "virtual_getScope_3734116213129936182", new Object[]{kind, child});
+  }
+  public static Abstract.Clause virtual_toSourceClause_3871692118594316597(SNode thisNode) {
+    return new ClauseAdapter(thisNode);
   }
 }

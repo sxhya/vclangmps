@@ -26,6 +26,6 @@ public class ElimExpression_Behavior {
     return BehaviorReflection.invokeSuper(Scope.class, thisNode, "jetbrains.mps.lang.core.structure.ScopeProvider", "virtual_getScope_3734116213129936182", new Object[]{kind, child});
   }
   public static Abstract.Expression virtual_toSourceExpression_7330199235213689458(SNode thisNode) {
-    return null;
+    return new ElimExpressionAdapter(thisNode);
   }
 }

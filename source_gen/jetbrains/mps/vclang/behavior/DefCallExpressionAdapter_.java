@@ -5,6 +5,10 @@ package jetbrains.mps.vclang.behavior;
 import com.jetbrains.jetpad.vclang.term.Abstract;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.jetbrains.jetpad.vclang.term.definition.Definition;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import com.jetbrains.jetpad.vclang.term.expr.visitor.AbstractExpressionVisitor;
 
 public class DefCallExpressionAdapter_ extends ExpressionAdapter implements Abstract.DefCallExpression {
@@ -21,12 +25,10 @@ public class DefCallExpressionAdapter_ extends ExpressionAdapter implements Abst
     return null;
   }
   public String getName() {
-    // TODO: Implement this 
-    return null;
+    return SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, 0x40feb6e2a72d3a3fL, "def")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public Abstract.Definition.Fixity getFixity() {
-    // TODO: Implement this 
-    return null;
+    return (BehaviorReflection.invokeVirtual(Boolean.TYPE, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, 0x40feb6e2a72d3a3fL, "def")), "virtual_isInfix_7364609393485304660", new Object[]{}) ? Abstract.Definition.Fixity.INFIX : Abstract.Definition.Fixity.PREFIX);
   }
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitDefCall(this, params);
