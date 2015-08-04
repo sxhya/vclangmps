@@ -3970,55 +3970,57 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="5NQyKEZJogu" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getFixity" />
-      <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="5NQyKEZJogv" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZJogx" role="3clF45">
-        <ref role="3uigEE" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
-      </node>
-      <node concept="3clFbS" id="5NQyKEZJogy" role="3clF47">
-        <node concept="3clFbF" id="5NQyKEZJqm9" role="3cqZAp">
-          <node concept="3K4zz7" id="5NQyKEZJqma" role="3clFbG">
-            <node concept="2OqwBi" id="5NQyKEZJqmb" role="3K4Cdx">
-              <node concept="1rXfSq" id="5NQyKEZJ$Tb" role="2Oq$k0">
-                <ref role="37wK5l" node="5NQyKEZJzN5" resolve="getThisNode" />
-              </node>
-              <node concept="2qgKlT" id="5NQyKEZJqmd" role="2OqNvi">
-                <ref role="37wK5l" node="6oOmj_oc_dk" resolve="isInfix" />
-              </node>
-            </node>
-            <node concept="Rm8GO" id="5NQyKEZJqme" role="3K4E3e">
-              <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
-              <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.INFIX" resolve="INFIX" />
-            </node>
-            <node concept="Rm8GO" id="5NQyKEZJqmf" role="3K4GZi">
-              <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
-              <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.PREFIX" resolve="PREFIX" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3clFb_" id="5NQyKEZJogO" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getName" />
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5NQyKEZJogP" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZJogR" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      <node concept="3uibUv" id="UBRyKmBQU4" role="3clF45">
+        <ref role="3uigEE" to="bm5j:~Utils$Name" resolve="Utils.Name" />
       </node>
       <node concept="3clFbS" id="5NQyKEZJogT" role="3clF47">
-        <node concept="3clFbF" id="5NQyKEZJom4" role="3cqZAp">
-          <node concept="2OqwBi" id="5NQyKEZJoyv" role="3clFbG">
-            <node concept="1rXfSq" id="5NQyKEZJ$Z2" role="2Oq$k0">
+        <node concept="3cpWs8" id="UBRyKmC2C0" role="3cqZAp">
+          <node concept="3cpWsn" id="UBRyKmC2C3" role="3cpWs9">
+            <property role="TrG5h" value="thisNode" />
+            <node concept="3Tqbb2" id="UBRyKmC2BY" role="1tU5fm">
+              <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
+            </node>
+            <node concept="1rXfSq" id="UBRyKmBZhR" role="33vP2m">
               <ref role="37wK5l" node="5NQyKEZJzN5" resolve="getThisNode" />
             </node>
-            <node concept="3TrcHB" id="5NQyKEZJqLC" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="UBRyKmC2pL" role="3cqZAp">
+          <node concept="2ShNRf" id="UBRyKmC2pJ" role="3clFbG">
+            <node concept="1pGfFk" id="UBRyKmC2$y" role="2ShVmc">
+              <ref role="37wK5l" to="bm5j:~Utils$Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Utils.Name" />
+              <node concept="2OqwBi" id="UBRyKmC3uF" role="37wK5m">
+                <node concept="37vLTw" id="UBRyKmC2HW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="UBRyKmC2C3" resolve="thisNode" />
+                </node>
+                <node concept="3TrcHB" id="UBRyKmCdHt" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="3K4zz7" id="5NQyKEZJqma" role="37wK5m">
+                <node concept="2OqwBi" id="5NQyKEZJqmb" role="3K4Cdx">
+                  <node concept="37vLTw" id="UBRyKmCfmo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="UBRyKmC2C3" resolve="thisNode" />
+                  </node>
+                  <node concept="2qgKlT" id="5NQyKEZJqmd" role="2OqNvi">
+                    <ref role="37wK5l" node="6oOmj_oc_dk" resolve="isInfix" />
+                  </node>
+                </node>
+                <node concept="Rm8GO" id="5NQyKEZJqme" role="3K4E3e">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.INFIX" resolve="INFIX" />
+                </node>
+                <node concept="Rm8GO" id="5NQyKEZJqmf" role="3K4GZi">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.PREFIX" resolve="PREFIX" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4431,6 +4433,62 @@
             </node>
             <node concept="2qgKlT" id="5NQyKEZGRE2" role="2OqNvi">
               <ref role="37wK5l" node="5NQyKEZFwKp" resolve="getSourceArguments" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="UBRyKmChWb" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getOriginalName" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="UBRyKmChWc" role="1B3o_S" />
+      <node concept="3uibUv" id="UBRyKmChWe" role="3clF45">
+        <ref role="3uigEE" to="bm5j:~Utils$Name" resolve="Utils.Name" />
+      </node>
+      <node concept="3clFbS" id="UBRyKmChWg" role="3clF47">
+        <node concept="3cpWs8" id="UBRyKmCj22" role="3cqZAp">
+          <node concept="3cpWsn" id="UBRyKmCj23" role="3cpWs9">
+            <property role="TrG5h" value="thisNode" />
+            <node concept="3Tqbb2" id="UBRyKmCj24" role="1tU5fm">
+              <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
+            </node>
+            <node concept="1rXfSq" id="UBRyKmCj25" role="33vP2m">
+              <ref role="37wK5l" node="5NQyKEZJ_l7" resolve="getThisNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="UBRyKmCj26" role="3cqZAp">
+          <node concept="2ShNRf" id="UBRyKmCj27" role="3clFbG">
+            <node concept="1pGfFk" id="UBRyKmCj28" role="2ShVmc">
+              <ref role="37wK5l" to="bm5j:~Utils$Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Utils.Name" />
+              <node concept="2OqwBi" id="UBRyKmCj29" role="37wK5m">
+                <node concept="37vLTw" id="UBRyKmCj2a" role="2Oq$k0">
+                  <ref role="3cqZAo" node="UBRyKmCj23" resolve="thisNode" />
+                </node>
+                <node concept="3TrcHB" id="UBRyKmCj2b" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="3K4zz7" id="UBRyKmCj2c" role="37wK5m">
+                <node concept="2OqwBi" id="UBRyKmCj2d" role="3K4Cdx">
+                  <node concept="37vLTw" id="UBRyKmCj2e" role="2Oq$k0">
+                    <ref role="3cqZAo" node="UBRyKmCj23" resolve="thisNode" />
+                  </node>
+                  <node concept="2qgKlT" id="UBRyKmCj2f" role="2OqNvi">
+                    <ref role="37wK5l" node="6oOmj_oc_dk" resolve="isInfix" />
+                  </node>
+                </node>
+                <node concept="Rm8GO" id="UBRyKmCj2g" role="3K4E3e">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.INFIX" resolve="INFIX" />
+                </node>
+                <node concept="Rm8GO" id="UBRyKmCj2h" role="3K4GZi">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.PREFIX" resolve="PREFIX" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4923,24 +4981,6 @@
             <node concept="37vLTw" id="5NQyKEZK5wf" role="37vLTJ">
               <ref role="3cqZAo" node="5NQyKEZK52c" resolve="thisNode" />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="5NQyKEZK2J2" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getElimType" />
-      <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="5NQyKEZK2J3" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZK2J5" role="3clF45">
-        <ref role="3uigEE" to="up44:~Abstract$ElimExpression$ElimType" resolve="Abstract.ElimExpression.ElimType" />
-      </node>
-      <node concept="3clFbS" id="5NQyKEZK2J7" role="3clF47">
-        <node concept="3clFbF" id="3mV0Rw0w6lK" role="3cqZAp">
-          <node concept="Rm8GO" id="3mV0Rw0w6sh" role="3clFbG">
-            <ref role="Rm8GQ" to="up44:~Abstract$ElimExpression$ElimType.ELIM" resolve="ELIM" />
-            <ref role="1Px2BO" to="up44:~Abstract$ElimExpression$ElimType" resolve="Abstract.ElimExpression.ElimType" />
           </node>
         </node>
       </node>
@@ -6136,22 +6176,56 @@
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5FayNcg3HCj" role="1B3o_S" />
-      <node concept="3uibUv" id="5FayNcg3HCl" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      <node concept="3uibUv" id="UBRyKmC$07" role="3clF45">
+        <ref role="3uigEE" to="bm5j:~Utils$Name" resolve="Utils.Name" />
       </node>
       <node concept="3clFbS" id="5FayNcg3HCn" role="3clF47">
-        <node concept="3clFbF" id="3mV0Rw0waj$" role="3cqZAp">
-          <node concept="2OqwBi" id="3mV0Rw0waVA" role="3clFbG">
-            <node concept="2OqwBi" id="3mV0Rw0wanB" role="2Oq$k0">
-              <node concept="37vLTw" id="3mV0Rw0wajz" role="2Oq$k0">
+        <node concept="3cpWs8" id="UBRyKmC$gY" role="3cqZAp">
+          <node concept="3cpWsn" id="UBRyKmC$gZ" role="3cpWs9">
+            <property role="TrG5h" value="t" />
+            <node concept="3Tqbb2" id="UBRyKmC$h0" role="1tU5fm">
+              <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
+            </node>
+            <node concept="2OqwBi" id="UBRyKmCCzN" role="33vP2m">
+              <node concept="37vLTw" id="UBRyKmCCut" role="2Oq$k0">
                 <ref role="3cqZAo" node="5NQyKEZL95l" resolve="thisNode" />
               </node>
-              <node concept="3TrEf2" id="3mV0Rw0waCs" role="2OqNvi">
+              <node concept="3TrEf2" id="UBRyKmCCS3" role="2OqNvi">
                 <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" />
               </node>
             </node>
-            <node concept="3TrcHB" id="3mV0Rw0wbez" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="UBRyKmC$h2" role="3cqZAp">
+          <node concept="2ShNRf" id="UBRyKmC$h3" role="3clFbG">
+            <node concept="1pGfFk" id="UBRyKmC$h4" role="2ShVmc">
+              <ref role="37wK5l" to="bm5j:~Utils$Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Utils.Name" />
+              <node concept="2OqwBi" id="UBRyKmC$h5" role="37wK5m">
+                <node concept="37vLTw" id="UBRyKmC$h6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="UBRyKmC$gZ" resolve="t" />
+                </node>
+                <node concept="3TrcHB" id="UBRyKmC$h7" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="3K4zz7" id="UBRyKmC$h8" role="37wK5m">
+                <node concept="2OqwBi" id="UBRyKmC$h9" role="3K4Cdx">
+                  <node concept="37vLTw" id="UBRyKmC$ha" role="2Oq$k0">
+                    <ref role="3cqZAo" node="UBRyKmC$gZ" resolve="t" />
+                  </node>
+                  <node concept="2qgKlT" id="UBRyKmC$hb" role="2OqNvi">
+                    <ref role="37wK5l" node="6oOmj_oc_dk" resolve="isInfix" />
+                  </node>
+                </node>
+                <node concept="Rm8GO" id="UBRyKmC$hc" role="3K4E3e">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.INFIX" resolve="INFIX" />
+                </node>
+                <node concept="Rm8GO" id="UBRyKmC$hd" role="3K4GZi">
+                  <ref role="1Px2BO" to="up44:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
+                  <ref role="Rm8GQ" to="up44:~Abstract$Definition$Fixity.PREFIX" resolve="PREFIX" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -6715,17 +6789,22 @@
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3mV0Rw0uqvk" role="1B3o_S" />
-      <node concept="3uibUv" id="3mV0Rw0uqvm" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      <node concept="3uibUv" id="UBRyKmCxJz" role="3clF45">
+        <ref role="3uigEE" to="bm5j:~Utils$Name" resolve="Utils.Name" />
       </node>
       <node concept="3clFbS" id="3mV0Rw0uqvn" role="3clF47">
-        <node concept="3clFbF" id="3mV0Rw0utLE" role="3cqZAp">
-          <node concept="2OqwBi" id="3mV0Rw0utQ4" role="3clFbG">
-            <node concept="37vLTw" id="3mV0Rw0utLC" role="2Oq$k0">
-              <ref role="3cqZAo" node="3mV0Rw0urVU" resolve="thisNode" />
-            </node>
-            <node concept="3TrcHB" id="3mV0Rw0uC4K" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3clFbF" id="UBRyKmCxY$" role="3cqZAp">
+          <node concept="2ShNRf" id="UBRyKmCxY_" role="3clFbG">
+            <node concept="1pGfFk" id="UBRyKmCxYA" role="2ShVmc">
+              <ref role="37wK5l" to="bm5j:~Utils$Name.&lt;init&gt;(java.lang.String)" resolve="Utils.Name" />
+              <node concept="2OqwBi" id="UBRyKmCxYB" role="37wK5m">
+                <node concept="37vLTw" id="UBRyKmCybu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3mV0Rw0urVU" resolve="thisNode" />
+                </node>
+                <node concept="3TrcHB" id="UBRyKmCxYD" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -6940,8 +7019,8 @@
             </node>
             <node concept="3clFbF" id="3mV0Rw0v$or" role="3cqZAp">
               <node concept="2YIFZM" id="3mV0Rw0vwLV" role="3clFbG">
-                <ref role="37wK5l" to="bm5j:~Utils.prettyPrintClause(com.jetbrains.jetpad.vclang.term.Abstract$ElimExpression,com.jetbrains.jetpad.vclang.term.Abstract$Clause,java.lang.StringBuilder,java.util.List,int):void" resolve="prettyPrintClause" />
                 <ref role="1Pybhc" to="bm5j:~Utils" resolve="Utils" />
+                <ref role="37wK5l" to="bm5j:~Utils.prettyPrintClause(com.jetbrains.jetpad.vclang.term.Abstract$ElimCaseExpression,com.jetbrains.jetpad.vclang.term.Abstract$Clause,java.lang.StringBuilder,java.util.List,int):void" resolve="prettyPrintClause" />
                 <node concept="10QFUN" id="3mV0Rw0v_UX" role="37wK5m">
                   <node concept="3uibUv" id="3mV0Rw0v_UV" role="10QFUM">
                     <ref role="3uigEE" to="up44:~Abstract$ElimExpression" resolve="Abstract.ElimExpression" />
