@@ -225,17 +225,18 @@
     </node>
   </node>
   <node concept="1TIwiD" id="Z42ctSV31q">
-    <property role="TrG5h" value="Sheet" />
+    <property role="TrG5h" value="ClassDefinition" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <property role="34LRSv" value="\class" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
     <node concept="1TJgyj" id="Z42ctSV7V9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="statements" />
       <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
     </node>
-    <node concept="PrWs8" id="Z42ctSVdkO" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="6wsTcrVcUI0" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
     <node concept="PrWs8" id="1$0zzZHWjid" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
