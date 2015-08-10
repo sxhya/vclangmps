@@ -233,6 +233,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
         <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
       </concept>
@@ -2428,6 +2429,27 @@
         </node>
       </node>
       <node concept="10P_77" id="2nfHNdzS_ir" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1Te6WjKRVc5" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="toSourceExpression" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6mU6lSbK89M" resolve="toSourceExpression" />
+      <node concept="3Tm1VV" id="1Te6WjKRVc6" role="1B3o_S" />
+      <node concept="3clFbS" id="1Te6WjKRVcb" role="3clF47">
+        <node concept="3clFbF" id="1Te6WjKS0oa" role="3cqZAp">
+          <node concept="2OqwBi" id="1Te6WjKS0r5" role="3clFbG">
+            <node concept="13iPFW" id="1Te6WjKS0o8" role="2Oq$k0" />
+            <node concept="1B$H19" id="1Te6WjKS0ra" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Te6WjKRVce" role="3cqZAp">
+          <node concept="10Nm6u" id="1Te6WjKRVcd" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1Te6WjKRVcc" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2wthDpjQXAF">

@@ -1324,10 +1324,7 @@
     <node concept="3EZMnI" id="7nfIx2ucngW" role="2wV5jI">
       <node concept="PMmxH" id="7nfIx2ucnhk" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
-        <node concept="11LMrY" id="1rh2nYs0Wub" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
       </node>
       <node concept="3F2HdR" id="7nfIx2ucnh3" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1336,10 +1333,7 @@
       </node>
       <node concept="3F0ifn" id="7nfIx2ucnht" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
-        <node concept="11L4FC" id="1rh2nYs0Wv2" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="l2Vlx" id="7nfIx2ucngZ" role="2iSdaV" />
     </node>

@@ -5,7 +5,9 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:0ebf98e3-297c-49df-8487-4b820588cd91(jetbrains.mps.vclang.prelude)" />
+  </accessoryModels>
   <generators>
     <generator generatorUID="jetbrains.mps.vclang#7108625883772164077" uuid="038da0c3-fe92-4321-aa82-7243d540c9e2">
       <models>
@@ -53,6 +55,7 @@
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">09fe5dc3-0251-4e84-958f-593c3dc22caa(jetbrains.mps.vclang.sandbox)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
