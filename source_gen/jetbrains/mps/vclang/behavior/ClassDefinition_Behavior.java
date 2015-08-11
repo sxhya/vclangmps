@@ -23,16 +23,22 @@ public class ClassDefinition_Behavior {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition"))) {
       List<SNode> prevDefs = new ArrayList<SNode>();
       if (SNodeOperations.isInstanceOf(child, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition"))) {
-        ListSequence.fromList(prevDefs).addElement(SNodeOperations.cast(child, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")));
+        ListSequence.fromList(prevDefs).addElement(SNodeOperations.cast(child, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d5f034L, "jetbrains.mps.vclang.structure.IClassMember")));
       }
-      ListSequence.fromList(prevDefs).addSequence(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getPrevSiblings(child, false), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition"))));
+      ListSequence.fromList(prevDefs).addSequence(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getPrevSiblings(child, false), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d5f034L, "jetbrains.mps.vclang.structure.IClassMember"))));
       List<SNode> result = new ArrayList<SNode>();
+      List<SNode> importedClasses = new ArrayList<SNode>();
       for (SNode def : ListSequence.fromList(prevDefs)) {
-        ListSequence.fromList(result).addElement(def);
         if (SNodeOperations.isInstanceOf(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2e5fe5L, "jetbrains.mps.vclang.structure.DefType"))) {
+          ListSequence.fromList(result).addElement(SNodeOperations.cast(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")));
           ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2e5fe5L, "jetbrains.mps.vclang.structure.DefType")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2e5fe5L, 0x75cfba109e2fd6f6L, "constructors"))));
+        } else if (SNodeOperations.isInstanceOf(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))) {
+          ListSequence.fromList(result).addElement(SNodeOperations.cast(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")));
+        } else if (SNodeOperations.isInstanceOf(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7cL, "jetbrains.mps.vclang.structure.OpenScopeCommand"))) {
+          ListSequence.fromList(importedClasses).addElement(SLinkOperations.getTarget(SNodeOperations.cast(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7cL, "jetbrains.mps.vclang.structure.OpenScopeCommand")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7fL, 0x37ebde1aa3d50122L, "classifier")));
         }
       }
+      // TODO: Calculate valid scope 
       return CompositeWithParentScope.from(result, thisNode, kind);
     }
     return BehaviorReflection.invokeSuper(Scope.class, thisNode, "jetbrains.mps.lang.core.structure.ScopeProvider", "virtual_getScope_3734116213129936182", new Object[]{kind, child});

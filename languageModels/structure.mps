@@ -241,6 +241,9 @@
     <node concept="PrWs8" id="1$0zzZHWjid" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="3vFRxEzPv1d" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Z42ctSV7V8">
     <property role="TrG5h" value="Definition" />
@@ -311,6 +314,10 @@
     <node concept="M4N5e" id="KzXl40_pIR" role="M5hS2">
       <property role="1uS6qo" value="=&gt;" />
       <property role="1uS6qv" value="1" />
+    </node>
+    <node concept="M4N5e" id="3vFRxEzMS0v" role="M5hS2">
+      <property role="1uS6qv" value="2" />
+      <property role="1uS6qo" value="&lt;abstract&gt;" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKFe">
@@ -436,6 +443,9 @@
     <node concept="PrWs8" id="5a9n1m5cUVF" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
     </node>
+    <node concept="PrWs8" id="3vFRxEzPv0V" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFLjf">
     <property role="3GE5qa" value="def" />
@@ -496,6 +506,9 @@
     </node>
     <node concept="PrWs8" id="5a9n1m5cUVy" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
+    </node>
+    <node concept="PrWs8" id="3vFRxEzPv14" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ubIap">
@@ -671,6 +684,41 @@
     <property role="34LRSv" value="{" />
     <property role="R4oN_" value="Implicit argument" />
     <ref role="1TJDcQ" node="7nfIx2ucogv" resolve="BracketExpression" />
+  </node>
+  <node concept="1TIwiD" id="3vFRxEzPfTW">
+    <property role="3GE5qa" value="def.scope" />
+    <property role="TrG5h" value="OpenScopeCommand" />
+    <property role="34LRSv" value="\open" />
+    <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
+  </node>
+  <node concept="1TIwiD" id="3vFRxEzPfTZ">
+    <property role="3GE5qa" value="def.scope" />
+    <property role="TrG5h" value="AbstractScopeCommand" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyj" id="3vFRxEzPg4y" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classifier" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+    </node>
+    <node concept="PrWs8" id="3vFRxEzPv0P" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3vFRxEzPfU0">
+    <property role="3GE5qa" value="def.scope" />
+    <property role="TrG5h" value="CloseScopeCommand" />
+    <property role="34LRSv" value="\close" />
+    <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
+  </node>
+  <node concept="1TIwiD" id="3vFRxEzPfU1">
+    <property role="3GE5qa" value="def.scope" />
+    <property role="TrG5h" value="ExportScopeCommand" />
+    <property role="34LRSv" value="\export" />
+    <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
+  </node>
+  <node concept="PlHQZ" id="3vFRxEzPv0O">
+    <property role="TrG5h" value="IClassMember" />
   </node>
 </model>
 

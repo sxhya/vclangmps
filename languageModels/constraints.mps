@@ -208,7 +208,7 @@
           <node concept="3clFbF" id="6FOQVYN4HhI" role="3cqZAp">
             <node concept="2ShNRf" id="6FOQVYN4jVh" role="3clFbG">
               <node concept="1pGfFk" id="6FOQVYN4p7o" role="2ShVmc">
-                <ref role="37wK5l" to="8t77:3rV3sBXetA2" resolve="BinaryScope" />
+                <ref role="37wK5l" to="o8zo:3rV3sBXetA2" resolve="FilteringScope" />
                 <node concept="2YIFZM" id="6FOQVYMYy8_" role="37wK5m">
                   <ref role="1Pybhc" to="o8zo:3fifI_xCtN$" resolve="Scope" />
                   <ref role="37wK5l" to="o8zo:3fifI_xCtPu" resolve="getScope" />

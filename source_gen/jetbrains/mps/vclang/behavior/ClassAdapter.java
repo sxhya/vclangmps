@@ -10,6 +10,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import java.util.Collection;
 import com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor;
 
 public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDefinition {
@@ -26,6 +27,13 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
   }
   protected SNode getThisNode() {
     return thisNode;
+  }
+  public Collection<? extends Abstract.Definition> getFields() {
+    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))).select(new ISelector<SNode, Abstract.Definition>() {
+      public Abstract.Definition select(SNode it) {
+        return BehaviorReflection.invokeVirtual(Abstract.Definition.class, it, "virtual_toSourceDefinition_6698694374042209625", new Object[]{});
+      }
+    }).toListSequence();
   }
   public <P, R> R accept(AbstractDefinitionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitClass(this, params);

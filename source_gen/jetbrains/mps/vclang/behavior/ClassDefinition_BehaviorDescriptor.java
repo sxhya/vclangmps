@@ -8,7 +8,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SConcept;
 import com.jetbrains.jetpad.vclang.term.Abstract;
 
-public class ClassDefinition_BehaviorDescriptor extends Definition_BehaviorDescriptor implements IValidIdentifier_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
+public class ClassDefinition_BehaviorDescriptor extends Definition_BehaviorDescriptor implements IValidIdentifier_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor, IClassMember_BehaviorDescriptor {
   public ClassDefinition_BehaviorDescriptor() {
   }
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
