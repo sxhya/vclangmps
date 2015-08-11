@@ -62,7 +62,7 @@
   <node concept="1TIwiD" id="6aAUpg3pIV3">
     <property role="TrG5h" value="ElimExpression" />
     <property role="3GE5qa" value="expression" />
-    <property role="34LRSv" value="\elim" />
+    <property role="34LRSv" value="elim" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFKB8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -106,7 +106,7 @@
   <node concept="1TIwiD" id="6aAUpg3pU9$">
     <property role="TrG5h" value="PiExpression" />
     <property role="3GE5qa" value="expression" />
-    <property role="34LRSv" value="\Pi" />
+    <property role="34LRSv" value="Pi" />
     <property role="R4oN_" value="Dependent product type" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6aAUpg3pXd4" role="1TKVEi">
@@ -153,7 +153,7 @@
   <node concept="1TIwiD" id="6aAUpg3pUa4">
     <property role="TrG5h" value="LambdaExpression" />
     <property role="3GE5qa" value="expression" />
-    <property role="34LRSv" value="\lam" />
+    <property role="34LRSv" value="lam" />
     <property role="R4oN_" value="Lambda expression" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFe5n" role="1TKVEi">
@@ -189,7 +189,7 @@
     <property role="3GE5qa" value="expression" />
     <property role="34LRSv" value="(" />
     <property role="R4oN_" value="Tuple" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="7nfIx2ucngN" role="1TKVEi">
@@ -198,7 +198,7 @@
       <property role="20kJfa" value="fields" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
-    <node concept="PrWs8" id="2wthDpjSXn7" role="PzmwI">
+    <node concept="PrWs8" id="7GSxIwvEUbf" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
@@ -227,13 +227,14 @@
   <node concept="1TIwiD" id="Z42ctSV31q">
     <property role="TrG5h" value="ClassDefinition" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="\class" />
+    <property role="34LRSv" value="class" />
+    <property role="R4oN_" value="Vclang class definition" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
     <node concept="1TJgyj" id="Z42ctSV7V9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="statements" />
-      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <ref role="20lvS9" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
     <node concept="PrWs8" id="6wsTcrVcUI0" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
@@ -396,7 +397,7 @@
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKYD">
     <property role="3GE5qa" value="literal" />
-    <property role="34LRSv" value="\Type" />
+    <property role="34LRSv" value="Type" />
     <property role="TrG5h" value="TypeUniverse" />
     <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
   </node>
@@ -425,7 +426,7 @@
   <node concept="1TIwiD" id="6dbcPfPFLfE">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="DefFunction" />
-    <property role="34LRSv" value="\function" />
+    <property role="34LRSv" value="function" />
     <property role="R4oN_" value="Function definition" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
     <node concept="1TJgyi" id="2wthDpjSwD4" role="1TKVEl">
@@ -436,6 +437,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
+    </node>
+    <node concept="1TJgyj" id="5Hyh$MjdZbm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="whereDefinitions" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
     </node>
     <node concept="PrWs8" id="KzXl40AQZi" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
@@ -481,7 +488,8 @@
   <node concept="1TIwiD" id="7nfIx2ub_Z_">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="DefType" />
-    <property role="34LRSv" value="\data" />
+    <property role="34LRSv" value="data" />
+    <property role="R4oN_" value="Inductive type definition" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
     <node concept="1TJgyj" id="7nfIx2ubXrQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -688,12 +696,14 @@
   <node concept="1TIwiD" id="3vFRxEzPfTW">
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="OpenScopeCommand" />
-    <property role="34LRSv" value="\open" />
+    <property role="34LRSv" value="open" />
+    <property role="R4oN_" value="Open scope" />
     <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
   </node>
   <node concept="1TIwiD" id="3vFRxEzPfTZ">
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="AbstractScopeCommand" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="3vFRxEzPg4y" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -708,17 +718,47 @@
   <node concept="1TIwiD" id="3vFRxEzPfU0">
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="CloseScopeCommand" />
-    <property role="34LRSv" value="\close" />
+    <property role="34LRSv" value="close" />
+    <property role="R4oN_" value="Close scope" />
     <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
   </node>
   <node concept="1TIwiD" id="3vFRxEzPfU1">
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="ExportScopeCommand" />
-    <property role="34LRSv" value="\export" />
+    <property role="34LRSv" value="export" />
+    <property role="R4oN_" value="Export scope" />
     <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
   </node>
   <node concept="PlHQZ" id="3vFRxEzPv0O">
     <property role="TrG5h" value="IClassMember" />
+  </node>
+  <node concept="1TIwiD" id="7GSxIwvCsQY">
+    <property role="3GE5qa" value="def" />
+    <property role="TrG5h" value="StaticModifier" />
+    <property role="34LRSv" value="static" />
+    <property role="R4oN_" value="Static modifier" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyj" id="7GSxIwvCsQZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+    </node>
+    <node concept="PrWs8" id="7GSxIwvCsR1" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Hyh$MjdShy">
+    <property role="3GE5qa" value="def" />
+    <property role="TrG5h" value="OverrideModifier" />
+    <property role="34LRSv" value="override" />
+    <property role="R4oN_" value="Override inherited class member" />
+    <ref role="1TJDcQ" node="6dbcPfPFLfE" resolve="DefFunction" />
+    <node concept="1TJgyj" id="5Hyh$MjdShF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="oldDef" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+    </node>
   </node>
 </model>
 

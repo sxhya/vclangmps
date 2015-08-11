@@ -4,13 +4,14 @@ package jetbrains.mps.vclang.behavior;
 
 import com.jetbrains.jetpad.vclang.term.Abstract;
 import org.jetbrains.mps.openapi.model.SNode;
-import java.util.List;
+import java.util.Collection;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import java.util.Collection;
 import com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor;
 
 public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDefinition {
@@ -18,20 +19,18 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
   public ClassAdapter(SNode t) {
     thisNode = t;
   }
-  public List<? extends Abstract.Definition> getPublicFields() {
-    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))).select(new ISelector<SNode, Abstract.Definition>() {
-      public Abstract.Definition select(SNode it) {
-        return BehaviorReflection.invokeVirtual(Abstract.Definition.class, it, "virtual_toSourceDefinition_6698694374042209625", new Object[]{});
-      }
-    }).toListSequence();
-  }
   protected SNode getThisNode() {
     return thisNode;
   }
   public Collection<? extends Abstract.Definition> getFields() {
-    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))).select(new ISelector<SNode, Abstract.Definition>() {
+    // should return the list of static fields 
+    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, "jetbrains.mps.vclang.structure.StaticModifier"));
+      }
+    }).select(new ISelector<SNode, Abstract.Definition>() {
       public Abstract.Definition select(SNode it) {
-        return BehaviorReflection.invokeVirtual(Abstract.Definition.class, it, "virtual_toSourceDefinition_6698694374042209625", new Object[]{});
+        return BehaviorReflection.invokeVirtual(Abstract.Definition.class, SLinkOperations.getTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, "jetbrains.mps.vclang.structure.StaticModifier")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, 0x7b3886e81fa1cdbfL, "member")), "virtual_toSourceDefinition_6698694374042209625", new Object[]{});
       }
     }).toListSequence();
   }
