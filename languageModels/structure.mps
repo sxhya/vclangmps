@@ -252,7 +252,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="def" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="PrWs8" id="KzXl40C4QO" role="PzmwI">
+    <node concept="PrWs8" id="24ni4bq0due" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="5NQyKEZH5rE" role="PzmwI">
@@ -442,7 +442,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="whereDefinitions" />
-      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <ref role="20lvS9" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
     <node concept="PrWs8" id="KzXl40AQZi" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />

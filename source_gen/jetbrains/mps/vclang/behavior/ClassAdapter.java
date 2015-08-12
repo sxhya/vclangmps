@@ -5,12 +5,11 @@ package jetbrains.mps.vclang.behavior;
 import com.jetbrains.jetpad.vclang.term.Abstract;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Collection;
+import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.LinkedList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor;
 
@@ -24,15 +23,14 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
   }
   public Collection<? extends Abstract.Definition> getFields() {
     // should return the list of static fields 
-    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, "jetbrains.mps.vclang.structure.StaticModifier"));
+    List<Abstract.Definition> a = ListSequence.fromList(new LinkedList<Abstract.Definition>());
+    for (SNode s : ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements")))) {
+      SNode d = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), s, "virtual_getDefinition_2384453979674359704", new Object[]{});
+      if ((d != null)) {
+        ListSequence.fromList(a).addElement(BehaviorReflection.invokeVirtual(Abstract.Definition.class, d, "virtual_toSourceDefinition_6698694374042209625", new Object[]{}));
       }
-    }).select(new ISelector<SNode, Abstract.Definition>() {
-      public Abstract.Definition select(SNode it) {
-        return BehaviorReflection.invokeVirtual(Abstract.Definition.class, SLinkOperations.getTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, "jetbrains.mps.vclang.structure.StaticModifier")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, 0x7b3886e81fa1cdbfL, "member")), "virtual_toSourceDefinition_6698694374042209625", new Object[]{});
-      }
-    }).toListSequence();
+    }
+    return a;
   }
   public <P, R> R accept(AbstractDefinitionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitClass(this, params);
