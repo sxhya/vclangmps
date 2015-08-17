@@ -756,8 +756,8 @@
     <ref role="1TJDcQ" node="6dbcPfPFLfE" resolve="DefFunction" />
     <node concept="1TJgyj" id="5Hyh$MjdShF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="oldDef" />
-      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <property role="20kJfa" value="overriddenFunction" />
+      <ref role="20lvS9" node="6dbcPfPFLfE" resolve="DefFunction" />
     </node>
   </node>
 </model>

@@ -1564,23 +1564,6 @@
         <node concept="Cmt7Y" id="1rh2nYs2IiN" role="uz6Si">
           <node concept="Cnhdc" id="1rh2nYs2IiP" role="Cncma">
             <node concept="3clFbS" id="1rh2nYs2IiR" role="2VODD2">
-              <node concept="3cpWs8" id="1rh2nYs2Io_" role="3cqZAp">
-                <node concept="3cpWsn" id="1rh2nYs2IoC" role="3cpWs9">
-                  <property role="TrG5h" value="tele" />
-                  <node concept="3Tqbb2" id="1rh2nYs2IoD" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
-                  </node>
-                  <node concept="10QFUN" id="1rh2nYs2IoE" role="33vP2m">
-                    <node concept="2OqwBi" id="1rh2nYs2IoF" role="10QFUP">
-                      <node concept="Cj7Ep" id="1rh2nYs2IoG" role="2Oq$k0" />
-                      <node concept="1mfA1w" id="1rh2nYs2IoH" role="2OqNvi" />
-                    </node>
-                    <node concept="3Tqbb2" id="1rh2nYs2IoI" role="10QFUM">
-                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="1rh2nYs2IlS" role="3cqZAp">
                 <node concept="3cpWsn" id="1rh2nYs2IlV" role="3cpWs9">
                   <property role="TrG5h" value="var" />
