@@ -16,7 +16,9 @@ public class TupleExpressionAdapter extends ExpressionAdapter implements Abstrac
   private SNode thisNode;
   public TupleExpressionAdapter(SNode te) {
     thisNode = te;
+    AdapterUtils.rememberAdapter(thisNode, this);
   }
+
   public List<? extends Abstract.Expression> getFields() {
     return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a654L, 0x75cfba109e317433L, "fields"))).select(new ISelector<SNode, Abstract.Expression>() {
       public Abstract.Expression select(SNode it) {

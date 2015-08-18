@@ -28,11 +28,9 @@ public class ClassDefinition_Behavior {
   public static void init(SNode thisNode) {
   }
   public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
-    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition"))) {
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")) && SNodeOperations.hasRole(child, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements"))) {
       List<SNode> prevDefs = new ArrayList<SNode>();
-      if (SNodeOperations.isInstanceOf(child, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition"))) {
-        ListSequence.fromList(prevDefs).addElement(SNodeOperations.cast(child, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d5f034L, "jetbrains.mps.vclang.structure.IClassMember")));
-      }
+      ListSequence.fromList(prevDefs).addElement(SNodeOperations.cast(child, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d5f034L, "jetbrains.mps.vclang.structure.IClassMember")));
       ListSequence.fromList(prevDefs).addSequence(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getPrevSiblings(child, false), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d5f034L, "jetbrains.mps.vclang.structure.IClassMember"))));
       List<SNode> result = new ArrayList<SNode>();
       Set<SNode> importedClasses = SetSequence.fromSet(new HashSet<SNode>());
@@ -40,7 +38,9 @@ public class ClassDefinition_Behavior {
       SetSequence.fromSet(externalClasses).addSequence(ListSequence.fromList(SModelOperations.rootsIncludingImported(SNodeOperations.getModel(child), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, "jetbrains.mps.vclang.structure.ClassDefinition"))));
       for (SNode def : ListSequence.fromList(prevDefs)) {
         SNode definition = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), def, "virtual_getDefinition_2384453979674359704", new Object[]{});
-        BehaviorReflection.invokeVirtual(Void.class, definition, "virtual_addArtifacts_2384453979680086099", new Object[]{result});
+        if ((definition != null)) {
+          BehaviorReflection.invokeVirtual(Void.class, definition, "virtual_addArtifacts_2384453979680086099", new Object[]{result});
+        }
         if (SNodeOperations.isInstanceOf(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7cL, "jetbrains.mps.vclang.structure.OpenScopeCommand"))) {
           SetSequence.fromSet(importedClasses).addElement(SLinkOperations.getTarget(SNodeOperations.cast(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7cL, "jetbrains.mps.vclang.structure.OpenScopeCommand")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe7fL, 0x37ebde1aa3d50122L, "classifier")));
         } else if (SNodeOperations.isInstanceOf(def, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x37ebde1aa3d4fe80L, "jetbrains.mps.vclang.structure.CloseScopeCommand"))) {

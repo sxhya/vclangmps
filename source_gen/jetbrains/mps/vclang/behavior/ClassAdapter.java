@@ -17,7 +17,9 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
   private SNode thisNode;
   public ClassAdapter(SNode t) {
     thisNode = t;
+    AdapterUtils.rememberAdapter(thisNode, this);
   }
+
   protected SNode getThisNode() {
     return thisNode;
   }
