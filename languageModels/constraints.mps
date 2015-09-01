@@ -379,5 +379,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1dats513lGq">
+    <property role="3GE5qa" value="clause.pattern" />
+    <ref role="1M2myG" to="51uy:1dats513lF1" resolve="ImplicitPattern" />
+    <node concept="nKS2y" id="1dats513lGr" role="1MLUbF">
+      <node concept="3clFbS" id="1dats513lGs" role="2VODD2">
+        <node concept="3clFbF" id="1dats513lOg" role="3cqZAp">
+          <node concept="3fqX7Q" id="1dats513mid" role="3clFbG">
+            <node concept="2OqwBi" id="1dats513mif" role="3fr31v">
+              <node concept="nLn13" id="1dats513mig" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1dats513mih" role="2OqNvi">
+                <node concept="chp4Y" id="1dats513mii" role="cj9EA">
+                  <ref role="cht4Q" to="51uy:1dats513lF1" resolve="ImplicitPattern" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
