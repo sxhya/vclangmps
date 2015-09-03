@@ -372,6 +372,12 @@
     <node concept="PrWs8" id="1SuY8bUbX4k" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
     </node>
+    <node concept="1TJgyj" id="531uUs8wu7o" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cons" />
+      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
+      <ref role="20ksaX" node="1dats513lFl" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKXv">
     <property role="3GE5qa" value="expression" />
@@ -776,6 +782,7 @@
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="ImplicitPattern" />
     <property role="34LRSv" value="{" />
+    <property role="R4oN_" value="Pattern for implicit argument" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="1dats513lGo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -798,6 +805,7 @@
   <node concept="1TIwiD" id="1dats513lFh">
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="PatternId" />
+    <property role="R4oN_" value="Matching variable" />
     <ref role="1TJDcQ" node="6aAUpg3pUr$" resolve="Variable" />
     <node concept="PrWs8" id="1SuY8bUd_js" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
@@ -807,6 +815,12 @@
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="PatternConstructor" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyj" id="531uUs8wu7s" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cons" />
+      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
+      <ref role="20ksaX" node="1dats513lFl" />
+    </node>
     <node concept="PrWs8" id="1SuY8bUbX4e" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
     </node>
@@ -825,7 +839,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="constructor" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
     </node>
     <node concept="1TJgyj" id="1dats513lFU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -848,12 +862,6 @@
     <property role="3GE5qa" value="def.data_constructor" />
     <property role="TrG5h" value="ConstructorWithPatterns" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="1TJgyj" id="14pT6cv9BVY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="np" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6dbcPfPFKLZ" resolve="NamedClause" />
-    </node>
     <node concept="1TJgyj" id="14pT6cv9BW_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
@@ -862,6 +870,15 @@
     </node>
     <node concept="PrWs8" id="14pT6cv9ApM" role="PzmwI">
       <ref role="PrY4T" node="14pT6cv9ApE" resolve="IDataTypeConstructor" />
+    </node>
+    <node concept="PrWs8" id="4r2Al6x4Ykh" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
+    </node>
+    <node concept="1TJgyj" id="531uUs8wsD4" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cons" />
+      <ref role="20lvS9" node="7nfIx2ub_Z_" resolve="DefType" />
+      <ref role="20ksaX" node="1dats513lFl" />
     </node>
   </node>
   <node concept="PlHQZ" id="14pT6cv9ApE">
