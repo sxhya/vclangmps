@@ -181,7 +181,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6aAUpg3pUr$" resolve="Variable" />
+      <ref role="20lvS9" node="1eT6ycFBtO5" resolve="IVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUpk">
@@ -220,8 +220,8 @@
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="Variable" />
     <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
-    <node concept="PrWs8" id="1$0zzZHVZHE" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    <node concept="PrWs8" id="1eT6ycFBtO6" role="PzmwI">
+      <ref role="PrY4T" node="1eT6ycFBtO5" resolve="IVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="Z42ctSV31q">
@@ -582,6 +582,10 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
+      <ref role="20ksaX" node="67S9aw8rUBW" />
+    </node>
+    <node concept="PrWs8" id="67S9aw8rVkA" role="PzmwI">
+      <ref role="PrY4T" node="67S9aw8rUBO" resolve="ParenthesizedExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="43YHIaBbeeJ">
@@ -778,54 +782,40 @@
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1dats513lF1">
-    <property role="3GE5qa" value="clause.pattern" />
-    <property role="TrG5h" value="ImplicitPattern" />
-    <property role="34LRSv" value="{" />
-    <property role="R4oN_" value="Pattern for implicit argument" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="1TJgyj" id="1dats513lGo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pattern" />
-      <ref role="20lvS9" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
-    </node>
-    <node concept="PrWs8" id="1SuY8bUd_jo" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1dats513lFg">
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="PatternAny" />
     <property role="34LRSv" value="_" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="PrWs8" id="1SuY8bUd_jq" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    <node concept="PrWs8" id="1eT6ycFCfcC" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="1dats513lFh">
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="PatternId" />
     <property role="R4oN_" value="Matching variable" />
-    <ref role="1TJDcQ" node="6aAUpg3pUr$" resolve="Variable" />
-    <node concept="PrWs8" id="1SuY8bUd_js" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    <node concept="PrWs8" id="1eT6ycFByPH" role="PzmwI">
+      <ref role="PrY4T" node="1eT6ycFBtO5" resolve="IVariable" />
+    </node>
+    <node concept="PrWs8" id="1eT6ycFChdJ" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="1dats513lFk">
     <property role="3GE5qa" value="clause.pattern" />
     <property role="TrG5h" value="PatternConstructor" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <property role="R4oN_" value="Constructor pattern" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     <node concept="1TJgyj" id="531uUs8wu7s" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="cons" />
-      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
       <ref role="20ksaX" node="1dats513lFl" />
+      <ref role="20lvS9" node="7nfIx2ubIap" resolve="AbstractConstructor" />
     </node>
     <node concept="PrWs8" id="1SuY8bUbX4e" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
-    </node>
-    <node concept="PrWs8" id="1SuY8bUehSZ" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
     </node>
   </node>
   <node concept="PlHQZ" id="1SuY8bUbX4a">
@@ -845,16 +835,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="argPatterns" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1SuY8bUd_ar" resolve="IAbstractPattern" />
+      <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     </node>
     <node concept="PrWs8" id="1SuY8bUbZKh" role="PrDN$">
-      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="1SuY8bUd_ar">
-    <property role="3GE5qa" value="clause.pattern" />
-    <property role="TrG5h" value="IAbstractPattern" />
-    <node concept="PrWs8" id="1SuY8bUd_as" role="PrDN$">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
@@ -874,6 +857,9 @@
     <node concept="PrWs8" id="4r2Al6x4Ykh" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
     </node>
+    <node concept="PrWs8" id="67S9aw8F7$p" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="531uUs8wsD4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="cons" />
@@ -884,6 +870,50 @@
   <node concept="PlHQZ" id="14pT6cv9ApE">
     <property role="3GE5qa" value="def.data_constructor" />
     <property role="TrG5h" value="IDataTypeConstructor" />
+  </node>
+  <node concept="PlHQZ" id="1eT6ycFBtO5">
+    <property role="3GE5qa" value="arguments" />
+    <property role="TrG5h" value="IVariable" />
+    <node concept="PrWs8" id="1eT6ycFBtO9" role="PrDN$">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eT6ycFBBZg">
+    <property role="3GE5qa" value="clause.pattern" />
+    <property role="TrG5h" value="AbstractPattern" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+  </node>
+  <node concept="1TIwiD" id="67S9aw8rSeD">
+    <property role="3GE5qa" value="clause.pattern" />
+    <property role="TrG5h" value="PatternParenthesis" />
+    <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Parenthesized pattern expession" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="67S9aw8rTSp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+      <ref role="20ksaX" node="67S9aw8rUBW" />
+    </node>
+    <node concept="PrWs8" id="67S9aw8rVnP" role="PzmwI">
+      <ref role="PrY4T" node="67S9aw8rUBO" resolve="ParenthesizedExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="67S9aw8rUBO">
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="ParenthesizedExpression" />
+    <node concept="1TJgyj" id="67S9aw8rUBW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    </node>
+    <node concept="1TJgyi" id="67S9aw8tv39" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
+    </node>
   </node>
 </model>
 

@@ -148,13 +148,14 @@
       <concept id="4683381747095495599" name="jetbrains.mps.vclang.structure.DefExpression" flags="ng" index="3BO_ld">
         <reference id="4683381747095517759" name="def" index="3BOSNt" />
       </concept>
+      <concept id="7059432720017893876" name="jetbrains.mps.vclang.structure.ParenthesizedExpression" flags="ng" index="1D_SPs">
+        <child id="7059432720017893884" name="expression" index="1D_SPk" />
+      </concept>
       <concept id="8489208403152790170" name="jetbrains.mps.vclang.structure.Constructor" flags="ng" index="3FSlya" />
       <concept id="8489208403152756709" name="jetbrains.mps.vclang.structure.DefType" flags="ng" index="3FSunP">
         <child id="8489208403152852726" name="constructors" index="3FS6NA" />
       </concept>
-      <concept id="8489208403152962591" name="jetbrains.mps.vclang.structure.BracketExpression" flags="ng" index="3FZzSf">
-        <child id="8489208403152962622" name="expression" index="3FZzSI" />
-      </concept>
+      <concept id="8489208403152962591" name="jetbrains.mps.vclang.structure.BracketExpression" flags="ng" index="3FZzSf" />
       <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt">
         <child id="1136042658824486601" name="statements" index="1Ra7oe" />
       </concept>
@@ -290,36 +291,34 @@
             <ref role="3FZzZu" node="6wsTcrVf9Ya" resolve="A" />
           </node>
         </node>
-        <node concept="1xKkZq" id="6wsTcrVf9Yg" role="2mYRmc">
-          <node concept="1xKkZ5" id="6wsTcrVf9Yh" role="3FZH5U">
-            <ref role="3FZzZu" node="6wsTcrVf9Ye" resolve="a'" />
-          </node>
-          <node concept="1xKkZq" id="6wsTcrVf9Yi" role="3FZH5S">
-            <node concept="1xKkZ5" id="6wsTcrVf9Yj" role="3FZH5U">
-              <ref role="3FZzZu" node="6wsTcrVf9Yd" resolve="a" />
-            </node>
-            <node concept="3FZzSf" id="6wsTcrVf9Yk" role="3FZH5S">
-              <node concept="1xKkZq" id="6wsTcrVf9Yl" role="3FZzSI">
-                <node concept="3FZzSf" id="6wsTcrVf9Ym" role="3FZH5U">
-                  <node concept="1xKkGg" id="6wsTcrVf9Yn" role="3FZzSI">
-                    <node concept="1xKkXK" id="6wsTcrVf9Yo" role="cHald">
-                      <property role="TrG5h" value="_" />
-                    </node>
-                    <node concept="1xKkZ5" id="6wsTcrVf9Yp" role="2mTX84">
-                      <ref role="3FZzZu" node="6wsTcrVf9Ya" resolve="A" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3BO_ld" id="6wsTcrVf9Yq" role="3FZH5S">
-                  <ref role="3BOSNt" node="6wsTcrVf9wH" resolve="Path" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="2mT2us" id="6wsTcrVf9Yr" role="cIHwa">
           <property role="2mT2pe" value="2" />
           <property role="2mT2pc" value="0" />
+        </node>
+        <node concept="1xKkZq" id="67S9aw8yHvg" role="2mYRmc">
+          <node concept="1xKkZ5" id="67S9aw8yHvC" role="3FZH5U">
+            <ref role="3FZzZu" node="6wsTcrVf9Ye" resolve="a'" />
+          </node>
+          <node concept="1xKkZq" id="67S9aw8yHuc" role="3FZH5S">
+            <node concept="1xKkZ5" id="67S9aw8yHul" role="3FZH5U">
+              <ref role="3FZzZu" node="6wsTcrVf9Yd" resolve="a" />
+            </node>
+            <node concept="1xKkZq" id="67S9aw8yHtG" role="3FZH5S">
+              <node concept="3FZzSf" id="67S9aw8yHtC" role="3FZH5U">
+                <node concept="1xKkGg" id="67S9aw8yHtL" role="1D_SPk">
+                  <node concept="1xKkXK" id="67S9aw8yHtM" role="cHald">
+                    <property role="TrG5h" value="_" />
+                  </node>
+                  <node concept="1xKkZ5" id="67S9aw8yHtS" role="2mTX84">
+                    <ref role="3FZzZu" node="6wsTcrVf9Ya" resolve="A" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3BO_ld" id="67S9aw8yHtk" role="3FZH5S">
+                <ref role="3BOSNt" node="6wsTcrVf9wV" resolve="path" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
