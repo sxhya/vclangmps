@@ -1124,13 +1124,6 @@
     <property role="3GE5qa" value="def" />
     <ref role="1XX52x" to="51uy:6dbcPfPFLjf" resolve="Precedence" />
     <node concept="3EZMnI" id="6dbcPfPFLnl" role="2wV5jI">
-      <node concept="3F0ifn" id="2wthDpjM2sf" role="3EZMnx">
-        <property role="3F0ifm" value="\" />
-        <node concept="Vb9p2" id="2wthDpjM5sF" role="3F10Kt" />
-        <node concept="11LMrY" id="2wthDpjM5tB" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0A7n" id="6dbcPfPFLqm" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6dbcPfPFLkt" resolve="associativity" />
       </node>
