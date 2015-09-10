@@ -67,7 +67,7 @@
     <node concept="1TJgyj" id="6dbcPfPFKB8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="6aAUpg3pUph" resolve="VariableExpression" />
     </node>
     <node concept="1TJgyj" id="6dbcPfPFE4X" role="1TKVEi">
@@ -136,7 +136,7 @@
   <node concept="1TIwiD" id="6aAUpg3pU9H">
     <property role="TrG5h" value="SigmaExpression" />
     <property role="3GE5qa" value="expression" />
-    <property role="34LRSv" value="\Sigma" />
+    <property role="34LRSv" value="Sigma" />
     <property role="R4oN_" value="Dependent sigma type" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFe56" role="1TKVEi">
@@ -328,7 +328,7 @@
     <ref role="1TJDcQ" node="6dbcPfPFE4W" resolve="AbstractClause" />
     <node concept="1TJgyj" id="6dbcPfPFKJ1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="clauseName" />
       <ref role="20lvS9" node="6dbcPfPFKJ4" resolve="AbstractClauseName" />
     </node>
@@ -417,13 +417,13 @@
   <node concept="1TIwiD" id="6dbcPfPFL5p">
     <property role="3GE5qa" value="literal" />
     <property role="TrG5h" value="PropUniverse" />
-    <property role="34LRSv" value="\Prop" />
+    <property role="34LRSv" value="Prop" />
     <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
   </node>
   <node concept="1TIwiD" id="6dbcPfPFL5q">
     <property role="3GE5qa" value="literal" />
     <property role="TrG5h" value="SetUniverse" />
-    <property role="34LRSv" value="\Set" />
+    <property role="34LRSv" value="Set" />
     <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
   </node>
   <node concept="1TIwiD" id="6dbcPfPFLfE">
