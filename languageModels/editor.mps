@@ -15,6 +15,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="thjl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.definition(jetpad.vclang/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -31,6 +32,7 @@
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="5949640294884234625" name="jetbrains.mps.lang.editor.structure.CellLayout_Table" flags="nn" index="fvoJi" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
@@ -1040,7 +1042,7 @@
       <node concept="3F2HdR" id="3cMDZeG3AOP" role="3EZMnx">
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="51uy:6dbcPfPFKB8" />
-        <node concept="l2Vlx" id="3cMDZeG3AOS" role="2czzBx" />
+        <node concept="fvoJi" id="5QGigKLe7XI" role="2czzBx" />
       </node>
       <node concept="3F2HdR" id="6dbcPfPFE5s" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6dbcPfPFE4X" />
@@ -1101,6 +1103,24 @@
       </node>
       <node concept="3F0A7n" id="6dbcPfPFL0d" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6dbcPfPFKYB" resolve="level" />
+        <node concept="pkWqt" id="5QGigKLjHYa" role="pqm2j">
+          <node concept="3clFbS" id="5QGigKLjHYb" role="2VODD2">
+            <node concept="3clFbF" id="5QGigKLjI3a" role="3cqZAp">
+              <node concept="3y3z36" id="5QGigKLjJI0" role="3clFbG">
+                <node concept="10M0yZ" id="5QGigKLjJI1" role="3uHU7w">
+                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
+                  <ref role="3cqZAo" to="thjl:~Universe.NO_LEVEL" resolve="NO_LEVEL" />
+                </node>
+                <node concept="2OqwBi" id="5QGigKLjJI2" role="3uHU7B">
+                  <node concept="pncrf" id="5QGigKLjJI3" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5QGigKLjJI4" role="2OqNvi">
+                    <ref role="3TsBF5" to="51uy:6dbcPfPFKYB" resolve="level" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="6dbcPfPFKZY" role="2iSdaV" />
     </node>
@@ -1120,6 +1140,24 @@
       </node>
       <node concept="3F0A7n" id="6dbcPfPFL5I" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6dbcPfPFKYB" resolve="level" />
+        <node concept="pkWqt" id="5QGigKLjBi5" role="pqm2j">
+          <node concept="3clFbS" id="5QGigKLjBi6" role="2VODD2">
+            <node concept="3clFbF" id="5QGigKLjBn5" role="3cqZAp">
+              <node concept="3y3z36" id="5QGigKLjCnC" role="3clFbG">
+                <node concept="10M0yZ" id="5QGigKLjD2z" role="3uHU7w">
+                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
+                  <ref role="3cqZAo" to="thjl:~Universe.NO_LEVEL" resolve="NO_LEVEL" />
+                </node>
+                <node concept="2OqwBi" id="5QGigKLjBta" role="3uHU7B">
+                  <node concept="pncrf" id="5QGigKLjBn4" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5QGigKLjBMX" role="2OqNvi">
+                    <ref role="3TsBF5" to="51uy:6dbcPfPFKYB" resolve="level" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="6dbcPfPFL5_" role="2iSdaV" />
     </node>
