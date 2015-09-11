@@ -74,7 +74,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="clauses" />
-      <ref role="20lvS9" node="6dbcPfPFKFe" resolve="Clause" />
+      <ref role="20lvS9" node="6dbcPfPFE4W" resolve="AbstractClause" />
     </node>
     <node concept="PrWs8" id="1$0zzZHXl30" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -310,10 +310,10 @@
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="6dbcPfPFKEi" role="M5hS2">
       <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="&lt;=" />
+      <property role="1uS6qo" value="⇐" />
     </node>
     <node concept="M4N5e" id="KzXl40_pIR" role="M5hS2">
-      <property role="1uS6qo" value="=&gt;" />
+      <property role="1uS6qo" value="⇒" />
       <property role="1uS6qv" value="1" />
     </node>
     <node concept="M4N5e" id="3vFRxEzMS0v" role="M5hS2">
@@ -326,11 +326,11 @@
     <property role="TrG5h" value="Clause" />
     <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="6dbcPfPFE4W" resolve="AbstractClause" />
-    <node concept="1TJgyj" id="6dbcPfPFKJ1" role="1TKVEi">
+    <node concept="1TJgyj" id="5QGigKLa0a6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="patterns" />
       <property role="20lbJX" value="1..n" />
-      <property role="20kJfa" value="clauseName" />
-      <ref role="20lvS9" node="6dbcPfPFKJ4" resolve="AbstractClauseName" />
+      <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     </node>
     <node concept="1TJgyj" id="6dbcPfPFKH7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -347,36 +347,6 @@
     </node>
     <node concept="PrWs8" id="1$0zzZHVbof" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKJ4">
-    <property role="3GE5qa" value="clause" />
-    <property role="TrG5h" value="AbstractClauseName" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="PrWs8" id="1SuY8bUbXZj" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKJD">
-    <property role="3GE5qa" value="clause" />
-    <property role="TrG5h" value="UnnamedClause" />
-    <property role="34LRSv" value="_" />
-    <ref role="1TJDcQ" node="6dbcPfPFKJ4" resolve="AbstractClauseName" />
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKLZ">
-    <property role="3GE5qa" value="clause" />
-    <property role="TrG5h" value="NamedClause" />
-    <ref role="1TJDcQ" node="6dbcPfPFKJ4" resolve="AbstractClauseName" />
-    <node concept="PrWs8" id="1SuY8bUbX4k" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
-    </node>
-    <node concept="1TJgyj" id="531uUs8wu7o" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="cons" />
-      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
-      <ref role="20ksaX" node="1dats513lFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKXv">

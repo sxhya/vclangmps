@@ -101,18 +101,18 @@
       </concept>
       <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.Clause" flags="ng" index="2mT3At">
         <child id="7154868868705356615" name="clauseExpression" index="2mT3wk" />
-        <child id="7154868868705356737" name="clauseName" index="2mT3yi" />
+        <child id="6749850258234671750" name="patterns" index="1Gx4Ia" />
       </concept>
       <concept id="7154868868705357663" name="jetbrains.mps.vclang.structure.ArrowExpression" flags="ng" index="2mT3Kc" />
       <concept id="7154868868705357734" name="jetbrains.mps.vclang.structure.LeveledUniverse" flags="ng" index="2mT3NP">
         <property id="7154868868705357735" name="level" index="2mT3NO" />
       </concept>
       <concept id="7154868868705357737" name="jetbrains.mps.vclang.structure.TypeUniverse" flags="ng" index="2mT3NU" />
-      <concept id="7154868868705356927" name="jetbrains.mps.vclang.structure.NamedClause" flags="ng" index="2mT3WG" />
       <concept id="7154868868705215045" name="jetbrains.mps.vclang.structure.ITypedArgument" flags="ng" index="2mTX4m">
         <property id="874812480891454493" name="isImplicit" index="cJJ5c" />
         <child id="7108625883772462783" name="typeExpr" index="1xKkWF" />
       </concept>
+      <concept id="1390052907877751508" name="jetbrains.mps.vclang.structure.PatternConstructor" flags="ng" index="1ihMWl" />
       <concept id="5947386030418276056" name="jetbrains.mps.vclang.structure.HasType" flags="ng" index="3nIJbd">
         <child id="5947386030418276061" name="type" index="3nIJb8" />
       </concept>
@@ -399,11 +399,11 @@
             <ref role="3FZzZu" node="6wsTcrVfAnx" resolve="p" />
           </node>
           <node concept="2mT3At" id="6wsTcrVfAnj" role="2mTp9I">
-            <node concept="2mT3WG" id="1SuY8bUh4k6" role="2mT3yi">
-              <ref role="1ihMWk" node="6wsTcrVf9wV" resolve="path" />
-            </node>
             <node concept="1xKkZ5" id="6wsTcrVfAnl" role="2mT3wk">
               <ref role="3FZzZu" node="6wsTcrVfAns" resolve="elem" />
+            </node>
+            <node concept="1ihMWl" id="5QGigKLbuMD" role="1Gx4Ia">
+              <ref role="1ihMWk" node="6wsTcrVf9wV" resolve="path" />
             </node>
           </node>
         </node>
@@ -462,6 +462,23 @@
             <node concept="3BO_ld" id="1Te6WjKRX$H" role="1xKkWF">
               <ref role="3BOSNt" node="1Te6WjKRXyZ" resolve="Nat" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2mT22T" id="5QGigKLcwum" role="1Ra7oe">
+      <property role="TrG5h" value="f" />
+      <node concept="1xKkXl" id="5QGigKLcwvY" role="cHald">
+        <property role="cJJ5c" value="false" />
+        <node concept="1xKkXK" id="5QGigKLcwvZ" role="1xKkXQ">
+          <property role="TrG5h" value="x" />
+        </node>
+        <node concept="2mT3Kc" id="5QGigKLcww$" role="1xKkWF">
+          <node concept="3BO_ld" id="5QGigKLcwwC" role="3FZH5U">
+            <ref role="3BOSNt" node="1Te6WjKRXyZ" resolve="Nat" />
+          </node>
+          <node concept="3BO_ld" id="5QGigKLcww5" role="3FZH5S">
+            <ref role="3BOSNt" node="1Te6WjKRXyZ" resolve="Nat" />
           </node>
         </node>
       </node>
