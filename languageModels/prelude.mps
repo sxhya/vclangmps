@@ -8,8 +8,7 @@
   <imports>
     <import index="2968" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term(jetpad.vclang/)" />
     <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="51uy" ref="r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)" implicit="true" />
   </imports>
   <registry>
@@ -18,7 +17,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
@@ -32,13 +30,15 @@
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
-        <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -60,10 +60,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
-        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
-      </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -74,9 +70,6 @@
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -166,9 +159,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -797,224 +787,146 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2AR5txswf16" role="3clF47">
-        <node concept="3cpWs8" id="2AR5txswfSY" role="3cqZAp">
-          <node concept="3cpWsn" id="2AR5txswfSZ" role="3cpWs9">
-            <property role="TrG5h" value="key" />
-            <node concept="3uibUv" id="2AR5txswfT0" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        <node concept="3clFbF" id="5QBouqtrVYX" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrWeY" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqtrWtI" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txsw8u7" resolve="zero" />
             </node>
-            <node concept="10M0yZ" id="2AR5txswbNV" role="33vP2m">
-              <ref role="1PxDUh" to="f93o:7jOshQJOqzX" resolve="TypeCheckUtils" />
-              <ref role="3cqZAo" to="f93o:7jOshQJOq$E" resolve="KEY" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2AR5txswbxn" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswbH2" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswbGk" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswf7y" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txsw8u7" resolve="zero" />
-              </node>
-            </node>
-            <node concept="liA8E" id="2AR5txswbLp" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswfXo" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswbVD" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.ZERO" resolve="ZERO" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqtrWsu" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.ZERO" resolve="ZERO" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswc0D" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswcke" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswciK" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswfc4" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txsw8Bg" resolve="suc" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrWK0" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrWSA" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqtrX0h" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txsw8Bg" resolve="suc" />
             </node>
-            <node concept="liA8E" id="2AR5txswcpl" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswfZ4" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswcsi" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.SUC" resolve="SUC" />
-              </node>
+            <node concept="10M0yZ" id="2AR5txswcsi" role="37wK5m">
+              <ref role="3cqZAo" to="2968:~Prelude.SUC" resolve="SUC" />
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswcwF" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswcJ$" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswcHK" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswfhH" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txsw8ON" resolve="Nat" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrX_D" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrXIk" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqtrXQ1" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txsw8ON" resolve="Nat" />
             </node>
-            <node concept="liA8E" id="2AR5txswcP2" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswg0Q" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswcSz" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.NAT" resolve="NAT" />
-              </node>
+            <node concept="10M0yZ" id="2AR5txswcSz" role="37wK5m">
+              <ref role="3cqZAo" to="2968:~Prelude.NAT" resolve="NAT" />
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswfnb" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswf_a" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswfyu" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswfn9" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswd5D" resolve="left" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrYhj" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrYqN" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqtrYze" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswd5D" resolve="left" />
             </node>
-            <node concept="liA8E" id="2AR5txswfFv" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswg2k" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswg3r" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.LEFT" resolve="LEFT" />
-              </node>
+            <node concept="10M0yZ" id="2AR5txswg3r" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.LEFT" resolve="LEFT" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswg4G" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswg4I" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswg4J" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswg8G" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswd8A" resolve="right" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrYKK" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrYU1" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqtrZ4a" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswd8A" resolve="right" />
             </node>
-            <node concept="liA8E" id="2AR5txswg4K" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswg4L" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswg4M" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.RIGHT" resolve="RIGHT" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqtrZ2A" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.RIGHT" resolve="RIGHT" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswgpG" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswgpH" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswgpI" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswguk" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswd0c" resolve="I" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrZmw" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrZmx" role="3clFbG">
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <node concept="37vLTw" id="5QBouqtrZvY" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswd0c" resolve="I" />
             </node>
-            <node concept="liA8E" id="2AR5txswgpJ" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswgpK" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswgpL" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.INTERVAL" resolve="INTERVAL" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqtrZmy" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.INTERVAL" resolve="INTERVAL" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswilf" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswiF0" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswiBg" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswild" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswgLM" resolve="path" />
-              </node>
+        <node concept="3clFbF" id="5QBouqtrZNQ" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqtrZWD" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqts047" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswgLM" resolve="path" />
             </node>
-            <node concept="liA8E" id="2AR5txswiMt" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswiNg" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswiOh" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.PATH_CON" resolve="PATH_CON" />
-              </node>
+            <node concept="10M0yZ" id="2AR5txswiOh" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.PATH_CON" resolve="PATH_CON" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswiQA" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswiQB" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswiQC" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswiXS" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswgC6" resolve="Path" />
-              </node>
+        <node concept="3clFbF" id="5QBouqts0oj" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqts0wq" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqts0Bh" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswgC6" resolve="Path" />
             </node>
-            <node concept="liA8E" id="2AR5txswiQD" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswiQE" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswiQF" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.PATH" resolve="PATH" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqts0DN" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.PATH" resolve="PATH" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswlsm" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswl$w" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswmhr" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswlsk" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswjcC" resolve="path_infix" />
-              </node>
+        <node concept="3clFbF" id="5QBouqts0OL" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqts0Xc" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqts1bM" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswjcC" resolve="path_infix" />
             </node>
-            <node concept="liA8E" id="2AR5txswm7o" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswm7p" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswm7q" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.PATH_INFIX" resolve="PATH_INFIX" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqts1d$" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.PATH_INFIX" resolve="PATH_INFIX" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswmju" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswmjv" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswmjw" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswmqs" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswjkM" resolve="at" />
-              </node>
+        <node concept="3clFbF" id="5QBouqts1uB" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqts1AD" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqts1Ie" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswjkM" resolve="at" />
             </node>
-            <node concept="liA8E" id="2AR5txswmjx" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswmjy" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswmjz" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.AT" resolve="AT" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqts1Jt" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.AT" resolve="AT" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2AR5txswMQ3" role="3cqZAp">
-          <node concept="2OqwBi" id="2AR5txswNpC" role="3clFbG">
-            <node concept="2JrnkZ" id="2AR5txswNpD" role="2Oq$k0">
-              <node concept="37vLTw" id="2AR5txswNw8" role="2JrQYb">
-                <ref role="3cqZAo" node="2AR5txswmFu" resolve="coe" />
-              </node>
+        <node concept="3clFbF" id="5QBouqts1ZZ" role="3cqZAp">
+          <node concept="2YIFZM" id="5QBouqts285" role="3clFbG">
+            <ref role="37wK5l" to="hhlq:IDt3LXG0fh" resolve="setWellTyped" />
+            <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="37vLTw" id="5QBouqts2fz" role="37wK5m">
+              <ref role="3cqZAo" node="2AR5txswmFu" resolve="coe" />
             </node>
-            <node concept="liA8E" id="2AR5txswNpE" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-              <node concept="37vLTw" id="2AR5txswNpF" role="37wK5m">
-                <ref role="3cqZAo" node="2AR5txswfSZ" resolve="key" />
-              </node>
-              <node concept="10M0yZ" id="2AR5txswNpG" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                <ref role="3cqZAo" to="2968:~Prelude.COERCE" resolve="COERCE" />
-              </node>
+            <node concept="10M0yZ" id="5QBouqts2gs" role="37wK5m">
+              <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              <ref role="3cqZAo" to="2968:~Prelude.COERCE" resolve="COERCE" />
             </node>
           </node>
         </node>
