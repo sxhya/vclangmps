@@ -75,7 +75,6 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" name="jetbrains.mps.vclang">
       <concept id="874812480891080731" name="jetbrains.mps.vclang.structure.HasArguments" flags="ng" index="cHala">
@@ -468,14 +467,14 @@
       <node concept="3Tqbb2" id="2AR5txsw8ua" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
       </node>
-      <node concept="3Tm6S6" id="2AR5txsw8u9" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwRi" role="1B3o_S" />
     </node>
     <node concept="Wx3nA" id="2AR5txsw8Bg" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="suc" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txsw8AI" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwNv" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txsw8Ba" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
       </node>
@@ -485,7 +484,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="Nat" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txsw8O6" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwLh" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txsw8OH" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
       </node>
@@ -495,7 +494,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="I" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswcW3" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwI0" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswcXX" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
       </node>
@@ -505,7 +504,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="left" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswd3X" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwEz" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswd5B" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
       </node>
@@ -515,7 +514,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="right" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswd8B" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwB2" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswd8C" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
       </node>
@@ -525,7 +524,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="Path" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswg_9" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IHqc0" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswgC4" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
       </node>
@@ -535,7 +534,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="path" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswgIM" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwy_" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswgLK" role="1tU5fm">
         <ref role="ehGHo" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
       </node>
@@ -545,7 +544,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="path_infix" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswjcD" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwsO" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswjcE" role="1tU5fm">
         <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
       </node>
@@ -555,7 +554,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="at" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswjkN" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwuJ" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswjkO" role="1tU5fm">
         <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
       </node>
@@ -565,7 +564,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="coe" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2AR5txswmzm" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6hbMo7IOwwE" role="1B3o_S" />
       <node concept="3Tqbb2" id="2AR5txswmFo" role="1tU5fm">
         <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
       </node>
