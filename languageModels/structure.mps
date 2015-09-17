@@ -814,6 +814,7 @@
   <node concept="1TIwiD" id="14pT6cv9ApD">
     <property role="3GE5qa" value="def.data_constructor" />
     <property role="TrG5h" value="ConstructorWithPatterns" />
+    <property role="R4oN_" value="Constructor of a datatype with indices" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="14pT6cv9BW_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
