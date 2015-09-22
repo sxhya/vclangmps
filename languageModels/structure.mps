@@ -62,7 +62,6 @@
   <node concept="1TIwiD" id="6aAUpg3pIV3">
     <property role="TrG5h" value="ElimExpression" />
     <property role="3GE5qa" value="expression" />
-    <property role="34LRSv" value="elim" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFKB8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -78,6 +77,10 @@
     </node>
     <node concept="PrWs8" id="1$0zzZHXl30" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyi" id="5NOZh$Vbqxk" role="1TKVEl">
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="6dbcPfPFDMz" resolve="ElimCaseSwitch" />
     </node>
   </node>
   <node concept="PlHQZ" id="6aAUpg3pIVR">
