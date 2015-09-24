@@ -247,11 +247,24 @@
       <concept id="1196433923911" name="jetbrains.mps.lang.actions.structure.SideTransform_SimpleString" flags="nn" index="2h1dTh">
         <property id="1196433942569" name="text" index="2h1i$Z" />
       </concept>
+      <concept id="1196434649611" name="jetbrains.mps.lang.actions.structure.Substitute_SimpleString" flags="ng" index="2h3Zct">
+        <property id="1196434851095" name="text" index="2h4Kg1" />
+      </concept>
       <concept id="1177323996388" name="jetbrains.mps.lang.actions.structure.AddMenuPart" flags="ng" index="tYCnQ" />
+      <concept id="1177327161126" name="jetbrains.mps.lang.actions.structure.QueryFunction_CanSubstitute" flags="in" index="uaGSO" />
+      <concept id="1177327274449" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_pattern" flags="nn" index="ub8z3" />
+      <concept id="1177327570013" name="jetbrains.mps.lang.actions.structure.QueryFunction_Substitute_Handler" flags="in" index="ucgPf" />
+      <concept id="1177327666243" name="jetbrains.mps.lang.actions.structure.SimpleItemSubstitutePart" flags="ng" index="ucClh">
+        <child id="1177327698839" name="canSubstitute" index="ucKa5" />
+        <child id="1177327709106" name="handler" index="ucMEw" />
+        <child id="1177336013307" name="matchingText" index="uGu3D" />
+        <child id="1177336018902" name="descriptionText" index="uGvr4" />
+      </concept>
       <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
+      <concept id="1177335944525" name="jetbrains.mps.lang.actions.structure.QueryFunction_SubstituteString" flags="in" index="uGdhv" />
       <concept id="1177337641126" name="jetbrains.mps.lang.actions.structure.ParameterizedSubstituteMenuPart" flags="ng" index="uMFAO">
         <child id="1177337679534" name="type" index="uMOYW" />
         <child id="1177338017561" name="query" index="uO7ob" />
@@ -5264,6 +5277,79 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3FK_9_" id="4UsT_r7Llwi">
+    <property role="TrG5h" value="PatternSubstituteActions" />
+    <node concept="3FOIzC" id="4UsT_r7LlyT" role="3FOPby">
+      <ref role="3FOWKa" to="51uy:1SuY8bUbX4a" resolve="IPattern" />
+      <node concept="tYCnQ" id="4UsT_r7Ll$h" role="tZc4B">
+        <ref role="uz4UX" to="51uy:1dats513lFh" resolve="PatternId" />
+        <node concept="ucClh" id="4UsT_r7Ll$j" role="uz6Si">
+          <node concept="ucgPf" id="4UsT_r7Ll$k" role="ucMEw">
+            <node concept="3clFbS" id="4UsT_r7Ll$l" role="2VODD2">
+              <node concept="3cpWs8" id="4UsT_r7Lr8a" role="3cqZAp">
+                <node concept="3cpWsn" id="4UsT_r7Lr8d" role="3cpWs9">
+                  <property role="TrG5h" value="result" />
+                  <node concept="3Tqbb2" id="4UsT_r7Lr89" role="1tU5fm">
+                    <ref role="ehGHo" to="51uy:1dats513lFh" resolve="PatternId" />
+                  </node>
+                  <node concept="2ShNRf" id="4UsT_r7Lrdk" role="33vP2m">
+                    <node concept="3zrR0B" id="4UsT_r7Lrch" role="2ShVmc">
+                      <node concept="3Tqbb2" id="4UsT_r7Lrci" role="3zrR0E">
+                        <ref role="ehGHo" to="51uy:1dats513lFh" resolve="PatternId" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4UsT_r7Lrf_" role="3cqZAp">
+                <node concept="37vLTI" id="4UsT_r7LrO8" role="3clFbG">
+                  <node concept="ub8z3" id="4UsT_r7LrRW" role="37vLTx" />
+                  <node concept="2OqwBi" id="4UsT_r7Lrkx" role="37vLTJ">
+                    <node concept="37vLTw" id="4UsT_r7Lrfz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4UsT_r7Lr8d" resolve="result" />
+                    </node>
+                    <node concept="3TrcHB" id="4UsT_r7LrvQ" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4UsT_r7Ls1D" role="3cqZAp">
+                <node concept="37vLTw" id="4UsT_r7Ls1B" role="3clFbG">
+                  <ref role="3cqZAo" node="4UsT_r7Lr8d" resolve="result" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uaGSO" id="4UsT_r7LlBw" role="ucKa5">
+            <node concept="3clFbS" id="4UsT_r7LlBx" role="2VODD2">
+              <node concept="3clFbF" id="4UsT_r7LpTN" role="3cqZAp">
+                <node concept="2OqwBi" id="4UsT_r7LqbY" role="3clFbG">
+                  <node concept="35c_gC" id="4UsT_r7LpTM" role="2Oq$k0">
+                    <ref role="35c_gD" to="51uy:KzXl40ALRS" resolve="IValidIdentifier" />
+                  </node>
+                  <node concept="2qgKlT" id="4UsT_r7LqjV" role="2OqNvi">
+                    <ref role="37wK5l" to="hhlq:6oOmj_ocdin" resolve="isCorrectVarName" />
+                    <node concept="ub8z3" id="4UsT_r7LqmJ" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uGdhv" id="4UsT_r7LqFr" role="uGu3D">
+            <node concept="3clFbS" id="4UsT_r7LqFs" role="2VODD2">
+              <node concept="3clFbF" id="4UsT_r7LqRK" role="3cqZAp">
+                <node concept="ub8z3" id="4UsT_r7LqRJ" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+          <node concept="2h3Zct" id="4UsT_r7LqWW" role="uGvr4">
+            <property role="2h4Kg1" value="Create pattern variable" />
           </node>
         </node>
       </node>
