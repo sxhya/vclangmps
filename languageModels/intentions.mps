@@ -485,27 +485,9 @@
             <node concept="3uibUv" id="TI0q9FKH7d" role="1tU5fm">
               <ref role="3uigEE" to="wru8:~Namespace" resolve="Namespace" />
             </node>
-            <node concept="2OqwBi" id="TI0q9FKX3U" role="33vP2m">
-              <node concept="liA8E" id="TI0q9FKXsh" role="2OqNvi">
-                <ref role="37wK5l" to="wru8:~Namespace.getChild(com.jetbrains.jetpad.vclang.term.expr.arg.Utils$Name):com.jetbrains.jetpad.vclang.module.Namespace" resolve="getChild" />
-                <node concept="2ShNRf" id="7jOshQJOa3q" role="37wK5m">
-                  <node concept="1pGfFk" id="7jOshQJOa9s" role="2ShVmc">
-                    <ref role="37wK5l" to="3i1n:~Utils$Name.&lt;init&gt;(java.lang.String)" resolve="Utils.Name" />
-                    <node concept="2OqwBi" id="7jOshQJO9iP" role="37wK5m">
-                      <node concept="37vLTw" id="1dats510ws0" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1dats510v1i" resolve="node" />
-                      </node>
-                      <node concept="3TrcHB" id="7jOshQJO9Ce" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="10M0yZ" id="fBg47xo$ty" role="2Oq$k0">
-                <ref role="1PxDUh" to="wru8:~RootModule" resolve="RootModule" />
-                <ref role="3cqZAo" to="wru8:~RootModule.ROOT" resolve="ROOT" />
-              </node>
+            <node concept="10M0yZ" id="fBg47xo$ty" role="33vP2m">
+              <ref role="1PxDUh" to="wru8:~RootModule" resolve="RootModule" />
+              <ref role="3cqZAo" to="wru8:~RootModule.ROOT" resolve="ROOT" />
             </node>
           </node>
         </node>
