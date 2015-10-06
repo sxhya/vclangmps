@@ -53,7 +53,7 @@ public abstract class ExpressionAdapter implements Abstract.Expression {
           ListSequence.fromList(visitor.indices).addElement(null);
         }
       }
-      SNode e = type.accept(visitor, new BuildModelVisitor.Context());
+      SNode e = type.accept(visitor, null);
       thisNode.putUserObject(TypeCheckUtils.TYPE, e);
     } catch (Exception exc) {
       exc.printStackTrace();

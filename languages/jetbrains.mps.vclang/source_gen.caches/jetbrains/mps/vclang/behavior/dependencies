@@ -632,6 +632,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="jetbrains.mps.vclang.behavior.BuildClassVisitor" file="BuildClassVisitor.java">
+    <classNode dependClassName="com.jetbrains.jetpad.vclang.term.Abstract" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor" />
+  </dependency>
   <dependency className="jetbrains.mps.vclang.behavior.BuildModelVisitor" file="BuildModelVisitor.java">
     <classNode dependClassName="com.jetbrains.jetpad.vclang.module.DefinitionPair" />
     <classNode dependClassName="com.jetbrains.jetpad.vclang.term.Abstract" />
@@ -647,27 +653,25 @@
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Deque" />
-    <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.LinkedList" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.DequeSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.LinkedListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.vclang.behavior.AdapterUtils" />
+    <classNode dependClassName="jetbrains.mps.vclang.behavior.BuildOptions" />
     <classNode dependClassName="jetbrains.mps.vclang.behavior.DefinitionAdapter" />
     <classNode dependClassName="jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.vclang.prelude.PreludeInitializer" />
@@ -676,6 +680,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="com.jetbrains.jetpad.vclang.term.expr.visitor.AbstractExpressionVisitor" />
   </dependency>
+  <dependency className="jetbrains.mps.vclang.behavior.BuildOptions" file="BuildOptions.java" />
   <dependency className="jetbrains.mps.vclang.behavior.CaseExpressionAdapter" file="CaseExpressionAdapter.java">
     <classNode dependClassName="com.jetbrains.jetpad.vclang.term.Abstract" />
     <classNode dependClassName="com.jetbrains.jetpad.vclang.term.expr.visitor.AbstractExpressionVisitor" />

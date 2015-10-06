@@ -25,30 +25,27 @@ import com.jetbrains.jetpad.vclang.term.definition.Definition;
 import com.jetbrains.jetpad.vclang.module.DefinitionPair;
 import com.jetbrains.jetpad.vclang.term.definition.Universe;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Iterator;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import com.jetbrains.jetpad.vclang.term.pattern.NamePattern;
 import com.jetbrains.jetpad.vclang.term.pattern.ConstructorPattern;
-import java.util.Map;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
-import java.util.HashMap;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.IMapping;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
 
-public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVisitor.Context, SNode> {
+public class BuildModelVisitor implements AbstractExpressionVisitor<Void, SNode> {
+  public BuildOptions option = BuildOptions.DEFAULT;
   public List<SNode> indices = LinkedListSequence.fromLinkedListNew(new LinkedList<SNode>());
   public Deque<List<SNode>> indexStack = DequeSequence.fromDequeNew(new LinkedList<List<SNode>>());
 
-  public SNode visitApp(Abstract.AppExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitApp(Abstract.AppExpression expression, Void context) {
     List<Abstract.ArgumentExpression> args = ListSequence.fromList(new ArrayList<Abstract.ArgumentExpression>());
     Abstract.Expression expr = Abstract.getFunction(expression, args);
 
     if (expr instanceof Abstract.DefCallExpression && ((Abstract.DefCallExpression) expr).getDefinitionPair().definition == Prelude.PATH) {
       if (ListSequence.fromList(args).count() == 3 && ListSequence.fromList(args).getElement(0).getExpression() instanceof Expression && ExpressionFactory.Apps(((Expression) ListSequence.fromList(args).getElement(0).getExpression()).liftIndex(0, 1), ExpressionFactory.Index(0)).normalize(NormalizeVisitor.Mode.NF).liftIndex(0, -1) != null) {
-        return _quotation_createNode_b65po9_a0a0a3a3(ListSequence.fromList(args).getElement(1).getExpression().accept(this, context), ListSequence.fromList(args).getElement(2).getExpression().accept(this, context), PreludeInitializer.path_infix);
+        return _quotation_createNode_b65po9_a0a0a3a4(ListSequence.fromList(args).getElement(1).getExpression().accept(this, context), ListSequence.fromList(args).getElement(2).getExpression().accept(this, context), PreludeInitializer.path_infix);
       }
     }
 
@@ -56,22 +53,22 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     SNode lhs = expression.getFunction().accept(this, context);
     SNode rhs = e.getExpression().accept(this, context);
     boolean isHidden;
-    if (context.option == BuildModelVisitor.Context.BuildOptions.VERBOSE) {
+    if (option == BuildOptions.VERBOSE) {
       isHidden = false;
-    } else if (context.option == BuildModelVisitor.Context.BuildOptions.COMPACT) {
+    } else if (option == BuildOptions.COMPACT) {
       isHidden = true;
     } else {
       isHidden = e.isHidden();
     }
 
     if (SNodeOperations.isInstanceOf(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")) && (boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref"))) && !(isHidden)) {
-      return _quotation_createNode_b65po9_a0a11a3(SNodeOperations.detachNode(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b6aL, "rightArg"))), rhs, SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")));
+      return _quotation_createNode_b65po9_a0a11a4(SNodeOperations.detachNode(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b6aL, "rightArg"))), rhs, SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a64eL, "jetbrains.mps.vclang.structure.ApplicationExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")));
     }
 
 
-    return (isHidden ? lhs : _quotation_createNode_b65po9_a0o0d(lhs, (e.isExplicit() ? rhs : createImplicitArgument_b65po9_a0a0a0a41a3(SNodeOperations.cast(HUtil.copyIfNecessary(rhs), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression"))))));
+    return (isHidden ? lhs : _quotation_createNode_b65po9_a0o0e(lhs, (e.isExplicit() ? rhs : createImplicitArgument_b65po9_a0a0a0a41a4(SNodeOperations.cast(HUtil.copyIfNecessary(rhs), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression"))))));
   }
-  public SNode visitDefCall(Abstract.DefCallExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitDefCall(Abstract.DefCallExpression expression, Void context) {
     Abstract.Definition d = expression.getDefinitionPair().abstractDefinition;
     Definition d2 = expression.getDefinitionPair().definition;
     if (d == null && d2 != null) {
@@ -82,99 +79,103 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     if (d instanceof DefinitionAdapter) {
       DefinitionAdapter da = (DefinitionAdapter) d;
-      return createDefExpression_b65po9_a1a3a4(da.getThisNode());
+      return createDefExpression_b65po9_a1a3a5(da.getThisNode());
     } else if (d2 != null) {
       // This is only needed for correct operation of Prelude; 
       // TODO: Maybe refactor this? 
-      return createDefExpression_b65po9_a2a0d0e(SNodeOperations.cast(AdapterUtils.getRaw(d2), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")));
+      return createDefExpression_b65po9_a2a0d0f(SNodeOperations.cast(AdapterUtils.getRaw(d2), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition")));
     }
     return null;
   }
-  public SNode visitIndex(Abstract.IndexExpression expression, BuildModelVisitor.Context context) {
-    return createVariableExpression_b65po9_a0a5(ListSequence.fromList(indices).getElement(expression.getIndex()));
+  public SNode visitIndex(Abstract.IndexExpression expression, Void context) {
+    return createVariableExpression_b65po9_a0a6(ListSequence.fromList(indices).getElement(expression.getIndex()));
   }
-  public SNode visitLam(final Abstract.LamExpression expression, final BuildModelVisitor.Context context) {
+  public SNode visitLam(final Abstract.LamExpression expression, final Void context) {
     List<Abstract.Argument> l = (List<Abstract.Argument>) expression.getArguments();
     return new BuildModelVisitor.ArgumentComputer<SNode>() {
       public SNode compute(List<SNode> args) {
-        return _quotation_createNode_b65po9_a0a0a0a0b0g(args, expression.getBody().accept(BuildModelVisitor.this, context));
+        return _quotation_createNode_b65po9_a0a0a0a0b0h(args, expression.getBody().accept(BuildModelVisitor.this, context));
       }
     }.computeArgumentExpressionIndex(this, l, context);
   }
-  public SNode visitPi(final Abstract.PiExpression expression, final BuildModelVisitor.Context context) {
+  public SNode visitPi(final Abstract.PiExpression expression, final Void context) {
     List<Abstract.Argument> l = (List<Abstract.Argument>) expression.getArguments();
     return new BuildModelVisitor.ArgumentComputer<SNode>() {
       public SNode compute(List<SNode> args) {
         SNode rhs = expression.getCodomain().accept(BuildModelVisitor.this, context);
         if (ListSequence.fromList(args).count() == 1 && SNodeOperations.isInstanceOf(ListSequence.fromList(args).getElement(0), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5cf68b0abfa42c58L, "jetbrains.mps.vclang.structure.TypedArgument")) && !((SNodeOperations.isInstanceOf(ListSequence.fromList(args).getElement(0), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6c1L, "jetbrains.mps.vclang.structure.TelescopeArgument"))))) {
-          return _quotation_createNode_b65po9_a0a1a0a0a0b0h(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(args).getElement(0), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5cf68b0abfa42c58L, "jetbrains.mps.vclang.structure.TypedArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0x62a6e9940367a6bfL, "typeExpr")), rhs);
+          return _quotation_createNode_b65po9_a0a1a0a0a0b0i(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(args).getElement(0), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5cf68b0abfa42c58L, "jetbrains.mps.vclang.structure.TypedArgument")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0x62a6e9940367a6bfL, "typeExpr")), rhs);
         } else {
-          return _quotation_createNode_b65po9_a0a0b0a0a0a1a7(args, rhs);
+          return _quotation_createNode_b65po9_a0a0b0a0a0a1a8(args, rhs);
         }
       }
     }.computeArgumentExpressionIndex(this, l, context);
   }
-  public SNode visitUniverse(Abstract.UniverseExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitUniverse(Abstract.UniverseExpression expression, Void context) {
     Universe u = expression.getUniverse();
     if (u instanceof Universe.Type) {
       Universe.Type t = (Universe.Type) u;
       if (t.getTruncated() == Universe.Type.PROP) {
-        return _quotation_createNode_b65po9_a0a1a1a8();
+        return _quotation_createNode_b65po9_a0a1a1a9();
       }
       if (t.getTruncated() == Universe.Type.SET) {
-        return _quotation_createNode_b65po9_a0a2a1a8(String.valueOf(t.getLevel()));
+        return _quotation_createNode_b65po9_a0a2a1a9(String.valueOf(t.getLevel()));
       }
-      return (t.getTruncated() == Universe.Type.NOT_TRUNCATED ? _quotation_createNode_b65po9_a0d0b0i_0(String.valueOf(t.getLevel())) : _quotation_createNode_b65po9_a0d0b0i(String.valueOf(t.getTruncated()), String.valueOf(t.getLevel())));
+      return (t.getTruncated() == Universe.Type.NOT_TRUNCATED ? _quotation_createNode_b65po9_a0d0b0j_0(String.valueOf(t.getLevel())) : _quotation_createNode_b65po9_a0d0b0j(String.valueOf(t.getTruncated()), String.valueOf(t.getLevel())));
     }
     return null;
   }
-  public SNode visitInferHole(Abstract.InferHoleExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitInferHole(Abstract.InferHoleExpression expression, Void context) {
     // TODO: 
     return null;
   }
-  public SNode visitError(Abstract.ErrorExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitError(Abstract.ErrorExpression expression, Void context) {
     // TODO: 
     return null;
   }
 
-  public SNode visitBinOpSequence(Abstract.BinOpSequenceExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitBinOpSequence(Abstract.BinOpSequenceExpression expression, Void context) {
     // TODO: Do nothing (this is related to the way how parser is implemented in Vclang 
     return null;
   }
 
-  public SNode visitTuple(Abstract.TupleExpression expression, final BuildModelVisitor.Context context) {
+  public SNode visitTuple(Abstract.TupleExpression expression, final Void context) {
     List<Abstract.Expression> exprs = (List<Abstract.Expression>) expression.getFields();
-    return _quotation_createNode_b65po9_a1a41(ListSequence.fromList(exprs).select(new ISelector<Abstract.Expression, SNode>() {
+    return _quotation_createNode_b65po9_a1a51(ListSequence.fromList(exprs).select(new ISelector<Abstract.Expression, SNode>() {
       public SNode select(Abstract.Expression it) {
         return it.accept(BuildModelVisitor.this, context);
       }
     }).toListSequence());
   }
-  public SNode visitSigma(Abstract.SigmaExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitSigma(Abstract.SigmaExpression expression, Void context) {
     List<Abstract.Argument> l = (List<Abstract.Argument>) expression.getArguments();
     return new BuildModelVisitor.ArgumentComputer<SNode>() {
       public SNode compute(List<SNode> args) {
-        return _quotation_createNode_b65po9_a0a0a0a0b0p(args);
+        return _quotation_createNode_b65po9_a0a0a0a0b0q(args);
       }
     }.computeArgumentExpressionIndex(this, l, context);
   }
-  public SNode visitBinOp(Abstract.BinOpExpression expression, BuildModelVisitor.Context context) {
-    return _quotation_createNode_b65po9_a0a61(expression.getLeft().accept(this, context), expression.getRight().accept(this, context), AdapterUtils.getRaw(expression.getBinOp().definition));
+  public SNode visitBinOp(Abstract.BinOpExpression expression, Void context) {
+    return _quotation_createNode_b65po9_a0a71(expression.getLeft().accept(this, context), expression.getRight().accept(this, context), AdapterUtils.getRaw(expression.getBinOp().definition));
   }
 
-  public SNode visitElimCase(Abstract.ElimCaseExpression expression, final BuildModelVisitor.Context context) {
+  public SNode visitElimCase(Abstract.ElimCaseExpression expression, final Void context) {
     List<SNode> exprNode = ListSequence.fromList(((List<Abstract.Expression>) expression.getExpressions())).select(new ISelector<Abstract.Expression, SNode>() {
       public SNode select(Abstract.Expression it) {
         return it.accept(BuildModelVisitor.this, context);
       }
     }).toListSequence();
-    final List<SNode> matchedIndices = ListSequence.fromList(exprNode).select(new ISelector<SNode, SNode>() {
+    final List<SNode> matchedIndices = ListSequence.fromList(exprNode).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, "jetbrains.mps.vclang.structure.VariableExpression"));
+      }
+    }).select(new ISelector<SNode, SNode>() {
       public SNode select(SNode it) {
-        return (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, "jetbrains.mps.vclang.structure.VariableExpression")) ? SLinkOperations.getTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, "jetbrains.mps.vclang.structure.VariableExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")) : null);
+        return SLinkOperations.getTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, "jetbrains.mps.vclang.structure.VariableExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref"));
       }
     }).toListSequence();
     List<Abstract.Clause> clauses = (List<Abstract.Clause>) expression.getClauses();
-    SNode result = _quotation_createNode_b65po9_a0d0s(ListSequence.fromList(clauses).select(new ISelector<Abstract.Clause, SNode>() {
+    SNode result = _quotation_createNode_b65po9_a0d0t(ListSequence.fromList(clauses).select(new ISelector<Abstract.Clause, SNode>() {
       public SNode select(Abstract.Clause it) {
         pushIndices();
         List<SNode> apat = new ArrayList<SNode>();
@@ -200,7 +201,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
             }
           }
         }
-        SNode result = createClause_b65po9_a0e0a0a0a0a0a3a81(apat, SNodeOperations.cast(HUtil.copyIfNecessary(it.getExpression().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")), Integer.parseInt(SEnumOperations.getEnumMemberValue(AdapterUtils.convertArrow2(it.getArrow()))));
+        SNode result = createClause_b65po9_a0e0a0a0a0a0a3a91(apat, SNodeOperations.cast(HUtil.copyIfNecessary(it.getExpression().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")), Integer.parseInt(SEnumOperations.getEnumMemberValue(AdapterUtils.convertArrow2(it.getArrow()))));
         popIndices();
         return result;
       }
@@ -208,24 +209,24 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     return result;
   }
 
-  public SNode visitElim(Abstract.ElimExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitElim(Abstract.ElimExpression expression, Void context) {
     return visitElimCase(expression, context);
   }
-  public SNode visitCase(Abstract.CaseExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitCase(Abstract.CaseExpression expression, Void context) {
     return visitElimCase(expression, context);
   }
-  public SNode visitProj(Abstract.ProjExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitProj(Abstract.ProjExpression expression, Void context) {
     // TODO: Implement Proj expression 
     return null;
   }
-  public SNode visitClassExt(Abstract.ClassExtExpression expression, BuildModelVisitor.Context context) {
+  public SNode visitClassExt(Abstract.ClassExtExpression expression, Void context) {
     // TODO: Implement class extensions 
     return null;
   }
-  public SNode visitNew(Abstract.NewExpression expression, BuildModelVisitor.Context context) {
-    return _quotation_createNode_b65po9_a0a42(expression.getExpression().accept(this, context));
+  public SNode visitNew(Abstract.NewExpression expression, Void context) {
+    return _quotation_createNode_b65po9_a0a52(expression.getExpression().accept(this, context));
   }
-  public SNode visitLet(Abstract.LetExpression expression, final BuildModelVisitor.Context context) {
+  public SNode visitLet(Abstract.LetExpression expression, final Void context) {
     List<SNode> clauses = new ArrayList<SNode>();
     int count = 0;
     for (Abstract.LetClause clause : ListSequence.fromList(expression.getClauses())) {
@@ -233,14 +234,14 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
       List<Abstract.Argument> l = (List<Abstract.Argument>) clause.getArguments();
       SNode c = new BuildModelVisitor.ArgumentComputer<SNode>() {
         public SNode compute(List<SNode> args) {
-          return createLetClause_b65po9_a0a0a0a0a2a2a52(finalClause.getName().name, Integer.parseInt(SEnumOperations.getEnumMemberValue(AdapterUtils.convertArrow2(finalClause.getArrow()))), args, SNodeOperations.cast(HUtil.copyIfNecessary(finalClause.getTerm().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")), SNodeOperations.cast(HUtil.copyIfNecessary(finalClause.getResultType().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
+          return createLetClause_b65po9_a0a0a0a0a2a2a62(finalClause.getName().name, Integer.parseInt(SEnumOperations.getEnumMemberValue(AdapterUtils.convertArrow2(finalClause.getArrow()))), args, SNodeOperations.cast(HUtil.copyIfNecessary(finalClause.getTerm().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")), SNodeOperations.cast(HUtil.copyIfNecessary(finalClause.getResultType().accept(BuildModelVisitor.this, context)), MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
         }
       }.computeArgumentExpressionIndex(this, l, context);
       ListSequence.fromList(clauses).addElement(c);
       ListSequence.fromList(indices).insertElement(0, c);
       count++;
     }
-    SNode result = _quotation_createNode_b65po9_a0d0z(clauses, expression.getExpression().accept(this, context));
+    SNode result = _quotation_createNode_b65po9_a0d0ab(clauses, expression.getExpression().accept(this, context));
     releaseVariables(count);
     return result;
   }
@@ -251,10 +252,10 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
       NamePattern np = (NamePattern) p2;
       String name = np.getName();
       if (name != null) {
-        result = _quotation_createNode_b65po9_a0a0c0b0bb(name);
+        result = _quotation_createNode_b65po9_a0a0c0b0cb(name);
         ListSequence.fromList(matchedVariables).addElement(SNodeOperations.cast(result, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId")));
       } else {
-        result = _quotation_createNode_b65po9_a0a0a2a1a72();
+        result = _quotation_createNode_b65po9_a0a0a2a1a82();
         ListSequence.fromList(matchedVariables).addElement(null);
       }
     } else if (p2 instanceof Abstract.ConstructorPattern) {
@@ -264,7 +265,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
       if (cp instanceof ConstructorPattern) {
         cons = SNodeOperations.cast(AdapterUtils.getRaw(((ConstructorPattern) cp).getConstructor()), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2ee29aL, "jetbrains.mps.vclang.structure.Constructor"));
       }
-      result = _quotation_createNode_b65po9_a0e0a1a72(ListSequence.fromList(cargs).select(new ISelector<Abstract.Pattern, SNode>() {
+      result = _quotation_createNode_b65po9_a0e0a1a82(ListSequence.fromList(cargs).select(new ISelector<Abstract.Pattern, SNode>() {
         public SNode select(Abstract.Pattern it) {
           return processPattern(visitor, it, matchedVariables);
         }
@@ -277,7 +278,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
   public abstract class ArgumentComputer<T> {
     public abstract T compute(List<SNode> args);
 
-    public T computeArgumentExpressionIndex(BuildModelVisitor visitor, List<Abstract.Argument> args, BuildModelVisitor.Context context) {
+    public T computeArgumentExpressionIndex(BuildModelVisitor visitor, List<Abstract.Argument> args, Void context) {
       List<SNode> vars = new ArrayList<SNode>();
       int counter = 0;
       for (Abstract.Argument arg : ListSequence.fromList(args)) {
@@ -290,12 +291,12 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
               counter++;
               ListSequence.fromList(teleArgs).addElement(visitor.addIndex(n));
             }
-            ListSequence.fromList(vars).addElement(_quotation_createNode_b65po9_a0a3a1a0a2a2eb(h, teleArgs));
+            ListSequence.fromList(vars).addElement(_quotation_createNode_b65po9_a0a3a1a0a2a2fb(h, teleArgs));
           } else {
             Abstract.TypeArgument t = (Abstract.TypeArgument) arg;
             counter++;
             ListSequence.fromList(visitor.indices).insertElement(0, null);
-            ListSequence.fromList(vars).addElement(_quotation_createNode_b65po9_a0a3a0b0a0c0c03(h));
+            ListSequence.fromList(vars).addElement(_quotation_createNode_b65po9_a0a3a0b0a0c0c13(h));
           }
         } else if (arg instanceof Abstract.NameArgument) {
           Abstract.NameArgument t = (Abstract.NameArgument) arg;
@@ -311,7 +312,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
 
 
   public SNode addIndex(String name) {
-    SNode result = _quotation_createNode_b65po9_a0a0hb(name);
+    SNode result = _quotation_createNode_b65po9_a0a0ib(name);
     ListSequence.fromList(indices).insertElement(0, result);
     return result;
   }
@@ -331,66 +332,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
   }
 
 
-  public static class Context {
-    private Map<String, SNode> variables = MapSequence.fromMap(new HashMap<String, SNode>());
-    private Map<String, SNode> oldState = MapSequence.fromMap(new HashMap<String, SNode>());
-    private Deque<Map<String, SNode>> states = DequeSequence.fromDequeNew(new LinkedList<Map<String, SNode>>());
-
-    public BuildModelVisitor.Context.BuildOptions option = BuildModelVisitor.Context.BuildOptions.DEFAULT;
-    public static     enum BuildOptions {
-      VERBOSE(),
-      DEFAULT(),
-      COMPACT();
-
-      BuildOptions() {
-      }
-
-    }
-    public Context() {
-    }
-
-    public void saveVarState() {
-      DequeSequence.fromDequeNew(states).pushElement(oldState);
-      oldState = MapSequence.fromMap(new HashMap<String, SNode>());
-    }
-
-    public void addVariable(SNode var) {
-      MapSequence.fromMap(oldState).put(SPropertyOperations.getString(var, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), MapSequence.fromMap(variables).get(SPropertyOperations.getString(var, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))));
-      MapSequence.fromMap(variables).put(SPropertyOperations.getString(var, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), var);
-    }
-
-    public SNode addVariableName(String name) {
-      SNode v = _quotation_createNode_b65po9_a0a0m24(name);
-      addVariable(v);
-      return v;
-    }
-
-    public SNode getVariable(String name) {
-      return MapSequence.fromMap(variables).get(name);
-    }
-
-    public void restoreVarState() {
-      for (IMapping<String, SNode> s : MapSequence.fromMap(oldState)) {
-        if (s.value() == null) {
-          MapSequence.fromMap(variables).removeKey(s.key());
-        } else {
-          MapSequence.fromMap(variables).put(s.key(), s.value());
-        }
-      }
-      oldState = DequeSequence.fromDequeNew(states).popElement();
-    }
-
-
-
-    private static SNode _quotation_createNode_b65po9_a0a0m24(Object parameter_1) {
-      PersistenceFacade facade = PersistenceFacade.getInstance();
-      SNode quotedNode_2 = null;
-      quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable"), null, null, false);
-      SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), (String) parameter_1);
-      return quotedNode_2;
-    }
-  }
-  private static SNode _quotation_createNode_b65po9_a0a0a3a3(Object parameter_1, Object parameter_2, Object parameter_3) {
+  private static SNode _quotation_createNode_b65po9_a0a0a3a4(Object parameter_1, Object parameter_2, Object parameter_3) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_4 = null;
     SNode quotedNode_5 = null;
@@ -409,7 +351,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_4;
   }
-  private static SNode _quotation_createNode_b65po9_a0a11a3(Object parameter_1, Object parameter_2, Object parameter_3) {
+  private static SNode _quotation_createNode_b65po9_a0a11a4(Object parameter_1, Object parameter_2, Object parameter_3) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_4 = null;
     SNode quotedNode_5 = null;
@@ -428,7 +370,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_4;
   }
-  private static SNode _quotation_createNode_b65po9_a0o0d(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0o0e(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -444,7 +386,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode createImplicitArgument_b65po9_a0a0a0a41a3(Object p0) {
+  private static SNode createImplicitArgument_b65po9_a0a0a0a41a4(Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5cf68b0abfab6115L, "jetbrains.mps.vclang.structure.ImplicitArgument"), null, null, false);
     if (p0 != null) {
@@ -452,25 +394,25 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return n1;
   }
-  private static SNode createDefExpression_b65po9_a1a3a4(Object p0) {
+  private static SNode createDefExpression_b65po9_a1a3a5(Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression"), null, null, false);
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref"), (SNode) p0);
     return n1;
   }
-  private static SNode createDefExpression_b65po9_a2a0d0e(Object p0) {
+  private static SNode createDefExpression_b65po9_a2a0d0f(Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression"), null, null, false);
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref"), (SNode) p0);
     return n1;
   }
-  private static SNode createVariableExpression_b65po9_a0a5(Object p0) {
+  private static SNode createVariableExpression_b65po9_a0a6(Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a651L, "jetbrains.mps.vclang.structure.VariableExpression"), null, null, false);
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref"), (SNode) p0);
     return n1;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0a0a0b0g(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0a0a0a0b0h(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -491,7 +433,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     quotedNode_3.addChild(MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x61f824a8086fa9f4L, 0x61f824a8086fa9fcL, "expression"), quotedNode_4);
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a1a0a0a0b0h(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0a1a0a0a0b0i(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -509,7 +451,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0b0a0a0a1a7(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0a0b0a0a0a1a8(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -527,20 +469,20 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a1a1a8() {
+  private static SNode _quotation_createNode_b65po9_a0a1a1a9() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
     quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af1159L, "jetbrains.mps.vclang.structure.PropUniverse"), null, null, false);
     return quotedNode_1;
   }
-  private static SNode _quotation_createNode_b65po9_a0a2a1a8(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a2a1a9(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af115aL, "jetbrains.mps.vclang.structure.SetUniverse"), null, null, false);
     SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0fa6L, 0x634b3353f5af0fa7L, "level"), (String) parameter_1);
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a0d0b0i(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0d0b0j(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0ff1L, "jetbrains.mps.vclang.structure.TruncatedTypeUniverse"), null, null, false);
@@ -548,14 +490,14 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     SNodeAccessUtil.setProperty(quotedNode_3, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0ff1L, 0x634b3353f5af0ff2L, "truncLevel"), (String) parameter_1);
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0d0b0i_0(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0d0b0j_0(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0fa9L, "jetbrains.mps.vclang.structure.TypeUniverse"), null, null, false);
     SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0fa6L, 0x634b3353f5af0fa7L, "level"), (String) parameter_1);
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a1a41(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a1a51(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     SNode quotedNode_3 = null;
@@ -568,7 +510,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0a0a0b0p(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a0a0a0b0q(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     SNode quotedNode_3 = null;
@@ -581,7 +523,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a0a61(Object parameter_1, Object parameter_2, Object parameter_3) {
+  private static SNode _quotation_createNode_b65po9_a0a71(Object parameter_1, Object parameter_2, Object parameter_3) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_4 = null;
     SNode quotedNode_5 = null;
@@ -598,7 +540,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_4;
   }
-  private static SNode _quotation_createNode_b65po9_a0d0s(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0d0t(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -620,7 +562,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode createClause_b65po9_a0e0a0a0a0a0a3a81(Object p0, Object p1, Object p2) {
+  private static SNode createClause_b65po9_a0e0a0a0a0a0a3a91(Object p0, Object p1, Object p2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, "jetbrains.mps.vclang.structure.Clause"), null, null, false);
     for (SNode n : (Iterable<SNode>) p0) {
@@ -632,7 +574,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     n1.setProperty(MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0b0aL, "arrow"), p2 + "");
     return n1;
   }
-  private static SNode _quotation_createNode_b65po9_a0a42(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a52(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     SNode quotedNode_3 = null;
@@ -643,7 +585,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_2;
   }
-  private static SNode createLetClause_b65po9_a0a0a0a0a2a2a52(Object p0, Object p1, Object p2, Object p3, Object p4) {
+  private static SNode createLetClause_b65po9_a0a0a0a0a2a2a62(Object p0, Object p1, Object p2, Object p3, Object p4) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ceL, "jetbrains.mps.vclang.structure.LetClause"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
@@ -659,7 +601,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return n1;
   }
-  private static SNode _quotation_createNode_b65po9_a0d0z(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0d0ab(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -679,20 +621,20 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0c0b0bb(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a0c0b0cb(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId"), null, null, false);
     SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), (String) parameter_1);
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0a2a1a72() {
+  private static SNode _quotation_createNode_b65po9_a0a0a2a1a82() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
     quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad0L, "jetbrains.mps.vclang.structure.PatternAny"), null, null, false);
     return quotedNode_1;
   }
-  private static SNode _quotation_createNode_b65po9_a0e0a1a72(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0e0a1a82(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -706,7 +648,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a3a1a0a2a2eb(Object parameter_1, Object parameter_2) {
+  private static SNode _quotation_createNode_b65po9_a0a3a1a0a2a2fb(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;
     SNode quotedNode_4 = null;
@@ -724,7 +666,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_3;
   }
-  private static SNode _quotation_createNode_b65po9_a0a3a0b0a0c0c03(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a3a0b0a0c0c13(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     SNode quotedNode_3 = null;
@@ -736,7 +678,7 @@ public class BuildModelVisitor implements AbstractExpressionVisitor<BuildModelVi
     }
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_b65po9_a0a0hb(Object parameter_1) {
+  private static SNode _quotation_createNode_b65po9_a0a0ib(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a6e4L, "jetbrains.mps.vclang.structure.Variable"), null, null, false);
