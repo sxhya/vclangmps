@@ -198,6 +198,10 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1eT6ycFBtO5" resolve="IVariable" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" />
+    </node>
+    <node concept="PrWs8" id="5LKdqecnJYS" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUpk">
@@ -611,6 +615,10 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="def" />
       <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" />
+    </node>
+    <node concept="PrWs8" id="5LKdqecnJEW" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40_P0r">
@@ -1011,6 +1019,61 @@
     <property role="TrG5h" value="VcLangNamespace" />
     <node concept="PrWs8" id="3wdrnIK3BVW" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="65CX60nc1HI">
+    <property role="1pbfSe" value="2023296974" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="DotExpression" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <node concept="1TJgyj" id="65CX60nc1HM" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="leftExpression" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="65CX60nc1HO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rightExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="65CX60nc1HR" resolve="AbstractDotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="65CX60nc1HR">
+    <property role="1pbfSe" value="2023296983" />
+    <property role="3GE5qa" value="expression.dotExpression" />
+    <property role="TrG5h" value="AbstractDotOperation" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="65CX60nc9$h">
+    <property role="1pbfSe" value="2023329137" />
+    <property role="3GE5qa" value="expression.dotExpression" />
+    <property role="TrG5h" value="StaticFieldAccessOperation" />
+    <ref role="1TJDcQ" node="65CX60nc1HR" resolve="AbstractDotOperation" />
+    <node concept="1TJgyj" id="65CX60nc9$i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="field" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" />
+    </node>
+    <node concept="PrWs8" id="5LKdqecnJcL" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5LKdqecnJcI">
+    <property role="1pbfSe" value="389076783" />
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="RefExpression" />
+    <node concept="1TJgyj" id="5LKdqecnJcJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    </node>
+    <node concept="PrWs8" id="5LKdqecnUps" role="PrDN$">
+      <ref role="PrY4T" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
   </node>
 </model>
