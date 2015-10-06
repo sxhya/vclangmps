@@ -14,7 +14,7 @@ import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNodeReference;
@@ -24,11 +24,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.scope.ListScope;
-import jetbrains.mps.vclang.behavior.ClassDefinition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.ClassDefinition__BehaviorDescriptor;
 import java.util.List;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.vclang.behavior.IClassMember_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.IClassMember__BehaviorDescriptor;
 import jetbrains.mps.scope.EmptyScope;
 import jetbrains.mps.smodel.SNodePointer;
 
@@ -54,8 +54,8 @@ public class StaticFieldAccessOperation_Constraints extends BaseConstraintsDescr
           }
           @Override
           public String getPresentation(final IOperationContext operationContext, final ReferencePresentationContext _context) {
-            if (Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(_context.getParameterNode())) {
-              return Definition_BehaviorDescriptor.getPrefixName_id6FOQVYN1P9T.invoke(_context.getParameterNode());
+            if ((boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(_context.getParameterNode())) {
+              return Definition__BehaviorDescriptor.getPrefixName_id6FOQVYN1P9T.invoke(_context.getParameterNode());
             }
             return SPropertyOperations.getString(_context.getParameterNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
           }
@@ -76,14 +76,14 @@ public class StaticFieldAccessOperation_Constraints extends BaseConstraintsDescr
                 SNode lhs = SLinkOperations.getTarget(dot, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x6168f46017301b6eL, 0x6168f46017301b72L, "leftExpression"));
                 if (SNodeOperations.isInstanceOf(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, "jetbrains.mps.vclang.structure.ClassDefinition"))) {
                   SNode cls = SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, "jetbrains.mps.vclang.structure.ClassDefinition"));
-                  return ListScope.forNamedElements(ClassDefinition_BehaviorDescriptor.getStaticMembersIncludingExported_id2jcrgspEawz.invoke(cls));
+                  return ListScope.forNamedElements(ClassDefinition__BehaviorDescriptor.getStaticMembersIncludingExported_id2jcrgspEawz.invoke(cls));
                 } else if (SNodeOperations.isInstanceOf(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))) {
                   // TODO: This implementation hides non-static definitions in "where"-expression 
                   SNode df = SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(lhs, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x40feb6e2a72ce3afL, "jetbrains.mps.vclang.structure.DefExpression")), MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"));
                   List<SNode> def = new ArrayList<SNode>();
                   for (SNode d : ListSequence.fromList(SLinkOperations.getChildren(df, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, 0x5b62464c9337f2d6L, "whereDefinitions")))) {
                     if (SNodeOperations.isInstanceOf(d, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x7b3886e81fa1cdbeL, "jetbrains.mps.vclang.structure.StaticModifier"))) {
-                      ListSequence.fromList(def).addElement(IClassMember_BehaviorDescriptor.getDefinition_id24ni4bpKruo.invoke(d));
+                      ListSequence.fromList(def).addElement(IClassMember__BehaviorDescriptor.getDefinition_id24ni4bpKruo.invoke(d));
                     }
                   }
                   return ListScope.forNamedElements(def);

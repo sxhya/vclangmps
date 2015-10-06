@@ -11,12 +11,20 @@ public enum AssociativitySwitch {
   _1("infixl", 1),
   _2("infix", 2);
 
-  private String myName;
+  private final String myName;
   public String getName() {
-    return this.myName;
+    return myName;
+  }
+  private final int myValue;
+  AssociativitySwitch(String name, int value) {
+    myName = name;
+    myValue = value;
+  }
+  public int getValue() {
+    return myValue;
   }
   public String getValueAsString() {
-    return "" + this.myValue;
+    return Integer.toString(myValue);
   }
   public static List<AssociativitySwitch> getConstants() {
     List<AssociativitySwitch> list = ListSequence.fromList(new LinkedList<AssociativitySwitch>());
@@ -42,13 +50,5 @@ public enum AssociativitySwitch {
       return AssociativitySwitch._2;
     }
     return AssociativitySwitch.getDefault();
-  }
-  private int myValue;
-  AssociativitySwitch(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
-  public int getValue() {
-    return this.myValue;
   }
 }

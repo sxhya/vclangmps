@@ -20,12 +20,12 @@ public class PiExpressionAdapter extends ExpressionAdapter implements Abstract.P
   public List<? extends Abstract.TypeArgument> getArguments() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a264L, "jetbrains.mps.vclang.structure.PiExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"))).select(new ISelector<SNode, Abstract.TypeArgument>() {
       public Abstract.TypeArgument select(SNode it) {
-        return ITypedArgument_BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
+        return (Abstract.TypeArgument) ITypedArgument__BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
       }
     }).toListSequence();
   }
   public Abstract.Expression getCodomain() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a264L, "jetbrains.mps.vclang.structure.PiExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a264L, 0x62a6e9940367d382L, "codomain")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a264L, "jetbrains.mps.vclang.structure.PiExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a264L, 0x62a6e9940367d382L, "codomain")));
   }
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitPi(this, params);

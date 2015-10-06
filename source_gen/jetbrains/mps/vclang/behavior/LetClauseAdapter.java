@@ -23,17 +23,17 @@ public class LetClauseAdapter implements Abstract.LetClause {
     return AdapterUtils.convertArrow(SPropertyOperations.getInteger_def(thisNode, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ceL, 0x4e9ce656c7c6f05cL, "arrow"), "0"));
   }
   public Abstract.Expression getTerm() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ceL, 0x4e9ce656c7c6f05eL, "expression")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ceL, 0x4e9ce656c7c6f05eL, "expression")));
   }
   public List<? extends Abstract.Argument> getArguments() {
     return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"))).select(new ISelector<SNode, Abstract.Argument>() {
       public Abstract.Argument select(SNode it) {
-        return AbstractArgument_BehaviorDescriptor.toSourceArgument_id6mU6lSbLceY.invoke(it);
+        return (Abstract.Argument) AbstractArgument__BehaviorDescriptor.toSourceArgument_id6mU6lSbLceY.invoke(it);
       }
     }).toListSequence();
   }
   public Abstract.Expression getResultType() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x52895c158533aed8L, 0x52895c158533aeddL, "type")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x52895c158533aed8L, 0x52895c158533aeddL, "type")));
   }
   public void prettyPrint(StringBuilder builder, List<String> names, byte b) {
     Utils.prettyPrintLetClause(this, builder, names, 0);

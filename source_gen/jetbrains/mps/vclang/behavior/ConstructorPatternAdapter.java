@@ -26,7 +26,7 @@ public class ConstructorPatternAdapter extends AbstractPatternAdapter implements
   public List<? extends Abstract.Pattern> getPatterns() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x1e1ef882fa2fd10dL, "jetbrains.mps.vclang.structure.IPatternConstructor")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x1e1ef882fa2fd10dL, 0x134a75c1410d5afaL, "argPatterns"))).select(new ISelector<SNode, Abstract.Pattern>() {
       public Abstract.Pattern select(SNode it) {
-        return AbstractPattern_BehaviorDescriptor.toSourcePattern_id1dats513mDi.invoke(it);
+        return (Abstract.Pattern) AbstractPattern__BehaviorDescriptor.toSourcePattern_id1dats513mDi.invoke(it);
       }
     }).toListSequence();
   }

@@ -63,7 +63,7 @@ public class AdapterUtils {
   }
 
   public static Utils.Name getName(SNode def) {
-    return new Utils.Name(SPropertyOperations.getString(def, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(def) ? Abstract.Definition.Fixity.INFIX : Abstract.Definition.Fixity.PREFIX));
+    return new Utils.Name(SPropertyOperations.getString(def, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), ((boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(def) ? Abstract.Definition.Fixity.INFIX : Abstract.Definition.Fixity.PREFIX));
   }
 
   public static void setWellTyped(SNode source, Abstract.SourceNode wellTypedExpr) {
@@ -86,7 +86,7 @@ public class AdapterUtils {
       }
     }).select(new ISelector<SNode, String>() {
       public String select(SNode it) {
-        return VcLangNamespace_BehaviorDescriptor.getNamespaceName_id3wdrnIK3K7o.invoke(SNodeOperations.cast(it, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x380d6d7bb00e7ce0L, "jetbrains.mps.vclang.structure.VcLangNamespace")));
+        return (String) VcLangNamespace__BehaviorDescriptor.getNamespaceName_id3wdrnIK3K7o.invoke(SNodeOperations.cast(it, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x380d6d7bb00e7ce0L, "jetbrains.mps.vclang.structure.VcLangNamespace")));
       }
     }).toListSequence()).reversedList();
     if (SNodeOperations.isInstanceOf(b, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept")) && !(ListSequence.fromList(result).last().equals(SPropertyOperations.getString(SNodeOperations.cast(b, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))))) {

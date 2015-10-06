@@ -25,7 +25,7 @@ public class TelescopeArgumentAdapter extends ArgumentAdapter implements Abstrac
     }).toListSequence();
   }
   public Abstract.Expression getType() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0x62a6e9940367a6bfL, "typeExpr")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0x62a6e9940367a6bfL, "typeExpr")));
   }
   public boolean getExplicit() {
     return SPropertyOperations.hasValue(thisNode, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5ace245L, 0xc23f551009d041dL, "isImplicit"), "false", "false");

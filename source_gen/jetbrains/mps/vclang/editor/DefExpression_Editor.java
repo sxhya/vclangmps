@@ -16,7 +16,7 @@ import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -58,7 +58,7 @@ public class DefExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_18iitz_a0a(SNode node, EditorContext editorContext) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")) && Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")));
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")) && (boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")));
   }
   private EditorCell createRefCell_18iitz_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
@@ -151,6 +151,6 @@ public class DefExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_18iitz_a3a(SNode node, EditorContext editorContext) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")) && Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")));
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")) && (boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, 0x5c7035a38c5ef32fL, "ref")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction")));
   }
 }

@@ -29,9 +29,9 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
     // should return the list of static fields 
     List<Abstract.Definition> a = ListSequence.fromList(new LinkedList<Abstract.Definition>());
     for (SNode s : ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec305aL, 0xfc408c778ec7ec9L, "statements")))) {
-      SNode d = IClassMember_BehaviorDescriptor.getDefinition_id24ni4bpKruo.invoke(s);
+      SNode d = IClassMember__BehaviorDescriptor.getDefinition_id24ni4bpKruo.invoke(s);
       if ((d != null)) {
-        ListSequence.fromList(a).addElement(Definition_BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(d));
+        ListSequence.fromList(a).addElement(Definition__BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(d));
       }
     }
     return a;
@@ -44,7 +44,7 @@ public class ClassAdapter extends DefinitionAdapter implements Abstract.ClassDef
       }
     }).select(new ISelector<SNode, Abstract.Statement>() {
       public Abstract.Statement select(SNode it) {
-        return IClassMember_BehaviorDescriptor.toSourceStatement_id3wdrnIK4lOW.invoke(it);
+        return (Abstract.Statement) IClassMember__BehaviorDescriptor.toSourceStatement_id3wdrnIK4lOW.invoke(it);
       }
     }).toListSequence();
   }

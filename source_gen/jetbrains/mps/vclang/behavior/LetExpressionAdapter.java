@@ -21,13 +21,13 @@ public class LetExpressionAdapter extends ExpressionAdapter implements Abstract.
   public List<? extends Abstract.LetClause> getClauses() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, "jetbrains.mps.vclang.structure.LetExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, 0x4e9ce656c7c3f7cfL, "clauses"))).select(new ISelector<SNode, Abstract.LetClause>() {
       public Abstract.LetClause select(SNode it) {
-        return LetClause_BehaviorDescriptor.toSourceClause_id4UsT_r7LJVF.invoke(it);
+        return (Abstract.LetClause) LetClause__BehaviorDescriptor.toSourceClause_id4UsT_r7LJVF.invoke(it);
       }
     }).toListSequence();
   }
 
   public Abstract.Expression getExpression() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, "jetbrains.mps.vclang.structure.LetExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, 0x4e9ce656c7c3f7d1L, "expression")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, "jetbrains.mps.vclang.structure.LetExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x4e9ce656c7c3f7ccL, 0x4e9ce656c7c3f7d1L, "expression")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

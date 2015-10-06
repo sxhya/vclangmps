@@ -11,7 +11,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.vclang.behavior.IValidIdentifier_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.IValidIdentifier__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -30,7 +30,7 @@ public class IValidIdentifier_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return (SPropertyOperations.getString(propertyValue)).equals("_") || IValidIdentifier_BehaviorDescriptor.isCorrectVarName_id6oOmj_ocdin.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), (SPropertyOperations.getString(propertyValue)));
+        return (SPropertyOperations.getString(propertyValue)).equals("_") || (boolean) IValidIdentifier__BehaviorDescriptor.isCorrectVarName_id6oOmj_ocdin.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), (SPropertyOperations.getString(propertyValue)));
       }
     });
     return properties;

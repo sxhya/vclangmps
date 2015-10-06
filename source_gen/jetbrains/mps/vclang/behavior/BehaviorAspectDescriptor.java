@@ -12,64 +12,64 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import java.util.Arrays;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myHasArguments_BehaviorDescriptor = new HasArguments_BehaviorDescriptor();
-  private final BHDescriptor myExpression_BehaviorDescriptor = new Expression_BehaviorDescriptor();
-  private final BHDescriptor myIValidIdentifier_BehaviorDescriptor = new IValidIdentifier_BehaviorDescriptor();
-  private final BHDescriptor myIValidFunctionalSymbol_BehaviorDescriptor = new IValidFunctionalSymbol_BehaviorDescriptor();
-  private final BHDescriptor myClassDefinition_BehaviorDescriptor = new ClassDefinition_BehaviorDescriptor();
-  private final BHDescriptor myDefinition_BehaviorDescriptor = new Definition_BehaviorDescriptor();
-  private final BHDescriptor myConstructorWithPatterns_BehaviorDescriptor = new ConstructorWithPatterns_BehaviorDescriptor();
-  private final BHDescriptor myNewExpression_BehaviorDescriptor = new NewExpression_BehaviorDescriptor();
-  private final BHDescriptor myPatternAny_BehaviorDescriptor = new PatternAny_BehaviorDescriptor();
-  private final BHDescriptor myPatternId_BehaviorDescriptor = new PatternId_BehaviorDescriptor();
-  private final BHDescriptor myPatternConstructor_BehaviorDescriptor = new PatternConstructor_BehaviorDescriptor();
-  private final BHDescriptor myAbstractPattern_BehaviorDescriptor = new AbstractPattern_BehaviorDescriptor();
-  private final BHDescriptor myBaseVcConcept_BehaviorDescriptor = new BaseVcConcept_BehaviorDescriptor();
-  private final BHDescriptor myIVcConcept_BehaviorDescriptor = new IVcConcept_BehaviorDescriptor();
-  private final BHDescriptor myAbstractScopeCommand_BehaviorDescriptor = new AbstractScopeCommand_BehaviorDescriptor();
-  private final BHDescriptor myIClassMember_BehaviorDescriptor = new IClassMember_BehaviorDescriptor();
-  private final BHDescriptor myVcLangNamespace_BehaviorDescriptor = new VcLangNamespace_BehaviorDescriptor();
-  private final BHDescriptor myDefExpression_BehaviorDescriptor = new DefExpression_BehaviorDescriptor();
-  private final BHDescriptor myLetExpression_BehaviorDescriptor = new LetExpression_BehaviorDescriptor();
-  private final BHDescriptor myLetClause_BehaviorDescriptor = new LetClause_BehaviorDescriptor();
-  private final BHDescriptor myOverrideModifier_BehaviorDescriptor = new OverrideModifier_BehaviorDescriptor();
-  private final BHDescriptor myRefExpression_BehaviorDescriptor = new RefExpression_BehaviorDescriptor();
-  private final BHDescriptor myTypedArgument_BehaviorDescriptor = new TypedArgument_BehaviorDescriptor();
-  private final BHDescriptor myDotExpression_BehaviorDescriptor = new DotExpression_BehaviorDescriptor();
-  private final BHDescriptor myAbstractDotOperation_BehaviorDescriptor = new AbstractDotOperation_BehaviorDescriptor();
-  private final BHDescriptor myStaticFieldAccessOperation_BehaviorDescriptor = new StaticFieldAccessOperation_BehaviorDescriptor();
-  private final BHDescriptor myPatternParenthesis_BehaviorDescriptor = new PatternParenthesis_BehaviorDescriptor();
-  private final BHDescriptor myParenthesizedExpression_BehaviorDescriptor = new ParenthesizedExpression_BehaviorDescriptor();
-  private final BHDescriptor myElimExpression_BehaviorDescriptor = new ElimExpression_BehaviorDescriptor();
-  private final BHDescriptor myAbstractExpression_BehaviorDescriptor = new AbstractExpression_BehaviorDescriptor();
-  private final BHDescriptor myAbstractBinOpExpression_BehaviorDescriptor = new AbstractBinOpExpression_BehaviorDescriptor();
-  private final BHDescriptor myPiExpression_BehaviorDescriptor = new PiExpression_BehaviorDescriptor();
-  private final BHDescriptor mySigmaExpression_BehaviorDescriptor = new SigmaExpression_BehaviorDescriptor();
-  private final BHDescriptor myLambdaExpression_BehaviorDescriptor = new LambdaExpression_BehaviorDescriptor();
-  private final BHDescriptor myApplicationExpression_BehaviorDescriptor = new ApplicationExpression_BehaviorDescriptor();
-  private final BHDescriptor myVariableExpression_BehaviorDescriptor = new VariableExpression_BehaviorDescriptor();
-  private final BHDescriptor myTupleExpression_BehaviorDescriptor = new TupleExpression_BehaviorDescriptor();
-  private final BHDescriptor myTelescopeArgument_BehaviorDescriptor = new TelescopeArgument_BehaviorDescriptor();
-  private final BHDescriptor myVariable_BehaviorDescriptor = new Variable_BehaviorDescriptor();
-  private final BHDescriptor myAbstractArgument_BehaviorDescriptor = new AbstractArgument_BehaviorDescriptor();
-  private final BHDescriptor myITypedArgument_BehaviorDescriptor = new ITypedArgument_BehaviorDescriptor();
-  private final BHDescriptor myAbstractClause_BehaviorDescriptor = new AbstractClause_BehaviorDescriptor();
-  private final BHDescriptor myClause_BehaviorDescriptor = new Clause_BehaviorDescriptor();
-  private final BHDescriptor myArrowExpression_BehaviorDescriptor = new ArrowExpression_BehaviorDescriptor();
-  private final BHDescriptor myLeveledUniverse_BehaviorDescriptor = new LeveledUniverse_BehaviorDescriptor();
-  private final BHDescriptor myTypeUniverse_BehaviorDescriptor = new TypeUniverse_BehaviorDescriptor();
-  private final BHDescriptor myTruncatedTypeUniverse_BehaviorDescriptor = new TruncatedTypeUniverse_BehaviorDescriptor();
-  private final BHDescriptor myPropUniverse_BehaviorDescriptor = new PropUniverse_BehaviorDescriptor();
-  private final BHDescriptor mySetUniverse_BehaviorDescriptor = new SetUniverse_BehaviorDescriptor();
-  private final BHDescriptor myDefFunction_BehaviorDescriptor = new DefFunction_BehaviorDescriptor();
-  private final BHDescriptor myPrecedence_BehaviorDescriptor = new Precedence_BehaviorDescriptor();
-  private final BHDescriptor myDefType_BehaviorDescriptor = new DefType_BehaviorDescriptor();
-  private final BHDescriptor myAbstractConstructor_BehaviorDescriptor = new AbstractConstructor_BehaviorDescriptor();
-  private final BHDescriptor myConstructor_BehaviorDescriptor = new Constructor_BehaviorDescriptor();
-  private final BHDescriptor myBinOpExpression_BehaviorDescriptor = new BinOpExpression_BehaviorDescriptor();
-  private final BHDescriptor myNumeral__BehaviorDescriptor = new Numeral__BehaviorDescriptor();
-  private final BHDescriptor myBracketExpression_BehaviorDescriptor = new BracketExpression_BehaviorDescriptor();
-  private final BHDescriptor myStaticModifier_BehaviorDescriptor = new StaticModifier_BehaviorDescriptor();
+  private final BHDescriptor myHasArguments__BehaviorDescriptor = new HasArguments__BehaviorDescriptor();
+  private final BHDescriptor myExpression__BehaviorDescriptor = new Expression__BehaviorDescriptor();
+  private final BHDescriptor myIValidIdentifier__BehaviorDescriptor = new IValidIdentifier__BehaviorDescriptor();
+  private final BHDescriptor myIValidFunctionalSymbol__BehaviorDescriptor = new IValidFunctionalSymbol__BehaviorDescriptor();
+  private final BHDescriptor myClassDefinition__BehaviorDescriptor = new ClassDefinition__BehaviorDescriptor();
+  private final BHDescriptor myDefinition__BehaviorDescriptor = new Definition__BehaviorDescriptor();
+  private final BHDescriptor myConstructorWithPatterns__BehaviorDescriptor = new ConstructorWithPatterns__BehaviorDescriptor();
+  private final BHDescriptor myNewExpression__BehaviorDescriptor = new NewExpression__BehaviorDescriptor();
+  private final BHDescriptor myPatternAny__BehaviorDescriptor = new PatternAny__BehaviorDescriptor();
+  private final BHDescriptor myPatternId__BehaviorDescriptor = new PatternId__BehaviorDescriptor();
+  private final BHDescriptor myPatternConstructor__BehaviorDescriptor = new PatternConstructor__BehaviorDescriptor();
+  private final BHDescriptor myAbstractPattern__BehaviorDescriptor = new AbstractPattern__BehaviorDescriptor();
+  private final BHDescriptor myBaseVcConcept__BehaviorDescriptor = new BaseVcConcept__BehaviorDescriptor();
+  private final BHDescriptor myIVcConcept__BehaviorDescriptor = new IVcConcept__BehaviorDescriptor();
+  private final BHDescriptor myAbstractScopeCommand__BehaviorDescriptor = new AbstractScopeCommand__BehaviorDescriptor();
+  private final BHDescriptor myIClassMember__BehaviorDescriptor = new IClassMember__BehaviorDescriptor();
+  private final BHDescriptor myVcLangNamespace__BehaviorDescriptor = new VcLangNamespace__BehaviorDescriptor();
+  private final BHDescriptor myDefExpression__BehaviorDescriptor = new DefExpression__BehaviorDescriptor();
+  private final BHDescriptor myLetExpression__BehaviorDescriptor = new LetExpression__BehaviorDescriptor();
+  private final BHDescriptor myLetClause__BehaviorDescriptor = new LetClause__BehaviorDescriptor();
+  private final BHDescriptor myOverrideModifier__BehaviorDescriptor = new OverrideModifier__BehaviorDescriptor();
+  private final BHDescriptor myRefExpression__BehaviorDescriptor = new RefExpression__BehaviorDescriptor();
+  private final BHDescriptor myTypedArgument__BehaviorDescriptor = new TypedArgument__BehaviorDescriptor();
+  private final BHDescriptor myDotExpression__BehaviorDescriptor = new DotExpression__BehaviorDescriptor();
+  private final BHDescriptor myAbstractDotOperation__BehaviorDescriptor = new AbstractDotOperation__BehaviorDescriptor();
+  private final BHDescriptor myStaticFieldAccessOperation__BehaviorDescriptor = new StaticFieldAccessOperation__BehaviorDescriptor();
+  private final BHDescriptor myPatternParenthesis__BehaviorDescriptor = new PatternParenthesis__BehaviorDescriptor();
+  private final BHDescriptor myParenthesizedExpression__BehaviorDescriptor = new ParenthesizedExpression__BehaviorDescriptor();
+  private final BHDescriptor myElimExpression__BehaviorDescriptor = new ElimExpression__BehaviorDescriptor();
+  private final BHDescriptor myAbstractExpression__BehaviorDescriptor = new AbstractExpression__BehaviorDescriptor();
+  private final BHDescriptor myAbstractBinOpExpression__BehaviorDescriptor = new AbstractBinOpExpression__BehaviorDescriptor();
+  private final BHDescriptor myPiExpression__BehaviorDescriptor = new PiExpression__BehaviorDescriptor();
+  private final BHDescriptor mySigmaExpression__BehaviorDescriptor = new SigmaExpression__BehaviorDescriptor();
+  private final BHDescriptor myLambdaExpression__BehaviorDescriptor = new LambdaExpression__BehaviorDescriptor();
+  private final BHDescriptor myApplicationExpression__BehaviorDescriptor = new ApplicationExpression__BehaviorDescriptor();
+  private final BHDescriptor myVariableExpression__BehaviorDescriptor = new VariableExpression__BehaviorDescriptor();
+  private final BHDescriptor myTupleExpression__BehaviorDescriptor = new TupleExpression__BehaviorDescriptor();
+  private final BHDescriptor myTelescopeArgument__BehaviorDescriptor = new TelescopeArgument__BehaviorDescriptor();
+  private final BHDescriptor myVariable__BehaviorDescriptor = new Variable__BehaviorDescriptor();
+  private final BHDescriptor myAbstractArgument__BehaviorDescriptor = new AbstractArgument__BehaviorDescriptor();
+  private final BHDescriptor myITypedArgument__BehaviorDescriptor = new ITypedArgument__BehaviorDescriptor();
+  private final BHDescriptor myAbstractClause__BehaviorDescriptor = new AbstractClause__BehaviorDescriptor();
+  private final BHDescriptor myClause__BehaviorDescriptor = new Clause__BehaviorDescriptor();
+  private final BHDescriptor myArrowExpression__BehaviorDescriptor = new ArrowExpression__BehaviorDescriptor();
+  private final BHDescriptor myLeveledUniverse__BehaviorDescriptor = new LeveledUniverse__BehaviorDescriptor();
+  private final BHDescriptor myTypeUniverse__BehaviorDescriptor = new TypeUniverse__BehaviorDescriptor();
+  private final BHDescriptor myTruncatedTypeUniverse__BehaviorDescriptor = new TruncatedTypeUniverse__BehaviorDescriptor();
+  private final BHDescriptor myPropUniverse__BehaviorDescriptor = new PropUniverse__BehaviorDescriptor();
+  private final BHDescriptor mySetUniverse__BehaviorDescriptor = new SetUniverse__BehaviorDescriptor();
+  private final BHDescriptor myDefFunction__BehaviorDescriptor = new DefFunction__BehaviorDescriptor();
+  private final BHDescriptor myPrecedence__BehaviorDescriptor = new Precedence__BehaviorDescriptor();
+  private final BHDescriptor myDefType__BehaviorDescriptor = new DefType__BehaviorDescriptor();
+  private final BHDescriptor myAbstractConstructor__BehaviorDescriptor = new AbstractConstructor__BehaviorDescriptor();
+  private final BHDescriptor myConstructor__BehaviorDescriptor = new Constructor__BehaviorDescriptor();
+  private final BHDescriptor myBinOpExpression__BehaviorDescriptor = new BinOpExpression__BehaviorDescriptor();
+  private final BHDescriptor myNumeral___BehaviorDescriptor = new Numeral___BehaviorDescriptor();
+  private final BHDescriptor myBracketExpression__BehaviorDescriptor = new BracketExpression__BehaviorDescriptor();
+  private final BHDescriptor myStaticModifier__BehaviorDescriptor = new StaticModifier__BehaviorDescriptor();
 
   private final long[] myConceptBehaviorIds;
 
@@ -147,121 +147,121 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     int behaviorIndex = Arrays.binarySearch(myConceptBehaviorIds, conceptId.getIdValue());
     switch (behaviorIndex) {
       case 0:
-        return myHasArguments_BehaviorDescriptor;
+        return myHasArguments__BehaviorDescriptor;
       case 1:
-        return myExpression_BehaviorDescriptor;
+        return myExpression__BehaviorDescriptor;
       case 2:
-        return myIValidIdentifier_BehaviorDescriptor;
+        return myIValidIdentifier__BehaviorDescriptor;
       case 3:
-        return myIValidFunctionalSymbol_BehaviorDescriptor;
+        return myIValidFunctionalSymbol__BehaviorDescriptor;
       case 4:
-        return myClassDefinition_BehaviorDescriptor;
+        return myClassDefinition__BehaviorDescriptor;
       case 5:
-        return myDefinition_BehaviorDescriptor;
+        return myDefinition__BehaviorDescriptor;
       case 6:
-        return myConstructorWithPatterns_BehaviorDescriptor;
+        return myConstructorWithPatterns__BehaviorDescriptor;
       case 7:
-        return myNewExpression_BehaviorDescriptor;
+        return myNewExpression__BehaviorDescriptor;
       case 8:
-        return myPatternAny_BehaviorDescriptor;
+        return myPatternAny__BehaviorDescriptor;
       case 9:
-        return myPatternId_BehaviorDescriptor;
+        return myPatternId__BehaviorDescriptor;
       case 10:
-        return myPatternConstructor_BehaviorDescriptor;
+        return myPatternConstructor__BehaviorDescriptor;
       case 11:
-        return myAbstractPattern_BehaviorDescriptor;
+        return myAbstractPattern__BehaviorDescriptor;
       case 12:
-        return myBaseVcConcept_BehaviorDescriptor;
+        return myBaseVcConcept__BehaviorDescriptor;
       case 13:
-        return myIVcConcept_BehaviorDescriptor;
+        return myIVcConcept__BehaviorDescriptor;
       case 14:
-        return myAbstractScopeCommand_BehaviorDescriptor;
+        return myAbstractScopeCommand__BehaviorDescriptor;
       case 15:
-        return myIClassMember_BehaviorDescriptor;
+        return myIClassMember__BehaviorDescriptor;
       case 16:
-        return myVcLangNamespace_BehaviorDescriptor;
+        return myVcLangNamespace__BehaviorDescriptor;
       case 17:
-        return myDefExpression_BehaviorDescriptor;
+        return myDefExpression__BehaviorDescriptor;
       case 18:
-        return myLetExpression_BehaviorDescriptor;
+        return myLetExpression__BehaviorDescriptor;
       case 19:
-        return myLetClause_BehaviorDescriptor;
+        return myLetClause__BehaviorDescriptor;
       case 20:
-        return myOverrideModifier_BehaviorDescriptor;
+        return myOverrideModifier__BehaviorDescriptor;
       case 21:
-        return myRefExpression_BehaviorDescriptor;
+        return myRefExpression__BehaviorDescriptor;
       case 22:
-        return myTypedArgument_BehaviorDescriptor;
+        return myTypedArgument__BehaviorDescriptor;
       case 23:
-        return myDotExpression_BehaviorDescriptor;
+        return myDotExpression__BehaviorDescriptor;
       case 24:
-        return myAbstractDotOperation_BehaviorDescriptor;
+        return myAbstractDotOperation__BehaviorDescriptor;
       case 25:
-        return myStaticFieldAccessOperation_BehaviorDescriptor;
+        return myStaticFieldAccessOperation__BehaviorDescriptor;
       case 26:
-        return myPatternParenthesis_BehaviorDescriptor;
+        return myPatternParenthesis__BehaviorDescriptor;
       case 27:
-        return myParenthesizedExpression_BehaviorDescriptor;
+        return myParenthesizedExpression__BehaviorDescriptor;
       case 28:
-        return myElimExpression_BehaviorDescriptor;
+        return myElimExpression__BehaviorDescriptor;
       case 29:
-        return myAbstractExpression_BehaviorDescriptor;
+        return myAbstractExpression__BehaviorDescriptor;
       case 30:
-        return myAbstractBinOpExpression_BehaviorDescriptor;
+        return myAbstractBinOpExpression__BehaviorDescriptor;
       case 31:
-        return myPiExpression_BehaviorDescriptor;
+        return myPiExpression__BehaviorDescriptor;
       case 32:
-        return mySigmaExpression_BehaviorDescriptor;
+        return mySigmaExpression__BehaviorDescriptor;
       case 33:
-        return myLambdaExpression_BehaviorDescriptor;
+        return myLambdaExpression__BehaviorDescriptor;
       case 34:
-        return myApplicationExpression_BehaviorDescriptor;
+        return myApplicationExpression__BehaviorDescriptor;
       case 35:
-        return myVariableExpression_BehaviorDescriptor;
+        return myVariableExpression__BehaviorDescriptor;
       case 36:
-        return myTupleExpression_BehaviorDescriptor;
+        return myTupleExpression__BehaviorDescriptor;
       case 37:
-        return myTelescopeArgument_BehaviorDescriptor;
+        return myTelescopeArgument__BehaviorDescriptor;
       case 38:
-        return myVariable_BehaviorDescriptor;
+        return myVariable__BehaviorDescriptor;
       case 39:
-        return myAbstractArgument_BehaviorDescriptor;
+        return myAbstractArgument__BehaviorDescriptor;
       case 40:
-        return myITypedArgument_BehaviorDescriptor;
+        return myITypedArgument__BehaviorDescriptor;
       case 41:
-        return myAbstractClause_BehaviorDescriptor;
+        return myAbstractClause__BehaviorDescriptor;
       case 42:
-        return myClause_BehaviorDescriptor;
+        return myClause__BehaviorDescriptor;
       case 43:
-        return myArrowExpression_BehaviorDescriptor;
+        return myArrowExpression__BehaviorDescriptor;
       case 44:
-        return myLeveledUniverse_BehaviorDescriptor;
+        return myLeveledUniverse__BehaviorDescriptor;
       case 45:
-        return myTypeUniverse_BehaviorDescriptor;
+        return myTypeUniverse__BehaviorDescriptor;
       case 46:
-        return myTruncatedTypeUniverse_BehaviorDescriptor;
+        return myTruncatedTypeUniverse__BehaviorDescriptor;
       case 47:
-        return myPropUniverse_BehaviorDescriptor;
+        return myPropUniverse__BehaviorDescriptor;
       case 48:
-        return mySetUniverse_BehaviorDescriptor;
+        return mySetUniverse__BehaviorDescriptor;
       case 49:
-        return myDefFunction_BehaviorDescriptor;
+        return myDefFunction__BehaviorDescriptor;
       case 50:
-        return myPrecedence_BehaviorDescriptor;
+        return myPrecedence__BehaviorDescriptor;
       case 51:
-        return myDefType_BehaviorDescriptor;
+        return myDefType__BehaviorDescriptor;
       case 52:
-        return myAbstractConstructor_BehaviorDescriptor;
+        return myAbstractConstructor__BehaviorDescriptor;
       case 53:
-        return myConstructor_BehaviorDescriptor;
+        return myConstructor__BehaviorDescriptor;
       case 54:
-        return myBinOpExpression_BehaviorDescriptor;
+        return myBinOpExpression__BehaviorDescriptor;
       case 55:
-        return myNumeral__BehaviorDescriptor;
+        return myNumeral___BehaviorDescriptor;
       case 56:
-        return myBracketExpression_BehaviorDescriptor;
+        return myBracketExpression__BehaviorDescriptor;
       case 57:
-        return myStaticModifier_BehaviorDescriptor;
+        return myStaticModifier__BehaviorDescriptor;
       default:
         return null;
     }

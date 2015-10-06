@@ -11,12 +11,20 @@ public enum ArrowSwitch {
   _1("\u21d2", 1),
   _2("<abstract>", 2);
 
-  private String myName;
+  private final String myName;
   public String getName() {
-    return this.myName;
+    return myName;
+  }
+  private final int myValue;
+  ArrowSwitch(String name, int value) {
+    myName = name;
+    myValue = value;
+  }
+  public int getValue() {
+    return myValue;
   }
   public String getValueAsString() {
-    return "" + this.myValue;
+    return Integer.toString(myValue);
   }
   public static List<ArrowSwitch> getConstants() {
     List<ArrowSwitch> list = ListSequence.fromList(new LinkedList<ArrowSwitch>());
@@ -42,13 +50,5 @@ public enum ArrowSwitch {
       return ArrowSwitch._2;
     }
     return ArrowSwitch.getDefault();
-  }
-  private int myValue;
-  ArrowSwitch(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
-  public int getValue() {
-    return this.myValue;
   }
 }

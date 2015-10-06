@@ -33,16 +33,16 @@ public class DefFunctionAdapter extends DefinitionAdapter implements Abstract.Fu
     return false;
   }
   public Abstract.Expression getTerm() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, 0x634b3353f5b046dfL, "expression")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, 0x634b3353f5b046dfL, "expression")));
   }
   public List<? extends Abstract.Argument> getArguments() {
-    return HasArguments_BehaviorDescriptor.getSourceArguments_id5NQyKEZFwKp.invoke(thisNode);
+    return (List<Abstract.Argument>) HasArguments__BehaviorDescriptor.getSourceArguments_id5NQyKEZFwKp.invoke(thisNode);
   }
   public Utils.Name getOriginalName() {
     return AdapterUtils.getName(getThisNode());
   }
   public Abstract.Expression getResultType() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x52895c158533aed8L, 0x52895c158533aeddL, "type")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x52895c158533aed8L, 0x52895c158533aeddL, "type")));
   }
   public <P, R> R accept(AbstractDefinitionVisitor<? super P, ? extends R> visitor, P params) {
     return visitor.visitFunction(this, params);
@@ -50,7 +50,7 @@ public class DefFunctionAdapter extends DefinitionAdapter implements Abstract.Fu
   public Collection<? extends Abstract.Statement> getStatements() {
     return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, 0x5b62464c9337f2d6L, "whereDefinitions"))).select(new ISelector<SNode, Abstract.Statement>() {
       public Abstract.Statement select(SNode it) {
-        return IClassMember_BehaviorDescriptor.toSourceStatement_id3wdrnIK4lOW.invoke(it);
+        return (Abstract.Statement) IClassMember__BehaviorDescriptor.toSourceStatement_id3wdrnIK4lOW.invoke(it);
       }
     }).toListSequence();
   }

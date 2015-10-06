@@ -20,7 +20,7 @@ public class SigmaExpressionAdapter extends ExpressionAdapter implements Abstrac
   public List<? extends Abstract.TypeArgument> getArguments() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a26dL, "jetbrains.mps.vclang.structure.SigmaExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"))).select(new ISelector<SNode, Abstract.TypeArgument>() {
       public Abstract.TypeArgument select(SNode it) {
-        return ITypedArgument_BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
+        return (Abstract.TypeArgument) ITypedArgument__BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
       }
     }).toListSequence();
   }

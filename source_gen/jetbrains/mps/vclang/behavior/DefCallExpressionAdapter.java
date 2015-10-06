@@ -46,7 +46,7 @@ public class DefCallExpressionAdapter extends ExpressionAdapter implements Abstr
     return null;
   }
   public Utils.Name getName() {
-    return RefExpression_BehaviorDescriptor.getInternalName_id5LKdqecnLnC.invoke(SNodeOperations.cast(thisNode, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, "jetbrains.mps.vclang.structure.RefExpression")));
+    return RefExpression__BehaviorDescriptor.getInternalName_id5LKdqecnLnC.invoke(SNodeOperations.cast(thisNode, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x5c7035a38c5ef32eL, "jetbrains.mps.vclang.structure.RefExpression")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

@@ -8,14 +8,14 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.vclang.behavior.AbstractExpression_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.AbstractExpression__BehaviorDescriptor;
 import java.util.LinkedList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Deque;
 import jetbrains.mps.internal.collections.runtime.DequeSequence;
-import jetbrains.mps.vclang.behavior.AbstractBinOpExpression_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.AbstractBinOpExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
+import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 
 public class SideTransformContext {
   private SNode dummy = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eef7L, "jetbrains.mps.vclang.structure.AbstractExpression")));
@@ -96,7 +96,7 @@ public class SideTransformContext {
 
   private static SNode findTransformRoot(SNode expr) {
     boolean flag = true;
-    while ((!(AbstractExpression_BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(expr)) || flag) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"))) {
+    while ((!((boolean) AbstractExpression__BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(expr)) || flag) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"))) {
       expr = SNodeOperations.cast(SNodeOperations.getParent(expr), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"));
       flag = false;
     }
@@ -105,7 +105,7 @@ public class SideTransformContext {
 
   private static List<SideTransformContext.AbstractAtom> linearize(SNode root, boolean isRoot) {
     if (SNodeOperations.isInstanceOf(root, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression"))) {
-      boolean braces = AbstractExpression_BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(root);
+      boolean braces = (boolean) AbstractExpression__BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(root);
       if (!(braces) || isRoot) {
         List<SideTransformContext.AbstractAtom> result = ListSequence.fromList(new LinkedList<SideTransformContext.AbstractAtom>());
         ListSequence.fromList(result).addSequence(ListSequence.fromList(linearize(SLinkOperations.getTarget(SNodeOperations.cast(root, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, "jetbrains.mps.vclang.structure.AbstractBinOpExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")), false)));
@@ -130,9 +130,9 @@ public class SideTransformContext {
           if (DequeSequence.fromDequeNew(operationStack).isNotEmpty()) {
             peek = DequeSequence.fromDequeNew(operationStack).peekElement().op;
           }
-          int peekPriority = AbstractBinOpExpression_BehaviorDescriptor.getPriority_id6FOQVYN5Gn2.invoke(peek);
-          int currentPriority = AbstractBinOpExpression_BehaviorDescriptor.getPriority_id6FOQVYN5Gn2.invoke(currentOp);
-          int peekAssociativity = AbstractBinOpExpression_BehaviorDescriptor.getAssociativity_id6FOQVYN5Kbs.invoke(peek);
+          int peekPriority = (int) AbstractBinOpExpression__BehaviorDescriptor.getPriority_id6FOQVYN5Gn2.invoke(peek);
+          int currentPriority = (int) AbstractBinOpExpression__BehaviorDescriptor.getPriority_id6FOQVYN5Gn2.invoke(currentOp);
+          int peekAssociativity = (int) AbstractBinOpExpression__BehaviorDescriptor.getAssociativity_id6FOQVYN5Kbs.invoke(peek);
           if ((peek != null) && (peekPriority > currentPriority || (currentPriority == peekPriority && peekAssociativity == Integer.parseInt(SEnumOperations.getEnumMemberValue(SEnumOperations.getEnumMember(SEnumOperations.getEnum("r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)", "AssociativitySwitch"), "1")))))) {
             smallStep(operationStack, valueStack);
           } else {
@@ -173,7 +173,7 @@ public class SideTransformContext {
     }
     @Override
     public String toString() {
-      return BaseConcept_BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(expr);
+      return (String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(expr);
     }
   }
   private static class Operation extends SideTransformContext.AbstractAtom {
@@ -186,7 +186,7 @@ public class SideTransformContext {
     }
     @Override
     public String toString() {
-      return "(" + BaseConcept_BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(op) + ")";
+      return "(" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(op) + ")";
     }
   }
 }

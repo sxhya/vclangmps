@@ -19,7 +19,7 @@ import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.DefaultSimpleSubstituteAction;
-import jetbrains.mps.vclang.behavior.PatternId_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.PatternId__BehaviorDescriptor;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import org.jetbrains.annotations.Nullable;
@@ -30,7 +30,7 @@ import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.scope.FilteringScope;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import jetbrains.mps.smodel.action.ModelActions;
 import jetbrains.mps.smodel.action.AbstractChildNodeSetter;
 import jetbrains.mps.smodel.action.NodeSubstituteActionWrapper;
@@ -116,7 +116,7 @@ public class QueriesGenerated {
             return true;
           }
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
-            return PatternId_BehaviorDescriptor.isValidPatternName_id4xhUX3tyjtK.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId")), _context.getParentNode(), pattern);
+            return (boolean) PatternId__BehaviorDescriptor.isValidPatternName_id4xhUX3tyjtK.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId")), _context.getParentNode(), pattern);
           }
           public String getDescriptionText(String pattern) {
             return "Create pattern variable";
@@ -207,7 +207,7 @@ public class QueriesGenerated {
               return ctx.doSideTransform(b);
             }
             public String getMatchingText(String pattern) {
-              return Definition_BehaviorDescriptor.getInfixName_id6FOQVYN1P9H.invoke((item));
+              return Definition__BehaviorDescriptor.getInfixName_id6FOQVYN1P9H.invoke((item));
             }
             public String getVisibleMatchingText(String pattern) {
               return getMatchingText(pattern);
@@ -322,7 +322,7 @@ public class QueriesGenerated {
               return ctx.doSideTransform(b);
             }
             public String getMatchingText(String pattern) {
-              return Definition_BehaviorDescriptor.getInfixName_id6FOQVYN1P9H.invoke((item));
+              return Definition__BehaviorDescriptor.getInfixName_id6FOQVYN1P9H.invoke((item));
             }
             public String getVisibleMatchingText(String pattern) {
               return getMatchingText(pattern);
@@ -718,7 +718,7 @@ public class QueriesGenerated {
               return result;
             }
             public String getMatchingText(String pattern) {
-              return Definition_BehaviorDescriptor.getPrefixName_id6FOQVYN1P9T.invoke((item));
+              return (String) Definition__BehaviorDescriptor.getPrefixName_id6FOQVYN1P9T.invoke((item));
             }
             public String getVisibleMatchingText(String pattern) {
               return getMatchingText(pattern);

@@ -21,7 +21,7 @@ public class ArrowExpressionAdapter extends ExpressionAdapter implements Abstrac
   public List<? extends Abstract.TypeArgument> getArguments() {
     Abstract.TypeArgument arg = new Abstract.TypeArgument() {
       public Abstract.Expression getType() {
-        return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0f5fL, "jetbrains.mps.vclang.structure.ArrowExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")));
+        return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0f5fL, "jetbrains.mps.vclang.structure.ArrowExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg")));
       }
       public void prettyPrint(StringBuilder builder, List<String> list, byte b) {
         Utils.prettyPrintArgument(this, builder, list, b, 0);
@@ -34,7 +34,7 @@ public class ArrowExpressionAdapter extends ExpressionAdapter implements Abstrac
   }
 
   public Abstract.Expression getCodomain() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0f5fL, "jetbrains.mps.vclang.structure.ArrowExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b6aL, "rightArg")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0f5fL, "jetbrains.mps.vclang.structure.ArrowExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b6aL, "rightArg")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

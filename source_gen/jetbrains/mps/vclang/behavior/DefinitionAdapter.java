@@ -14,7 +14,7 @@ public abstract class DefinitionAdapter implements Abstract.Definition {
     return null;
   }
   public Abstract.Definition.Precedence getPrecedence() {
-    return ((SLinkOperations.getTarget(getThisNode(), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009be72aL, 0xc23f55100992d5bL, "precedence")) == null) ? DEFAULT_PRECEDENCE : Precedence_BehaviorDescriptor.toSourcePrecedence_id5NQyKEZHnxj.invoke(SLinkOperations.getTarget(getThisNode(), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009be72aL, 0xc23f55100992d5bL, "precedence"))));
+    return ((SLinkOperations.getTarget(getThisNode(), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009be72aL, 0xc23f55100992d5bL, "precedence")) == null) ? DEFAULT_PRECEDENCE : Precedence__BehaviorDescriptor.toSourcePrecedence_id5NQyKEZHnxj.invoke(SLinkOperations.getTarget(getThisNode(), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009be72aL, 0xc23f55100992d5bL, "precedence"))));
   }
   public Utils.Name getName() {
     return AdapterUtils.getName(getThisNode());

@@ -26,14 +26,14 @@ public class DefTypeAdapter extends DefinitionAdapter implements Abstract.DataDe
   public List<? extends Abstract.TypeArgument> getParameters() {
     return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"))).select(new ISelector<SNode, Abstract.TypeArgument>() {
       public Abstract.TypeArgument select(SNode it) {
-        return ITypedArgument_BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
+        return (Abstract.TypeArgument) ITypedArgument__BehaviorDescriptor.toSourceTypedArgument_id5NQyKEZFFKM.invoke(it);
       }
     }).toListSequence();
   }
   public List<? extends Abstract.Constructor> getConstructors() {
     return ListSequence.fromList(SNodeOperations.getNodeDescendants(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2ee29aL, "jetbrains.mps.vclang.structure.Constructor"), false, new SAbstractConcept[]{})).select(new ISelector<SNode, Abstract.Constructor>() {
       public Abstract.Constructor select(SNode it) {
-        return AbstractConstructor_BehaviorDescriptor.toSourceConstructor_id5NQyKEZH5E7.invoke(it);
+        return (Abstract.Constructor) AbstractConstructor__BehaviorDescriptor.toSourceConstructor_id5NQyKEZH5E7.invoke(it);
       }
     }).toListSequence();
   }

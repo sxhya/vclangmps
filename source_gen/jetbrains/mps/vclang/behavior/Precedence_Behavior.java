@@ -4,16 +4,14 @@ package jetbrains.mps.vclang.behavior;
 
 import com.jetbrains.jetpad.vclang.term.Abstract;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /**
- * will be removed after 3.3
- * need to support the legacy static direct method calls
+ * Will be removed after 3.3
+ * Need to support the legacy static direct method calls
  */
 @Deprecated
 public class Precedence_Behavior {
   public static Abstract.Definition.Precedence call_toSourcePrecedence_6698694374042466387(SNode __thisNode__) {
-    return new Abstract.Definition.Precedence(AdapterUtils.convertAssoc(SPropertyOperations.getInteger_def(__thisNode__, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af14cfL, 0x634b3353f5af151dL, "associativity"), "0")), (byte) SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af14cfL, 0x634b3353f5af151fL, "precedence")));
+    return Precedence__BehaviorDescriptor.toSourcePrecedence_id5NQyKEZHnxj(__thisNode__);
   }
 }

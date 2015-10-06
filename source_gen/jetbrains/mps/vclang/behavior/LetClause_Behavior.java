@@ -6,12 +6,12 @@ import com.jetbrains.jetpad.vclang.term.Abstract;
 import org.jetbrains.mps.openapi.model.SNode;
 
 /**
- * will be removed after 3.3
- * need to support the legacy static direct method calls
+ * Will be removed after 3.3
+ * Need to support the legacy static direct method calls
  */
 @Deprecated
 public class LetClause_Behavior {
   public static Abstract.LetClause call_toSourceClause_5664655691718524651(SNode __thisNode__) {
-    return new LetClauseAdapter(__thisNode__);
+    return LetClause__BehaviorDescriptor.toSourceClause_id4UsT_r7LJVF(__thisNode__);
   }
 }

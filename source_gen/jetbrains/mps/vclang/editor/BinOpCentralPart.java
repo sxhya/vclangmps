@@ -17,7 +17,7 @@ import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -55,7 +55,7 @@ public class BinOpCentralPart implements ConceptEditorComponent {
   }
   private static boolean renderingCondition_dnrae8_a0a(SNode node, EditorContext editorContext) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))) {
-      return !(Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))));
+      return !((boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))));
     }
     return true;
   }
@@ -119,7 +119,7 @@ public class BinOpCentralPart implements ConceptEditorComponent {
   }
   private static boolean renderingCondition_dnrae8_a2a(SNode node, EditorContext editorContext) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))) {
-      return !(Definition_BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))));
+      return !((boolean) Definition__BehaviorDescriptor.isInfix_id6oOmj_oc_dk.invoke(SNodeOperations.cast(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e316d2cL, 0x75cfba109e316d2dL, "function")), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af13eaL, "jetbrains.mps.vclang.structure.DefFunction"))));
     }
     return true;
   }

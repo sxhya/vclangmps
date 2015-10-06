@@ -11,7 +11,7 @@ import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.vclang.behavior.ClassDefinition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.ClassDefinition__BehaviorDescriptor;
 import java.util.List;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -21,7 +21,7 @@ import com.jetbrains.jetpad.vclang.module.Namespace;
 import com.jetbrains.jetpad.vclang.term.definition.visitor.DefinitionResolveNameVisitor;
 import com.jetbrains.jetpad.vclang.typechecking.nameresolver.DummyNameResolver;
 import com.jetbrains.jetpad.vclang.term.definition.visitor.DefinitionCheckTypeVisitor;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import com.jetbrains.jetpad.vclang.term.definition.Definition;
 import com.jetbrains.jetpad.vclang.typechecking.error.GeneralError;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
@@ -44,7 +44,7 @@ public class TypeCheckUtils {
     do {
       oldRoots = SetSequence.fromSet(rootsToTypeCheck).count();
       for (SNode rootToCheck : SetSequence.fromSet(rootsToTypeCheck)) {
-        SetSequence.fromSet(rootsToTypeCheck).addSequence(ListSequence.fromList(ClassDefinition_BehaviorDescriptor.getDependencies_id5LKdqeczslD.invoke(rootToCheck)));
+        SetSequence.fromSet(rootsToTypeCheck).addSequence(ListSequence.fromList(ClassDefinition__BehaviorDescriptor.getDependencies_id5LKdqeczslD.invoke(rootToCheck)));
       }
     } while (SetSequence.fromSet(rootsToTypeCheck).count() > oldRoots);
 
@@ -52,7 +52,7 @@ public class TypeCheckUtils {
       oldRoots = SetSequence.fromSet(rootsToTypeCheck).count();
       List<SNode> typeChecked = new ArrayList<SNode>();
       for (SNode rootToCheck : SetSequence.fromSet(rootsToTypeCheck)) {
-        if (SetSequence.fromSet(typeCheckedRoots).containsSequence(ListSequence.fromList(ClassDefinition_BehaviorDescriptor.getDependencies_id5LKdqeczslD.invoke(rootToCheck)))) {
+        if (SetSequence.fromSet(typeCheckedRoots).containsSequence(ListSequence.fromList(ClassDefinition__BehaviorDescriptor.getDependencies_id5LKdqeczslD.invoke(rootToCheck)))) {
           System.out.println("Typechecking " + SPropertyOperations.getString(rootToCheck, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           typeCheckClass(rootToCheck);
           ListSequence.fromList(typeChecked).addElement(rootToCheck);
@@ -74,8 +74,8 @@ public class TypeCheckUtils {
       Namespace classStaticNamespace = RootModule.ROOT;
       DefinitionResolveNameVisitor resolveNameVisitor = new DefinitionResolveNameVisitor(reporter, classStaticNamespace, DummyNameResolver.getInstance());
       DefinitionCheckTypeVisitor definitionVisitor = new DefinitionCheckTypeVisitor(classStaticNamespace, reporter);
-      Namespace classNonStaticNamespace = Definition_BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(node).accept(resolveNameVisitor, null);
-      Definition wellTypedDefinition = Definition_BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(node).accept(definitionVisitor, classNonStaticNamespace);
+      Namespace classNonStaticNamespace = Definition__BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(node).accept(resolveNameVisitor, null);
+      Definition wellTypedDefinition = Definition__BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(node).accept(definitionVisitor, classNonStaticNamespace);
       int eC = reporter.getErrorList().size();
       tcLog.info((eC == 0 ? "There were no typechecking errors." : ((eC == 1 ? "There was 1 typechecking error." + "" : "There were " + eC + " typechecking errors."))));
       for (GeneralError ge : CollectionSequence.fromCollection(reporter.getErrorList())) {

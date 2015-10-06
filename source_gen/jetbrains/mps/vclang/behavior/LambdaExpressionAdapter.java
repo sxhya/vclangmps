@@ -20,13 +20,13 @@ public class LambdaExpressionAdapter extends ExpressionAdapter implements Abstra
   public List<? extends Abstract.Argument> getArguments() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a284L, "jetbrains.mps.vclang.structure.LambdaExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, 0xc23f5510097501cL, "args"))).select(new ISelector<SNode, Abstract.Argument>() {
       public Abstract.Argument select(SNode it) {
-        return AbstractArgument_BehaviorDescriptor.toSourceArgument_id6mU6lSbLceY.invoke(it);
+        return (Abstract.Argument) AbstractArgument__BehaviorDescriptor.toSourceArgument_id6mU6lSbLceY.invoke(it);
       }
     }).toListSequence();
   }
 
   public Abstract.Expression getBody() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a284L, "jetbrains.mps.vclang.structure.LambdaExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a284L, 0x634b3353f5ace157L, "body")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a284L, "jetbrains.mps.vclang.structure.LambdaExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a284L, 0x634b3353f5ace157L, "body")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

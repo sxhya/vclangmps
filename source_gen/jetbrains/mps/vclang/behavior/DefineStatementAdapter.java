@@ -20,7 +20,7 @@ public class DefineStatementAdapter implements Abstract.DefineStatement {
   }
 
   public Abstract.Definition getDefinition() {
-    return Definition_BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(thisNode);
+    return (Abstract.Definition) Definition__BehaviorDescriptor.toSourceDefinition_id5NQyKEZGoPp.invoke(thisNode);
   }
 
   public <P, R> R accept(AbstractStatementVisitor<? super P, ? extends R> visitor, P p) {

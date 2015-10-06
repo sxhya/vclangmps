@@ -13,7 +13,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
-import jetbrains.mps.vclang.behavior.AbstractExpression_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.AbstractExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -49,7 +49,7 @@ public class AbstractBinOpExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_eq8jr_a0a(SNode node, EditorContext editorContext) {
-    return AbstractExpression_BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(node);
+    return (boolean) AbstractExpression__BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(node);
   }
   private EditorCell createRefNode_eq8jr_b0(EditorContext editorContext, SNode node) {
     SingleRoleCellProvider provider = new AbstractBinOpExpression_Editor.leftArgSingleRoleHandler_eq8jr_b0(node, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a261L, 0x75cfba109e316b68L, "leftArg"), editorContext);
@@ -135,6 +135,6 @@ public class AbstractBinOpExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_eq8jr_a4a(SNode node, EditorContext editorContext) {
-    return AbstractExpression_BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(node);
+    return (boolean) AbstractExpression__BehaviorDescriptor.isSurroundedWithBraces_id2nfHNdzS$N4.invoke(node);
   }
 }

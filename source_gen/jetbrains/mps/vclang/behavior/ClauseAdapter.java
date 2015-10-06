@@ -25,7 +25,7 @@ public class ClauseAdapter implements Abstract.Clause {
     return AdapterUtils.convertArrow(SPropertyOperations.getInteger_def(thisNode, MetaAdapterFactory.getProperty(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0b0aL, "arrow"), "0"));
   }
   public Abstract.Expression getExpression() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0b47L, "clauseExpression")));
+    return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x634b3353f5af0b47L, "clauseExpression")));
   }
   public void replacePatternWithConstructor(int i) {
     // TODO: Do nothing 
@@ -33,14 +33,14 @@ public class ClauseAdapter implements Abstract.Clause {
   public List<? extends Abstract.Pattern> getPatterns() {
     return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0aceL, 0x5dac490c31280286L, "patterns"))).select(new ISelector<SNode, Abstract.Pattern>() {
       public Abstract.Pattern select(SNode it) {
-        return AbstractPattern_BehaviorDescriptor.toSourcePattern_id1dats513mDi.invoke(it);
+        return (Abstract.Pattern) AbstractPattern__BehaviorDescriptor.toSourcePattern_id1dats513mDi.invoke(it);
       }
     }).toListSequence();
   }
   public void prettyPrint(StringBuilder builder, List<String> names, byte prec) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eec3L, "jetbrains.mps.vclang.structure.ElimExpression"))) {
       SNode elim = SNodeOperations.cast(SNodeOperations.getParent(thisNode), MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940366eec3L, "jetbrains.mps.vclang.structure.ElimExpression"));
-      Utils.prettyPrintClause((Abstract.ElimExpression) AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(elim), this, builder, names, 0);
+      Utils.prettyPrintClause((Abstract.ElimExpression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(elim), this, builder, names, 0);
     }
   }
 

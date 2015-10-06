@@ -10,7 +10,7 @@ import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
 import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.vclang.behavior.PatternId_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.PatternId__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -30,7 +30,7 @@ public class PatternId_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
-        return PatternId_BehaviorDescriptor.isValidPatternName_id4xhUX3tyjtK.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId")), node, (SPropertyOperations.getString(propertyValue)));
+        return (boolean) PatternId__BehaviorDescriptor.isValidPatternName_id4xhUX3tyjtK.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c1410d5ad1L, "jetbrains.mps.vclang.structure.PatternId")), node, (SPropertyOperations.getString(propertyValue)));
       }
     });
     return properties;

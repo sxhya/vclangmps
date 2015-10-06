@@ -10,12 +10,20 @@ public enum ImplicitExplicitSwitch {
   false_fd78xi_a("(", false),
   true_fd78xi_b("{", true);
 
-  private String myName;
+  private final String myName;
   public String getName() {
-    return this.myName;
+    return myName;
+  }
+  private final boolean myValue;
+  ImplicitExplicitSwitch(String name, boolean value) {
+    myName = name;
+    myValue = value;
+  }
+  public boolean getValue() {
+    return myValue;
   }
   public String getValueAsString() {
-    return "" + this.myValue;
+    return Boolean.toString(myValue);
   }
   public static List<ImplicitExplicitSwitch> getConstants() {
     List<ImplicitExplicitSwitch> list = ListSequence.fromList(new LinkedList<ImplicitExplicitSwitch>());
@@ -37,13 +45,5 @@ public enum ImplicitExplicitSwitch {
       return ImplicitExplicitSwitch.true_fd78xi_b;
     }
     return ImplicitExplicitSwitch.getDefault();
-  }
-  private boolean myValue;
-  ImplicitExplicitSwitch(String name, boolean value) {
-    this.myName = name;
-    this.myValue = value;
-  }
-  public boolean getValue() {
-    return this.myValue;
   }
 }

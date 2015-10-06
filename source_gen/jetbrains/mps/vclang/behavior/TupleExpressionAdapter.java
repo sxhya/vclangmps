@@ -20,7 +20,7 @@ public class TupleExpressionAdapter extends ExpressionAdapter implements Abstrac
   public List<? extends Abstract.Expression> getFields() {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a654L, "jetbrains.mps.vclang.structure.TupleExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x62a6e9940367a654L, 0x75cfba109e317433L, "fields"))).select(new ISelector<SNode, Abstract.Expression>() {
       public Abstract.Expression select(SNode it) {
-        return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(it);
+        return (Abstract.Expression) AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(it);
       }
     }).toListSequence();
   }

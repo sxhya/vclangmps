@@ -15,7 +15,7 @@ public class UniverseExpressionAdapter extends ExpressionAdapter implements Abst
   }
 
   public Universe getUniverse() {
-    return LeveledUniverse_BehaviorDescriptor.toSourceUniverse_id5NQyKEZGDBj.invoke(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0fa6L, "jetbrains.mps.vclang.structure.LeveledUniverse")));
+    return (Universe) LeveledUniverse__BehaviorDescriptor.toSourceUniverse_id5NQyKEZGDBj.invoke(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x634b3353f5af0fa6L, "jetbrains.mps.vclang.structure.LeveledUniverse")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

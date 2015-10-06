@@ -12,9 +12,9 @@ import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.vclang.behavior.IValidIdentifier_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.IValidIdentifier__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.vclang.behavior.IValidFunctionalSymbol_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.IValidFunctionalSymbol__BehaviorDescriptor;
 
 public class OverrideModifier_Constraints extends BaseConstraintsDescriptor {
   public OverrideModifier_Constraints() {
@@ -32,7 +32,7 @@ public class OverrideModifier_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "name";
         if (isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
-          return IValidIdentifier_BehaviorDescriptor.isCorrectVarName_id6oOmj_ocdin.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), (SPropertyOperations.getString(propertyValue))) || IValidFunctionalSymbol_BehaviorDescriptor.isCorrectFunctionalSymbol_id6oOmj_ocr1W.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1e0dL, "jetbrains.mps.vclang.structure.IValidFunctionalSymbol")), (SPropertyOperations.getString(propertyValue)));
+          return (boolean) IValidIdentifier__BehaviorDescriptor.isCorrectVarName_id6oOmj_ocdin.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), (SPropertyOperations.getString(propertyValue))) || (boolean) IValidFunctionalSymbol__BehaviorDescriptor.isCorrectFunctionalSymbol_id6oOmj_ocr1W.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1e0dL, "jetbrains.mps.vclang.structure.IValidFunctionalSymbol")), (SPropertyOperations.getString(propertyValue)));
         }
         return true;
       }

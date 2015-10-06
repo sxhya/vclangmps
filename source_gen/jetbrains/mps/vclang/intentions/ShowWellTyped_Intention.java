@@ -19,7 +19,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.vclang.behavior.HasArguments_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.HasArguments__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.jetbrains.jetpad.vclang.term.definition.Binding;
@@ -73,7 +73,7 @@ public final class ShowWellTyped_Intention extends IntentionDescriptorBase imple
         List<String> bindings = ListSequence.fromList(new ArrayList<String>());
         SNode n = SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, "jetbrains.mps.vclang.structure.HasArguments"), true, false);
         while (SNodeOperations.isInstanceOf(n, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, "jetbrains.mps.vclang.structure.HasArguments"))) {
-          ListSequence.fromList(bindings).addSequence(ListSequence.fromList(HasArguments_BehaviorDescriptor.getArguments_id1$0zzZHWG3G.invoke(SNodeOperations.cast(n, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, "jetbrains.mps.vclang.structure.HasArguments")), false)).reversedList().select(new ISelector<SNode, String>() {
+          ListSequence.fromList(bindings).addSequence(ListSequence.fromList(HasArguments__BehaviorDescriptor.getArguments_id1$0zzZHWG3G.invoke(SNodeOperations.cast(n, MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f5510097501bL, "jetbrains.mps.vclang.structure.HasArguments")), ((boolean) false))).reversedList().select(new ISelector<SNode, String>() {
             public String select(SNode it) {
               return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
             }

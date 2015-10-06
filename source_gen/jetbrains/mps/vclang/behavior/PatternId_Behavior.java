@@ -4,42 +4,14 @@ package jetbrains.mps.vclang.behavior;
 
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.scope.Scope;
-import java.util.Set;
-import jetbrains.mps.internal.collections.runtime.SetSequence;
-import java.util.HashSet;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 /**
- * will be removed after 3.3
- * need to support the legacy static direct method calls
+ * Will be removed after 3.3
+ * Need to support the legacy static direct method calls
  */
 @Deprecated
 public class PatternId_Behavior {
   public static boolean call_isValidPatternName_5211205526146856816(SAbstractConcept __thisConcept__, SNode refNode, String v) {
-    if (!(IValidIdentifier_BehaviorDescriptor.isCorrectVarName_id6oOmj_ocdin.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getInterfaceConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xc23f551009b1df8L, "jetbrains.mps.vclang.structure.IValidIdentifier")), v))) {
-      return false;
-    }
-    // It is not allowed to use id's for matching variables epinymous with constructor names 
-    Scope scope = Scope.getScope(SNodeOperations.getParent(refNode), refNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0xfc408c778ec7ec8L, "jetbrains.mps.vclang.structure.Definition").getDeclarationNode());
-    Set<String> forbiddenNames = SetSequence.fromSet(new HashSet<String>());
-    if (scope != null) {
-      SetSequence.fromSet(forbiddenNames).addSequence(Sequence.fromIterable(scope.getAvailableElements(null)).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2ee299L, "jetbrains.mps.vclang.structure.AbstractConstructor")) && ListSequence.fromList(HasArguments_BehaviorDescriptor.getArguments_id1$0zzZHWG3G.invoke(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2ee299L, "jetbrains.mps.vclang.structure.AbstractConstructor")), true)).isEmpty();
-        }
-      }).select(new ISelector<SNode, String>() {
-        public String select(SNode it) {
-          return SPropertyOperations.getString(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x75cfba109e2ee299L, "jetbrains.mps.vclang.structure.AbstractConstructor")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-        }
-      }));
-    }
-    return !(SetSequence.fromSet(forbiddenNames).contains(v));
+    return PatternId__BehaviorDescriptor.isValidPatternName_id4xhUX3tyjtK(__thisConcept__, refNode, v);
   }
 }

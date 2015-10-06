@@ -15,7 +15,7 @@ public class NewExpressionAdapter extends ExpressionAdapter implements Abstract.
   }
 
   public Abstract.Expression getExpression() {
-    return AbstractExpression_BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c14102d4e1L, "jetbrains.mps.vclang.structure.NewExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c14102d4e1L, 0x134a75c14107d357L, "expr")));
+    return AbstractExpression__BehaviorDescriptor.toSourceExpression_id6mU6lSbK89M.invoke(SLinkOperations.getTarget(SNodeOperations.cast(thisNode, MetaAdapterFactory.getConcept(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c14102d4e1L, "jetbrains.mps.vclang.structure.NewExpression")), MetaAdapterFactory.getContainmentLink(0x2db233bb72db49c3L, 0xadc47ae97f87f8dcL, 0x134a75c14102d4e1L, 0x134a75c14107d357L, "expr")));
   }
 
   public <P, R> R accept(AbstractExpressionVisitor<? super P, ? extends R> visitor, P params) {

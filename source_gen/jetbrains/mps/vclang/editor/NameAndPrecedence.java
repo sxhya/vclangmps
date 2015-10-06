@@ -18,7 +18,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
-import jetbrains.mps.vclang.behavior.Definition_BehaviorDescriptor;
+import jetbrains.mps.vclang.behavior.Definition__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -112,7 +112,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a1a0(SNode node, EditorContext editorContext) {
-    return Definition_BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
+    return (boolean) Definition__BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
   }
   private EditorCell createProperty_xlrcx7_c0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
@@ -140,7 +140,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a3a0(SNode node, EditorContext editorContext) {
-    return Definition_BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
+    return (boolean) Definition__BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
   }
   private EditorCell createCollection_xlrcx7_a0_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
@@ -164,7 +164,7 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a0a0(SNode node, EditorContext editorContext) {
-    return Definition_BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
+    return (boolean) Definition__BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
   }
   private EditorCell createProperty_xlrcx7_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
@@ -222,6 +222,6 @@ public class NameAndPrecedence implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_xlrcx7_a2a0(SNode node, EditorContext editorContext) {
-    return Definition_BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
+    return (boolean) Definition__BehaviorDescriptor.shouldBeSurroundedWithBraces_id2wthDpjMEul.invoke(node);
   }
 }

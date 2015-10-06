@@ -101,6 +101,11 @@
       <concept id="8489208403152956716" name="jetbrains.mps.vclang.structure.BinOpExpression" flags="ng" index="3FZHsW">
         <reference id="8489208403152956717" name="function" index="3FZHsX" />
       </concept>
+      <concept id="7019128712800016657" name="jetbrains.mps.vclang.structure.StaticFieldAccessOperation" flags="ng" index="1Qm6PL" />
+      <concept id="7019128712799984494" name="jetbrains.mps.vclang.structure.DotExpression" flags="ng" index="1QmeWe">
+        <child id="7019128712799984498" name="leftExpression" index="1QmeWi" />
+        <child id="7019128712799984500" name="rightExpression" index="1QmeWk" />
+      </concept>
       <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt">
         <child id="1136042658824486601" name="statements" index="1Ra7oe" />
       </concept>
@@ -768,6 +773,19 @@
           </node>
           <node concept="1xKkZ5" id="5LKdqeczhKq" role="3FZH5S">
             <ref role="3gbGqc" node="65CX60nakaG" resolve="x" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1$AkHm" id="1nojhXnkYPr" role="1Ra7oe">
+      <node concept="2mT22T" id="1nojhXnkYQo" role="1$AkHn">
+        <property role="TrG5h" value="g2" />
+        <node concept="1QmeWe" id="1nojhXnkYRf" role="2mYRmc">
+          <node concept="1Qm6PL" id="1nojhXnkYRn" role="1QmeWk">
+            <ref role="3gbGqc" node="6wsTcrVfIiu" resolve="QED" />
+          </node>
+          <node concept="3BO_ld" id="1nojhXnkYQU" role="1QmeWi">
+            <ref role="3gbGqc" node="6wsTcrVf9tZ" resolve="Paths" />
           </node>
         </node>
       </node>
