@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.vclang/jetbrains.mps.vclang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.vclang/sandbox/jetbrains.mps.vclang.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetpad.vclang/jetpad.vclang.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

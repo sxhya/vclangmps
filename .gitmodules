@@ -1,0 +1,3 @@
+[submodule "solutions/jetpad.vclang/vclang"]
+	path = solutions/jetpad.vclang/vclang
+	url = https://github.com/valis/vclang.git
