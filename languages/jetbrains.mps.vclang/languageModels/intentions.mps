@@ -341,10 +341,10 @@
       </node>
       <node concept="2ShNRf" id="7jOshQJNWSv" role="33vP2m">
         <node concept="1pGfFk" id="7jOshQJNWSl" role="2ShVmc">
-          <ref role="37wK5l" to="wru8:~Namespace.&lt;init&gt;(com.jetbrains.jetpad.vclang.term.expr.arg.Utils$Name)" resolve="Namespace" />
+          <ref role="37wK5l" to="wru8:~Namespace.&lt;init&gt;(com.jetbrains.jetpad.vclang.term.definition.Name)" resolve="Namespace" />
           <node concept="2ShNRf" id="7jOshQJNX8R" role="37wK5m">
             <node concept="1pGfFk" id="7jOshQJNX8Q" role="2ShVmc">
-              <ref role="37wK5l" to="3i1n:~Utils$Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Utils.Name" />
+              <ref role="37wK5l" to="thjl:~Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Name" />
               <node concept="Xl_RD" id="7jOshQJNWTQ" role="37wK5m">
                 <property role="Xl_RC" value="\\root" />
               </node>
