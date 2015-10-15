@@ -6556,7 +6556,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4qqSIlOjHC" role="2OqNvi">
-                  <ref role="37wK5l" to="wru8:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.module.DefinitionPair" resolve="getMember" />
+                  <ref role="37wK5l" to="wru8:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.term.definition.NamespaceMember" resolve="getMember" />
                   <node concept="2OqwBi" id="4qqSIlOjHD" role="37wK5m">
                     <node concept="2OqwBi" id="4qqSIlOjHE" role="2Oq$k0">
                       <node concept="37vLTw" id="4qqSIlOk$A" role="2Oq$k0">
@@ -6572,8 +6572,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OwXpG" id="4qqSIlOjHI" role="2OqNvi">
-                <ref role="2Oxat5" to="wru8:~DefinitionPair.abstractDefinition" resolve="abstractDefinition" />
+              <node concept="2OwXpG" id="7jEwPleUJne" role="2OqNvi">
+                <ref role="2Oxat5" to="thjl:~NamespaceMember.abstractDefinition" resolve="abstractDefinition" />
               </node>
             </node>
           </node>
@@ -6599,25 +6599,20 @@
             <node concept="3cpWs8" id="4qqSIlOjHR" role="3cqZAp">
               <node concept="3cpWsn" id="4qqSIlOjHS" role="3cpWs9">
                 <property role="TrG5h" value="dp" />
-                <node concept="3uibUv" id="4qqSIlOjHT" role="1tU5fm">
-                  <ref role="3uigEE" to="wru8:~DefinitionPair" resolve="DefinitionPair" />
+                <node concept="3uibUv" id="7jEwPleUJk3" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~NamespaceMember" resolve="NamespaceMember" />
                 </node>
                 <node concept="2OqwBi" id="4qqSIlOjHU" role="33vP2m">
-                  <node concept="2OqwBi" id="4qqSIlOjHV" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4qqSIlOjHW" role="2Oq$k0">
-                      <node concept="liA8E" id="4qqSIlOjHX" role="2OqNvi">
-                        <ref role="37wK5l" to="thjl:~Definition.getNamespace():com.jetbrains.jetpad.vclang.module.Namespace" resolve="getNamespace" />
-                      </node>
-                      <node concept="37vLTw" id="4qqSIlOjHY" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4qqSIlOjHK" resolve="d2" />
-                      </node>
+                  <node concept="2OqwBi" id="4qqSIlOjHW" role="2Oq$k0">
+                    <node concept="liA8E" id="4qqSIlOjHX" role="2OqNvi">
+                      <ref role="37wK5l" to="thjl:~Definition.getParentNamespace():com.jetbrains.jetpad.vclang.module.Namespace" resolve="getParentNamespace" />
                     </node>
-                    <node concept="liA8E" id="4qqSIlOjHZ" role="2OqNvi">
-                      <ref role="37wK5l" to="wru8:~Namespace.getParent():com.jetbrains.jetpad.vclang.module.Namespace" resolve="getParent" />
+                    <node concept="37vLTw" id="4qqSIlOjHY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4qqSIlOjHK" resolve="d2" />
                     </node>
                   </node>
                   <node concept="liA8E" id="4qqSIlOjI0" role="2OqNvi">
-                    <ref role="37wK5l" to="wru8:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.module.DefinitionPair" resolve="getMember" />
+                    <ref role="37wK5l" to="wru8:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.term.definition.NamespaceMember" resolve="getMember" />
                     <node concept="2OqwBi" id="4qqSIlOjI1" role="37wK5m">
                       <node concept="2OqwBi" id="4qqSIlOjI2" role="2Oq$k0">
                         <node concept="37vLTw" id="4qqSIlOjI3" role="2Oq$k0">
@@ -6643,8 +6638,8 @@
                       <ref role="3cqZAo" node="4qqSIlOjHx" resolve="d" />
                     </node>
                     <node concept="2OqwBi" id="4qqSIlOjIb" role="37vLTx">
-                      <node concept="2OwXpG" id="4qqSIlOjIc" role="2OqNvi">
-                        <ref role="2Oxat5" to="wru8:~DefinitionPair.abstractDefinition" resolve="abstractDefinition" />
+                      <node concept="2OwXpG" id="7jEwPleWLOx" role="2OqNvi">
+                        <ref role="2Oxat5" to="thjl:~NamespaceMember.abstractDefinition" resolve="abstractDefinition" />
                       </node>
                       <node concept="37vLTw" id="4qqSIlOjId" role="2Oq$k0">
                         <ref role="3cqZAo" node="4qqSIlOjHS" resolve="dp" />
