@@ -64,9 +64,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1206,8 +1203,14 @@
                   <ref role="3uigEE" to="hhlq:PFJmlfDp$F" resolve="BuildClassVisitor" />
                 </node>
                 <node concept="2ShNRf" id="27z7C9pVwYt" role="33vP2m">
-                  <node concept="HV5vD" id="27z7C9pV_jf" role="2ShVmc">
-                    <ref role="HV5vE" to="hhlq:PFJmlfDp$F" resolve="BuildClassVisitor" />
+                  <node concept="1pGfFk" id="73jCsPaUd_Y" role="2ShVmc">
+                    <ref role="37wK5l" to="hhlq:73jCsPaSuua" resolve="BuildClassVisitor" />
+                    <node concept="2OqwBi" id="73jCsPaUdUN" role="37wK5m">
+                      <node concept="37vLTw" id="73jCsPaUdLT" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5LKdqeczl3A" resolve="node" />
+                      </node>
+                      <node concept="I4A8Y" id="73jCsPaUedO" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2291,8 +2294,11 @@
               <ref role="3uigEE" to="hhlq:PFJmlfDp$F" resolve="BuildClassVisitor" />
             </node>
             <node concept="2ShNRf" id="10jGNhK69tT" role="33vP2m">
-              <node concept="HV5vD" id="10jGNhK69tU" role="2ShVmc">
-                <ref role="HV5vE" to="hhlq:PFJmlfDp$F" resolve="BuildClassVisitor" />
+              <node concept="1pGfFk" id="73jCsPaSOtk" role="2ShVmc">
+                <ref role="37wK5l" to="hhlq:73jCsPaSuua" resolve="BuildClassVisitor" />
+                <node concept="37vLTw" id="73jCsPaSO_A" role="37wK5m">
+                  <ref role="3cqZAo" node="10jGNhK69YH" resolve="m2" />
+                </node>
               </node>
             </node>
           </node>
@@ -2335,17 +2341,12 @@
           <node concept="3clFbS" id="10jGNhK69u4" role="3clFbx">
             <node concept="3clFbF" id="10jGNhK69u5" role="3cqZAp">
               <node concept="37vLTI" id="10jGNhK69u6" role="3clFbG">
-                <node concept="2OqwBi" id="10jGNhK69Ne" role="37vLTx">
-                  <node concept="2OqwBi" id="10jGNhK69u7" role="2Oq$k0">
-                    <node concept="37vLTw" id="10jGNhK69HB" role="2Oq$k0">
-                      <ref role="3cqZAo" node="10jGNhK5MgS" resolve="name" />
-                    </node>
-                    <node concept="2OwXpG" id="10jGNhK69KG" role="2OqNvi">
-                      <ref role="2Oxat5" to="thjl:~ResolvedName.name" resolve="name" />
-                    </node>
+                <node concept="2OqwBi" id="73jCsPaS2DL" role="37vLTx">
+                  <node concept="37vLTw" id="10jGNhK69HB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="10jGNhK5MgS" resolve="name" />
                   </node>
-                  <node concept="2OwXpG" id="10jGNhK69ON" role="2OqNvi">
-                    <ref role="2Oxat5" to="thjl:~Name.name" resolve="name" />
+                  <node concept="liA8E" id="73jCsPaS2GH" role="2OqNvi">
+                    <ref role="37wK5l" to="thjl:~ResolvedName.toString():java.lang.String" resolve="toString" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="10jGNhK69ua" role="37vLTJ">

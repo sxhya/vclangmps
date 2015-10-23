@@ -69,7 +69,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6aAUpg3pUph" resolve="VariableExpression" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6dbcPfPFE4X" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
