@@ -757,6 +757,12 @@
     <node concept="PrWs8" id="3vFRxEzPv0P" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
+    <node concept="1TJgyj" id="3ixSrrqH3VW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="defs" />
+      <ref role="20lvS9" node="3ixSrrqHdZW" resolve="NameReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3vFRxEzPfU0">
     <property role="3GE5qa" value="def.scope" />
@@ -1091,6 +1097,19 @@
     <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3ixSrrqF9BL">
+    <property role="1pbfSe" value="256801703" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="InferHoleExpression" />
+    <property role="34LRSv" value="_" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3ixSrrqHdZW">
+    <property role="1pbfSe" value="257343922" />
+    <property role="3GE5qa" value="def.scope" />
+    <property role="TrG5h" value="NameReference" />
+    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
   </node>
 </model>
 

@@ -1358,6 +1358,50 @@
   <node concept="3UOs0u" id="5a9n1m5cPN3">
     <property role="TrG5h" value="DefinitionSideTransforms" />
     <property role="3GE5qa" value="def" />
+    <node concept="3UNGvq" id="3ixSrrqHayB" role="3UOs0v">
+      <ref role="3UNGvu" to="51uy:3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
+      <node concept="3kRJcU" id="3ixSrrqHbbf" role="3kShCk">
+        <node concept="3clFbS" id="3ixSrrqHbbg" role="2VODD2">
+          <node concept="3clFbF" id="3ixSrrqHbvi" role="3cqZAp">
+            <node concept="2OqwBi" id="3ixSrrqHcye" role="3clFbG">
+              <node concept="2OqwBi" id="3ixSrrqHbyN" role="2Oq$k0">
+                <node concept="Cj7Ep" id="3ixSrrqHbvh" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="3ixSrrqHbDt" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:3ixSrrqH3VW" />
+                </node>
+              </node>
+              <node concept="1v1jN8" id="3ixSrrqHdQF" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tYCnQ" id="3ixSrrqHdTM" role="_1QTJ">
+        <ref role="uz4UX" to="51uy:3ixSrrqHdZW" resolve="NameReference" />
+        <node concept="Cmt7Y" id="3ixSrrqHdZ3" role="uz6Si">
+          <node concept="Cnhdc" id="3ixSrrqHdZ4" role="Cncma">
+            <node concept="3clFbS" id="3ixSrrqHdZ5" role="2VODD2">
+              <node concept="3clFbF" id="3ixSrrqHwNZ" role="3cqZAp">
+                <node concept="2OqwBi" id="3ixSrrqHxQ9" role="3clFbG">
+                  <node concept="2OqwBi" id="3ixSrrqHwRo" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="3ixSrrqHwNY" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="3ixSrrqHwXA" role="2OqNvi">
+                      <ref role="3TtcxE" to="51uy:3ixSrrqH3VW" />
+                    </node>
+                  </node>
+                  <node concept="2DeJg1" id="3ixSrrqH$wK" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="3ixSrrqHdZI" role="Cn2iK">
+            <property role="2h1i$Z" value="(" />
+          </node>
+          <node concept="2h1dTh" id="3ixSrrqHdZP" role="Cn6ar">
+            <property role="2h1i$Z" value="Add explicit identifiers" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3UNGvq" id="5a9n1m5cPN4" role="3UOs0v">
       <ref role="3UNGvu" to="51uy:6dbcPfPFe7A" resolve="AbstractArgument" />
       <node concept="tYCnQ" id="5a9n1m5cScl" role="_1QTJ">
