@@ -1150,16 +1150,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7jEwPleVSo1" role="3cqZAp">
-              <node concept="2OqwBi" id="3wdrnIK2C2S" role="3clFbG">
-                <node concept="2OqwBi" id="3wdrnIK2Buk" role="2Oq$k0">
+            <node concept="3cpWs8" id="3ixSrrqsCtl" role="3cqZAp">
+              <node concept="3cpWsn" id="3ixSrrqsCtm" role="3cpWs9">
+                <property role="TrG5h" value="def" />
+                <node concept="3uibUv" id="3ixSrrqsCtn" role="1tU5fm">
+                  <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+                </node>
+                <node concept="2OqwBi" id="3wdrnIK2Buk" role="33vP2m">
                   <node concept="37vLTw" id="5LKdqeczlEv" role="2Oq$k0">
                     <ref role="3cqZAo" node="5LKdqeczl3A" resolve="node" />
                   </node>
                   <node concept="2qgKlT" id="3wdrnIK2BUR" role="2OqNvi">
                     <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                    <node concept="10Nm6u" id="3ixSrrqsCTK" role="37wK5m" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7jEwPleVSo1" role="3cqZAp">
+              <node concept="2OqwBi" id="3wdrnIK2C2S" role="3clFbG">
                 <node concept="liA8E" id="3wdrnIK2Cct" role="2OqNvi">
                   <ref role="37wK5l" to="2968:~Abstract$Definition.accept(com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor,java.lang.Object):java.lang.Object" resolve="accept" />
                   <node concept="37vLTw" id="5LKdqeczn5I" role="37wK5m">
@@ -1168,6 +1177,9 @@
                   <node concept="3clFbT" id="7jEwPleVUZR" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="3ixSrrqsCNe" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3ixSrrqsCtm" resolve="def" />
                 </node>
               </node>
             </node>
@@ -1178,13 +1190,8 @@
                   <ref role="3uigEE" to="thjl:~Definition" resolve="Definition" />
                 </node>
                 <node concept="2OqwBi" id="3wdrnIK2vQA" role="33vP2m">
-                  <node concept="2OqwBi" id="3wdrnIK2vuJ" role="2Oq$k0">
-                    <node concept="37vLTw" id="5LKdqeczlQ4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5LKdqeczl3A" resolve="node" />
-                    </node>
-                    <node concept="2qgKlT" id="3wdrnIK2vJd" role="2OqNvi">
-                      <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
-                    </node>
+                  <node concept="37vLTw" id="3ixSrrqsD4a" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3ixSrrqsCtm" resolve="def" />
                   </node>
                   <node concept="liA8E" id="3wdrnIK2vZF" role="2OqNvi">
                     <ref role="37wK5l" to="2968:~Abstract$Definition.accept(com.jetbrains.jetpad.vclang.term.definition.visitor.AbstractDefinitionVisitor,java.lang.Object):java.lang.Object" resolve="accept" />
@@ -2157,6 +2164,7 @@
                     </node>
                     <node concept="2qgKlT" id="YtOnQrEurz" role="2OqNvi">
                       <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                      <node concept="10Nm6u" id="3ixSrrqv4SQ" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="10Nm6u" id="YtOnQrEsKX" role="37wK5m" />

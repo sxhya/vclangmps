@@ -556,8 +556,8 @@
       <ref role="20ksaX" node="KzXl40_P0s" />
       <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
     </node>
-    <node concept="PrWs8" id="KzXl40BR37" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    <node concept="PrWs8" id="3ixSrrqDlPz" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ucmOG">
@@ -1074,6 +1074,22 @@
     </node>
     <node concept="PrWs8" id="5LKdqecnUps" role="PrDN$">
       <ref role="PrY4T" node="6aAUpg3pIVR" resolve="AbstractExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ixSrrqshCZ">
+    <property role="1pbfSe" value="252902389" />
+    <property role="3GE5qa" value="def" />
+    <property role="TrG5h" value="AbstractDefinition" />
+    <property role="34LRSv" value="abstract" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="PrWs8" id="3ixSrrqzqBb" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="3ixSrrqshD0" role="PzmwI">
+      <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
+    </node>
+    <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
   </node>
 </model>
