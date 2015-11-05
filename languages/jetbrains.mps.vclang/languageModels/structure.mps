@@ -1127,5 +1127,23 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2sdLh_aklnv">
+    <property role="1pbfSe" value="1902058232" />
+    <property role="3GE5qa" value="clause.pattern" />
+    <property role="TrG5h" value="RawPatternConstructor" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="2bS0tZiQmvd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argPatterns" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    </node>
+    <node concept="PrWs8" id="2sdLh_aklnH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2bS0tZiQnO1" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
+    </node>
+  </node>
 </model>
 

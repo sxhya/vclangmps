@@ -3607,5 +3607,23 @@
       <node concept="l2Vlx" id="54AIZWS11rs" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2sdLh_akloi">
+    <property role="3GE5qa" value="clause.pattern" />
+    <ref role="1XX52x" to="51uy:2sdLh_aklnv" resolve="RawPatternConstructor" />
+    <node concept="3EZMnI" id="2sdLh_akl_d" role="2wV5jI">
+      <node concept="3F0A7n" id="2sdLh_akmeA" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="2sdLh_akmnA" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2sdLh_akl_h" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
+        <ref role="1NtTu8" to="51uy:2bS0tZiQmvd" />
+        <node concept="l2Vlx" id="2sdLh_akl_i" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="2sdLh_akl_I" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
