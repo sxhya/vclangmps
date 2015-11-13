@@ -1380,10 +1380,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="7nfIx2ucnaP">
-    <property role="3GE5qa" value="expression" />
-    <ref role="1XX52x" to="51uy:7nfIx2ucmVD" resolve="Numeral_" />
+    <property role="3GE5qa" value="literal" />
+    <ref role="1XX52x" to="51uy:7nfIx2ucmVD" resolve="NumericLiteral" />
     <node concept="3F0A7n" id="7nfIx2ucnaR" role="2wV5jI">
       <ref role="1NtTu8" to="51uy:7nfIx2ucnaI" resolve="number" />
+      <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
     </node>
   </node>
   <node concept="24kQdi" id="7nfIx2ucngU">

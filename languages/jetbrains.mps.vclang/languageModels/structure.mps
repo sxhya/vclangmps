@@ -577,9 +577,10 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ucmVD">
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="Numeral_" />
+    <property role="3GE5qa" value="literal" />
+    <property role="TrG5h" value="NumericLiteral" />
     <property role="1pbfSe" value="335620345" />
+    <property role="R4oN_" value="Numeric literal" />
     <ref role="1TJDcQ" node="6aAUpg3pU9E" resolve="Literal" />
     <node concept="1TJgyi" id="7nfIx2ucnaI" role="1TKVEl">
       <property role="TrG5h" value="number" />

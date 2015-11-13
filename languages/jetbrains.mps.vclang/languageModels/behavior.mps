@@ -9885,8 +9885,8 @@
     </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZKDKb">
-    <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="51uy:7nfIx2ucmVD" resolve="Numeral_" />
+    <property role="3GE5qa" value="literal" />
+    <ref role="13h7C2" to="51uy:7nfIx2ucmVD" resolve="NumericLiteral" />
     <node concept="13hLZK" id="5NQyKEZKDKc" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZKDKd" role="2VODD2" />
     </node>
@@ -9897,13 +9897,13 @@
       <ref role="13i0hy" node="6mU6lSbK89M" resolve="toSourceExpression" />
       <node concept="3Tm1VV" id="5NQyKEZKDKf" role="1B3o_S" />
       <node concept="3clFbS" id="5NQyKEZKDKk" role="3clF47">
-        <node concept="3SKdUt" id="5NQyKEZKDKP" role="3cqZAp">
-          <node concept="3SKdUq" id="5NQyKEZKDKW" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Should return unfolded definition?" />
+        <node concept="3clFbF" id="5spN2MM$swD" role="3cqZAp">
+          <node concept="2ShNRf" id="5spN2MM$swB" role="3clFbG">
+            <node concept="1pGfFk" id="5spN2MM$tAH" role="2ShVmc">
+              <ref role="37wK5l" node="5spN2MM$oxA" resolve="NumericLiteralAdapter" />
+              <node concept="13iPFW" id="5spN2MM$tCa" role="37wK5m" />
+            </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="5NQyKEZKDKn" role="3cqZAp">
-          <node concept="10Nm6u" id="5NQyKEZKDKm" role="3clFbG" />
         </node>
       </node>
       <node concept="3uibUv" id="5NQyKEZKDKl" role="3clF45">
@@ -18646,6 +18646,48 @@
         <ref role="ehGHo" to="51uy:KzXl40_QXs" resolve="Expression" />
       </node>
     </node>
+    <node concept="3clFb_" id="5spN2MM$hZw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="visitNumericLiteral" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5spN2MM$hZx" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5spN2MM$hZD" role="3clF45">
+        <ref role="ehGHo" to="51uy:KzXl40_QXs" resolve="Expression" />
+      </node>
+      <node concept="37vLTG" id="5spN2MM$hZ$" role="3clF46">
+        <property role="TrG5h" value="literal" />
+        <node concept="3uibUv" id="5spN2MM$hZ_" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$NumericLiteral" resolve="Abstract.NumericLiteral" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5spN2MM$hZA" role="3clF46">
+        <property role="TrG5h" value="aVoid" />
+        <node concept="3uibUv" id="5spN2MM$hZC" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Void" resolve="Void" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5spN2MM$hZE" role="3clF47">
+        <node concept="3clFbF" id="5spN2MM_Gt5" role="3cqZAp">
+          <node concept="2pJPEk" id="5spN2MM_Gt3" role="3clFbG">
+            <node concept="2pJPED" id="5spN2MM_GtB" role="2pJPEn">
+              <ref role="2pJxaS" to="51uy:7nfIx2ucmVD" resolve="NumericLiteral" />
+              <node concept="2pJxcG" id="5spN2MM_GwC" role="2pJxcM">
+                <ref role="2pJxcJ" to="51uy:7nfIx2ucnaI" resolve="number" />
+                <node concept="2OqwBi" id="5spN2MM_GBh" role="2pJxcZ">
+                  <node concept="37vLTw" id="5spN2MM_Gzn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5spN2MM$hZ$" resolve="literal" />
+                  </node>
+                  <node concept="liA8E" id="5spN2MM_GRU" role="2OqNvi">
+                    <ref role="37wK5l" to="2968:~Abstract$NumericLiteral.getNumber():int" resolve="getNumber" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="7e_29m98SGl">
     <property role="TrG5h" value="ElimExpressionAdapter" />
@@ -23113,6 +23155,114 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="OV0Rn1whPB" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5spN2MM$nrg">
+    <property role="TrG5h" value="NumericLiteralAdapter" />
+    <node concept="3Tm1VV" id="5spN2MM$nrh" role="1B3o_S" />
+    <node concept="3uibUv" id="5spN2MM$nKH" role="EKbjA">
+      <ref role="3uigEE" to="2968:~Abstract$NumericLiteral" resolve="Abstract.NumericLiteral" />
+    </node>
+    <node concept="2tJIrI" id="5spN2MM$oSz" role="jymVt" />
+    <node concept="3clFbW" id="5spN2MM$oxA" role="jymVt">
+      <node concept="37vLTG" id="5spN2MM$oPq" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="5spN2MM$qil" role="1tU5fm">
+          <ref role="ehGHo" to="51uy:7nfIx2ucmVD" resolve="NumericLiteral" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5spN2MM$oxC" role="3clF45" />
+      <node concept="3Tm1VV" id="5spN2MM$oxD" role="1B3o_S" />
+      <node concept="3clFbS" id="5spN2MM$oxE" role="3clF47">
+        <node concept="XkiVB" id="5spN2MM$q7d" role="3cqZAp">
+          <ref role="37wK5l" node="IDt3LXGdIg" resolve="ExpressionAdapter" />
+          <node concept="37vLTw" id="5spN2MM$qo$" role="37wK5m">
+            <ref role="3cqZAo" node="5spN2MM$oPq" resolve="n" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5spN2MM$ohi" role="jymVt" />
+    <node concept="3clFb_" id="5spN2MM$nKR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getNumber" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5spN2MM$nKS" role="1B3o_S" />
+      <node concept="10Oyi0" id="5spN2MM$nKU" role="3clF45" />
+      <node concept="3clFbS" id="5spN2MM$nKV" role="3clF47">
+        <node concept="3clFbF" id="5spN2MM$qs1" role="3cqZAp">
+          <node concept="2OqwBi" id="5spN2MM$r4F" role="3clFbG">
+            <node concept="1PxgMI" id="5spN2MM$qJe" role="2Oq$k0">
+              <ref role="1PxNhF" to="51uy:7nfIx2ucmVD" resolve="NumericLiteral" />
+              <node concept="37vLTw" id="5spN2MM$qs0" role="1PxMeX">
+                <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="5spN2MM$rsb" role="2OqNvi">
+              <ref role="3TsBF5" to="51uy:7nfIx2ucnaI" resolve="number" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5spN2MM$r$f" role="jymVt" />
+    <node concept="3clFb_" id="5spN2MM$nKW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="accept" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5spN2MM$nKX" role="1B3o_S" />
+      <node concept="16euLQ" id="5spN2MM$nKZ" role="16eVyc">
+        <property role="TrG5h" value="P" />
+      </node>
+      <node concept="16euLQ" id="5spN2MM$nL0" role="16eVyc">
+        <property role="TrG5h" value="R" />
+      </node>
+      <node concept="16syzq" id="5spN2MM$nL1" role="3clF45">
+        <ref role="16sUi3" node="5spN2MM$nL0" resolve="R" />
+      </node>
+      <node concept="37vLTG" id="5spN2MM$nL2" role="3clF46">
+        <property role="TrG5h" value="visitor" />
+        <node concept="3uibUv" id="5spN2MM$nL3" role="1tU5fm">
+          <ref role="3uigEE" to="byr7:~AbstractExpressionVisitor" resolve="AbstractExpressionVisitor" />
+          <node concept="3qUtgH" id="5spN2MM$nL4" role="11_B2D">
+            <node concept="16syzq" id="5spN2MM$nL5" role="3qUvdb">
+              <ref role="16sUi3" node="5spN2MM$nKZ" resolve="P" />
+            </node>
+          </node>
+          <node concept="3qUE_q" id="5spN2MM$nL6" role="11_B2D">
+            <node concept="16syzq" id="5spN2MM$nL7" role="3qUE_r">
+              <ref role="16sUi3" node="5spN2MM$nL0" resolve="R" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5spN2MM$nL8" role="3clF46">
+        <property role="TrG5h" value="p" />
+        <node concept="16syzq" id="5spN2MM$nL9" role="1tU5fm">
+          <ref role="16sUi3" node="5spN2MM$nKZ" resolve="P" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5spN2MM$nLb" role="3clF47">
+        <node concept="3clFbF" id="5spN2MM$rSJ" role="3cqZAp">
+          <node concept="2OqwBi" id="5spN2MM$rVm" role="3clFbG">
+            <node concept="37vLTw" id="5spN2MM$rSI" role="2Oq$k0">
+              <ref role="3cqZAo" node="5spN2MM$nL2" resolve="visitor" />
+            </node>
+            <node concept="liA8E" id="5spN2MM$s2q" role="2OqNvi">
+              <ref role="37wK5l" to="byr7:~AbstractExpressionVisitor.visitNumericLiteral(com.jetbrains.jetpad.vclang.term.Abstract$NumericLiteral,java.lang.Object):java.lang.Object" resolve="visitNumericLiteral" />
+              <node concept="Xjq3P" id="5spN2MM$s9q" role="37wK5m" />
+              <node concept="37vLTw" id="5spN2MM$sc_" role="37wK5m">
+                <ref role="3cqZAo" node="5spN2MM$nL8" resolve="p" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="5spN2MM$nX6" role="1zkMxy">
+      <ref role="3uigEE" node="5NQyKEZF8i8" resolve="ExpressionAdapter" />
+    </node>
   </node>
 </model>
 
