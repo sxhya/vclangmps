@@ -1007,14 +1007,9 @@
             </node>
             <node concept="liA8E" id="YtOnQrED4t" role="2OqNvi">
               <ref role="37wK5l" to="wru8:~BaseModuleLoader.setOutputSupplier(com.jetbrains.jetpad.vclang.module.output.OutputSupplier):void" resolve="setOutputSupplier" />
-              <node concept="2ShNRf" id="YtOnQrEE2v" role="37wK5m">
-                <node concept="1pGfFk" id="YtOnQrF00Y" role="2ShVmc">
-                  <ref role="37wK5l" node="YtOnQrEEun" resolve="MPSOutputSupplier" />
-                  <node concept="2OqwBi" id="YtOnQrEZGo" role="37wK5m">
-                    <node concept="2Sf5sV" id="YtOnQrEZEo" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="YtOnQrEZKI" role="2OqNvi" />
-                  </node>
-                </node>
+              <node concept="2YIFZM" id="4ojGMosohnG" role="37wK5m">
+                <ref role="37wK5l" to="y5rz:~DummyOutputSupplier.getInstance():com.jetbrains.jetpad.vclang.module.output.DummyOutputSupplier" resolve="getInstance" />
+                <ref role="1Pybhc" to="y5rz:~DummyOutputSupplier" resolve="DummyOutputSupplier" />
               </node>
             </node>
           </node>
@@ -1076,7 +1071,7 @@
                       <node concept="1pGfFk" id="10jGNhK6OWa" role="2ShVmc">
                         <ref role="37wK5l" to="thjl:~Name.&lt;init&gt;(java.lang.String)" resolve="Name" />
                         <node concept="Xl_RD" id="10jGNhK6NZR" role="37wK5m">
-                          <property role="Xl_RC" value="List" />
+                          <property role="Xl_RC" value="Vec" />
                         </node>
                       </node>
                     </node>

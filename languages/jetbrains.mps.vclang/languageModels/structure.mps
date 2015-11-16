@@ -366,7 +366,7 @@
     </node>
     <node concept="1TJgyj" id="6dbcPfPFKH7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="clauseExpression" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
@@ -1143,6 +1143,16 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="2bS0tZiQnO1" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ojGMossfs_">
+    <property role="1pbfSe" value="1652861515" />
+    <property role="3GE5qa" value="clause.pattern" />
+    <property role="TrG5h" value="AnyConstructorPattern" />
+    <property role="34LRSv" value="_?" />
+    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
+    <node concept="PrWs8" id="4ojGMossllW" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
