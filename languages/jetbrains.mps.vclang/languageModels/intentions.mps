@@ -103,6 +103,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -725,21 +729,60 @@
             <property role="TrG5h" value="ge" />
           </node>
           <node concept="3clFbS" id="1B_A_DXbi2X" role="2LFqv$">
+            <node concept="3cpWs8" id="5fOERWnpY8M" role="3cqZAp">
+              <node concept="3cpWsn" id="5fOERWnpY8N" role="3cpWs9">
+                <property role="TrG5h" value="cause" />
+                <node concept="3uibUv" id="5fOERWnpY8O" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="2OqwBi" id="1B_A_DXbkOi" role="33vP2m">
+                  <node concept="2GrUjf" id="5c9_9GiYzSy" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="1B_A_DXbi2V" resolve="ge" />
+                  </node>
+                  <node concept="liA8E" id="1B_A_DXbkXV" role="2OqNvi">
+                    <ref role="37wK5l" to="oy0i:~GeneralError.getCause():com.jetbrains.jetpad.vclang.term.Abstract$SourceNode" resolve="getCause" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="1B_A_DXblLm" role="3cqZAp">
               <node concept="3cpWsn" id="1B_A_DXblLp" role="3cpWs9">
                 <property role="TrG5h" value="n" />
                 <node concept="3Tqbb2" id="1B_A_DXblLk" role="1tU5fm" />
-                <node concept="2YIFZM" id="1B_A_DXbm2I" role="33vP2m">
-                  <ref role="37wK5l" to="hhlq:1B_A_DXaZ0o" resolve="resolveNode" />
-                  <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
-                  <node concept="2OqwBi" id="1B_A_DXbkOi" role="37wK5m">
-                    <node concept="2GrUjf" id="5c9_9GiYzSy" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="1B_A_DXbi2V" resolve="ge" />
+                <node concept="10Nm6u" id="5fOERWnpZaz" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5fOERWnpYMW" role="3cqZAp">
+              <node concept="3clFbS" id="5fOERWnpYMY" role="3clFbx">
+                <node concept="3clFbF" id="5fOERWnpYUb" role="3cqZAp">
+                  <node concept="37vLTI" id="5fOERWnpYVb" role="3clFbG">
+                    <node concept="2OqwBi" id="5fOERWnpZ3Z" role="37vLTx">
+                      <node concept="1eOMI4" id="5fOERWnpZ2R" role="2Oq$k0">
+                        <node concept="10QFUN" id="5fOERWnpZ2S" role="1eOMHV">
+                          <node concept="3uibUv" id="5fOERWnpZ2T" role="10QFUM">
+                            <ref role="3uigEE" to="hhlq:OV0Rn1whPA" resolve="AbstractAdapter" />
+                          </node>
+                          <node concept="37vLTw" id="5fOERWnpZ2U" role="10QFUP">
+                            <ref role="3cqZAo" node="5fOERWnpY8N" resolve="cause" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5fOERWnpZ5Y" role="2OqNvi">
+                        <ref role="37wK5l" to="hhlq:OV0Rn1whPR" resolve="getSourceNode" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="1B_A_DXbkXV" role="2OqNvi">
-                      <ref role="37wK5l" to="oy0i:~GeneralError.getCause():com.jetbrains.jetpad.vclang.term.Abstract$SourceNode" resolve="getCause" />
+                    <node concept="37vLTw" id="5fOERWnpYU9" role="37vLTJ">
+                      <ref role="3cqZAo" node="1B_A_DXblLp" resolve="n" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="5fOERWnpYSQ" role="3clFbw">
+                <node concept="3uibUv" id="5fOERWnpYT_" role="2ZW6by">
+                  <ref role="3uigEE" to="hhlq:OV0Rn1whPA" resolve="AbstractAdapter" />
+                </node>
+                <node concept="37vLTw" id="5fOERWnpYSt" role="2ZW6bz">
+                  <ref role="3cqZAo" node="5fOERWnpY8N" resolve="cause" />
                 </node>
               </node>
             </node>
