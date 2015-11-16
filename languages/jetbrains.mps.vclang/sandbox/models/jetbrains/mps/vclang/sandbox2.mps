@@ -7,10 +7,7 @@
   <imports />
   <registry>
     <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" name="jetbrains.mps.vclang">
-      <concept id="4029558497612263476" name="jetbrains.mps.vclang.structure.IClassMember" flags="ng" index="2kfySI" />
-      <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt">
-        <child id="1136042658824486601" name="statements" index="1Ra7oe" />
-      </concept>
+      <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -18,9 +15,8 @@
       </concept>
     </language>
   </registry>
-  <node concept="1Ra3yt" id="3XWVWp7wjm9">
+  <node concept="1Ra3yt" id="4SJ$5Ux0PMl">
     <property role="TrG5h" value="A" />
-    <node concept="2kfySI" id="5spN2MMCq7t" role="1Ra7oe" />
   </node>
 </model>
 
