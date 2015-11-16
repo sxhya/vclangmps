@@ -14391,6 +14391,7 @@
         <node concept="3clFbH" id="6hbMo7ILNrI" role="3cqZAp" />
         <node concept="3clFbJ" id="6hbMo7IGks6" role="3cqZAp">
           <node concept="3clFbS" id="6hbMo7IGks8" role="3clFbx">
+            <node concept="3clFbH" id="5fOERWnkOUZ" role="3cqZAp" />
             <node concept="3clFbJ" id="6hbMo7IGP_l" role="3cqZAp">
               <node concept="3clFbS" id="6hbMo7IGP_n" role="3clFbx">
                 <node concept="3cpWs6" id="6hbMo7IHaiw" role="3cqZAp">
@@ -14469,73 +14470,40 @@
               <node concept="1Wc70l" id="6hbMo7IGVft" role="3clFbw">
                 <node concept="3y3z36" id="6hbMo7IH711" role="3uHU7w">
                   <node concept="10Nm6u" id="6hbMo7IH73$" role="3uHU7w" />
-                  <node concept="2OqwBi" id="6hbMo7IH5LF" role="3uHU7B">
-                    <node concept="2OqwBi" id="6hbMo7IH4LY" role="2Oq$k0">
-                      <node concept="2YIFZM" id="6hbMo7IGXMi" role="2Oq$k0">
-                        <ref role="1Pybhc" to="nx2r:~ExpressionFactory" resolve="ExpressionFactory" />
-                        <ref role="37wK5l" to="nx2r:~ExpressionFactory.Apps(com.jetbrains.jetpad.vclang.term.expr.Expression,com.jetbrains.jetpad.vclang.term.expr.Expression...):com.jetbrains.jetpad.vclang.term.expr.Expression" resolve="Apps" />
-                        <node concept="2OqwBi" id="6hbMo7IGXMj" role="37wK5m">
-                          <node concept="1eOMI4" id="6hbMo7IGXMk" role="2Oq$k0">
-                            <node concept="10QFUN" id="6hbMo7IGXMl" role="1eOMHV">
-                              <node concept="3uibUv" id="6hbMo7IGXMm" role="10QFUM">
-                                <ref role="3uigEE" to="nx2r:~Expression" resolve="Expression" />
+                  <node concept="2OqwBi" id="6hbMo7IGXMj" role="3uHU7B">
+                    <node concept="2OqwBi" id="5fOERWnkTRe" role="2Oq$k0">
+                      <node concept="1eOMI4" id="6hbMo7IGXMk" role="2Oq$k0">
+                        <node concept="10QFUN" id="6hbMo7IGXMl" role="1eOMHV">
+                          <node concept="3uibUv" id="5fOERWnkTKj" role="10QFUM">
+                            <ref role="3uigEE" to="nx2r:~LamExpression" resolve="LamExpression" />
+                          </node>
+                          <node concept="2OqwBi" id="6hbMo7IGXMn" role="10QFUP">
+                            <node concept="2OqwBi" id="6hbMo7IGXMo" role="2Oq$k0">
+                              <node concept="37vLTw" id="6hbMo7IGXMp" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6hbMo7IGwne" resolve="args" />
                               </node>
-                              <node concept="2OqwBi" id="6hbMo7IGXMn" role="10QFUP">
-                                <node concept="2OqwBi" id="6hbMo7IGXMo" role="2Oq$k0">
-                                  <node concept="37vLTw" id="6hbMo7IGXMp" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="6hbMo7IGwne" resolve="args" />
-                                  </node>
-                                  <node concept="34jXtK" id="6hbMo7IGXMq" role="2OqNvi">
-                                    <node concept="3cmrfG" id="6hbMo7IGXMr" role="25WWJ7">
-                                      <property role="3cmrfH" value="0" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="6hbMo7IGXMs" role="2OqNvi">
-                                  <ref role="37wK5l" to="2968:~Abstract$ArgumentExpression.getExpression():com.jetbrains.jetpad.vclang.term.Abstract$Expression" resolve="getExpression" />
+                              <node concept="34jXtK" id="6hbMo7IGXMq" role="2OqNvi">
+                                <node concept="3cmrfG" id="6hbMo7IGXMr" role="25WWJ7">
+                                  <property role="3cmrfH" value="0" />
                                 </node>
                               </node>
                             </node>
-                          </node>
-                          <node concept="liA8E" id="6hbMo7IGXMt" role="2OqNvi">
-                            <ref role="37wK5l" to="nx2r:~Expression.liftIndex(int,int):com.jetbrains.jetpad.vclang.term.expr.Expression" resolve="liftIndex" />
-                            <node concept="3cmrfG" id="6hbMo7IGXMu" role="37wK5m">
-                              <property role="3cmrfH" value="0" />
+                            <node concept="liA8E" id="6hbMo7IGXMs" role="2OqNvi">
+                              <ref role="37wK5l" to="2968:~Abstract$ArgumentExpression.getExpression():com.jetbrains.jetpad.vclang.term.Abstract$Expression" resolve="getExpression" />
                             </node>
-                            <node concept="3cmrfG" id="6hbMo7IGXMv" role="37wK5m">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="2YIFZM" id="6hbMo7IGXMw" role="37wK5m">
-                          <ref role="37wK5l" to="nx2r:~ExpressionFactory.Index(int):com.jetbrains.jetpad.vclang.term.expr.IndexExpression" resolve="Index" />
-                          <ref role="1Pybhc" to="nx2r:~ExpressionFactory" resolve="ExpressionFactory" />
-                          <node concept="3cmrfG" id="6hbMo7IGXMx" role="37wK5m">
-                            <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="6hbMo7IH57k" role="2OqNvi">
-                        <ref role="37wK5l" to="nx2r:~Expression.normalize(com.jetbrains.jetpad.vclang.term.expr.visitor.NormalizeVisitor$Mode,java.util.List):com.jetbrains.jetpad.vclang.term.expr.Expression" resolve="normalize" />
-                        <node concept="Rm8GO" id="6hbMo7IH5ve" role="37wK5m">
-                          <ref role="1Px2BO" to="byr7:~NormalizeVisitor$Mode" resolve="NormalizeVisitor.Mode" />
-                          <ref role="Rm8GQ" to="byr7:~NormalizeVisitor$Mode.NF" resolve="NF" />
-                        </node>
-                        <node concept="2ShNRf" id="28VLgn0uXSM" role="37wK5m">
-                          <node concept="Tc6Ow" id="28VLgn0v0sz" role="2ShVmc">
-                            <node concept="3uibUv" id="28VLgn0v0Kl" role="HW$YZ">
-                              <ref role="3uigEE" to="thjl:~Binding" resolve="Binding" />
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="liA8E" id="5fOERWnkU2R" role="2OqNvi">
+                        <ref role="37wK5l" to="nx2r:~LamExpression.getBody():com.jetbrains.jetpad.vclang.term.expr.Expression" resolve="getBody" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="6hbMo7IH6eo" role="2OqNvi">
+                    <node concept="liA8E" id="6hbMo7IGXMt" role="2OqNvi">
                       <ref role="37wK5l" to="nx2r:~Expression.liftIndex(int,int):com.jetbrains.jetpad.vclang.term.expr.Expression" resolve="liftIndex" />
-                      <node concept="3cmrfG" id="6hbMo7IH6o8" role="37wK5m">
+                      <node concept="3cmrfG" id="6hbMo7IGXMu" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
-                      <node concept="3cmrfG" id="6hbMo7IH6O$" role="37wK5m">
+                      <node concept="3cmrfG" id="6hbMo7IGXMv" role="37wK5m">
                         <property role="3cmrfH" value="-1" />
                       </node>
                     </node>
@@ -14554,8 +14522,8 @@
                     </node>
                   </node>
                   <node concept="2ZW3vV" id="6hbMo7IGUKb" role="3uHU7w">
-                    <node concept="3uibUv" id="6hbMo7IGUUk" role="2ZW6by">
-                      <ref role="3uigEE" to="nx2r:~Expression" resolve="Expression" />
+                    <node concept="3uibUv" id="5fOERWnkTFa" role="2ZW6by">
+                      <ref role="3uigEE" to="nx2r:~LamExpression" resolve="LamExpression" />
                     </node>
                     <node concept="2OqwBi" id="6hbMo7IGTLI" role="2ZW6bz">
                       <node concept="2OqwBi" id="6hbMo7IGSSp" role="2Oq$k0">
