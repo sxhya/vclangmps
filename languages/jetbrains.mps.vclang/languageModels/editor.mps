@@ -3702,5 +3702,15 @@
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
     </node>
   </node>
+  <node concept="24kQdi" id="7lTETB7Kya4">
+    <property role="3GE5qa" value="expression.dotExpression" />
+    <ref role="1XX52x" to="51uy:7lTETB7Ky9q" resolve="RawFieldAccessOperation" />
+    <node concept="3F0A7n" id="7lTETB7Kya6" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="VechU" id="7lTETB7Kye2" role="3F10Kt">
+        <property role="Vb096" value="red" />
+      </node>
+    </node>
+  </node>
 </model>
 

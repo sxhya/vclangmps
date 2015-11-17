@@ -1156,5 +1156,17 @@
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7lTETB7Ky9q">
+    <property role="1pbfSe" value="1027329523" />
+    <property role="3GE5qa" value="expression.dotExpression" />
+    <property role="TrG5h" value="RawFieldAccessOperation" />
+    <ref role="1TJDcQ" node="65CX60nc1HR" resolve="AbstractDotOperation" />
+    <node concept="PrWs8" id="7lTETB7Ky9z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7lTETB7Ky9C" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
 </model>
 
