@@ -61,13 +61,13 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="6aAUpg3pIV3">
-    <property role="TrG5h" value="ElimExpression" />
+    <property role="TrG5h" value="ElimCaseExpression" />
     <property role="3GE5qa" value="expression" />
     <property role="1pbfSe" value="1712183383" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFKB8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
@@ -1015,6 +1015,9 @@
     <node concept="PrWs8" id="4UsT_r7LB2B" role="PzmwI">
       <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
     </node>
+    <node concept="PrWs8" id="iEspzHwVFq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyi" id="4UsT_r7LJ1s" role="1TKVEl">
       <property role="TrG5h" value="arrow" />
       <ref role="AX2Wp" node="6dbcPfPFKEh" resolve="ArrowSwitch" />
@@ -1131,7 +1134,7 @@
   <node concept="1TIwiD" id="2sdLh_aklnv">
     <property role="1pbfSe" value="1902058232" />
     <property role="3GE5qa" value="clause.pattern" />
-    <property role="TrG5h" value="RawPatternConstructor" />
+    <property role="TrG5h" value="UnresolvedPatternConstructor" />
     <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     <node concept="1TJgyj" id="2bS0tZiQmvd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1139,8 +1142,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     </node>
-    <node concept="PrWs8" id="2sdLh_aklnH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="iEspzHmi9q" role="PzmwI">
+      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
     </node>
     <node concept="PrWs8" id="2bS0tZiQnO1" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
@@ -1159,13 +1162,21 @@
   <node concept="1TIwiD" id="7lTETB7Ky9q">
     <property role="1pbfSe" value="1027329523" />
     <property role="3GE5qa" value="expression.dotExpression" />
-    <property role="TrG5h" value="RawFieldAccessOperation" />
+    <property role="TrG5h" value="UnresolvedFieldAccessOperation" />
     <ref role="1TJDcQ" node="65CX60nc1HR" resolve="AbstractDotOperation" />
-    <node concept="PrWs8" id="7lTETB7Ky9z" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="iEspzHmi9v" role="PzmwI">
+      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
     </node>
-    <node concept="PrWs8" id="7lTETB7Ky9C" role="PzmwI">
+  </node>
+  <node concept="PlHQZ" id="iEspzHmhXy">
+    <property role="1pbfSe" value="234647302" />
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="IUnresolvedReference" />
+    <node concept="PrWs8" id="iEspzHmhXz" role="PrDN$">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="iEspzHmhXC" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

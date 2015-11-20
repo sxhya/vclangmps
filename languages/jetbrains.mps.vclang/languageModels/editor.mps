@@ -16,12 +16,12 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="thjl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.definition(jetpad.vclang/)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
+    <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -3658,7 +3658,7 @@
   </node>
   <node concept="24kQdi" id="2sdLh_akloi">
     <property role="3GE5qa" value="clause.pattern" />
-    <ref role="1XX52x" to="51uy:2sdLh_aklnv" resolve="RawPatternConstructor" />
+    <ref role="1XX52x" to="51uy:2sdLh_aklnv" resolve="UnresolvedPatternConstructor" />
     <node concept="3EZMnI" id="2sdLh_akl_d" role="2wV5jI">
       <node concept="3F0A7n" id="2sdLh_akmeA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -3704,7 +3704,7 @@
   </node>
   <node concept="24kQdi" id="7lTETB7Kya4">
     <property role="3GE5qa" value="expression.dotExpression" />
-    <ref role="1XX52x" to="51uy:7lTETB7Ky9q" resolve="RawFieldAccessOperation" />
+    <ref role="1XX52x" to="51uy:7lTETB7Ky9q" resolve="UnresolvedFieldAccessOperation" />
     <node concept="3F0A7n" id="7lTETB7Kya6" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       <node concept="VechU" id="7lTETB7Kye2" role="3F10Kt">
