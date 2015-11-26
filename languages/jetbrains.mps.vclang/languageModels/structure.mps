@@ -1179,5 +1179,57 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1TnPY9DDfKA">
+    <property role="1pbfSe" value="2013473784" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ClassExtExpression" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <node concept="1TJgyj" id="1TnPY9DDfKB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="leftArgument" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1TnPY9DDfKD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="statements" />
+      <ref role="20lvS9" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1TnPY9DDfKG">
+    <property role="1pbfSe" value="2013473778" />
+    <property role="3GE5qa" value="expression.implement" />
+    <property role="TrG5h" value="ImplementStatement" />
+    <ref role="1TJDcQ" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
+    <node concept="1TJgyj" id="1TnPY9DDhA1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="AbstractDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1TnPY9DG96w">
+    <property role="1pbfSe" value="2012714622" />
+    <property role="3GE5qa" value="expression.implement" />
+    <property role="TrG5h" value="UnresolvedImplementStatement" />
+    <ref role="1TJDcQ" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
+    <node concept="PrWs8" id="1TnPY9DG96x" role="PzmwI">
+      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1TnPY9DG96z">
+    <property role="1pbfSe" value="2012714619" />
+    <property role="3GE5qa" value="expression.implement" />
+    <property role="TrG5h" value="AbstractImplementStatement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyj" id="1TnPY9DDhA3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
