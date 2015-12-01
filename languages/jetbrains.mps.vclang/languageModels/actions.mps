@@ -655,6 +655,98 @@
   <node concept="3UOs0u" id="1yB791E7dw2">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="ExpressionSideTransforms" />
+    <node concept="3UNGvq" id="8deykFdNn1" role="3UOs0v">
+      <property role="3mWRNi" value="Allow anonymous extensions of classes" />
+      <ref role="3UNGvu" to="51uy:6aAUpg3pIVR" resolve="AbstractExpression" />
+      <node concept="tYCnQ" id="8deykFdNGw" role="_1QTJ">
+        <ref role="uz4UX" to="51uy:1TnPY9DG96z" resolve="AbstractImplementStatement" />
+        <node concept="Cmt7Y" id="8deykFdNGy" role="uz6Si">
+          <node concept="Cnhdc" id="8deykFdNGz" role="Cncma">
+            <node concept="3clFbS" id="8deykFdNG$" role="2VODD2">
+              <node concept="3cpWs8" id="8deykFdNIx" role="3cqZAp">
+                <node concept="3cpWsn" id="8deykFdNI$" role="3cpWs9">
+                  <property role="TrG5h" value="result" />
+                  <node concept="3Tqbb2" id="8deykFdNIw" role="1tU5fm">
+                    <ref role="ehGHo" to="51uy:1TnPY9DDfKA" resolve="ClassExtExpression" />
+                  </node>
+                  <node concept="2ShNRf" id="8deykFdNKJ" role="33vP2m">
+                    <node concept="3zrR0B" id="8deykFdNK4" role="2ShVmc">
+                      <node concept="3Tqbb2" id="8deykFdNK5" role="3zrR0E">
+                        <ref role="ehGHo" to="51uy:1TnPY9DDfKA" resolve="ClassExtExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="8deykFdOjq" role="3cqZAp">
+                <node concept="2OqwBi" id="8deykFdOlu" role="3clFbG">
+                  <node concept="Cj7Ep" id="8deykFdOjo" role="2Oq$k0" />
+                  <node concept="1P9Npp" id="8deykFdOoQ" role="2OqNvi">
+                    <node concept="37vLTw" id="8deykFdOqn" role="1P9ThW">
+                      <ref role="3cqZAo" node="8deykFdNI$" resolve="result" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="8deykFdNOa" role="3cqZAp">
+                <node concept="37vLTI" id="8deykFdOgb" role="3clFbG">
+                  <node concept="1PxgMI" id="8deykFdOKI" role="37vLTx">
+                    <ref role="1PxNhF" to="51uy:KzXl40_QXs" resolve="Expression" />
+                    <node concept="Cj7Ep" id="8deykFdOHd" role="1PxMeX" />
+                  </node>
+                  <node concept="2OqwBi" id="8deykFdNRC" role="37vLTJ">
+                    <node concept="37vLTw" id="8deykFdNO8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="8deykFdNI$" resolve="result" />
+                    </node>
+                    <node concept="3TrEf2" id="8deykFdO5m" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51uy:1TnPY9DDfKB" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="8deykFdNM0" role="3cqZAp">
+                <node concept="2OqwBi" id="8deykFdPN4" role="3clFbG">
+                  <node concept="2OqwBi" id="8deykFdOY9" role="2Oq$k0">
+                    <node concept="37vLTw" id="8deykFdNLY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="8deykFdNI$" resolve="result" />
+                    </node>
+                    <node concept="3Tsc0h" id="8deykFdP7p" role="2OqNvi">
+                      <ref role="3TtcxE" to="51uy:1TnPY9DDfKD" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="8deykFdQLb" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="8deykFdNHd" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="8deykFdNIs" role="Cn6ar">
+            <property role="2h1i$Z" value="Anonymous class extension" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kRJcU" id="8deykFdOvv" role="3kShCk">
+        <node concept="3clFbS" id="8deykFdOvw" role="2VODD2">
+          <node concept="3clFbF" id="8deykFdOyO" role="3cqZAp">
+            <node concept="2OqwBi" id="8deykFdO$X" role="3clFbG">
+              <node concept="Cj7Ep" id="8deykFdOyN" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="8deykFdOCt" role="2OqNvi">
+                <node concept="chp4Y" id="8deykFdOEH" role="cj9EA">
+                  <ref role="cht4Q" to="51uy:KzXl40_QXs" resolve="Expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="8deykFdOQx" role="3cqZAp">
+            <node concept="3SKdUq" id="8deykFdORK" role="3SKWNk">
+              <property role="3SKdUp" value="This should use information from typesystem" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3UNGvq" id="65CX60neqLu" role="3UOs0v">
       <property role="3mWRNi" value="Allows to access static class members" />
       <ref role="3UNGvu" to="51uy:6aAUpg3pIVR" resolve="AbstractExpression" />
@@ -4707,7 +4799,7 @@
                 <ref role="3cqZAo" node="4xhUX3twnaf" resolve="root" />
               </node>
               <node concept="1BlSNk" id="4xhUX3twnap" role="2OqNvi">
-                <ref role="1BmUXE" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+                <ref role="1BmUXE" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
                 <ref role="1Bn3mz" to="51uy:6dbcPfPFKB8" />
               </node>
             </node>
@@ -4780,7 +4872,7 @@
                 </node>
                 <node concept="1mIQ4w" id="4XXYB3_29gK" role="2OqNvi">
                   <node concept="chp4Y" id="4XXYB3_29oQ" role="cj9EA">
-                    <ref role="cht4Q" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+                    <ref role="cht4Q" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
                   </node>
                 </node>
               </node>
@@ -4864,7 +4956,7 @@
                 <node concept="2OqwBi" id="4XXYB3_2gyF" role="3clFbG">
                   <node concept="2OqwBi" id="4XXYB3_2fmz" role="2Oq$k0">
                     <node concept="1PxgMI" id="4XXYB3_2fdK" role="2Oq$k0">
-                      <ref role="1PxNhF" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+                      <ref role="1PxNhF" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
                       <node concept="2OqwBi" id="4XXYB3_2eYe" role="1PxMeX">
                         <node concept="Cj7Ep" id="4XXYB3_2eUP" role="2Oq$k0" />
                         <node concept="1mfA1w" id="4XXYB3_2f5q" role="2OqNvi" />
@@ -5429,7 +5521,7 @@
     <node concept="3FOIzC" id="4XXYB3_2mhA" role="3FOPby">
       <ref role="3FOWKa" to="51uy:6aAUpg3pIVR" resolve="AbstractExpression" />
       <node concept="tYCnQ" id="4XXYB3_2mhC" role="tZc4B">
-        <ref role="uz4UX" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+        <ref role="uz4UX" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
         <node concept="uMFAO" id="4XXYB3_2mhE" role="uz6Si">
           <node concept="uSIkt" id="4XXYB3_2mhF" role="uTubQ">
             <node concept="3clFbS" id="4XXYB3_2mhG" role="2VODD2">
@@ -5437,12 +5529,12 @@
                 <node concept="3cpWsn" id="4XXYB3_2nz0" role="3cpWs9">
                   <property role="TrG5h" value="result" />
                   <node concept="3Tqbb2" id="4XXYB3_2nyW" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+                    <ref role="ehGHo" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
                   </node>
                   <node concept="2ShNRf" id="4XXYB3_2nEV" role="33vP2m">
                     <node concept="3zrR0B" id="4XXYB3_2nE8" role="2ShVmc">
                       <node concept="3Tqbb2" id="4XXYB3_2nE9" role="3zrR0E">
-                        <ref role="ehGHo" to="51uy:6aAUpg3pIV3" resolve="ElimExpression" />
+                        <ref role="ehGHo" to="51uy:6aAUpg3pIV3" resolve="ElimCaseExpression" />
                       </node>
                     </node>
                   </node>
