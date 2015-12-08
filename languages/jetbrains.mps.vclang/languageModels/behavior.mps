@@ -13,7 +13,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -79,9 +79,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -617,6 +614,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp">
@@ -2096,8 +2100,10 @@
                 </node>
               </node>
             </node>
-            <node concept="u8gfJ" id="iEspzHCC6e" role="3cqZAp">
-              <node concept="3clFbF" id="4IGDNsCxxhn" role="u8lrQ">
+            <node concept="1X3_iC" id="5AajGBUFaXU" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="4IGDNsCxxhn" role="8Wnug">
                 <node concept="2OqwBi" id="4IGDNsCxi0s" role="3clFbG">
                   <node concept="37vLTw" id="4IGDNsCxhCK" role="2Oq$k0">
                     <ref role="3cqZAo" node="1$0zzZHWkqu" resolve="prevDefs" />
@@ -25746,8 +25752,21 @@
                         <node concept="3clFbF" id="1TnPY9DNHwb" role="3cqZAp">
                           <node concept="2OqwBi" id="1TnPY9DNHwc" role="3clFbG">
                             <node concept="1P9Npp" id="1TnPY9DNHwe" role="2OqNvi">
-                              <node concept="37vLTw" id="3c8XCwSIafC" role="1P9ThW">
-                                <ref role="3cqZAo" node="3c8XCwSI7IG" resolve="target" />
+                              <node concept="2pJPEk" id="5AajGBUIhqf" role="1P9ThW">
+                                <node concept="2pJPED" id="5AajGBUIhrM" role="2pJPEn">
+                                  <ref role="2pJxaS" to="51uy:65CX60nc9$h" resolve="StaticFieldAccessOperation" />
+                                  <node concept="2pIpSj" id="5AajGBUIhuT" role="2pJxcM">
+                                    <ref role="2pIpSl" to="51uy:65CX60nc9$i" />
+                                    <node concept="36biLy" id="5AajGBUIhzj" role="2pJxcZ">
+                                      <node concept="1PxgMI" id="5AajGBUIhGE" role="36biLW">
+                                        <ref role="1PxNhF" to="51uy:Z42ctSV7V8" resolve="Definition" />
+                                        <node concept="37vLTw" id="5AajGBUIhAZ" role="1PxMeX">
+                                          <ref role="3cqZAo" node="3c8XCwSI7IG" resolve="target" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                             <node concept="2OqwBi" id="1TnPY9DNIUV" role="2Oq$k0">
@@ -25762,11 +25781,15 @@
                         </node>
                       </node>
                       <node concept="1Wc70l" id="3c8XCwSLBm2" role="3clFbw">
-                        <node concept="3y3z36" id="3c8XCwSIaKm" role="3uHU7B">
-                          <node concept="37vLTw" id="3c8XCwSIaH2" role="3uHU7B">
+                        <node concept="2OqwBi" id="5AajGBUIhT_" role="3uHU7B">
+                          <node concept="37vLTw" id="3c8XCwSIaH2" role="2Oq$k0">
                             <ref role="3cqZAo" node="3c8XCwSI7IG" resolve="target" />
                           </node>
-                          <node concept="10Nm6u" id="3c8XCwSIaOD" role="3uHU7w" />
+                          <node concept="1mIQ4w" id="5AajGBUIi23" role="2OqNvi">
+                            <node concept="chp4Y" id="5AajGBUIi6v" role="cj9EA">
+                              <ref role="cht4Q" to="51uy:Z42ctSV7V8" resolve="Definition" />
+                            </node>
+                          </node>
                         </node>
                         <node concept="2OqwBi" id="8deykF9RMl" role="3uHU7w">
                           <node concept="2OqwBi" id="8deykF9Rxn" role="2Oq$k0">
