@@ -10,6 +10,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -54,6 +55,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -125,7 +127,7 @@
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="args" />
       <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     </node>
     <node concept="1TJgyj" id="6aAUpg3pXe2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -157,7 +159,7 @@
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="typedArgs" />
       <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     </node>
     <node concept="PrWs8" id="5NQyKEZKmbD" role="PzmwI">
       <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
@@ -227,15 +229,12 @@
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="TelescopeArgument" />
     <property role="1pbfSe" value="1712230485" />
-    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     <node concept="1TJgyj" id="6aAUpg3pUry" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="varNames" />
       <ref role="20lvS9" node="6aAUpg3pUr$" resolve="Variable" />
-    </node>
-    <node concept="PrWs8" id="6dbcPfPFe9d" role="PzmwI">
-      <ref role="PrY4T" node="6dbcPfPFe95" resolve="ITypedArgument" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUr$">
@@ -312,6 +311,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
+    <node concept="asaX9" id="3J0mSWJrVDu" role="lGtFl" />
   </node>
   <node concept="AxPO7" id="6dbcPfPFDMz">
     <property role="3GE5qa" value="switches" />
@@ -521,7 +521,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typedArgs" />
       <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     </node>
     <node concept="PrWs8" id="KzXl40BR2Y" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
@@ -554,7 +554,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typedArgs" />
       <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="6dbcPfPFe95" resolve="ITypedArgument" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     </node>
     <node concept="PrWs8" id="3ixSrrqDlPz" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
@@ -722,10 +722,7 @@
     <property role="TrG5h" value="TypedArgument" />
     <property role="R4oN_" value="Anonymous typed argument" />
     <property role="1pbfSe" value="479901538" />
-    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
-    <node concept="PrWs8" id="5NQyKEZDeej" role="PzmwI">
-      <ref role="PrY4T" node="6dbcPfPFe95" resolve="ITypedArgument" />
-    </node>
+    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
   </node>
   <node concept="1TIwiD" id="5NQyKEZEQ4l">
     <property role="3GE5qa" value="expression" />
@@ -1229,6 +1226,23 @@
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3J0mSWJrk4E">
+    <property role="1pbfSe" value="1798151353" />
+    <property role="3GE5qa" value="arguments" />
+    <property role="TrG5h" value="AbstractTypedArgument" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+    <node concept="1TJgyj" id="3J0mSWJrkqy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
+    </node>
+    <node concept="1TJgyi" id="3J0mSWJrkqw" role="1TKVEl">
+      <property role="TrG5h" value="isImplicit" />
+      <ref role="AX2Wp" node="KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
     </node>
   </node>
 </model>
