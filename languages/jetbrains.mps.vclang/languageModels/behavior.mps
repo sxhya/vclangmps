@@ -5659,6 +5659,20 @@
   <node concept="312cEu" id="5NQyKEZGqyC">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="AdapterUtils" />
+    <node concept="Wx3nA" id="7lZzp77OjDL" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="VCLANG" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7lZzp77OjV0" role="1B3o_S" />
+      <node concept="3uibUv" id="7lZzp77OjCl" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="7lZzp77OjU9" role="33vP2m">
+        <property role="Xl_RC" value="vclang" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7lZzp77OhFD" role="jymVt" />
     <node concept="Wx3nA" id="5QGigKLeZoK" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
