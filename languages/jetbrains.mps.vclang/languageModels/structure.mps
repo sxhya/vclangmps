@@ -523,6 +523,12 @@
       <ref role="20ksaX" node="KzXl40_P0s" />
       <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
     </node>
+    <node concept="1TJgyj" id="1mwsisV1hnW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="conditions" />
+      <ref role="20lvS9" node="1mwsisV1fp0" resolve="Condition" />
+    </node>
     <node concept="PrWs8" id="KzXl40BR2Y" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
@@ -1243,6 +1249,24 @@
     <node concept="1TJgyi" id="3J0mSWJrkqw" role="1TKVEl">
       <property role="TrG5h" value="isImplicit" />
       <ref role="AX2Wp" node="KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1mwsisV1fp0">
+    <property role="1pbfSe" value="1353017191" />
+    <property role="3GE5qa" value="def.data_constructor" />
+    <property role="TrG5h" value="Condition" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="PrWs8" id="1mwsisV1fp8" role="PzmwI">
+      <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
+    </node>
+    <node concept="PrWs8" id="1mwsisV4fOw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1mwsisV1fpc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="expr" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
   </node>
 </model>
