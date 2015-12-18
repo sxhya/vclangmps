@@ -3730,59 +3730,12 @@
       <node concept="l2Vlx" id="54AIZWS11rs" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2sdLh_akloi">
-    <property role="3GE5qa" value="clause.pattern" />
-    <ref role="1XX52x" to="51uy:2sdLh_aklnv" resolve="UnresolvedPatternConstructor" />
-    <node concept="3EZMnI" id="2sdLh_akl_d" role="2wV5jI">
-      <node concept="3F0A7n" id="2sdLh_akmeA" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="VechU" id="2sdLh_akmnA" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="2sdLh_akl_h" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
-        <ref role="1NtTu8" to="51uy:2bS0tZiQmvd" />
-        <node concept="l2Vlx" id="2sdLh_akl_i" role="2czzBx" />
-        <node concept="pkWqt" id="2JojTvPu6Ha" role="pqm2j">
-          <node concept="3clFbS" id="2JojTvPu6Hb" role="2VODD2">
-            <node concept="3clFbF" id="2JojTvPu8tF" role="3cqZAp">
-              <node concept="2OqwBi" id="5AajGBUFaUn" role="3clFbG">
-                <node concept="2OqwBi" id="2JojTvPu8y2" role="2Oq$k0">
-                  <node concept="pncrf" id="2JojTvPu8tE" role="2Oq$k0" />
-                  <node concept="Bykcj" id="5AajGBUFaUk" role="2OqNvi">
-                    <node concept="1aIX9F" id="5AajGBUFaUl" role="1xVPHs">
-                      <node concept="26LbJo" id="5AajGBUFaUm" role="1aIX9E">
-                        <ref role="26LbJp" to="51uy:2bS0tZiQmvd" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="5AajGBUFaUo" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2sdLh_akl_I" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4ojGMossftK">
     <property role="3GE5qa" value="clause.pattern" />
     <ref role="1XX52x" to="51uy:4ojGMossfs_" resolve="AnyConstructorPattern" />
     <node concept="3F0ifn" id="4ojGMossftM" role="2wV5jI">
       <property role="3F0ifm" value="_?" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7lTETB7Kya4">
-    <property role="3GE5qa" value="expression.dotExpression" />
-    <ref role="1XX52x" to="51uy:7lTETB7Ky9q" resolve="UnresolvedFieldAccessOperation" />
-    <node concept="3F0A7n" id="7lTETB7Kya6" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      <node concept="VechU" id="7lTETB7Kye2" role="3F10Kt">
-        <property role="Vb096" value="red" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1TnPY9DDfL5">

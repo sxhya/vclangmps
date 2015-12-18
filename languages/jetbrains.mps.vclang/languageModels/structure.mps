@@ -884,6 +884,7 @@
       <property role="20kJfa" value="constructor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" />
     </node>
     <node concept="1TJgyj" id="1dats513lFU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -893,6 +894,9 @@
     </node>
     <node concept="PrWs8" id="1SuY8bUbZKh" role="PrDN$">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
+    </node>
+    <node concept="PrWs8" id="25RiHgHM$yg" role="PrDN$">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="14pT6cv9ApD">
@@ -1085,9 +1089,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     </node>
-    <node concept="PrWs8" id="5LKdqecnUps" role="PrDN$">
-      <ref role="PrY4T" node="6aAUpg3pIVR" resolve="AbstractExpression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3ixSrrqshCZ">
     <property role="1pbfSe" value="252902389" />
@@ -1134,24 +1135,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2sdLh_aklnv">
-    <property role="1pbfSe" value="1902058232" />
-    <property role="3GE5qa" value="clause.pattern" />
-    <property role="TrG5h" value="UnresolvedPatternConstructor" />
-    <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
-    <node concept="1TJgyj" id="2bS0tZiQmvd" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="argPatterns" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
-    </node>
-    <node concept="PrWs8" id="iEspzHmi9q" role="PzmwI">
-      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
-    </node>
-    <node concept="PrWs8" id="2bS0tZiQnO1" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4ojGMossfs_">
     <property role="1pbfSe" value="1652861515" />
     <property role="3GE5qa" value="clause.pattern" />
@@ -1160,15 +1143,6 @@
     <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     <node concept="PrWs8" id="4ojGMossllW" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7lTETB7Ky9q">
-    <property role="1pbfSe" value="1027329523" />
-    <property role="3GE5qa" value="expression.dotExpression" />
-    <property role="TrG5h" value="UnresolvedFieldAccessOperation" />
-    <ref role="1TJDcQ" node="65CX60nc1HR" resolve="AbstractDotOperation" />
-    <node concept="PrWs8" id="iEspzHmi9v" role="PzmwI">
-      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
     </node>
   </node>
   <node concept="PlHQZ" id="iEspzHmhXy">
