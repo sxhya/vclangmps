@@ -757,9 +757,13 @@
       <property role="20kJfa" value="classifier" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" />
     </node>
     <node concept="PrWs8" id="3vFRxEzPv0P" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="1sSRWjCXK1z" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
     <node concept="1TJgyj" id="3ixSrrqH3VW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
