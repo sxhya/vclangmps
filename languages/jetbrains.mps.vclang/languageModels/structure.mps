@@ -1237,9 +1237,6 @@
     <node concept="PrWs8" id="1mwsisV1fp8" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
     </node>
-    <node concept="PrWs8" id="1mwsisV4fOw" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="1mwsisV1fpc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />

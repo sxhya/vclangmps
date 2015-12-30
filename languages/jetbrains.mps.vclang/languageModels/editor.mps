@@ -3817,27 +3817,6 @@
       <node concept="3F0ifn" id="1mwsisV1fyF" role="3EZMnx">
         <property role="3F0ifm" value="|" />
       </node>
-      <node concept="3F0A7n" id="1mwsisV4iNh" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="pkWqt" id="1mwsisV4iNo" role="pqm2j">
-          <node concept="3clFbS" id="1mwsisV4iNp" role="2VODD2">
-            <node concept="3clFbF" id="1mwsisV4iOy" role="3cqZAp">
-              <node concept="2OqwBi" id="1mwsisV4jeo" role="3clFbG">
-                <node concept="2OqwBi" id="1mwsisV4iST" role="2Oq$k0">
-                  <node concept="pncrf" id="1mwsisV4iOx" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1mwsisV4j3k" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="17RvpY" id="1mwsisV4jmg" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="VechU" id="1mwsisV4jrU" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
       <node concept="PMmxH" id="1mwsisV1fpU" role="3EZMnx">
         <ref role="PMmxG" node="4r2Al6x4ZJ7" resolve="ConstructorPatternComponent" />
       </node>
