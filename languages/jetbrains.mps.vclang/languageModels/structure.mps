@@ -249,10 +249,13 @@
   <node concept="1TIwiD" id="Z42ctSV31q">
     <property role="TrG5h" value="ClassDefinition" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="class" />
     <property role="R4oN_" value="Vclang class definition" />
     <property role="1pbfSe" value="2001716959" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyi" id="3cDD4OBZoi6" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="3cDD4OBZohY" resolve="ClassType" />
+    </node>
     <node concept="1TJgyj" id="Z42ctSV7V9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
@@ -795,10 +798,13 @@
   <node concept="1TIwiD" id="7GSxIwvCsQY">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="StaticModifier" />
-    <property role="34LRSv" value="static" />
-    <property role="R4oN_" value="Static modifier" />
+    <property role="R4oN_" value="Definition modifier" />
     <property role="1pbfSe" value="1696967514" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyi" id="3cDD4OBTMmi" role="1TKVEl">
+      <property role="TrG5h" value="modifier" />
+      <ref role="AX2Wp" node="3cDD4OBTM01" resolve="ModifierType" />
+    </node>
     <node concept="1TJgyj" id="7GSxIwvCsQZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="member" />
@@ -807,6 +813,9 @@
     </node>
     <node concept="PrWs8" id="7GSxIwvCsR1" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="3$zNNicmcj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Hyh$MjdShy">
@@ -1242,6 +1251,46 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="expr" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3cDD4OBTM01">
+    <property role="3GE5qa" value="switches" />
+    <property role="TrG5h" value="ModifierType" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3cDD4OBTM02" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="static" />
+    </node>
+    <node concept="M4N5e" id="3cDD4OBTM6A" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="dynamic" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3cDD4OBX$WE">
+    <property role="1pbfSe" value="1528820599" />
+    <property role="3GE5qa" value="def" />
+    <property role="TrG5h" value="DefaultStaticModifier" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="PrWs8" id="3cDD4OBX$WF" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="1TJgyi" id="3cDD4OBX$WL" role="1TKVEl">
+      <property role="TrG5h" value="modifier" />
+      <ref role="AX2Wp" node="3cDD4OBTM01" resolve="ModifierType" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3cDD4OBZohY">
+    <property role="3GE5qa" value="switches" />
+    <property role="TrG5h" value="ClassType" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3cDD4OBZoi0" role="M5hS2">
+      <property role="1uS6qo" value="module" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="3cDD4OBZohZ" role="M5hS2">
+      <property role="1uS6qo" value="class" />
+      <property role="1uS6qv" value="1" />
     </node>
   </node>
 </model>

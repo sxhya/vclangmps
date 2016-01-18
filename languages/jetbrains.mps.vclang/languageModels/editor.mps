@@ -969,8 +969,8 @@
   <node concept="24kQdi" id="Z42ctSVdkV">
     <ref role="1XX52x" to="51uy:Z42ctSV31q" resolve="ClassDefinition" />
     <node concept="3EZMnI" id="6wsTcrVcwgz" role="2wV5jI">
-      <node concept="PMmxH" id="6wsTcrVcwgE" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="3F0A7n" id="3cDD4OBZoqL" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3cDD4OBZoi6" resolve="type" />
         <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
       </node>
       <node concept="3F0A7n" id="6wsTcrVcwgN" role="3EZMnx">
@@ -2632,10 +2632,10 @@
     <property role="3GE5qa" value="def" />
     <ref role="1XX52x" to="51uy:7GSxIwvCsQY" resolve="StaticModifier" />
     <node concept="3EZMnI" id="7GSxIwvCsRa" role="2wV5jI">
-      <node concept="PMmxH" id="7GSxIwvCsRk" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      <node concept="3F0A7n" id="3cDD4OBTMmo" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3cDD4OBTMmi" resolve="modifier" />
         <ref role="1ERwB7" node="2jcrgspHJ9u" resolve="StaticModifier_remove" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
       </node>
       <node concept="3F1sOY" id="7GSxIwvCsRn" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:7GSxIwvCsQZ" />
@@ -3828,6 +3828,21 @@
         <ref role="1NtTu8" to="51uy:1mwsisV1fpc" />
       </node>
       <node concept="l2Vlx" id="1mwsisV1fpJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3cDD4OBX$Xb">
+    <property role="3GE5qa" value="def" />
+    <ref role="1XX52x" to="51uy:3cDD4OBX$WE" resolve="DefaultStaticModifier" />
+    <node concept="3EZMnI" id="3cDD4OBX$Xd" role="2wV5jI">
+      <node concept="3F0ifn" id="3cDD4OBX$Xn" role="3EZMnx">
+        <property role="3F0ifm" value="all" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      </node>
+      <node concept="3F0A7n" id="3cDD4OBX$Xt" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3cDD4OBX$WL" resolve="modifier" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      </node>
+      <node concept="l2Vlx" id="3cDD4OBX$Xg" role="2iSdaV" />
     </node>
   </node>
 </model>
