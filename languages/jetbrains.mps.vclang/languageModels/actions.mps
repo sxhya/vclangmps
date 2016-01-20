@@ -720,7 +720,7 @@
       <property role="3mWRNi" value="Allow anonymous extensions of classes" />
       <ref role="3UNGvu" to="51uy:6aAUpg3pIVR" resolve="AbstractExpression" />
       <node concept="tYCnQ" id="8deykFdNGw" role="_1QTJ">
-        <ref role="uz4UX" to="51uy:1TnPY9DG96z" resolve="AbstractImplementStatement" />
+        <ref role="uz4UX" to="51uy:1TnPY9DDfKG" resolve="ImplementStatement" />
         <node concept="Cmt7Y" id="8deykFdNGy" role="uz6Si">
           <node concept="Cnhdc" id="8deykFdNGz" role="Cncma">
             <node concept="3clFbS" id="8deykFdNG$" role="2VODD2">

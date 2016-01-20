@@ -10,7 +10,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -55,7 +54,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -299,22 +297,6 @@
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1492653369" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-  </node>
-  <node concept="PlHQZ" id="6dbcPfPFe95">
-    <property role="3GE5qa" value="abstract" />
-    <property role="TrG5h" value="ITypedArgument" />
-    <property role="1pbfSe" value="1492653464" />
-    <node concept="1TJgyi" id="KzXl40Bggt" role="1TKVEl">
-      <property role="TrG5h" value="isImplicit" />
-      <ref role="AX2Wp" node="KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
-    </node>
-    <node concept="1TJgyj" id="6aAUpg3pUqZ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="typeExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
-    </node>
-    <node concept="asaX9" id="3J0mSWJrVDu" role="lGtFl" />
   </node>
   <node concept="AxPO7" id="6dbcPfPFDMz">
     <property role="3GE5qa" value="switches" />
@@ -1158,17 +1140,6 @@
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
   </node>
-  <node concept="PlHQZ" id="iEspzHmhXy">
-    <property role="1pbfSe" value="234647302" />
-    <property role="3GE5qa" value="abstract" />
-    <property role="TrG5h" value="IUnresolvedReference" />
-    <node concept="PrWs8" id="iEspzHmhXz" role="PrDN$">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="iEspzHmhXC" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1TnPY9DDfKA">
     <property role="1pbfSe" value="2013473784" />
     <property role="3GE5qa" value="expression" />
@@ -1183,42 +1154,25 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="statements" />
-      <ref role="20lvS9" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
+      <ref role="20lvS9" node="1TnPY9DDfKG" resolve="ImplementStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="1TnPY9DDfKG">
     <property role="1pbfSe" value="2013473778" />
     <property role="3GE5qa" value="expression.implement" />
     <property role="TrG5h" value="ImplementStatement" />
-    <ref role="1TJDcQ" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
-    <node concept="1TJgyj" id="1TnPY9DDhA1" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="AbstractDefinition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1TnPY9DG96w">
-    <property role="1pbfSe" value="2012714622" />
-    <property role="3GE5qa" value="expression.implement" />
-    <property role="TrG5h" value="UnresolvedImplementStatement" />
-    <ref role="1TJDcQ" node="1TnPY9DG96z" resolve="AbstractImplementStatement" />
-    <node concept="PrWs8" id="1TnPY9DG96x" role="PzmwI">
-      <ref role="PrY4T" node="iEspzHmhXy" resolve="IUnresolvedReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1TnPY9DG96z">
-    <property role="1pbfSe" value="2012714619" />
-    <property role="3GE5qa" value="expression.implement" />
-    <property role="TrG5h" value="AbstractImplementStatement" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="1TnPY9DDhA3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1TnPY9DDhA1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="AbstractDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="3J0mSWJrk4E">

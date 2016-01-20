@@ -35,9 +35,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -102,7 +99,6 @@
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
-      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -305,23 +301,6 @@
     <node concept="1YaCAy" id="BWspTYejju" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="51uy:KzXl40_QXs" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="iEspzHmi9x">
-    <property role="TrG5h" value="CheckUnresolvedLinks" />
-    <node concept="3clFbS" id="iEspzHmi9y" role="18ibNy">
-      <node concept="2MkqsV" id="iEspzHmikp" role="3cqZAp">
-        <node concept="1YBJjd" id="iEspzHmikR" role="2OEOjV">
-          <ref role="1YBMHb" node="iEspzHmi9R" resolve="ref" />
-        </node>
-        <node concept="Xl_RD" id="iEspzHmik_" role="2MkJ7o">
-          <property role="Xl_RC" value="Unresolved reference" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="iEspzHmi9R" role="1YuTPh">
-      <property role="TrG5h" value="ref" />
-      <ref role="1YaFvo" to="51uy:iEspzHmhXy" resolve="IUnresolvedReference" />
     </node>
   </node>
 </model>

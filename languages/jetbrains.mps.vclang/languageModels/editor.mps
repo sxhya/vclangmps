@@ -3790,26 +3790,6 @@
       <node concept="l2Vlx" id="1TnPY9DDhAz" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1TnPY9DG96Y">
-    <property role="3GE5qa" value="expression.implement" />
-    <ref role="1XX52x" to="51uy:1TnPY9DG96w" resolve="UnresolvedImplementStatement" />
-    <node concept="3EZMnI" id="1TnPY9DG975" role="2wV5jI">
-      <node concept="3F0A7n" id="1TnPY9DG97p" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="VechU" id="1TnPY9DG98i" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1TnPY9DG979" role="3EZMnx">
-        <property role="3F0ifm" value="=&gt;" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-      </node>
-      <node concept="3F1sOY" id="1TnPY9DG97a" role="3EZMnx">
-        <ref role="1NtTu8" to="51uy:1TnPY9DDhA3" />
-      </node>
-      <node concept="l2Vlx" id="1TnPY9DG97b" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1mwsisV1fpE">
     <property role="3GE5qa" value="def.data_constructor" />
     <ref role="1XX52x" to="51uy:1mwsisV1fp0" resolve="Condition" />
