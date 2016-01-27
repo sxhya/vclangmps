@@ -572,7 +572,6 @@
                 <node concept="37vLTw" id="2YKkCzuYxL_" role="37wK5m">
                   <ref role="3cqZAo" node="2JojTvP$mKu" resolve="reporter" />
                 </node>
-                <node concept="3clFbT" id="2YKkCzuYxEn" role="37wK5m" />
                 <node concept="2OqwBi" id="2YKkCzuYxEo" role="37wK5m">
                   <node concept="37vLTw" id="2YKkCzuYxOc" role="2Oq$k0">
                     <ref role="3cqZAo" node="1dats510v1i" resolve="node" />
@@ -766,6 +765,21 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="3$zNNidw2s" role="3clF47">
+        <node concept="3SKdUt" id="6OKEjRrH9gn" role="3cqZAp">
+          <node concept="3SKdUq" id="6OKEjRrH9gp" role="3SKWNk">
+            <property role="3SKdUp" value="adds dynamic/static modifier to each class member" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6OKEjRrH9nH" role="3cqZAp">
+          <node concept="3SKdUq" id="6OKEjRrH9nJ" role="3SKWNk">
+            <property role="3SKdUp" value="these modifiers are not compulsory in the text version of vclang" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6OKEjRrHwTW" role="3cqZAp">
+          <node concept="3SKdUq" id="6OKEjRrHwTY" role="3SKWNk">
+            <property role="3SKdUp" value="but we require them to always be explicit in the mps version" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="3$zNNidw2t" role="3cqZAp">
           <node concept="3cpWsn" id="3$zNNidw2u" role="3cpWs9">
             <property role="TrG5h" value="sml" />
@@ -1348,7 +1362,6 @@
                 <node concept="37vLTw" id="YtOnQrFqvj" role="37wK5m">
                   <ref role="3cqZAo" node="YtOnQrF3IF" resolve="er" />
                 </node>
-                <node concept="3clFbT" id="YtOnQrECTK" role="37wK5m" />
                 <node concept="2OqwBi" id="10jGNhK6dBY" role="37wK5m">
                   <node concept="2Sf5sV" id="10jGNhK6dz6" role="2Oq$k0" />
                   <node concept="I4A8Y" id="10jGNhK6dJh" role="2OqNvi" />
@@ -1859,10 +1872,6 @@
           <ref role="3uigEE" to="5r1:~ErrorReporter" resolve="ErrorReporter" />
         </node>
       </node>
-      <node concept="37vLTG" id="10jGNhK5Mb8" role="3clF46">
-        <property role="TrG5h" value="f" />
-        <node concept="10P_77" id="10jGNhK5Meo" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="10jGNhK69Rc" role="3clF46">
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="10jGNhK69RM" role="1tU5fm" />
@@ -1875,8 +1884,8 @@
           <node concept="37vLTw" id="10jGNhK5Mg6" role="37wK5m">
             <ref role="3cqZAo" node="10jGNhK5Mb0" resolve="r" />
           </node>
-          <node concept="37vLTw" id="10jGNhK5Mgp" role="37wK5m">
-            <ref role="3cqZAo" node="10jGNhK5Mb8" resolve="f" />
+          <node concept="3clFbT" id="6OKEjRrHugS" role="37wK5m">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
         <node concept="3clFbF" id="10jGNhK6a2h" role="3cqZAp">

@@ -3801,7 +3801,7 @@
         <ref role="PMmxG" node="4r2Al6x4ZJ7" resolve="ConstructorPatternComponent" />
       </node>
       <node concept="3F0ifn" id="1mwsisV1fpQ" role="3EZMnx">
-        <property role="3F0ifm" value="=&gt;" />
+        <property role="3F0ifm" value="⇒" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="1mwsisV1fyx" role="3EZMnx">

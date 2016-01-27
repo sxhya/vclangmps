@@ -1184,7 +1184,7 @@
     <node concept="1TJgyj" id="3J0mSWJrkqy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typeExpr" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6aAUpg3pIVR" resolve="AbstractExpression" />
     </node>
     <node concept="1TJgyi" id="3J0mSWJrkqw" role="1TKVEl">
