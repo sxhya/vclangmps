@@ -747,6 +747,14 @@
         <node concept="3clFbF" id="2JojTvP$oBv" role="3cqZAp">
           <node concept="1rXfSq" id="2JojTvP$oBw" role="3clFbG">
             <ref role="37wK5l" node="YtOnQrFdBl" resolve="logErrors" />
+            <node concept="2OqwBi" id="6LSE$xxnLqW" role="37wK5m">
+              <node concept="37vLTw" id="6LSE$xxnLku" role="2Oq$k0">
+                <ref role="3cqZAo" node="1dats510v1i" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="6LSE$xxnLCL" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
             <node concept="37vLTw" id="2JojTvP$oBx" role="37wK5m">
               <ref role="3cqZAo" node="2JojTvP$mKu" resolve="reporter" />
             </node>
@@ -1003,12 +1011,15 @@
       </node>
       <node concept="3Tm1VV" id="3$zNNidw3O" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="7jEwPleYx5G" role="jymVt" />
     <node concept="2tJIrI" id="YtOnQrFc0Y" role="jymVt" />
     <node concept="2YIFZL" id="YtOnQrFdBl" role="jymVt">
       <property role="TrG5h" value="logErrors" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="6LSE$xxnKQH" role="3clF46">
+        <property role="TrG5h" value="prefix" />
+        <node concept="17QB3L" id="6LSE$xxnL1d" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="YtOnQrFe7u" role="3clF46">
         <property role="TrG5h" value="er" />
         <node concept="3uibUv" id="YtOnQrFeWy" role="1tU5fm">
@@ -1046,44 +1057,61 @@
             </node>
             <node concept="liA8E" id="1dpn7r0vPoI" role="2OqNvi">
               <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="3K4zz7" id="1dpn7r0wqZI" role="37wK5m">
-                <node concept="Xl_RD" id="1dpn7r0wrsb" role="3K4E3e">
-                  <property role="Xl_RC" value="There were no typechecking errors." />
-                </node>
-                <node concept="3clFbC" id="1dpn7r0wqdJ" role="3K4Cdx">
-                  <node concept="3cmrfG" id="1dpn7r0wqs$" role="3uHU7w">
-                    <property role="3cmrfH" value="0" />
+              <node concept="3cpWs3" id="6LSE$xxivXy" role="37wK5m">
+                <node concept="3cpWs3" id="6LSE$xxiweH" role="3uHU7B">
+                  <node concept="Xl_RD" id="6LSE$xxiwhL" role="3uHU7w">
+                    <property role="Xl_RC" value="] " />
                   </node>
-                  <node concept="37vLTw" id="1dpn7r0wpQZ" role="3uHU7B">
-                    <ref role="3cqZAo" node="1dpn7r0wnI3" resolve="eC" />
+                  <node concept="3cpWs3" id="6LSE$xxiwo_" role="3uHU7B">
+                    <node concept="Xl_RD" id="6LSE$xxiwrA" role="3uHU7B">
+                      <property role="Xl_RC" value="[" />
+                    </node>
+                    <node concept="37vLTw" id="6LSE$xxnLgc" role="3uHU7w">
+                      <ref role="3cqZAo" node="6LSE$xxnKQH" resolve="prefix" />
+                    </node>
                   </node>
                 </node>
-                <node concept="1eOMI4" id="IDt3LXI5T5" role="3K4GZi">
-                  <node concept="3K4zz7" id="IDt3LXI91q" role="1eOMHV">
-                    <node concept="3clFbC" id="IDt3LXI7_O" role="3K4Cdx">
-                      <node concept="3cmrfG" id="IDt3LXI8gT" role="3uHU7w">
-                        <property role="3cmrfH" value="1" />
+                <node concept="1eOMI4" id="6LSE$xxivUE" role="3uHU7w">
+                  <node concept="3K4zz7" id="6LSE$xxivUF" role="1eOMHV">
+                    <node concept="Xl_RD" id="6LSE$xxivUG" role="3K4E3e">
+                      <property role="Xl_RC" value="There were no typechecking errors." />
+                    </node>
+                    <node concept="3clFbC" id="6LSE$xxivUH" role="3K4Cdx">
+                      <node concept="3cmrfG" id="6LSE$xxivUI" role="3uHU7w">
+                        <property role="3cmrfH" value="0" />
                       </node>
-                      <node concept="37vLTw" id="IDt3LXI62V" role="3uHU7B">
+                      <node concept="37vLTw" id="6LSE$xxivUJ" role="3uHU7B">
                         <ref role="3cqZAo" node="1dpn7r0wnI3" resolve="eC" />
                       </node>
                     </node>
-                    <node concept="3cpWs3" id="1dpn7r0vRDo" role="3K4E3e">
-                      <node concept="Xl_RD" id="1dpn7r0vRRe" role="3uHU7w" />
-                      <node concept="Xl_RD" id="1dpn7r0vPp3" role="3uHU7B">
-                        <property role="Xl_RC" value="There was 1 typechecking error." />
-                      </node>
-                    </node>
-                    <node concept="3cpWs3" id="IDt3LXIczD" role="3K4GZi">
-                      <node concept="Xl_RD" id="IDt3LXIcLa" role="3uHU7w">
-                        <property role="Xl_RC" value=" typechecking errors." />
-                      </node>
-                      <node concept="3cpWs3" id="IDt3LXIbTW" role="3uHU7B">
-                        <node concept="Xl_RD" id="IDt3LXIboL" role="3uHU7B">
-                          <property role="Xl_RC" value="There were " />
+                    <node concept="1eOMI4" id="6LSE$xxivUK" role="3K4GZi">
+                      <node concept="3K4zz7" id="6LSE$xxivUL" role="1eOMHV">
+                        <node concept="3clFbC" id="6LSE$xxivUM" role="3K4Cdx">
+                          <node concept="3cmrfG" id="6LSE$xxivUN" role="3uHU7w">
+                            <property role="3cmrfH" value="1" />
+                          </node>
+                          <node concept="37vLTw" id="6LSE$xxivUO" role="3uHU7B">
+                            <ref role="3cqZAo" node="1dpn7r0wnI3" resolve="eC" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="IDt3LXIc71" role="3uHU7w">
-                          <ref role="3cqZAo" node="1dpn7r0wnI3" resolve="eC" />
+                        <node concept="3cpWs3" id="6LSE$xxivUP" role="3K4E3e">
+                          <node concept="Xl_RD" id="6LSE$xxivUQ" role="3uHU7w" />
+                          <node concept="Xl_RD" id="6LSE$xxivUR" role="3uHU7B">
+                            <property role="Xl_RC" value="There was 1 typechecking error." />
+                          </node>
+                        </node>
+                        <node concept="3cpWs3" id="6LSE$xxivUS" role="3K4GZi">
+                          <node concept="Xl_RD" id="6LSE$xxivUT" role="3uHU7w">
+                            <property role="Xl_RC" value=" typechecking errors." />
+                          </node>
+                          <node concept="3cpWs3" id="6LSE$xxivUU" role="3uHU7B">
+                            <node concept="Xl_RD" id="6LSE$xxivUV" role="3uHU7B">
+                              <property role="Xl_RC" value="There were " />
+                            </node>
+                            <node concept="37vLTw" id="6LSE$xxivUW" role="3uHU7w">
+                              <ref role="3cqZAo" node="1dpn7r0wnI3" resolve="eC" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1771,6 +1799,7 @@
           <node concept="2YIFZM" id="6$6Iq23dFVR" role="3clFbG">
             <ref role="37wK5l" node="YtOnQrFdBl" resolve="logErrors" />
             <ref role="1Pybhc" node="7jOshQJOqzX" resolve="TypeCheckUtils" />
+            <node concept="10Nm6u" id="6LSE$xxiGSA" role="37wK5m" />
             <node concept="37vLTw" id="6$6Iq23dG4g" role="37wK5m">
               <ref role="3cqZAo" node="YtOnQrF3IF" resolve="er" />
             </node>
@@ -1952,13 +1981,18 @@
           <node concept="3cpWsn" id="10jGNhK69tR" role="3cpWs9">
             <property role="TrG5h" value="bcv" />
             <node concept="3uibUv" id="10jGNhK69tS" role="1tU5fm">
-              <ref role="3uigEE" to="hhlq:PFJmlfDp$F" resolve="BuildClassVisitor" />
+              <ref role="3uigEE" to="hhlq:PFJmlfDp$F" resolve="ModelBuilder" />
             </node>
             <node concept="2ShNRf" id="10jGNhK69tT" role="33vP2m">
               <node concept="1pGfFk" id="73jCsPaSOtk" role="2ShVmc">
-                <ref role="37wK5l" to="hhlq:73jCsPaSuua" resolve="BuildClassVisitor" />
-                <node concept="37vLTw" id="73jCsPaSO_A" role="37wK5m">
-                  <ref role="3cqZAo" node="10jGNhK69YH" resolve="myModel" />
+                <ref role="37wK5l" to="hhlq:73jCsPaSuua" resolve="ModelBuilder" />
+                <node concept="2ShNRf" id="6LSE$xxi_$V" role="37wK5m">
+                  <node concept="1pGfFk" id="6LSE$xxiFph" role="2ShVmc">
+                    <ref role="37wK5l" to="hhlq:6LSE$xxgi8Y" resolve="ConstantMapper" />
+                    <node concept="37vLTw" id="6LSE$xxiGfI" role="37wK5m">
+                      <ref role="3cqZAo" node="10jGNhK69YH" resolve="myModel" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
