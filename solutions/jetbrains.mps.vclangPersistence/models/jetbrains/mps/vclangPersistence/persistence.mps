@@ -2,8 +2,6 @@
 <model ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)">
   <persistence version="9" />
   <languages>
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -17,13 +15,12 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="i290" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.java.stub(MPS.Core/)" />
     <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -855,8 +852,8 @@
   <node concept="312cEu" id="3HBnDK7aSnZ">
     <property role="TrG5h" value="VclangPersistence" />
     <node concept="3Tm1VV" id="3HBnDK7aSo0" role="1B3o_S" />
-    <node concept="3uibUv" id="3HBnDK7aSps" role="EKbjA">
-      <ref role="3uigEE" to="wyuk:~CoreComponent" resolve="CoreComponent" />
+    <node concept="3uibUv" id="2gDt65HV1oz" role="EKbjA">
+      <ref role="3uigEE" to="1m72:~ApplicationComponent" resolve="ApplicationComponent" />
     </node>
     <node concept="312cEg" id="3HBnDK7aSvQ" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -868,38 +865,15 @@
         <ref role="3uigEE" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
       </node>
     </node>
-    <node concept="2tJIrI" id="3HBnDK7aSuw" role="jymVt" />
-    <node concept="3clFbW" id="3HBnDK7aSxr" role="jymVt">
-      <node concept="37vLTG" id="3HBnDK7aSyv" role="3clF46">
-        <property role="TrG5h" value="facade" />
-        <node concept="3uibUv" id="3HBnDK7aSzn" role="1tU5fm">
-          <ref role="3uigEE" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="3HBnDK7aSxt" role="3clF45" />
-      <node concept="3Tm1VV" id="3HBnDK7aSxu" role="1B3o_S" />
-      <node concept="3clFbS" id="3HBnDK7aSxv" role="3clF47">
-        <node concept="3clFbF" id="3HBnDK7aS$3" role="3cqZAp">
-          <node concept="37vLTI" id="3HBnDK7aS_h" role="3clFbG">
-            <node concept="37vLTw" id="3HBnDK7aSAz" role="37vLTx">
-              <ref role="3cqZAo" node="3HBnDK7aSyv" resolve="facade" />
-            </node>
-            <node concept="37vLTw" id="3HBnDK7aS$2" role="37vLTJ">
-              <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3HBnDK7aSx4" role="jymVt" />
-    <node concept="3clFb_" id="3HBnDK7aSsq" role="jymVt">
+    <node concept="2tJIrI" id="2gDt65HUVfa" role="jymVt" />
+    <node concept="3clFb_" id="2gDt65HUV9t" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="init" />
+      <property role="TrG5h" value="initComponent" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="3HBnDK7aSsr" role="1B3o_S" />
-      <node concept="3cqZAl" id="3HBnDK7aSst" role="3clF45" />
-      <node concept="3clFbS" id="3HBnDK7aSsu" role="3clF47">
+      <node concept="3Tm1VV" id="2gDt65HUV9u" role="1B3o_S" />
+      <node concept="3cqZAl" id="2gDt65HUV9w" role="3clF45" />
+      <node concept="3clFbS" id="2gDt65HUV9y" role="3clF47">
         <node concept="3clFbF" id="3HBnDK7aSCE" role="3cqZAp">
           <node concept="2OqwBi" id="3HBnDK7aSDk" role="3clFbG">
             <node concept="37vLTw" id="3HBnDK7aSCD" role="2Oq$k0">
@@ -927,8 +901,8 @@
             <node concept="liA8E" id="3HBnDK7aSKk" role="2OqNvi">
               <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
               <node concept="10M0yZ" id="3HBnDK7aSN8" role="37wK5m">
-                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
                 <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
               </node>
               <node concept="2ShNRf" id="3HBnDK7aSUD" role="37wK5m">
                 <node concept="HV5vD" id="3HBnDK7aT5u" role="2ShVmc">
@@ -940,15 +914,14 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3HBnDK7aSAS" role="jymVt" />
-    <node concept="3clFb_" id="3HBnDK7aSsv" role="jymVt">
+    <node concept="3clFb_" id="2gDt65HUV9z" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="dispose" />
+      <property role="TrG5h" value="disposeComponent" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="3HBnDK7aSsw" role="1B3o_S" />
-      <node concept="3cqZAl" id="3HBnDK7aSsy" role="3clF45" />
-      <node concept="3clFbS" id="3HBnDK7aSsz" role="3clF47">
+      <node concept="3Tm1VV" id="2gDt65HUV9$" role="1B3o_S" />
+      <node concept="3cqZAl" id="2gDt65HUV9A" role="3clF45" />
+      <node concept="3clFbS" id="2gDt65HUV9C" role="3clF47">
         <node concept="3clFbF" id="3HBnDK7aTlV" role="3cqZAp">
           <node concept="2OqwBi" id="3HBnDK7aTlW" role="3clFbG">
             <node concept="37vLTw" id="3HBnDK7aTlX" role="2Oq$k0">
@@ -957,8 +930,8 @@
             <node concept="liA8E" id="3HBnDK7aTlY" role="2OqNvi">
               <ref role="37wK5l" to="dush:~PersistenceFacade.setModelRootFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRootFactory):void" resolve="setModelRootFactory" />
               <node concept="10M0yZ" id="3mtwAqFSupx" role="37wK5m">
-                <ref role="3cqZAo" to="hhlq:3mtwAqFStJY" resolve="VCLANG_ARTICLES_ROOT" />
                 <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:3mtwAqFStJY" resolve="VCLANG_ARTICLES_ROOT" />
               </node>
               <node concept="10Nm6u" id="3HBnDK7aTpy" role="37wK5m" />
             </node>
@@ -972,8 +945,8 @@
             <node concept="liA8E" id="3HBnDK7aTd7" role="2OqNvi">
               <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
               <node concept="10M0yZ" id="3HBnDK7aTd8" role="37wK5m">
-                <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
                 <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
               </node>
               <node concept="10Nm6u" id="3HBnDK7aTgn" role="37wK5m" />
             </node>
@@ -981,6 +954,49 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="7w57ZFTybEY" role="jymVt" />
+    <node concept="3clFb_" id="2gDt65HUV9D" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getComponentName" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="2gDt65HUV9E" role="1B3o_S" />
+      <node concept="3uibUv" id="2gDt65HUV9G" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="2AHcQZ" id="2gDt65HUV9H" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NonNls" resolve="NonNls" />
+      </node>
+      <node concept="2AHcQZ" id="2gDt65HUV9I" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3clFbS" id="2gDt65HUV9L" role="3clF47">
+        <node concept="3clFbF" id="2gDt65HUVBp" role="3cqZAp">
+          <node concept="Xl_RD" id="2gDt65HUVBo" role="3clFbG">
+            <property role="Xl_RC" value="VclangPersistence" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HBnDK7aSuw" role="jymVt" />
+    <node concept="3clFbW" id="3HBnDK7aSxr" role="jymVt">
+      <node concept="3cqZAl" id="3HBnDK7aSxt" role="3clF45" />
+      <node concept="3Tm1VV" id="3HBnDK7aSxu" role="1B3o_S" />
+      <node concept="3clFbS" id="3HBnDK7aSxv" role="3clF47">
+        <node concept="3clFbF" id="2gDt65HUVLz" role="3cqZAp">
+          <node concept="37vLTI" id="2gDt65HUVPN" role="3clFbG">
+            <node concept="2YIFZM" id="2gDt65HUVSW" role="37vLTx">
+              <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance():org.jetbrains.mps.openapi.persistence.PersistenceFacade" resolve="getInstance" />
+              <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+            </node>
+            <node concept="37vLTw" id="2gDt65HUVLy" role="37vLTJ">
+              <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HBnDK7aSx4" role="jymVt" />
   </node>
   <node concept="312cEu" id="3HBnDK7aTqO">
     <property role="TrG5h" value="VclangModelRoot" />

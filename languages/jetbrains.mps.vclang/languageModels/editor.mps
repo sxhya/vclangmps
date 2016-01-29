@@ -2,7 +2,6 @@
 <model ref="r:cd2de20f-c757-49fd-b48c-f5561b33dd32(jetbrains.mps.vclang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -19,7 +18,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
-    <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -908,7 +906,7 @@
         <property role="1QpmdY" value="true" />
         <node concept="3F0ifn" id="KzXl40BiQ3" role="1QoS34">
           <property role="3F0ifm" value=")" />
-          <ref role="1k5W1q" to="tp2u:hGdUtK2" resolve="AngleBracket" />
+          <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
           <node concept="lj46D" id="KzXl40BDgd" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -930,7 +928,7 @@
         </node>
         <node concept="3F0ifn" id="KzXl40BiVN" role="1QoVPY">
           <property role="3F0ifm" value="}" />
-          <ref role="1k5W1q" to="tp2u:hGdUtK2" resolve="AngleBracket" />
+          <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
           <node concept="lj46D" id="KzXl40BDh4" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -1681,7 +1679,7 @@
     <node concept="3EZMnI" id="7nfIx2ucmAS" role="2wV5jI">
       <node concept="3F0ifn" id="2nfHNdzSzO2" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tp2u:hGdUtK2" resolve="AngleBracket" />
+        <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
         <node concept="11LMrY" id="2nfHNdzSzO3" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1714,7 +1712,7 @@
       </node>
       <node concept="3F0ifn" id="2nfHNdzSzYi" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tp2u:hGdUtK2" resolve="AngleBracket" />
+        <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
         <node concept="11L4FC" id="2nfHNdzS$d4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
