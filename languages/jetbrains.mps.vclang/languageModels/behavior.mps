@@ -2,8 +2,8 @@
 <model ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" name="jetbrains.mps.vclang" version="0" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
@@ -24550,22 +24550,17 @@
     <property role="3GE5qa" value="builder" />
     <node concept="QsSxf" id="5QGigKLesPB" role="Qtgdg">
       <property role="TrG5h" value="VERBOSE" />
-      <ref role="37wK5l" node="5QGigKLesSd" resolve="BuildOptions" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="5QGigKLesRx" role="Qtgdg">
       <property role="TrG5h" value="DEFAULT" />
-      <ref role="37wK5l" node="5QGigKLesSd" resolve="BuildOptions" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="5QGigKLesRU" role="Qtgdg">
       <property role="TrG5h" value="COMPACT" />
-      <ref role="37wK5l" node="5QGigKLesSd" resolve="BuildOptions" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="5QGigKLesP2" role="1B3o_S" />
-    <node concept="3clFbW" id="5QGigKLesSd" role="jymVt">
-      <node concept="3cqZAl" id="5QGigKLesSe" role="3clF45" />
-      <node concept="3Tm1VV" id="5QGigKLesSf" role="1B3o_S" />
-      <node concept="3clFbS" id="5QGigKLesSg" role="3clF47" />
-    </node>
     <node concept="2tJIrI" id="5QGigKLfDqr" role="jymVt" />
   </node>
   <node concept="13h7C7" id="3ixSrrqsmen">

@@ -208,6 +208,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -893,20 +900,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3HBnDK7aSHU" role="3cqZAp">
-          <node concept="2OqwBi" id="3HBnDK7aSJ1" role="3clFbG">
-            <node concept="37vLTw" id="3HBnDK7aSHS" role="2Oq$k0">
-              <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
-            </node>
-            <node concept="liA8E" id="3HBnDK7aSKk" role="2OqNvi">
-              <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
-              <node concept="10M0yZ" id="3HBnDK7aSN8" role="37wK5m">
-                <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
-                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+        <node concept="1X3_iC" id="2BUl9xDm94$" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3HBnDK7aSHU" role="8Wnug">
+            <node concept="2OqwBi" id="3HBnDK7aSJ1" role="3clFbG">
+              <node concept="37vLTw" id="3HBnDK7aSHS" role="2Oq$k0">
+                <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
               </node>
-              <node concept="2ShNRf" id="3HBnDK7aSUD" role="37wK5m">
-                <node concept="HV5vD" id="3HBnDK7aT5u" role="2ShVmc">
-                  <ref role="HV5vE" node="3HBnDK7aPuF" resolve="VclangPackageModelId.VclangModelIdFactory" />
+              <node concept="liA8E" id="3HBnDK7aSKk" role="2OqNvi">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
+                <node concept="10M0yZ" id="3HBnDK7aSN8" role="37wK5m">
+                  <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
+                  <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                </node>
+                <node concept="2ShNRf" id="3HBnDK7aSUD" role="37wK5m">
+                  <node concept="HV5vD" id="3HBnDK7aT5u" role="2ShVmc">
+                    <ref role="HV5vE" node="3HBnDK7aPuF" resolve="VclangPackageModelId.VclangModelIdFactory" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -937,18 +948,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3HBnDK7aTd4" role="3cqZAp">
-          <node concept="2OqwBi" id="3HBnDK7aTd5" role="3clFbG">
-            <node concept="37vLTw" id="3HBnDK7aTd6" role="2Oq$k0">
-              <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
-            </node>
-            <node concept="liA8E" id="3HBnDK7aTd7" role="2OqNvi">
-              <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
-              <node concept="10M0yZ" id="3HBnDK7aTd8" role="37wK5m">
-                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
-                <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
+        <node concept="1X3_iC" id="2BUl9xDm96H" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3HBnDK7aTd4" role="8Wnug">
+            <node concept="2OqwBi" id="3HBnDK7aTd5" role="3clFbG">
+              <node concept="37vLTw" id="3HBnDK7aTd6" role="2Oq$k0">
+                <ref role="3cqZAo" node="3HBnDK7aSvQ" resolve="myFacade" />
               </node>
-              <node concept="10Nm6u" id="3HBnDK7aTgn" role="37wK5m" />
+              <node concept="liA8E" id="3HBnDK7aTd7" role="2OqNvi">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.setModelIdFactory(java.lang.String,org.jetbrains.mps.openapi.persistence.SModelIdFactory):void" resolve="setModelIdFactory" />
+                <node concept="10M0yZ" id="3HBnDK7aTd8" role="37wK5m">
+                  <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                  <ref role="3cqZAo" to="hhlq:7lZzp77OjDL" resolve="VCLANG" />
+                </node>
+                <node concept="10Nm6u" id="3HBnDK7aTgn" role="37wK5m" />
+              </node>
             </node>
           </node>
         </node>
@@ -1142,6 +1157,30 @@
             <node concept="3SKdUt" id="4BYu3UbtgfE" role="3cqZAp">
               <node concept="3SKdUq" id="4BYu3UbtgfG" role="3SKWNk">
                 <property role="3SKdUp" value="TODO: Implemented vclang typesystem properly;" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="2BUl9xDmdLC" role="3cqZAp">
+              <node concept="2OqwBi" id="2BUl9xDmdLD" role="3clFbG">
+                <node concept="10M0yZ" id="2BUl9xDmdLE" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="2BUl9xDmdLF" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="2BUl9xDmdLG" role="37wK5m">
+                    <node concept="2OqwBi" id="2BUl9xDmdLH" role="3uHU7w">
+                      <node concept="37vLTw" id="2BUl9xDmdXG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4BYu3Ubt93u" resolve="source" />
+                      </node>
+                      <node concept="liA8E" id="2BUl9xDmdLJ" role="2OqNvi">
+                        <ref role="37wK5l" to="ends:~FolderDataSource.getLocation():java.lang.String" resolve="getLocation" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="2BUl9xDmdLK" role="3uHU7B">
+                      <property role="Xl_RC" value="getModels @ source location: " />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="4BYu3Ubtg6g" role="3cqZAp">
@@ -1575,6 +1614,30 @@
         <node concept="3SKdUt" id="4BYu3Ubt6E4" role="3cqZAp">
           <node concept="3SKdUq" id="4BYu3Ubt6E6" role="3SKWNk">
             <property role="3SKdUp" value="TODO: This code should perform actual parsing of Vclang source code" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BUl9xDm9Xh" role="3cqZAp">
+          <node concept="2OqwBi" id="2BUl9xDm9ZJ" role="3clFbG">
+            <node concept="10M0yZ" id="2BUl9xDm9Xg" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BUl9xDma5r" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2BUl9xDmd$Z" role="37wK5m">
+                <node concept="2OqwBi" id="2BUl9xDmdD5" role="3uHU7w">
+                  <node concept="1rXfSq" id="2BUl9xDmdBG" role="2Oq$k0">
+                    <ref role="37wK5l" to="g3l6:~SModelBase.getSource():org.jetbrains.mps.openapi.persistence.DataSource" resolve="getSource" />
+                  </node>
+                  <node concept="liA8E" id="2BUl9xDmdFk" role="2OqNvi">
+                    <ref role="37wK5l" to="dush:~DataSource.getLocation():java.lang.String" resolve="getLocation" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2BUl9xDma7e" role="3uHU7B">
+                  <property role="Xl_RC" value="createModel @ source location: " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4BYu3Ubt6jA" role="3cqZAp">
