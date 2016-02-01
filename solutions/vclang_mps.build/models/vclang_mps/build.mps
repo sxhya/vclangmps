@@ -30,6 +30,7 @@
       </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
         <child id="1622293396948928802" name="content" index="3o6s8t" />
       </concept>
@@ -233,6 +234,31 @@
           </node>
         </node>
       </node>
+      <node concept="2pNNFK" id="3CWROv2M2AJ" role="20twgj">
+        <property role="2pNNFO" value="extensions" />
+        <node concept="2pNUuL" id="3CWROv2M2BY" role="2pNNFR">
+          <property role="2pNUuO" value="defaultExtensionNs" />
+          <node concept="2pMdtt" id="3CWROv2M2Cn" role="2pMdts">
+            <property role="2pMdty" value="com.intellij" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="3CWROv2M2DB" role="3o6s8t">
+          <property role="2pNNFO" value="mps.modelRootEntry" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="3CWROv2M2Eq" role="2pNNFR">
+            <property role="2pNUuO" value="rootType" />
+            <node concept="2pMdtt" id="3CWROv2M2EN" role="2pMdts">
+              <property role="2pMdty" value="vclang_articles" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="3CWROv2M2ER" role="2pNNFR">
+            <property role="2pNUuO" value="className" />
+            <node concept="2pMdtt" id="3CWROv2M2Fi" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3_J27D" id="7ZoWiKcez98" role="m$_yQ">
         <node concept="3Mxwew" id="7ZoWiKcez9x" role="3MwsjC">
           <property role="3MwjfP" value="Vclang MPS" />
@@ -296,6 +322,18 @@
         <node concept="3bR9La" id="Yuz1zXkOr7" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="Yuz1zXkOrr" resolve="jetbrains.mps.vclang" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3CWROv2M2HJ" role="3bR37C">
+        <node concept="3bR9La" id="3CWROv2M2HK" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3aBB2UvIzmv" role="3bR37C">
+        <node concept="3bR9La" id="3aBB2UvIzmw" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
         </node>
       </node>
     </node>

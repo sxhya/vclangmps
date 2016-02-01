@@ -40,6 +40,9 @@
             <implementation-class>jetbrains.mps.vclangPersistence.persistence.VclangPersistence</implementation-class>
           </component>
         </application-components>
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.modelRootEntry rootType="vclang_articles" className="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
+        </extensions>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
