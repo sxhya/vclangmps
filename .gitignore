@@ -1,3 +1,4 @@
+*.MF
 /.mps/workspace.xml
 classes_gen
 source_gen

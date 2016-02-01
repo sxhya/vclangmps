@@ -30,9 +30,16 @@
     <echoxml file="${build.tmp}/default/vclang_mps.zip/vclang_mps/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>vclang_mps</id>
-        <name>vclang_mps</name>
-        <version>1.0</version>
+        <name>Vclang MPS</name>
+        <description>Vclang custom MPS persistence</description>
+        <version>0.01</version>
+        <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
         <depends>jetbrains.mps.core</depends>
+        <application-components>
+          <component>
+            <implementation-class>jetbrains.mps.vclangPersistence.persistence.VclangPersistence</implementation-class>
+          </component>
+        </application-components>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -40,60 +47,6 @@
       </idea-plugin>
     </echoxml>
     <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages" />
-    <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps" />
-    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar" />
-    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar/META-INF/module.xml">
-      <module namespace="jetbrains.mps.vclangPersistence" type="solution" uuid="87e20a4e-f1aa-4681-bd4c-7d1e0ae931e9">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="jetbrains.mps.vclangPersistence-src.jar" descriptor="jetbrains.mps.vclangPersistence.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetbrains.mps.vclangPersistence.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
-      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclangPersistence-models">
-      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetbrains.mps.vclangPersistence-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclangPersistence-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/jetpad.vclang.jar" />
-    <mkdir dir="${build.tmp}/default/jetpad.vclang.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/jetpad.vclang.jar/META-INF/module.xml">
-      <module namespace="jetpad.vclang" type="solution" uuid="9c441817-78bb-4808-96cc-731aecf27641">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-        </dependencies>
-        <library jar="../../lib/antlr4-runtime-4.5.jar" />
-        <library jar="../../lib/vclang.jar" />
-        <sources jar="jetpad.vclang-src.jar" descriptor="jetpad.vclang.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetpad.vclang.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/jetpad.vclang" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/jetpad.vclang.jar" />
-    </jar>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetpad.vclang-src.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/solutions/jetpad.vclang/jetpad.vclang.msd" prefix="module" />
-    </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.vclang.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.vclang.jar/META-INF" />
     <echoxml file="${build.tmp}/default/jetbrains.mps.vclang.jar/META-INF/module.xml">
@@ -123,13 +76,13 @@
         <sources jar="jetbrains.mps.vclang-src.jar" descriptor="jetbrains.mps.vclang.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetbrains.mps.vclang.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclang.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.vclang" />
       <fileset dir="${basedir}/languages/jetbrains.mps.vclang" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/jetbrains.mps.vclang/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.vclang.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetbrains.mps.vclang-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclang-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.vclang-generator-template">
@@ -138,7 +91,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.vclang-languageModels">
       <fileset dir="${basedir}/languages/jetbrains.mps.vclang/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/vclang_mps/jetbrains.mps.vclang-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclang-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -150,6 +103,61 @@
       <zipfileset file="${basedir}/languages/jetbrains.mps.vclang/jetbrains.mps.vclang.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.vclang-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.vclang-languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.vclangPersistence" type="solution" uuid="87e20a4e-f1aa-4681-bd4c-7d1e0ae931e9">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="jetbrains.mps.vclangPersistence-src.jar" descriptor="jetbrains.mps.vclangPersistence.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclangPersistence.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.vclangPersistence.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclangPersistence-models">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclangPersistence-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclangPersistence-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages" />
+    <mkdir dir="${build.tmp}/default/jetpad.vclang.jar" />
+    <mkdir dir="${build.tmp}/default/jetpad.vclang.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetpad.vclang.jar/META-INF/module.xml">
+      <module namespace="jetpad.vclang" type="solution" uuid="9c441817-78bb-4808-96cc-731aecf27641">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+        </dependencies>
+        <library jar="../lib/antlr4-runtime-4.5.jar" />
+        <library jar="../lib/vclang.jar" />
+        <sources jar="jetpad.vclang-src.jar" descriptor="jetpad.vclang.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetpad.vclang.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/jetpad.vclang" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/jetpad.vclang.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetpad.vclang-src.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/solutions/jetpad.vclang/jetpad.vclang.msd" prefix="module" />
     </jar>
     <zip destfile="${build.layout}/vclang_mps.zip">
       <zipfileset file="${lib}/antlr4-runtime-4.5.jar" prefix="vclang_mps/lib" />
