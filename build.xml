@@ -42,6 +42,7 @@
         </application-components>
         <extensions defaultExtensionNs="com.intellij">
           <mps.modelRootEntry rootType="vclang_articles" className="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
+          <mps.ModelFactoryProvider implementationClass="jetbrains.mps.vclangPersistence.persistence.VclangModelPersistence"></mps.ModelFactoryProvider>
         </extensions>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -293,7 +294,7 @@
   <target name="java.compile.jetbrains.mps.vclangPersistence" depends="java.compile.jetbrains.mps.vclang, fetchDependencies">
     <mkdir dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" fork="false" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" />
@@ -328,12 +329,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.jetbrains.mps.vclang" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.vclang/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.vclang" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang" fork="false" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/jetbrains.mps.vclang/source_gen" />
@@ -390,12 +394,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/jetbrains.mps.vclang">
+      <fileset dir="${basedir}/languages/jetbrains.mps.vclang/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.jetbrains.mps.vclang#7108625883772164077" depends="java.compile.jetbrains.mps.vclang, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" fork="false" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen" />
@@ -430,6 +437,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077">
+      <fileset dir="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

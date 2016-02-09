@@ -58,6 +58,9 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -220,6 +223,9 @@
         </node>
       </node>
     </node>
+    <node concept="2_Ic$z" id="5b27hJqBGyC" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+    </node>
     <node concept="m$_wf" id="7ZoWiKcez96" role="3989C9">
       <property role="m$_wk" value="vclang_mps" />
       <node concept="2pNNFK" id="4ymH5IilLiu" role="20twgj">
@@ -257,6 +263,16 @@
               <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
             </node>
           </node>
+        </node>
+        <node concept="2pNNFK" id="6KODC5yRzFw" role="3o6s8t">
+          <property role="2pNNFO" value="mps.ModelFactoryProvider" />
+          <node concept="2pNUuL" id="6KODC5yRzHf" role="2pNNFR">
+            <property role="2pNUuO" value="implementationClass" />
+            <node concept="2pMdtt" id="6KODC5yRzHD" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangModelPersistence" />
+            </node>
+          </node>
+          <node concept="3o6iSG" id="6KODC5yRzGM" role="3o6s8t" />
         </node>
       </node>
       <node concept="3_J27D" id="7ZoWiKcez98" role="m$_yQ">

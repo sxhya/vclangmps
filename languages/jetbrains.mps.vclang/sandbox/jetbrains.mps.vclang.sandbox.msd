@@ -3,9 +3,6 @@
   <models>
     <modelRoot contentPath="/kingston/vclang_mps/solutions/vclang-lib/test" type="vclang_articles">
       <sourceRoot location="." />
-      <sourceRoot location="Algebra" />
-      <sourceRoot location="Data" />
-      <sourceRoot location="HITs" />
     </modelRoot>
   </models>
   <sourcePath />
