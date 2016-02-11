@@ -352,6 +352,18 @@
           <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
         </node>
       </node>
+      <node concept="1SiIV0" id="7qpOvzXk5vD" role="3bR37C">
+        <node concept="3bR9La" id="7qpOvzXk5vE" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7qpOvzXk5vF" role="3bR37C">
+        <node concept="3bR9La" id="7qpOvzXk5vG" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="Yuz1zXkOr8" resolve="jetpad.vclang" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="Yuz1zXkOr8" role="3989C9">
       <property role="BnDLt" value="true" />

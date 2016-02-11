@@ -315,6 +315,8 @@
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclang" />
+        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
+        <fileset file="${lib}/vclang.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
