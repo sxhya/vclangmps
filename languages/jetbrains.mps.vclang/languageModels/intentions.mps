@@ -60,6 +60,9 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -2002,6 +2005,32 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1Gg6dVZM83U" role="3cqZAp">
+          <node concept="3cpWsn" id="1Gg6dVZM83V" role="3cpWs9">
+            <property role="TrG5h" value="mapper" />
+            <node concept="3uibUv" id="1Gg6dVZM9$G" role="1tU5fm">
+              <ref role="3uigEE" to="hhlq:6LSE$xxfHus" resolve="ConstantRefMapper" />
+            </node>
+            <node concept="2ShNRf" id="1Gg6dVZM2OI" role="33vP2m">
+              <node concept="HV5vD" id="1Gg6dVZM4JH" role="2ShVmc">
+                <ref role="HV5vE" to="hhlq:6LSE$xxfHus" resolve="ConstantRefMapper" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Gg6dVZM8Yn" role="3cqZAp">
+          <node concept="2OqwBi" id="1Gg6dVZM9rB" role="3clFbG">
+            <node concept="37vLTw" id="1Gg6dVZM8Yl" role="2Oq$k0">
+              <ref role="3cqZAo" node="1Gg6dVZM83V" resolve="mapper" />
+            </node>
+            <node concept="liA8E" id="1Gg6dVZM9AZ" role="2OqNvi">
+              <ref role="37wK5l" to="hhlq:7MHOjQ9NsC4" resolve="setModel" />
+              <node concept="37vLTw" id="1Gg6dVZM9BV" role="37wK5m">
+                <ref role="3cqZAo" node="rqvlJ5_guZ" resolve="myModel" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="10jGNhK69tQ" role="3cqZAp">
           <node concept="3cpWsn" id="10jGNhK69tR" role="3cpWs9">
             <property role="TrG5h" value="bcv" />
@@ -2010,7 +2039,10 @@
             </node>
             <node concept="2ShNRf" id="10jGNhK69tT" role="33vP2m">
               <node concept="1pGfFk" id="73jCsPaSOtk" role="2ShVmc">
-                <ref role="37wK5l" to="hhlq:73jCsPaSuua" resolve="ModelBuilder" />
+                <ref role="37wK5l" to="hhlq:2gDt65HPPbg" resolve="ModelBuilder" />
+                <node concept="37vLTw" id="1Gg6dVZMawa" role="37wK5m">
+                  <ref role="3cqZAo" node="1Gg6dVZM83V" resolve="mapper" />
+                </node>
               </node>
             </node>
           </node>
