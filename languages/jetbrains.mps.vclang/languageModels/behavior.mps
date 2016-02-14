@@ -5637,35 +5637,6 @@
         </node>
       </node>
     </node>
-    <node concept="Wx3nA" id="6otXYHBgsV6" role="jymVt">
-      <property role="TrG5h" value="VC_EXTENSION" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="6otXYHBgsV7" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
-      <node concept="Xl_RD" id="6otXYHBgsV8" role="33vP2m">
-        <property role="Xl_RC" value="vc" />
-      </node>
-      <node concept="3Tm1VV" id="3mtwAqFSvT2" role="1B3o_S" />
-    </node>
-    <node concept="Wx3nA" id="3mtwAqFSvpv" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="VC_EXTENSION_DOT" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3mtwAqFSvdL" role="1B3o_S" />
-      <node concept="3uibUv" id="3mtwAqFSvga" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
-      <node concept="3cpWs3" id="3mtwAqFSvFI" role="33vP2m">
-        <node concept="37vLTw" id="3mtwAqFSxnT" role="3uHU7w">
-          <ref role="3cqZAo" node="6otXYHBgsV6" resolve="VC_EXTENSION" />
-        </node>
-        <node concept="Xl_RD" id="3mtwAqFSv_l" role="3uHU7B">
-          <property role="Xl_RC" value="." />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="7lZzp77OhFD" role="jymVt" />
     <node concept="Wx3nA" id="3c8XCwSI5v8" role="jymVt">
       <property role="2dlcS1" value="false" />
