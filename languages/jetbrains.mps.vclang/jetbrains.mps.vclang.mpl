@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="jetbrains.mps.vclang" uuid="2db233bb-72db-49c3-adc4-7ae97f87f8dc" languageVersion="0" moduleVersion="0">
+<language namespace="jetbrains.mps.vclang" uuid="2db233bb-72db-49c3-adc4-7ae97f87f8dc" languageVersion="0" moduleVersion="1">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
-    </modelRoot>
-    <modelRoot contentPath="/home/user/.m2/repository/org/antlr/antlr4-runtime/4.5" type="java_classes">
-      <sourceRoot location="antlr4-runtime-4.5.jar" />
     </modelRoot>
   </models>
   <accessoryModels>
@@ -36,7 +33,7 @@
         <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-        <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" fqName="jetbrains.mps.vclang" version="0" />
+        <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" fqName="jetbrains.mps.vclang" version="-1" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -46,8 +43,9 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="2db233bb-72db-49c3-adc4-7ae97f87f8dc(jetbrains.mps.vclang)" version="0" />
+        <module reference="2db233bb-72db-49c3-adc4-7ae97f87f8dc(jetbrains.mps.vclang)" version="1" />
         <module reference="038da0c3-fe92-4321-aa82-7243d540c9e2(jetbrains.mps.vclang#7108625883772164077)" version="0" />
+        <module reference="9c441817-78bb-4808-96cc-731aecf27641(jetpad.vclang)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -65,6 +63,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">87e20a4e-f1aa-4681-bd4c-7d1e0ae931e9(jetbrains.mps.vclangPersistence)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -89,7 +88,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" fqName="jetbrains.mps.lang.editor" version="2" />
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" fqName="jetbrains.mps.lang.intentions" version="0" />
-    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" fqName="jetbrains.mps.lang.plugin" version="0" />
+    <language id="90746344-04fd-4286-97d5-b46ae6a81709" fqName="jetbrains.mps.lang.migration" version="0" />
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" fqName="jetbrains.mps.lang.scopes" version="0" />
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" fqName="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -117,9 +116,13 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="2db233bb-72db-49c3-adc4-7ae97f87f8dc(jetbrains.mps.vclang)" version="0" />
+    <module reference="2db233bb-72db-49c3-adc4-7ae97f87f8dc(jetbrains.mps.vclang)" version="1" />
+    <module reference="87e20a4e-f1aa-4681-bd4c-7d1e0ae931e9(jetbrains.mps.vclangPersistence)" version="0" />
     <module reference="9c441817-78bb-4808-96cc-731aecf27641(jetpad.vclang)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">9c441817-78bb-4808-96cc-731aecf27641(jetpad.vclang)</dependency>
+  </runtime>
   <extendedLanguages />
 </language>
 

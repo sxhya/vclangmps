@@ -29,6 +29,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="4qvk" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file.attribute(JDK/)" />
     <import index="a39g" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.staticmodresolver(jetpad.vclang/)" />
+    <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -365,9 +366,9 @@
       <node concept="3clFbS" id="4IGDNsCy1VB" role="2VODD2">
         <node concept="3clFbF" id="7MHOjQ9Nx1R" role="3cqZAp">
           <node concept="2OqwBi" id="7MHOjQ9Nxaq" role="3clFbG">
-            <node concept="10M0yZ" id="7MHOjQ9Nx1Q" role="2Oq$k0">
-              <ref role="1PxDUh" to="hhlq:PFJmlfDp$F" resolve="ModelBuilder" />
-              <ref role="3cqZAo" to="hhlq:2gDt65HOF8h" resolve="defaultRefMapper" />
+            <node concept="10M0yZ" id="71aF$X53kvN" role="2Oq$k0">
+              <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              <ref role="3cqZAo" to="hhlq:71aF$X53kvC" resolve="defaultRefMapper" />
             </node>
             <node concept="liA8E" id="7MHOjQ9Nxdx" role="2OqNvi">
               <ref role="37wK5l" to="hhlq:7MHOjQ9NsC4" resolve="setModel" />
@@ -1344,9 +1345,9 @@
       <node concept="3clFbS" id="IDt3LXGUtv" role="2VODD2">
         <node concept="3clFbF" id="7MHOjQ9NyJV" role="3cqZAp">
           <node concept="2OqwBi" id="7MHOjQ9NyJW" role="3clFbG">
-            <node concept="10M0yZ" id="7MHOjQ9NyJX" role="2Oq$k0">
-              <ref role="1PxDUh" to="hhlq:PFJmlfDp$F" resolve="ModelBuilder" />
-              <ref role="3cqZAo" to="hhlq:2gDt65HOF8h" resolve="defaultRefMapper" />
+            <node concept="10M0yZ" id="71aF$X53kvL" role="2Oq$k0">
+              <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              <ref role="3cqZAo" to="hhlq:71aF$X53kvC" resolve="defaultRefMapper" />
             </node>
             <node concept="liA8E" id="7MHOjQ9NyJY" role="2OqNvi">
               <ref role="37wK5l" to="hhlq:7MHOjQ9NsC4" resolve="setModel" />
@@ -1973,7 +1974,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6LSE$xxtvjM" role="1B3o_S" />
       <node concept="3uibUv" id="6LSE$xxtvRh" role="1tU5fm">
-        <ref role="3uigEE" to="hhlq:6LSE$xxfHu2" resolve="IVclangRefMapper" />
+        <ref role="3uigEE" to="xq8z:6LSE$xxfHu2" resolve="IVclangRefMapper" />
       </node>
     </node>
     <node concept="312cEg" id="rqvlJ5_guZ" role="jymVt">
@@ -2140,11 +2141,11 @@
           <node concept="3cpWsn" id="10jGNhK69tR" role="3cpWs9">
             <property role="TrG5h" value="bcv" />
             <node concept="3uibUv" id="10jGNhK69tS" role="1tU5fm">
-              <ref role="3uigEE" to="hhlq:PFJmlfDp$F" resolve="ModelBuilder" />
+              <ref role="3uigEE" to="xq8z:PFJmlfDp$F" resolve="ModelBuilder" />
             </node>
             <node concept="2ShNRf" id="10jGNhK69tT" role="33vP2m">
               <node concept="1pGfFk" id="73jCsPaSOtk" role="2ShVmc">
-                <ref role="37wK5l" to="hhlq:2gDt65HPPbg" resolve="ModelBuilder" />
+                <ref role="37wK5l" to="xq8z:2gDt65HPPbg" resolve="ModelBuilder" />
                 <node concept="37vLTw" id="1Gg6dVZMawa" role="37wK5m">
                   <ref role="3cqZAo" node="1Gg6dVZM83V" resolve="mapper" />
                 </node>
