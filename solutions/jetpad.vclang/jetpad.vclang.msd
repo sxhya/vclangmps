@@ -8,6 +8,9 @@
       <sourceRoot location="vclang.jar" />
     </modelRoot>
   </models>
+  <facets>
+    <facet pluginId="vclang_mps" type="ideaPlugin" />
+  </facets>
   <stubModelEntries>
     <stubModelEntry path="/kingston/vclang_mps/lib/antlr4-runtime-4.5.jar" />
     <stubModelEntry path="/kingston/vclang_mps/lib/vclang.jar" />

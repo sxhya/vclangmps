@@ -5,6 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet pluginId="vclang_mps" type="ideaPlugin" />
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2db233bb-72db-49c3-adc4-7ae97f87f8dc(jetbrains.mps.vclang)</dependency>
