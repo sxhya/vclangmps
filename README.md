@@ -3,6 +3,7 @@
 Vclang frontend for MPS version 0.01
 
 ===== INSTALLATION FROM BINARIES =====
+
 1. Download and install the latest MPS build from here:
 http://buildserver.labs.intellij.net/viewType.html?buildTypeId=MPS_33_DistributionContinuousIntegrationDistribution
 
@@ -19,6 +20,7 @@ Check that \META-INF \lib and \languages directories are available in \vclang_mp
 You will need to restart MPS after doing that.
 
 ===== USAGE =====
+
 There are two possible ways to use the plugin:
 
 1. Download this sandbox file which contains MPS models generated from the Vclang standard library
@@ -43,6 +45,7 @@ Select the folder where vclang-lib is located.
 After you press Ok MPS will parse the standard library and will create the corresponding models inside the solution you selected.
 
 ===== KNOWN ISSUES =====
+
  -- Completion menus for proj-expressions and class field access operations are not working (you can not type "x.1" or "G.M.S.X");
  
  -- Certain scopes are implemented incorrectly (e.g. type constructors are not visible in condition declarations);
