@@ -760,7 +760,7 @@
       <node concept="3Tm1VV" id="25RiHgHSzdV" role="1B3o_S" />
       <node concept="17QB3L" id="25RiHgHSzv0" role="1tU5fm" />
       <node concept="Xl_RD" id="25RiHgHSzvz" role="33vP2m">
-        <property role="Xl_RC" value="Prelude" />
+        <property role="Xl_RC" value="::Prelude" />
       </node>
     </node>
     <node concept="2tJIrI" id="2AR5txswjii" role="jymVt" />
@@ -1029,7 +1029,7 @@
               <node concept="liA8E" id="25RiHgHqXje" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHqXjP" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.zero" />
+                  <property role="Xl_RC" value="::Prelude.zero" />
                 </node>
               </node>
             </node>
@@ -1040,7 +1040,7 @@
               <node concept="liA8E" id="25RiHgHYx$Y" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHYx$Z" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.Nat.zero" />
+                  <property role="Xl_RC" value="::Prelude.Nat.zero" />
                 </node>
               </node>
             </node>
@@ -1062,7 +1062,7 @@
               <node concept="liA8E" id="25RiHgHqYEG" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHqYEH" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.suc" />
+                  <property role="Xl_RC" value="::Prelude.suc" />
                 </node>
               </node>
             </node>
@@ -1073,7 +1073,7 @@
               <node concept="liA8E" id="25RiHgHYxQ6" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHYxQ7" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.Nat.suc" />
+                  <property role="Xl_RC" value="::Prelude.Nat.suc" />
                 </node>
               </node>
             </node>
@@ -1094,7 +1094,7 @@
             <node concept="liA8E" id="25RiHgHqZ4E" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
               <node concept="Xl_RD" id="25RiHgHqZ5w" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.Nat" />
+                <property role="Xl_RC" value="::Prelude.Nat" />
               </node>
             </node>
           </node>
@@ -1115,7 +1115,7 @@
               <node concept="liA8E" id="25RiHgHqZjl" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHqZjm" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.left" />
+                  <property role="Xl_RC" value="::Prelude.left" />
                 </node>
               </node>
             </node>
@@ -1126,7 +1126,7 @@
               <node concept="liA8E" id="1sSRWjCP19T" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="1sSRWjCP19U" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.I.left" />
+                  <property role="Xl_RC" value="::Prelude.I.left" />
                 </node>
               </node>
             </node>
@@ -1148,7 +1148,7 @@
               <node concept="liA8E" id="25RiHgHqZtN" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="25RiHgHqZtO" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.right" />
+                  <property role="Xl_RC" value="::Prelude.right" />
                 </node>
               </node>
             </node>
@@ -1159,7 +1159,7 @@
               <node concept="liA8E" id="1sSRWjCP1cH" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="1sSRWjCP1cI" role="37wK5m">
-                  <property role="Xl_RC" value="Prelude.I.right" />
+                  <property role="Xl_RC" value="::Prelude.I.right" />
                 </node>
               </node>
             </node>
@@ -1180,7 +1180,7 @@
             <node concept="liA8E" id="25RiHgHqZLN" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
               <node concept="Xl_RD" id="25RiHgHqZLO" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.I" />
+                <property role="Xl_RC" value="::Prelude.I" />
               </node>
             </node>
           </node>
@@ -1200,7 +1200,7 @@
             <node concept="liA8E" id="25RiHgHqZSp" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="25RiHgHqZSq" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.path" />
+                <property role="Xl_RC" value="::Prelude.path" />
               </node>
             </node>
           </node>
@@ -1220,7 +1220,7 @@
             <node concept="liA8E" id="25RiHgHr0lx" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="25RiHgHr0ly" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.Path" />
+                <property role="Xl_RC" value="::Prelude.Path" />
               </node>
             </node>
           </node>
@@ -1240,7 +1240,7 @@
             <node concept="liA8E" id="25RiHgHr0_J" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="25RiHgHr0_K" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.(=" />
+                <property role="Xl_RC" value="::Prelude.(=" />
               </node>
             </node>
           </node>
@@ -1260,7 +1260,7 @@
             <node concept="liA8E" id="25RiHgHr0Tk" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="25RiHgHr0Tl" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.(@" />
+                <property role="Xl_RC" value="::Prelude.(@" />
               </node>
             </node>
           </node>
@@ -1280,7 +1280,7 @@
             <node concept="liA8E" id="25RiHgHr1dN" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="25RiHgHr1dO" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.coe" />
+                <property role="Xl_RC" value="::Prelude.coe" />
               </node>
             </node>
           </node>
@@ -1300,7 +1300,7 @@
             <node concept="liA8E" id="1sSRWjCW_Rx" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="1sSRWjCW_Ry" role="37wK5m">
-                <property role="Xl_RC" value="Prelude.iso" />
+                <property role="Xl_RC" value="::Prelude.iso" />
               </node>
             </node>
           </node>
