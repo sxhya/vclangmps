@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="jetpad.vclang" uuid="9c441817-78bb-4808-96cc-731aecf27641" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}/vclang/target" type="java_classes">
-      <sourceRoot location="classes" />
-    </modelRoot>
     <modelRoot contentPath="/kingston/vclang_mps/lib" type="java_classes">
+      <sourceRoot location="antlr4-runtime-4.5.jar" />
       <sourceRoot location="vclang.jar" />
     </modelRoot>
   </models>
@@ -12,8 +10,8 @@
     <facet pluginId="vclang_mps" type="ideaPlugin" />
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/vclang/target/classes" />
     <stubModelEntry path="/kingston/vclang_mps/lib/antlr4-runtime-4.5.jar" />
+    <stubModelEntry path="/kingston/vclang_mps/lib/vclang.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
