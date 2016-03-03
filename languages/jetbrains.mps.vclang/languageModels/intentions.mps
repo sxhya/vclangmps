@@ -484,12 +484,6 @@
             <ref role="37wK5l" to="zkmn:2AR5txsw80x" resolve="initRefs" />
           </node>
         </node>
-        <node concept="3clFbF" id="OV0Rn1$naZ" role="3cqZAp">
-          <node concept="2YIFZM" id="OV0Rn1$nb0" role="3clFbG">
-            <ref role="1Pybhc" to="zkmn:2AR5txsw7ZY" resolve="PreludeInitializer" />
-            <ref role="37wK5l" to="zkmn:2AR5txswf13" resolve="initUserObjects" />
-          </node>
-        </node>
         <node concept="3clFbF" id="OV0Rn1$nb1" role="3cqZAp">
           <node concept="2YIFZM" id="4ydIhjRy$5S" role="3clFbG">
             <ref role="37wK5l" to="wru8:~Root.initialize():void" resolve="initialize" />
