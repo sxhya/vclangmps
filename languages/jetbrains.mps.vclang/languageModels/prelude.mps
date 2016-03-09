@@ -7,6 +7,11 @@
   </languages>
   <imports>
     <import index="51uy" ref="r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)" />
+    <import index="wru8" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module(jetpad.vclang/)" />
+    <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="2968" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term(jetpad.vclang/)" />
+    <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +38,12 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -190,6 +201,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -1043,6 +1057,12 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2AR5txsw80$" role="3clF47">
+        <node concept="3clFbF" id="3hLZSAskX0E" role="3cqZAp">
+          <node concept="2YIFZM" id="3YIJst5J3ub" role="3clFbG">
+            <ref role="1Pybhc" to="wru8:~Root" resolve="Root" />
+            <ref role="37wK5l" to="wru8:~Root.initialize():void" resolve="initialize" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2AR5txsw8pS" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txsw8zs" role="3clFbG">
             <node concept="37vLTw" id="2AR5txsw8uI" role="37vLTJ">
@@ -1063,6 +1083,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAskXEF" role="3cqZAp">
+          <node concept="2OqwBi" id="1egVW$2AA$R" role="3clFbG">
+            <node concept="2JrnkZ" id="1egVW$2AA$S" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAskYuf" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txsw8u7" resolve="zero" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1egVW$2AA$U" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAskXzw" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAskYps" role="37wK5m">
+                <ref role="3cqZAo" to="2968:~Prelude.ZERO" resolve="ZERO" />
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskYyM" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txsw8BR" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txsw8Gx" role="3clFbG">
             <node concept="37vLTw" id="2AR5txsw8BP" role="37vLTJ">
@@ -1083,6 +1124,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAskYDT" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAskYDU" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAskYDV" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAskYJr" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txsw8Bg" resolve="suc" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAskYDW" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAskYDX" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAskYDY" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.SUC" resolve="SUC" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskYAw" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txsw8PG" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txsw8UN" role="3clFbG">
             <node concept="1PxgMI" id="2AR5txsw9H_" role="37vLTx">
@@ -1103,6 +1165,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAskYTY" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAskYU0" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAskYU1" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAskYZn" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txsw8ON" resolve="Nat" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAskYU2" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAskYU3" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAskYU4" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.NAT" resolve="NAT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskYPz" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswddK" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswddL" role="3clFbG">
             <node concept="37vLTw" id="2AR5txswdIu" role="37vLTJ">
@@ -1123,6 +1206,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAskZgx" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAskZgy" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAskZgz" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAskZnj" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswd5D" resolve="left" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAskZg$" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAskZg_" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAskZgA" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.LEFT" resolve="LEFT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskZ6L" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswdLz" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswdL$" role="3clFbG">
             <node concept="37vLTw" id="2AR5txswdQy" role="37vLTJ">
@@ -1143,6 +1247,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAskZDC" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAskZDD" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAskZDE" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAskZKi" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswd8A" resolve="right" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAskZDF" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAskZDG" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAskZDH" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.RIGHT" resolve="RIGHT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskZuJ" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswdSW" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswe5W" role="3clFbG">
             <node concept="1PxgMI" id="2AR5txsweRM" role="37vLTx">
@@ -1163,6 +1288,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl024" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl025" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl026" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl0a5" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswd0c" resolve="I" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl027" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl028" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl029" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.INTERVAL" resolve="INTERVAL" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAskZSO" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswgPn" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswgVy" role="3clFbG">
             <node concept="37vLTw" id="2AR5txswgPl" role="37vLTJ">
@@ -1183,6 +1329,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl0A5" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl0A6" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl0A7" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl0IG" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswgLM" resolve="path" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl0A8" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl0A9" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl0Aa" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.PATH_CON" resolve="PATH_CON" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl0vg" role="3cqZAp" />
         <node concept="3clFbF" id="1sSRWjCW$AP" role="3cqZAp">
           <node concept="37vLTI" id="1sSRWjCW$AQ" role="3clFbG">
             <node concept="37vLTw" id="1sSRWjCW$GB" role="37vLTJ">
@@ -1203,6 +1370,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl1bM" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl1bN" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl1bO" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl2jl" role="2JrQYb">
+                <ref role="3cqZAo" node="1sSRWjCW$sj" resolve="iso" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl1bP" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl1bQ" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl1bR" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.ISO" resolve="ISO" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl10n" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswhlo" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswhsh" role="3clFbG">
             <node concept="37vLTw" id="2AR5txswhlm" role="37vLTJ">
@@ -1223,6 +1411,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl2Eg" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl2Eh" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl2Ei" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl2Od" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswgC6" resolve="Path" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl2Ej" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl2Ek" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl2El" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.PATH" resolve="PATH" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl2y5" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswjvj" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswjCQ" role="3clFbG">
             <node concept="2OqwBi" id="2AR5txswkfe" role="37vLTx">
@@ -1240,6 +1449,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl3c6" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl3c7" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl3c8" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl3mz" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswjcC" resolve="path_infix" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl3c9" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl3ca" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl3cb" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.PATH_INFIX" resolve="PATH_INFIX" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl2Z4" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswl1b" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswl9j" role="3clFbG">
             <node concept="2OqwBi" id="2AR5txswleJ" role="37vLTx">
@@ -1257,6 +1487,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl3NJ" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl3NK" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl3NL" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl3XY" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswjkM" resolve="at" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl3NM" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl3NN" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl3NO" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.AT" resolve="AT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl3xD" role="3cqZAp" />
         <node concept="3clFbF" id="2AR5txswmS1" role="3cqZAp">
           <node concept="37vLTI" id="2AR5txswn1k" role="3clFbG">
             <node concept="37vLTw" id="2AR5txswmRZ" role="37vLTJ">
@@ -1274,6 +1525,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl4nY" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl4nZ" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl4o0" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl4zA" role="2JrQYb">
+                <ref role="3cqZAo" node="2AR5txswmFu" resolve="coe" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl4o1" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl4o2" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="3hLZSAsl4o3" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                <ref role="3cqZAo" to="2968:~Prelude.COERCE" resolve="COERCE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl4aj" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIiSa" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIiSb" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIkCq" role="37vLTx">
@@ -1294,6 +1566,36 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl4Y8" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl4Y9" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl4Ya" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl59v" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIgND" resolve="TrP" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl4Yb" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl4Yc" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl5$k" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl4Yd" role="2Oq$k0">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl5Af" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl5Bl" role="37wK5m">
+                    <property role="Xl_RC" value="TrP" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl4JK" role="3cqZAp" />
+        <node concept="3clFbH" id="3hLZSAsl4ND" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIjfY" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIjfZ" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIkQF" role="37vLTx">
@@ -1314,6 +1616,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl5Pc" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl5Pd" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl5Pe" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl6e9" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIgTr" resolve="TrS" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl5Pf" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl5Pg" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl5Ph" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl5Pi" role="2Oq$k0">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl5Pj" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl5Pk" role="37wK5m">
+                    <property role="Xl_RC" value="TrS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl5Ej" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIjoy" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIjoz" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIjQH" role="37vLTx">
@@ -1334,6 +1665,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl6Ho" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl6Hp" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl6Hq" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl6XL" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIhb1" resolve="inS" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl6Hr" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl6Hs" role="37wK5m">
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl6Ht" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl6Hu" role="2Oq$k0">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl6Hv" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl6Hw" role="37wK5m">
+                    <property role="Xl_RC" value="inS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl6sN" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIjUC" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIjUD" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIjUE" role="37vLTx">
@@ -1354,6 +1714,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl7_z" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl7_$" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl7__" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl7Ol" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIgZc" resolve="inP" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl7_A" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl7_B" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl7_C" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl7_D" role="2Oq$k0">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl7_E" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl7_F" role="37wK5m">
+                    <property role="Xl_RC" value="inP" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl7ok" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIk6f" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIk6g" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIk6h" role="37vLTx">
@@ -1374,6 +1763,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl8wv" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl8ww" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl8wx" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl8KI" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIh58" resolve="truncP" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl8wy" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl8wz" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl8w$" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl8w_" role="2Oq$k0">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl8wA" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl8wB" role="37wK5m">
+                    <property role="Xl_RC" value="truncP" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl8in" role="3cqZAp" />
         <node concept="3clFbF" id="1q9iNMBIk6r" role="3cqZAp">
           <node concept="37vLTI" id="1q9iNMBIk6s" role="3clFbG">
             <node concept="1PxgMI" id="1q9iNMBIk6t" role="37vLTx">
@@ -1394,6 +1812,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hLZSAsl9gb" role="3cqZAp">
+          <node concept="2OqwBi" id="3hLZSAsl9gc" role="3clFbG">
+            <node concept="2JrnkZ" id="3hLZSAsl9gd" role="2Oq$k0">
+              <node concept="37vLTw" id="3hLZSAsl9xh" role="2JrQYb">
+                <ref role="3cqZAo" node="1q9iNMBIhb4" resolve="truncS" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3hLZSAsl9ge" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="3hLZSAsl9gf" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="2OqwBi" id="3hLZSAsl9gg" role="37wK5m">
+                <node concept="10M0yZ" id="3hLZSAsl9gh" role="2Oq$k0">
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                </node>
+                <node concept="liA8E" id="3hLZSAsl9gi" role="2OqNvi">
+                  <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                  <node concept="Xl_RD" id="3hLZSAsl9gj" role="37wK5m">
+                    <property role="Xl_RC" value="truncS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hLZSAsl5nq" role="3cqZAp" />
         <node concept="3clFbF" id="25RiHgHr3or" role="3cqZAp">
           <node concept="37vLTI" id="25RiHgHr3qP" role="3clFbG">
             <node concept="2OqwBi" id="25RiHgHr3yd" role="37vLTx">
