@@ -36,6 +36,7 @@
     <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
     <import index="udzc" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.context.binding(jetpad.vclang/)" />
+    <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="zkmn" ref="r:0ebf98e3-297c-49df-8487-4b820588cd91(jetbrains.mps.vclang.prelude)" implicit="true" />
   </imports>
   <registry>
@@ -5446,13 +5447,8 @@
       <property role="TrG5h" value="defaultRefMapper" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="71aF$X53kvD" role="1B3o_S" />
-      <node concept="3uibUv" id="71aF$X53kvE" role="1tU5fm">
-        <ref role="3uigEE" node="6LSE$xxfHus" resolve="ConstantRefMapper" />
-      </node>
-      <node concept="2ShNRf" id="71aF$X53kvF" role="33vP2m">
-        <node concept="HV5vD" id="71aF$X53kvG" role="2ShVmc">
-          <ref role="HV5vE" node="6LSE$xxfHus" resolve="ConstantRefMapper" />
-        </node>
+      <node concept="3uibUv" id="2gnWiAeVDlC" role="1tU5fm">
+        <ref role="3uigEE" to="xq8z:6LSE$xxfHu2" resolve="IVclangRefMapper" />
       </node>
       <node concept="z59LJ" id="71aF$X53kvH" role="lGtFl">
         <node concept="TZ5HI" id="71aF$X53kvI" role="3nqlJM">
@@ -5461,6 +5457,11 @@
       </node>
       <node concept="2AHcQZ" id="71aF$X53kvK" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="2ShNRf" id="2gnWiAeVC3C" role="33vP2m">
+        <node concept="HV5vD" id="2gnWiAeVCNr" role="2ShVmc">
+          <ref role="HV5vE" to="f93o:2gnWiAeV$Tk" resolve="DummyRefMapper" />
+        </node>
       </node>
     </node>
     <node concept="Wx3nA" id="47vVwnywr1P" role="jymVt">
@@ -12384,7 +12385,7 @@
                       <ref role="1PxDUh" node="5NQyKEZGqyC" resolve="AdapterUtils" />
                     </node>
                     <node concept="liA8E" id="2gDt65HStiE" role="2OqNvi">
-                      <ref role="37wK5l" to="xq8z:4muyeaNsNvj" resolve="setReference" />
+                      <ref role="37wK5l" to="xq8z:6ur4H5sNyCv" resolve="setReference" />
                       <node concept="37vLTw" id="2gDt65HStiF" role="37wK5m">
                         <ref role="3cqZAo" node="1dats513pHN" resolve="thisNode" />
                       </node>
@@ -18141,7 +18142,7 @@
                   <ref role="3cqZAo" node="71aF$X53kvC" resolve="defaultRefMapper" />
                 </node>
                 <node concept="liA8E" id="2gDt65HSsb7" role="2OqNvi">
-                  <ref role="37wK5l" to="xq8z:4muyeaNsNvj" resolve="setReference" />
+                  <ref role="37wK5l" to="xq8z:6ur4H5sNyCv" resolve="setReference" />
                   <node concept="37vLTw" id="2gDt65HSscZ" role="37wK5m">
                     <ref role="3cqZAo" node="1mwsisV0V$8" resolve="thisNode" />
                   </node>
