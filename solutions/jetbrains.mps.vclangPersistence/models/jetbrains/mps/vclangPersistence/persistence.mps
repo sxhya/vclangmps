@@ -4593,6 +4593,9 @@
         <node concept="3uibUv" id="41AqpIsdC2K" role="1tU5fm">
           <ref role="3uigEE" node="4BYu3Ubt5Ap" resolve="VclangArticleModelDescriptor" />
         </node>
+        <node concept="2AHcQZ" id="R7e9GLyA68" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
       </node>
       <node concept="37vLTG" id="4muyeaNsMoJ" role="3clF46">
         <property role="TrG5h" value="moduleRef" />
@@ -4746,16 +4749,26 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="41AqpIsdDgg" role="3cqZAp">
-                      <node concept="2OqwBi" id="41AqpIsdDsH" role="3clFbG">
-                        <node concept="37vLTw" id="41AqpIsdDge" role="2Oq$k0">
-                          <ref role="3cqZAo" node="41AqpIsdCKt" resolve="myModelDescriptor" />
-                        </node>
-                        <node concept="liA8E" id="41AqpIsdDD2" role="2OqNvi">
-                          <ref role="37wK5l" node="41AqpIsd_WX" resolve="addModelDependency" />
-                          <node concept="37vLTw" id="41AqpIsdF_u" role="37wK5m">
-                            <ref role="3cqZAo" node="41AqpIsdEZh" resolve="shortModulePath" />
+                    <node concept="3clFbJ" id="R7e9GLy_Fe" role="3cqZAp">
+                      <node concept="3clFbS" id="R7e9GLy_Fg" role="3clFbx">
+                        <node concept="3clFbF" id="41AqpIsdDgg" role="3cqZAp">
+                          <node concept="2OqwBi" id="41AqpIsdDsH" role="3clFbG">
+                            <node concept="37vLTw" id="41AqpIsdDge" role="2Oq$k0">
+                              <ref role="3cqZAo" node="41AqpIsdCKt" resolve="myModelDescriptor" />
+                            </node>
+                            <node concept="liA8E" id="41AqpIsdDD2" role="2OqNvi">
+                              <ref role="37wK5l" node="41AqpIsd_WX" resolve="addModelDependency" />
+                              <node concept="37vLTw" id="41AqpIsdF_u" role="37wK5m">
+                                <ref role="3cqZAo" node="41AqpIsdEZh" resolve="shortModulePath" />
+                              </node>
+                            </node>
                           </node>
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="R7e9GLy_Py" role="3clFbw">
+                        <node concept="10Nm6u" id="R7e9GLy_Qi" role="3uHU7w" />
+                        <node concept="37vLTw" id="R7e9GLy_Mp" role="3uHU7B">
+                          <ref role="3cqZAo" node="41AqpIsdCKt" resolve="myModelDescriptor" />
                         </node>
                       </node>
                     </node>
