@@ -42,7 +42,6 @@
         </application-components>
         <extensions defaultExtensionNs="com.intellij">
           <mps.modelRootEntry rootType="vclang_articles" className="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
-          <mps.ModelFactoryProvider implementationClass="jetbrains.mps.vclangPersistence.persistence.VclangModelPersistence"></mps.ModelFactoryProvider>
         </extensions>
         
         <extensions defaultExtensionNs="com.intellij">
