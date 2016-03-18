@@ -1037,6 +1037,7 @@
     <property role="1pbfSe" value="2023296974" />
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="DotExpression" />
+    <property role="34LRSv" value="." />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="65CX60nc1HM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
