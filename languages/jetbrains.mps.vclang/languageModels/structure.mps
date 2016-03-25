@@ -1119,13 +1119,7 @@
     <property role="1pbfSe" value="1993688395" />
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="ProjExpression" />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-    <node concept="1TJgyj" id="54AIZWS11rw" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="leftExpression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-    </node>
+    <ref role="1TJDcQ" node="65CX60nc1HR" resolve="AbstractDotOperation" />
     <node concept="1TJgyi" id="54AIZWS0ZXS" role="1TKVEl">
       <property role="TrG5h" value="fieldNumber" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
