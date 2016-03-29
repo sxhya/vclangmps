@@ -117,6 +117,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
+        <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -3164,6 +3165,7 @@
       </node>
       <node concept="3F0ifn" id="OV0Rn1w28J" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <property role="1cu_pB" value="1" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
         <node concept="pkWqt" id="OV0Rn1w36X" role="pqm2j">
           <node concept="3clFbS" id="OV0Rn1w36Y" role="2VODD2">
@@ -3177,6 +3179,34 @@
                 </node>
                 <node concept="2qgKlT" id="OV0Rn1w37E" role="2OqNvi">
                   <ref role="37wK5l" to="hhlq:6oOmj_oc_dk" resolve="isInfix" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="3NlDnxn6QoB" role="cStSX">
+          <node concept="3clFbS" id="3NlDnxn6QoC" role="2VODD2">
+            <node concept="3clFbF" id="3NlDnxn6Swk" role="3cqZAp">
+              <node concept="1Wc70l" id="3NlDnxn6V_H" role="3clFbG">
+                <node concept="2OqwBi" id="3NlDnxn6VVp" role="3uHU7w">
+                  <node concept="2OqwBi" id="3NlDnxn6VEf" role="2Oq$k0">
+                    <node concept="pncrf" id="3NlDnxn6VAZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3NlDnxn6VLB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51uy:1dats513lFl" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="3NlDnxn6W7U" role="2OqNvi">
+                    <ref role="37wK5l" to="hhlq:6oOmj_oc_dk" resolve="isInfix" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3NlDnxn6To2" role="3uHU7B">
+                  <node concept="2OqwBi" id="3NlDnxn6SzF" role="2Oq$k0">
+                    <node concept="pncrf" id="3NlDnxn6Swj" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="3NlDnxn6SIv" role="2OqNvi">
+                      <ref role="3TtcxE" to="51uy:1dats513lFU" />
+                    </node>
+                  </node>
+                  <node concept="1v1jN8" id="3NlDnxn6Usr" role="2OqNvi" />
                 </node>
               </node>
             </node>

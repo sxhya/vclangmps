@@ -1001,6 +1001,7 @@
     <property role="TrG5h" value="LetClause" />
     <property role="3GE5qa" value="expression.letClause" />
     <property role="1pbfSe" value="375447076" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="1TJgyj" id="4UsT_r7LJ1u" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
