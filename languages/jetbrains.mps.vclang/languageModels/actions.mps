@@ -865,7 +865,7 @@
                     <node concept="37vLTw" id="65CX60nesjp" role="2Oq$k0">
                       <ref role="3cqZAo" node="65CX60nes8n" resolve="expr" />
                     </node>
-                    <node concept="3TrEf2" id="65CX60nesuB" role="2OqNvi">
+                    <node concept="3TrEf2" id="5vx7uSZLxnA" role="2OqNvi">
                       <ref role="3Tt5mk" to="51uy:65CX60nc1HM" />
                     </node>
                   </node>
@@ -876,7 +876,7 @@
                   <node concept="37vLTw" id="65CX60nesJJ" role="2Oq$k0">
                     <ref role="3cqZAo" node="65CX60nes8n" resolve="expr" />
                   </node>
-                  <node concept="3TrEf2" id="65CX60nesWQ" role="2OqNvi">
+                  <node concept="3TrEf2" id="5vx7uSZLxxi" role="2OqNvi">
                     <ref role="3Tt5mk" to="51uy:65CX60nc1HO" />
                   </node>
                 </node>
@@ -887,7 +887,7 @@
             <property role="2h1i$Z" value="." />
           </node>
           <node concept="2h1dTh" id="65CX60nes6h" role="Cn6ar">
-            <property role="2h1i$Z" value="Access static class members" />
+            <property role="2h1i$Z" value="Dot expression" />
           </node>
         </node>
       </node>

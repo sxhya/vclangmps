@@ -1038,18 +1038,20 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="DotExpression" />
     <property role="34LRSv" value="." />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <ref role="1TJDcQ" node="6aAUpg3pU9x" resolve="AbstractBinOpExpression" />
     <node concept="1TJgyj" id="65CX60nc1HM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="leftExpression" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+      <ref role="20ksaX" node="7nfIx2ucmHC" />
     </node>
     <node concept="1TJgyj" id="65CX60nc1HO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rightExpression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="65CX60nc1HR" resolve="AbstractDotOperation" />
+      <ref role="20ksaX" node="7nfIx2ucmHE" />
     </node>
   </node>
   <node concept="1TIwiD" id="65CX60nc1HR">
