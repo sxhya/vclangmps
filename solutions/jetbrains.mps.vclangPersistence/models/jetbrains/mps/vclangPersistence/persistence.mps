@@ -5347,6 +5347,50 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="5kVpCV8gTsP" role="3cqZAp">
+          <node concept="3SKdUq" id="5kVpCV8gTsR" role="3SKWNk">
+            <property role="3SKdUp" value="Suppress superfluous parts in the definition" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5kVpCV8gQYe" role="3cqZAp">
+          <node concept="3clFbS" id="5kVpCV8gQYg" role="3clFbx">
+            <node concept="3cpWs6" id="5kVpCV8gSe$" role="3cqZAp">
+              <node concept="10Nm6u" id="5kVpCV8gSh7" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="5kVpCV8gRAB" role="3clFbw">
+            <node concept="3clFbC" id="5kVpCV8i7qV" role="3uHU7w">
+              <node concept="3cmrfG" id="5kVpCV8i7vQ" role="3uHU7w">
+                <property role="3cmrfH" value="10" />
+              </node>
+              <node concept="2OqwBi" id="5kVpCV8i6wC" role="3uHU7B">
+                <node concept="37vLTw" id="5kVpCV8i6uJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
+                </node>
+                <node concept="2OwXpG" id="5kVpCV8i6_p" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.priority" resolve="priority" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5kVpCV8i5$d" role="3uHU7B">
+              <node concept="2OqwBi" id="5kVpCV8i5qB" role="2Oq$k0">
+                <node concept="37vLTw" id="5kVpCV8i5qC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
+                </node>
+                <node concept="2OwXpG" id="5kVpCV8i5qD" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.associativity" resolve="associativity" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5kVpCV8i5Jz" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Rm8GO" id="21nqyqXNZpx" role="37wK5m">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1Lg2$HLzH2_" role="3cqZAp">
           <node concept="37vLTw" id="1Lg2$HLzH2z" role="3clFbG">
             <ref role="3cqZAo" node="1Lg2$HLzGFi" resolve="result" />
