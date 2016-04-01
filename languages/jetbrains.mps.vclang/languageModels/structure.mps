@@ -325,17 +325,17 @@
     <property role="3lZH7k" value="derive_from_internal_value" />
     <property role="3GE5qa" value="switches" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="6dbcPfPFKEi" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="⇐" />
-    </node>
-    <node concept="M4N5e" id="KzXl40_pIR" role="M5hS2">
-      <property role="1uS6qo" value="⇒" />
-      <property role="1uS6qv" value="1" />
-    </node>
     <node concept="M4N5e" id="3vFRxEzMS0v" role="M5hS2">
       <property role="1uS6qv" value="2" />
       <property role="1uS6qo" value="&lt;abstract&gt;" />
+    </node>
+    <node concept="M4N5e" id="6dbcPfPFKEi" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="&lt;=" />
+    </node>
+    <node concept="M4N5e" id="KzXl40_pIR" role="M5hS2">
+      <property role="1uS6qo" value="=&gt;" />
+      <property role="1uS6qv" value="1" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKFe">
