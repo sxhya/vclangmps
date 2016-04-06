@@ -450,7 +450,7 @@
       </node>
       <node concept="1SiIV0" id="Yuz1zXkOry" role="3bR37C">
         <node concept="3bR9La" id="Yuz1zXkOrz" role="1SiIV1">
-          <property role="3bR36h" value="false" />
+          <property role="3bR36h" value="true" />
           <ref role="3bR37D" node="Yuz1zXkOr8" resolve="jetpad.vclang" />
         </node>
       </node>
@@ -492,7 +492,7 @@
       </node>
       <node concept="1SiIV0" id="Yuz1zXkOrK" role="3bR37C">
         <node concept="3bR9La" id="Yuz1zXkOrL" role="1SiIV1">
-          <property role="3bR36h" value="false" />
+          <property role="3bR36h" value="true" />
           <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
         </node>
       </node>
@@ -515,7 +515,7 @@
       </node>
       <node concept="1SiIV0" id="5n7T3JmTmYL" role="3bR37C">
         <node concept="3bR9La" id="5n7T3JmTmYM" role="1SiIV1">
-          <property role="3bR36h" value="false" />
+          <property role="3bR36h" value="true" />
           <ref role="3bR37D" node="Yuz1zXkOqZ" resolve="jetbrains.mps.vclangPersistence" />
         </node>
       </node>
@@ -586,6 +586,33 @@
           </node>
         </node>
         <node concept="3o6iSG" id="7ZoWiKcey_n" role="3o6s8t" />
+        <node concept="2pNNFK" id="7lhEbQoU0Bk" role="3o6s8t">
+          <property role="2pNNFO" value="extensions" />
+          <node concept="2pNNFK" id="7lhEbQoU0CD" role="3o6s8t">
+            <property role="2pNNFO" value="mps.ModelFactoryProvider" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="7lhEbQoU0CU" role="2pNNFR">
+              <property role="2pNUuO" value="implementationClass" />
+              <node concept="2pMdtt" id="7lhEbQoU0CX" role="2pMdts">
+                <property role="2pMdty" value="jetbrains.mps.vclangPersistence.peristence.VclangModelFactory" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="7lhEbQoU0Dn" role="3o6s8t">
+            <property role="2pNNFO" value="mps.LanguageLibrary" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="7lhEbQoU0Dz" role="2pNNFR">
+              <property role="2pNUuO" value="dir" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="7lhEbQoU0C6" role="2pNNFR">
+            <property role="2pNUuO" value="defayktExtensionNs" />
+            <node concept="2pMdtt" id="7lhEbQoU0C9" role="2pMdts">
+              <property role="2pMdty" value="com.intellij" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="7lhEbQoU0_S" role="3o6s8t" />
         <node concept="2pNNFK" id="Yuz1zXkPQY" role="3o6s8t">
           <property role="2pNNFO" value="application-components" />
           <node concept="2pNNFK" id="Yuz1zXkPQZ" role="3o6s8t">
