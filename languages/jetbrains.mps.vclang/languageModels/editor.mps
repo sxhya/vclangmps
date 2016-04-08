@@ -4189,5 +4189,32 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3rcTxloRQWH">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1XX52x" to="51uy:3rcTxloRQWi" resolve="BinOpSequenceExpression" />
+    <node concept="3EZMnI" id="3rcTxloRQWJ" role="2wV5jI">
+      <node concept="3F1sOY" id="3rcTxloRYk8" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3rcTxloRYjF" />
+      </node>
+      <node concept="3F2HdR" id="3rcTxloRQWQ" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3rcTxloRQWj" />
+        <node concept="l2Vlx" id="3rcTxloRQWS" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="3rcTxloRQWM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3rcTxloRQXj">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1XX52x" to="51uy:3rcTxloRQWa" resolve="BinOpSequenceElem" />
+    <node concept="3EZMnI" id="3rcTxloRQX_" role="2wV5jI">
+      <node concept="3F1sOY" id="3rcTxloRQXG" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3rcTxloRQWd" />
+      </node>
+      <node concept="3F1sOY" id="3rcTxloRQXQ" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:3rcTxloRQWf" />
+      </node>
+      <node concept="l2Vlx" id="3rcTxloRQXC" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

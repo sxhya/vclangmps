@@ -1249,5 +1249,44 @@
       <property role="1uS6qv" value="1" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3rcTxloRQWa">
+    <property role="1pbfSe" value="1884531425" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="BinOpSequenceElem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3rcTxloRQWd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="binOp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="43YHIaBbeeJ" resolve="DefExpression" />
+    </node>
+    <node concept="1TJgyj" id="3rcTxloRQWf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3rcTxloRQWb" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3rcTxloRQWi">
+    <property role="1pbfSe" value="1884531417" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="BinOpSequenceExpression" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <node concept="1TJgyj" id="3rcTxloRYjF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3rcTxloRQWj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="sequence" />
+      <ref role="20lvS9" node="3rcTxloRQWa" resolve="BinOpSequenceElem" />
+    </node>
+  </node>
 </model>
 
