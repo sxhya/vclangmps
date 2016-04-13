@@ -14552,8 +14552,8 @@
                         <node concept="Xl_RD" id="6otXYHBgsXm" role="3uHU7B">
                           <property role="Xl_RC" value="path:" />
                         </node>
-                        <node concept="37vLTw" id="6otXYHBgsXn" role="3uHU7w">
-                          <ref role="3cqZAo" node="6otXYHBgsW7" resolve="relPath" />
+                        <node concept="37vLTw" id="71bFn89ved9" role="3uHU7w">
+                          <ref role="3cqZAo" node="6otXYHBgsWc" resolve="modelName" />
                         </node>
                       </node>
                     </node>
