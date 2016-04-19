@@ -38,7 +38,7 @@
     <import index="udzc" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.context.binding(jetpad.vclang/)" />
     <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="ajkr" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.nameresolver.listener(jetpad.vclang/)" />
-    <import index="zkmn" ref="r:0ebf98e3-297c-49df-8487-4b820588cd91(jetbrains.mps.vclang.prelude)" implicit="true" />
+    <import index="nl56" ref="r:9b915bc4-617f-4e37-afd2-3de80862c6d1(jetbrains.mps.vclang.prelude)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2040,7 +2040,7 @@
                     <node concept="2OqwBi" id="7qfY4yyBiuz" role="1PxMeX">
                       <node concept="2c44tf" id="7qfY4yyBhwY" role="2Oq$k0">
                         <node concept="3BO_ld" id="5LKdqecuHCx" role="2c44tc">
-                          <ref role="3gbGqc" to="zkmn:1Te6WjKRXuZ" resolve="Prelude" />
+                          <ref role="3gbGqc" to="nl56:1Te6WjKRXuZ" resolve="Prelude" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7qfY4yyBkXI" role="2OqNvi">
@@ -5659,8 +5659,8 @@
                     <node concept="3clFbS" id="2JC6VYIJ5R_" role="3clFbx">
                       <node concept="3cpWs6" id="2JC6VYIJ7cl" role="3cqZAp">
                         <node concept="2YIFZM" id="2JC6VYIJ5RD" role="3cqZAk">
-                          <ref role="37wK5l" to="zkmn:25RiHgHrkfZ" resolve="getNodeByResolvedName" />
-                          <ref role="1Pybhc" to="zkmn:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                          <ref role="37wK5l" to="nl56:25RiHgHrkfZ" resolve="getNodeByResolvedName" />
+                          <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
                           <node concept="37vLTw" id="2JC6VYIJ5RE" role="37wK5m">
                             <ref role="3cqZAo" node="2JC6VYIJ5Rv" resolve="resolvedName" />
                           </node>
@@ -5674,8 +5674,8 @@
                       <node concept="liA8E" id="2JC6VYIJ5RP" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                         <node concept="10M0yZ" id="2JC6VYIJ5RQ" role="37wK5m">
-                          <ref role="3cqZAo" to="zkmn:25RiHgHSzm_" resolve="PRELUDE_NAME" />
-                          <ref role="1PxDUh" to="zkmn:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                          <ref role="3cqZAo" to="nl56:25RiHgHSzm_" resolve="PRELUDE_NAME" />
+                          <ref role="1PxDUh" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
                         </node>
                       </node>
                     </node>
@@ -8975,36 +8975,6 @@
       </node>
       <node concept="3uibUv" id="vFf91iG0kt" role="3clF45">
         <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="5LKdqecnLXu" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getInternalName" />
-      <ref role="13i0hy" node="5LKdqecnLnC" resolve="getInternalName" />
-      <node concept="3Tm1VV" id="5LKdqecnLXv" role="1B3o_S" />
-      <node concept="3clFbS" id="5LKdqecnLXy" role="3clF47">
-        <node concept="3clFbF" id="5LKdqecnLY$" role="3cqZAp">
-          <node concept="2ShNRf" id="5LKdqecnLYA" role="3clFbG">
-            <node concept="1pGfFk" id="5LKdqecnLYC" role="2ShVmc">
-              <ref role="37wK5l" to="thjl:~Name.&lt;init&gt;(java.lang.String)" resolve="Name" />
-              <node concept="2OqwBi" id="5LKdqecnLYD" role="37wK5m">
-                <node concept="2OqwBi" id="5LKdqecnLYE" role="2Oq$k0">
-                  <node concept="13iPFW" id="5LKdqecoQbK" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="5LKdqecnLYH" role="2OqNvi">
-                    <ref role="3Tt5mk" to="51uy:7nfIx2ucone" />
-                  </node>
-                </node>
-                <node concept="3TrcHB" id="5LKdqecnLYI" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="10EbXto52wh" role="3clF45">
-        <ref role="3uigEE" to="thjl:~Name" resolve="Name" />
       </node>
     </node>
   </node>

@@ -302,6 +302,9 @@
       <node concept="m$_yB" id="Yuz1zXkOmt" role="m$_yh">
         <ref role="m$_yA" node="Yuz1zXkOqZ" resolve="jetbrains.mps.vclangPersistence" />
       </node>
+      <node concept="m$_yB" id="5i8jMJ3_LnZ" role="m$_yh">
+        <ref role="m$_yA" node="7vDSFCG1u5P" resolve="jetbrains.mps.vclang.pluginSolution" />
+      </node>
       <node concept="m$_yB" id="Yuz1zXkOmW" role="m$_yh">
         <ref role="m$_yA" node="Yuz1zXkOr8" resolve="jetpad.vclang" />
       </node>
@@ -368,6 +371,35 @@
         <node concept="3bR9La" id="5n7T3JmTmY5" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtA" id="7vDSFCG1u5P" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="jetbrains.mps.vclang.pluginSolution" />
+      <property role="3LESm3" value="23e07881-6a23-4165-ad0c-68977c12aabc" />
+      <property role="2GAjPV" value="false" />
+      <node concept="55IIr" id="7vDSFCG1u5Q" role="3LF7KH">
+        <node concept="2Ry0Ak" id="7vDSFCG1u5R" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="7vDSFCG1u5S" role="2Ry0An">
+            <property role="2Ry0Am" value="jetbrains.mps.vclang.pluginSolution" />
+            <node concept="2Ry0Ak" id="7vDSFCG1u8N" role="2Ry0An">
+              <property role="2Ry0Am" value="jetbrains.mps.vclang.pluginSolution.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7vDSFCG1u5W" role="3bR37C">
+        <node concept="3bR9La" id="7vDSFCG1u5X" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="Yuz1zXkOrr" resolve="jetbrains.mps.vclang" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7vDSFCG1ub2" role="3bR37C">
+        <node concept="3bR9La" id="7vDSFCG1ub3" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" node="Yuz1zXkOqZ" resolve="jetbrains.mps.vclangPersistence" />
         </node>
       </node>
     </node>
