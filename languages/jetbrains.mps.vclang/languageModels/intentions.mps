@@ -3026,8 +3026,8 @@
       </node>
       <node concept="37vLTG" id="1CLk1M3PtJY" role="3clF46">
         <property role="TrG5h" value="baseDef" />
-        <node concept="3uibUv" id="1CLk1M3PtJZ" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="1K1qkmWWmJ_" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3Tm1VV" id="1CLk1M3PtK1" role="1B3o_S" />
@@ -3171,10 +3171,10 @@
                   <node concept="3uibUv" id="6ur4H5sPZ1Y" role="1tU5fm">
                     <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                   </node>
-                  <node concept="2YIFZM" id="6ur4H5sPY3j" role="33vP2m">
-                    <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                    <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                    <node concept="37vLTw" id="1CLk1M3PxsO" role="37wK5m">
+                  <node concept="2YIFZM" id="1K1qkmWWmV6" role="33vP2m">
+                    <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                    <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                    <node concept="37vLTw" id="1K1qkmWWmV7" role="37wK5m">
                       <ref role="3cqZAo" node="1CLk1M3PtJY" resolve="baseDef" />
                     </node>
                   </node>

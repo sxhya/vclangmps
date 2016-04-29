@@ -47,7 +47,6 @@
     <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="nl56" ref="r:9b915bc4-617f-4e37-afd2-3de80862c6d1(jetbrains.mps.vclang.prelude)" />
-    <import index="nx2r" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.expr(jetpad.vclang/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5236,6 +5235,30 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1K1qkmWSevf" role="jymVt" />
+    <node concept="3clFb_" id="1K1qkmWS0Vw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="visitPolyUniverse" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="1K1qkmWS0Vx" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1K1qkmWS0VC" role="3clF45">
+        <ref role="ehGHo" to="51uy:KzXl40_QXs" resolve="Expression" />
+      </node>
+      <node concept="37vLTG" id="1K1qkmWS0V$" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3uibUv" id="1K1qkmWS0V_" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$PolyUniverseExpression" resolve="Abstract.PolyUniverseExpression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1K1qkmWS0VA" role="3clF46">
+        <property role="TrG5h" value="aVoid" />
+        <node concept="3uibUv" id="1K1qkmWS0VD" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Void" resolve="Void" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1K1qkmWS0VE" role="3clF47" />
+    </node>
     <node concept="2tJIrI" id="6LSE$xxqV_T" role="jymVt" />
     <node concept="3clFbW" id="2gDt65HPPbg" role="jymVt">
       <node concept="37vLTG" id="2gDt65HQ00T" role="3clF46">
@@ -8848,13 +8871,8 @@
           <node concept="2YIFZM" id="71aF$X532UU" role="3clFbG">
             <ref role="37wK5l" node="71aF$X532TO" resolve="convertUniverse" />
             <ref role="1Pybhc" node="71aF$X52XFP" resolve="BuilderUtils" />
-            <node concept="2OqwBi" id="5QGigKLizdJ" role="37wK5m">
-              <node concept="37vLTw" id="5QGigKLiz6m" role="2Oq$k0">
-                <ref role="3cqZAo" node="5QGigKLeoR9" resolve="expression" />
-              </node>
-              <node concept="liA8E" id="5QGigKLizDT" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$UniverseExpression.getUniverse():com.jetbrains.jetpad.vclang.term.Abstract$UniverseExpression$Universe" resolve="getUniverse" />
-              </node>
+            <node concept="37vLTw" id="5QGigKLiz6m" role="37wK5m">
+              <ref role="3cqZAo" node="5QGigKLeoR9" resolve="expression" />
             </node>
           </node>
         </node>
@@ -13800,143 +13818,186 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="71aF$X532TP" role="3clF46">
-        <property role="TrG5h" value="t" />
-        <node concept="3uibUv" id="5m7vKvh_8wI" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
+        <property role="TrG5h" value="expr" />
+        <node concept="3uibUv" id="1K1qkmWUpsI" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
         </node>
       </node>
       <node concept="3clFbS" id="71aF$X532TR" role="3clF47">
-        <node concept="3clFbJ" id="71aF$X532U0" role="3cqZAp">
-          <node concept="3clFbS" id="71aF$X532U1" role="3clFbx">
-            <node concept="3cpWs6" id="71aF$X532U2" role="3cqZAp">
-              <node concept="2c44tf" id="71aF$X532U3" role="3cqZAk">
-                <node concept="2mT28a" id="71aF$X532U4" role="2c44tc" />
+        <node concept="3clFbJ" id="1K1qkmWUmmd" role="3cqZAp">
+          <node concept="3clFbS" id="1K1qkmWUmmf" role="3clFbx">
+            <node concept="3cpWs8" id="1K1qkmWUuIq" role="3cqZAp">
+              <node concept="3cpWsn" id="1K1qkmWUuIr" role="3cpWs9">
+                <property role="TrG5h" value="universe" />
+                <node concept="3uibUv" id="1K1qkmWUuIs" role="1tU5fm">
+                  <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
+                </node>
+                <node concept="2OqwBi" id="1K1qkmWUv3m" role="33vP2m">
+                  <node concept="1eOMI4" id="1K1qkmWUuZa" role="2Oq$k0">
+                    <node concept="10QFUN" id="1K1qkmWUswO" role="1eOMHV">
+                      <node concept="3uibUv" id="1K1qkmWUswM" role="10QFUM">
+                        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression" resolve="Abstract.UniverseExpression" />
+                      </node>
+                      <node concept="37vLTw" id="1K1qkmWUsxU" role="10QFUP">
+                        <ref role="3cqZAo" node="71aF$X532TP" resolve="expr" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1K1qkmWUv7w" role="2OqNvi">
+                    <ref role="37wK5l" to="2968:~Abstract$UniverseExpression.getUniverse():com.jetbrains.jetpad.vclang.term.Abstract$UniverseExpression$Universe" resolve="getUniverse" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="71aF$X532U0" role="3cqZAp">
+              <node concept="3clFbS" id="71aF$X532U1" role="3clFbx">
+                <node concept="3cpWs6" id="71aF$X532U2" role="3cqZAp">
+                  <node concept="2c44tf" id="71aF$X532U3" role="3cqZAk">
+                    <node concept="2mT28a" id="71aF$X532U4" role="2c44tc" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="1K1qkmWUvRw" role="3clFbw">
+                <node concept="2OqwBi" id="1K1qkmWUwuB" role="3uHU7B">
+                  <node concept="37vLTw" id="1K1qkmWUvDY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                  </node>
+                  <node concept="2OwXpG" id="1K1qkmWUwxX" role="2OqNvi">
+                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                  </node>
+                </node>
+                <node concept="10M0yZ" id="71aF$X532U6" role="3uHU7w">
+                  <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
+                  <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.PROP" resolve="PROP" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="71aF$X532Ua" role="3cqZAp">
+              <node concept="3clFbS" id="71aF$X532Ub" role="3clFbx">
+                <node concept="3cpWs6" id="71aF$X532Uc" role="3cqZAp">
+                  <node concept="2c44tf" id="71aF$X532Ud" role="3cqZAk">
+                    <node concept="2mT289" id="71aF$X532Ue" role="2c44tc">
+                      <node concept="2EMmih" id="71aF$X532Uf" role="lGtFl">
+                        <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                        <property role="2qtEX9" value="level" />
+                        <node concept="2YIFZM" id="71aF$X532Ug" role="2c44t1">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <node concept="2OqwBi" id="1K1qkmWUfR2" role="37wK5m">
+                            <node concept="37vLTw" id="1K1qkmWUuTK" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                            </node>
+                            <node concept="2OwXpG" id="1K1qkmWUfSZ" role="2OqNvi">
+                              <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="1K1qkmWUwi0" role="3clFbw">
+                <node concept="2OqwBi" id="1K1qkmWUwzY" role="3uHU7B">
+                  <node concept="37vLTw" id="1K1qkmWUvFj" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                  </node>
+                  <node concept="2OwXpG" id="1K1qkmWUwAw" role="2OqNvi">
+                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                  </node>
+                </node>
+                <node concept="10M0yZ" id="1K1qkmWUwrI" role="3uHU7w">
+                  <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
+                  <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.PROP" resolve="PROP" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="71aF$X532Up" role="3cqZAp">
+              <node concept="3K4zz7" id="71aF$X532Uq" role="3cqZAk">
+                <node concept="2c44tf" id="71aF$X532Ur" role="3K4GZi">
+                  <node concept="2mT3My" id="71aF$X532Us" role="2c44tc">
+                    <node concept="2EMmih" id="71aF$X532Ut" role="lGtFl">
+                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357809/7154868868705357810" />
+                      <property role="2qtEX9" value="truncLevel" />
+                      <node concept="2YIFZM" id="71aF$X532Uu" role="2c44t1">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                        <node concept="2OqwBi" id="1K1qkmWUg28" role="37wK5m">
+                          <node concept="37vLTw" id="1K1qkmWUvzd" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                          </node>
+                          <node concept="2OwXpG" id="1K1qkmWUg48" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2EMmih" id="71aF$X532Uy" role="lGtFl">
+                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                      <property role="2qtEX9" value="level" />
+                      <node concept="2YIFZM" id="71aF$X532Uz" role="2c44t1">
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <node concept="2OqwBi" id="1K1qkmWUfWy" role="37wK5m">
+                          <node concept="37vLTw" id="1K1qkmWUvxt" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                          </node>
+                          <node concept="2OwXpG" id="1K1qkmWUfYy" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2c44tf" id="71aF$X532UB" role="3K4E3e">
+                  <node concept="2mT3NU" id="71aF$X532UC" role="2c44tc">
+                    <node concept="2EMmih" id="71aF$X532UD" role="lGtFl">
+                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                      <property role="2qtEX9" value="level" />
+                      <node concept="2YIFZM" id="71aF$X532UE" role="2c44t1">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                        <node concept="2OqwBi" id="1K1qkmWUfLB" role="37wK5m">
+                          <node concept="37vLTw" id="1K1qkmWUvvL" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                          </node>
+                          <node concept="2OwXpG" id="1K1qkmWUfN_" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="1K1qkmWUhsM" role="3K4Cdx">
+                  <node concept="2OqwBi" id="1K1qkmWUgmW" role="3uHU7B">
+                    <node concept="37vLTw" id="1K1qkmWUv$W" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
+                    </node>
+                    <node concept="2OwXpG" id="1K1qkmWUgvP" role="2OqNvi">
+                      <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                    </node>
+                  </node>
+                  <node concept="10M0yZ" id="1K1qkmWSsRq" role="3uHU7w">
+                    <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
+                    <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.NOT_TRUNCATED" resolve="NOT_TRUNCATED" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5m7vKvh_cHp" role="3clFbw">
-            <node concept="37vLTw" id="5m7vKvh_8QO" role="2Oq$k0">
-              <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+          <node concept="2ZW3vV" id="1K1qkmWUpMD" role="3clFbw">
+            <node concept="3uibUv" id="1K1qkmWUpQr" role="2ZW6by">
+              <ref role="3uigEE" to="2968:~Abstract$UniverseExpression" resolve="Abstract.UniverseExpression" />
             </node>
-            <node concept="liA8E" id="5m7vKvh_cJd" role="2OqNvi">
-              <ref role="37wK5l" to="thjl:~TypeUniverse.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="10M0yZ" id="71aF$X532U6" role="37wK5m">
-                <ref role="3cqZAo" to="thjl:~TypeUniverse.PROP" resolve="PROP" />
-                <ref role="1PxDUh" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
-              </node>
+            <node concept="37vLTw" id="1K1qkmWUpIl" role="2ZW6bz">
+              <ref role="3cqZAo" node="71aF$X532TP" resolve="expr" />
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="71aF$X532Ua" role="3cqZAp">
-          <node concept="3clFbS" id="71aF$X532Ub" role="3clFbx">
-            <node concept="3cpWs6" id="71aF$X532Uc" role="3cqZAp">
-              <node concept="2c44tf" id="71aF$X532Ud" role="3cqZAk">
-                <node concept="2mT289" id="71aF$X532Ue" role="2c44tc">
-                  <node concept="2EMmih" id="71aF$X532Uf" role="lGtFl">
-                    <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                    <property role="2qtEX9" value="level" />
-                    <node concept="2YIFZM" id="71aF$X532Ug" role="2c44t1">
-                      <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <node concept="2OqwBi" id="71aF$X532Uh" role="37wK5m">
-                        <node concept="37vLTw" id="71aF$X532Ui" role="2Oq$k0">
-                          <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-                        </node>
-                        <node concept="liA8E" id="71aF$X532Uj" role="2OqNvi">
-                          <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5m7vKvh_d9l" role="3clFbw">
-            <node concept="37vLTw" id="5m7vKvh_8S2" role="2Oq$k0">
-              <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-            </node>
-            <node concept="liA8E" id="5m7vKvh_djx" role="2OqNvi">
-              <ref role="37wK5l" to="thjl:~TypeUniverse.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="10M0yZ" id="71aF$X532Uo" role="37wK5m">
-                <ref role="3cqZAo" to="thjl:~TypeUniverse.SET" resolve="SET" />
-                <ref role="1PxDUh" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="71aF$X532Up" role="3cqZAp">
-          <node concept="3K4zz7" id="71aF$X532Uq" role="3cqZAk">
-            <node concept="2c44tf" id="71aF$X532Ur" role="3K4GZi">
-              <node concept="2mT3My" id="71aF$X532Us" role="2c44tc">
-                <node concept="2EMmih" id="71aF$X532Ut" role="lGtFl">
-                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357809/7154868868705357810" />
-                  <property role="2qtEX9" value="truncLevel" />
-                  <node concept="2YIFZM" id="71aF$X532Uu" role="2c44t1">
-                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                    <node concept="2OqwBi" id="71aF$X532Uv" role="37wK5m">
-                      <node concept="37vLTw" id="71aF$X532Uw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-                      </node>
-                      <node concept="liA8E" id="71aF$X532Ux" role="2OqNvi">
-                        <ref role="37wK5l" to="thjl:~TypeUniverse.getHLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getHLevel" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2EMmih" id="71aF$X532Uy" role="lGtFl">
-                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                  <property role="2qtEX9" value="level" />
-                  <node concept="2YIFZM" id="71aF$X532Uz" role="2c44t1">
-                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                    <node concept="2OqwBi" id="71aF$X532U$" role="37wK5m">
-                      <node concept="37vLTw" id="71aF$X532U_" role="2Oq$k0">
-                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-                      </node>
-                      <node concept="liA8E" id="71aF$X532UA" role="2OqNvi">
-                        <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2c44tf" id="71aF$X532UB" role="3K4E3e">
-              <node concept="2mT3NU" id="71aF$X532UC" role="2c44tc">
-                <node concept="2EMmih" id="71aF$X532UD" role="lGtFl">
-                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                  <property role="2qtEX9" value="level" />
-                  <node concept="2YIFZM" id="71aF$X532UE" role="2c44t1">
-                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                    <node concept="2OqwBi" id="71aF$X532UF" role="37wK5m">
-                      <node concept="37vLTw" id="71aF$X532UG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-                      </node>
-                      <node concept="liA8E" id="71aF$X532UH" role="2OqNvi">
-                        <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="5m7vKvh_dJY" role="3K4Cdx">
-              <node concept="2OqwBi" id="71aF$X532UK" role="2Oq$k0">
-                <node concept="37vLTw" id="5m7vKvh_8Tg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
-                </node>
-                <node concept="liA8E" id="71aF$X532UM" role="2OqNvi">
-                  <ref role="37wK5l" to="thjl:~TypeUniverse.getHLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getHLevel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="5m7vKvh_dUF" role="2OqNvi">
-                <ref role="37wK5l" to="nx2r:~LevelExpression.isInfinity():boolean" resolve="isInfinity" />
-              </node>
-            </node>
-          </node>
+        <node concept="3cpWs6" id="1K1qkmWUvkL" role="3cqZAp">
+          <node concept="10Nm6u" id="1K1qkmWUvmj" role="3cqZAk" />
         </node>
       </node>
       <node concept="3Tm1VV" id="71aF$X532US" role="1B3o_S" />

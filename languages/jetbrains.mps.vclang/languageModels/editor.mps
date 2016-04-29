@@ -1211,9 +1211,8 @@
           <node concept="3clFbS" id="5QGigKLjHYb" role="2VODD2">
             <node concept="3clFbF" id="5QGigKLjI3a" role="3cqZAp">
               <node concept="3y3z36" id="5QGigKLjJI0" role="3clFbG">
-                <node concept="10M0yZ" id="5QGigKLjJI1" role="3uHU7w">
-                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                  <ref role="3cqZAo" to="thjl:~Universe.NO_LEVEL" resolve="NO_LEVEL" />
+                <node concept="3cmrfG" id="1K1qkmWWlO$" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
                 </node>
                 <node concept="2OqwBi" id="5QGigKLjJI2" role="3uHU7B">
                   <node concept="pncrf" id="5QGigKLjJI3" role="2Oq$k0" />
@@ -1248,9 +1247,8 @@
           <node concept="3clFbS" id="5QGigKLjBi6" role="2VODD2">
             <node concept="3clFbF" id="5QGigKLjBn5" role="3cqZAp">
               <node concept="3y3z36" id="5QGigKLjCnC" role="3clFbG">
-                <node concept="10M0yZ" id="5QGigKLjD2z" role="3uHU7w">
-                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                  <ref role="3cqZAo" to="thjl:~Universe.NO_LEVEL" resolve="NO_LEVEL" />
+                <node concept="3cmrfG" id="1K1qkmWPNfX" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
                 </node>
                 <node concept="2OqwBi" id="5QGigKLjBta" role="3uHU7B">
                   <node concept="pncrf" id="5QGigKLjBn4" role="2Oq$k0" />
