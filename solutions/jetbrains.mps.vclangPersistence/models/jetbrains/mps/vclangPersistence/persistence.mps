@@ -47,6 +47,7 @@
     <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="nl56" ref="r:9b915bc4-617f-4e37-afd2-3de80862c6d1(jetbrains.mps.vclang.prelude)" />
+    <import index="nx2r" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.expr(jetpad.vclang/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4897,8 +4898,8 @@
       </node>
       <node concept="37vLTG" id="4muyeaNsNvo" role="3clF46">
         <property role="TrG5h" value="baseDef" />
-        <node concept="3uibUv" id="6ur4H5sPWJR" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvh_6Np" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4muyeaNsNvr" role="1B3o_S" />
@@ -4912,10 +4913,10 @@
                 <node concept="3uibUv" id="6ur4H5sPZ1Y" role="1tU5fm">
                   <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                 </node>
-                <node concept="2YIFZM" id="6ur4H5sPY3j" role="33vP2m">
-                  <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                  <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                  <node concept="37vLTw" id="6ur4H5sPYav" role="37wK5m">
+                <node concept="2YIFZM" id="5m7vKvh_6WK" role="33vP2m">
+                  <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                  <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                  <node concept="37vLTw" id="5m7vKvh_6WL" role="37wK5m">
                     <ref role="3cqZAo" node="4muyeaNsNvo" resolve="baseDef" />
                   </node>
                 </node>
@@ -5070,8 +5071,8 @@
       </node>
       <node concept="37vLTG" id="6ur4H5sNyIW" role="3clF46">
         <property role="TrG5h" value="reference" />
-        <node concept="3uibUv" id="6ur4H5sNyJE" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzcDr" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3clFbS" id="6ur4H5sNyCy" role="3clF47" />
@@ -5274,15 +5275,15 @@
         <node concept="3cpWs8" id="27z7C9pEX2D" role="3cqZAp">
           <node concept="3cpWsn" id="27z7C9pEL5w" role="3cpWs9">
             <property role="TrG5h" value="p" />
-            <node concept="3uibUv" id="27z7C9pEL5x" role="1tU5fm">
-              <ref role="3uigEE" to="2968:~Abstract$Definition$Precedence" resolve="Abstract.Definition.Precedence" />
+            <node concept="3uibUv" id="5m7vKvh_C2q" role="1tU5fm">
+              <ref role="3uigEE" to="2968:~Abstract$Binding$Precedence" resolve="Abstract.Binding.Precedence" />
             </node>
             <node concept="2OqwBi" id="27z7C9pEK8n" role="33vP2m">
               <node concept="37vLTw" id="27z7C9pEX6I" role="2Oq$k0">
                 <ref role="3cqZAo" node="27z7C9pEWGH" resolve="source" />
               </node>
               <node concept="liA8E" id="27z7C9pEKg5" role="2OqNvi">
-                <ref role="37wK5l" to="thjl:~BaseDefinition.getPrecedence():com.jetbrains.jetpad.vclang.term.Abstract$Definition$Precedence" resolve="getPrecedence" />
+                <ref role="37wK5l" to="2968:~Abstract$Binding.getPrecedence():com.jetbrains.jetpad.vclang.term.Abstract$Binding$Precedence" resolve="getPrecedence" />
               </node>
             </node>
           </node>
@@ -5312,8 +5313,8 @@
                   <node concept="37vLTw" id="27z7C9pEY56" role="2Oq$k0">
                     <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
                   </node>
-                  <node concept="2OwXpG" id="27z7C9pEY99" role="2OqNvi">
-                    <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.associativity" resolve="associativity" />
+                  <node concept="2OwXpG" id="5m7vKvh_C6$" role="2OqNvi">
+                    <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.associativity" resolve="associativity" />
                   </node>
                 </node>
               </node>
@@ -5335,8 +5336,8 @@
               <node concept="37vLTw" id="27z7C9pEXRw" role="2Oq$k0">
                 <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
               </node>
-              <node concept="2OwXpG" id="27z7C9pEXVo" role="2OqNvi">
-                <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.priority" resolve="priority" />
+              <node concept="2OwXpG" id="5m7vKvh_C9C" role="2OqNvi">
+                <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.priority" resolve="priority" />
               </node>
             </node>
             <node concept="2OqwBi" id="27z7C9pEXA8" role="37vLTJ">
@@ -5369,8 +5370,8 @@
                 <node concept="37vLTw" id="5kVpCV8i6uJ" role="2Oq$k0">
                   <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
                 </node>
-                <node concept="2OwXpG" id="5kVpCV8i6_p" role="2OqNvi">
-                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.priority" resolve="priority" />
+                <node concept="2OwXpG" id="5m7vKvh_CjM" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.priority" resolve="priority" />
                 </node>
               </node>
             </node>
@@ -5379,15 +5380,15 @@
                 <node concept="37vLTw" id="5kVpCV8i5qC" role="2Oq$k0">
                   <ref role="3cqZAo" node="27z7C9pEL5w" resolve="p" />
                 </node>
-                <node concept="2OwXpG" id="5kVpCV8i5qD" role="2OqNvi">
-                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.associativity" resolve="associativity" />
+                <node concept="2OwXpG" id="5m7vKvh_CcL" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.associativity" resolve="associativity" />
                 </node>
               </node>
               <node concept="liA8E" id="5kVpCV8i5Jz" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Rm8GO" id="21nqyqXNZpx" role="37wK5m">
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                <node concept="Rm8GO" id="5m7vKvh_CgQ" role="37wK5m">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
                 </node>
               </node>
             </node>
@@ -5655,7 +5656,7 @@
                               <ref role="3cqZAo" node="3J0mSWJdr9e" resolve="definition" />
                             </node>
                             <node concept="liA8E" id="27z7C9pF0ch" role="2OqNvi">
-                              <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -6013,7 +6014,7 @@
                                 <ref role="3cqZAo" node="3J0mSWJdr9p" resolve="definition" />
                               </node>
                               <node concept="liA8E" id="3ixSrrqx23U" role="2OqNvi">
-                                <ref role="37wK5l" to="thjl:~BaseDefinition.getPrecedence():com.jetbrains.jetpad.vclang.term.Abstract$Definition$Precedence" resolve="getPrecedence" />
+                                <ref role="37wK5l" to="2968:~Abstract$Binding.getPrecedence():com.jetbrains.jetpad.vclang.term.Abstract$Binding$Precedence" resolve="getPrecedence" />
                               </node>
                             </node>
                           </node>
@@ -6034,7 +6035,7 @@
                               <ref role="3cqZAo" node="3J0mSWJdr9p" resolve="definition" />
                             </node>
                             <node concept="liA8E" id="3ixSrrqwWWg" role="2OqNvi">
-                              <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -6312,7 +6313,7 @@
                               <ref role="3cqZAo" node="3J0mSWJdr9$" resolve="definition" />
                             </node>
                             <node concept="liA8E" id="3J0mSWJqmDB" role="2OqNvi">
-                              <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -6356,7 +6357,7 @@
                                 <ref role="3cqZAo" node="3J0mSWJdr9$" resolve="definition" />
                               </node>
                               <node concept="liA8E" id="27z7C9pHW3B" role="2OqNvi">
-                                <ref role="37wK5l" to="2968:~Abstract$DataDefinition.getUniverse():com.jetbrains.jetpad.vclang.term.definition.Universe" resolve="getUniverse" />
+                                <ref role="37wK5l" to="2968:~Abstract$DataDefinition.getUniverse():com.jetbrains.jetpad.vclang.term.Abstract$Expression" resolve="getUniverse" />
                               </node>
                             </node>
                           </node>
@@ -6484,7 +6485,7 @@
                                                       <ref role="3cqZAo" node="27z7C9pHZBf" resolve="it" />
                                                     </node>
                                                     <node concept="liA8E" id="3J0mSWJl7o7" role="2OqNvi">
-                                                      <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                                                      <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                                                     </node>
                                                   </node>
                                                 </node>
@@ -7026,7 +7027,7 @@
                                   <ref role="3cqZAo" node="3J0mSWJdr9J" resolve="constructor" />
                                 </node>
                                 <node concept="liA8E" id="27z7C9pNzrl" role="2OqNvi">
-                                  <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                                 </node>
                               </node>
                             </node>
@@ -7313,7 +7314,7 @@
                                         <ref role="3cqZAo" node="3J0mSWJdr9J" resolve="constructor" />
                                       </node>
                                       <node concept="liA8E" id="5m$tN724JnF" role="2OqNvi">
-                                        <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                                        <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                                       </node>
                                     </node>
                                   </node>
@@ -7481,7 +7482,7 @@
                 <ref role="3cqZAo" node="3J0mSWJdr9U" resolve="definition" />
               </node>
               <node concept="liA8E" id="27z7C9pQV5L" role="2OqNvi">
-                <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
               </node>
             </node>
           </node>
@@ -7785,15 +7786,15 @@
         <node concept="3cpWs8" id="1cYcn16gFwV" role="3cqZAp">
           <node concept="3cpWsn" id="1cYcn16gFwW" role="3cpWs9">
             <property role="TrG5h" value="targetDef" />
-            <node concept="3uibUv" id="3YIJst5_3yF" role="1tU5fm">
-              <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+            <node concept="3uibUv" id="5m7vKvh_Bcl" role="1tU5fm">
+              <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
             <node concept="2OqwBi" id="5QGigKLf0hZ" role="33vP2m">
               <node concept="37vLTw" id="5QGigKLf0ch" role="2Oq$k0">
                 <ref role="3cqZAo" node="5QGigKLeoQt" resolve="expression" />
               </node>
               <node concept="liA8E" id="5QGigKLf0Ef" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedDefinition" />
+                <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getReferent():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getReferent" />
               </node>
             </node>
           </node>
@@ -8040,8 +8041,8 @@
             <node concept="3cpWs8" id="40Rb6GVZ7aC" role="3cqZAp">
               <node concept="3cpWsn" id="40Rb6GVZ7aD" role="3cpWs9">
                 <property role="TrG5h" value="lhsTarget" />
-                <node concept="3uibUv" id="40Rb6GVZ7aE" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvh_Aj0" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="10Nm6u" id="40Rb6GVZLc2" role="33vP2m" />
               </node>
@@ -8098,7 +8099,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="40Rb6GW2eVU" role="2OqNvi">
-                        <ref role="37wK5l" to="2968:~Abstract$ModuleCallExpression.getModule():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getModule" />
+                        <ref role="37wK5l" to="2968:~Abstract$ModuleCallExpression.getModule():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getModule" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="40Rb6GW2eD5" role="37vLTJ">
@@ -8133,7 +8134,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="40Rb6GW2v6d" role="2OqNvi">
-                        <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedDefinition" />
+                        <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getReferent():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getReferent" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="40Rb6GW2eZr" role="37vLTJ">
@@ -8174,10 +8175,10 @@
                   <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                 </node>
                 <node concept="3K4zz7" id="40Rb6GW1kuZ" role="33vP2m">
-                  <node concept="2YIFZM" id="40Rb6GW1m3w" role="3K4E3e">
-                    <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                    <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                    <node concept="37vLTw" id="40Rb6GW1m7B" role="37wK5m">
+                  <node concept="2YIFZM" id="5m7vKvh_AKX" role="3K4E3e">
+                    <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                    <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                    <node concept="37vLTw" id="5m7vKvh_AKY" role="37wK5m">
                       <ref role="3cqZAo" node="40Rb6GVZ7aD" resolve="lhsTarget" />
                     </node>
                   </node>
@@ -8371,7 +8372,7 @@
                 <ref role="3cqZAo" node="5QGigKLeoQt" resolve="expression" />
               </node>
               <node concept="liA8E" id="3YIJst5BI2E" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedDefinition" />
+                <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getReferent():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getReferent" />
               </node>
             </node>
           </node>
@@ -8852,7 +8853,7 @@
                 <ref role="3cqZAo" node="5QGigKLeoR9" resolve="expression" />
               </node>
               <node concept="liA8E" id="5QGigKLizDT" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$UniverseExpression.getUniverse():com.jetbrains.jetpad.vclang.term.definition.Universe" resolve="getUniverse" />
+                <ref role="37wK5l" to="2968:~Abstract$UniverseExpression.getUniverse():com.jetbrains.jetpad.vclang.term.Abstract$UniverseExpression$Universe" resolve="getUniverse" />
               </node>
             </node>
           </node>
@@ -9597,15 +9598,15 @@
         <node concept="3cpWs8" id="25RiHgHmIKb" role="3cqZAp">
           <node concept="3cpWsn" id="25RiHgHmIKc" role="3cpWs9">
             <property role="TrG5h" value="baseDef" />
-            <node concept="3uibUv" id="3YIJst5CkKU" role="1tU5fm">
-              <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+            <node concept="3uibUv" id="5m7vKvh_Agq" role="1tU5fm">
+              <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
             <node concept="2OqwBi" id="4qqSIlQlFW" role="33vP2m">
               <node concept="37vLTw" id="4qqSIlQlFX" role="2Oq$k0">
                 <ref role="3cqZAo" node="5QGigKLeoSb" resolve="expression" />
               </node>
               <node concept="liA8E" id="4qqSIlQlFY" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$BinOpExpression.getResolvedBinOp():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedBinOp" />
+                <ref role="37wK5l" to="2968:~Abstract$BinOpExpression.getResolvedBinOp():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedBinOp" />
               </node>
             </node>
           </node>
@@ -12315,7 +12316,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3J0mSWJg3Dt" role="2OqNvi">
-                        <ref role="37wK5l" to="thjl:~BaseDefinition.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
                       </node>
                     </node>
                   </node>
@@ -13017,15 +13018,15 @@
             <node concept="3cpWs8" id="6LSE$xxlmd5" role="3cqZAp">
               <node concept="3cpWsn" id="6LSE$xxlmd6" role="3cpWs9">
                 <property role="TrG5h" value="targetClass" />
-                <node concept="3uibUv" id="3YIJst5E_hu" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvh_A6q" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="2OqwBi" id="6LSE$xxlktU" role="33vP2m">
                   <node concept="37vLTw" id="6LSE$xxlkoI" role="2Oq$k0">
                     <ref role="3cqZAo" node="73jCsPaSUqZ" resolve="ncs" />
                   </node>
                   <node concept="liA8E" id="6LSE$xxlk$w" role="2OqNvi">
-                    <ref role="37wK5l" to="2968:~Concrete$NamespaceCommandStatement.getResolvedClass():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedClass" />
+                    <ref role="37wK5l" to="2968:~Concrete$NamespaceCommandStatement.getResolvedClass():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedClass" />
                   </node>
                 </node>
               </node>
@@ -13038,10 +13039,10 @@
                     <node concept="3uibUv" id="3YIJst5EBuW" role="1tU5fm">
                       <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                     </node>
-                    <node concept="2YIFZM" id="3YIJst5EAe7" role="33vP2m">
-                      <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                      <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                      <node concept="37vLTw" id="GY6Myh8r$F" role="37wK5m">
+                    <node concept="2YIFZM" id="5m7vKvh__Es" role="33vP2m">
+                      <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                      <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                      <node concept="37vLTw" id="5m7vKvh__Et" role="37wK5m">
                         <ref role="3cqZAo" node="6LSE$xxlmd6" resolve="targetClass" />
                       </node>
                     </node>
@@ -13096,8 +13097,8 @@
                             <node concept="3cpWs8" id="7cru_WMQV9z" role="3cqZAp">
                               <node concept="3cpWsn" id="7cru_WMQV9$" role="3cpWs9">
                                 <property role="TrG5h" value="member" />
-                                <node concept="3uibUv" id="6ur4H5sNA8v" role="1tU5fm">
-                                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                                <node concept="3uibUv" id="5m7vKvh_Aci" role="1tU5fm">
+                                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                                 </node>
                                 <node concept="2OqwBi" id="7cru_WMQVCn" role="33vP2m">
                                   <node concept="2OqwBi" id="7cru_WMQVex" role="2Oq$k0">
@@ -13117,7 +13118,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="7cru_WMQVIi" role="2OqNvi">
-                                    <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedDefinition" />
+                                    <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedDefinition" />
                                   </node>
                                 </node>
                               </node>
@@ -13457,15 +13458,15 @@
         <node concept="3cpWs8" id="3YIJst5Gqe7" role="3cqZAp">
           <node concept="3cpWsn" id="3YIJst5Gqe8" role="3cpWs9">
             <property role="TrG5h" value="targetDef" />
-            <node concept="3uibUv" id="3YIJst5Gqe9" role="1tU5fm">
-              <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+            <node concept="3uibUv" id="5m7vKvh_BZE" role="1tU5fm">
+              <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
             <node concept="2OqwBi" id="3YIJst5FS8R" role="33vP2m">
               <node concept="37vLTw" id="3YIJst5GKQ9" role="2Oq$k0">
                 <ref role="3cqZAo" node="3YIJst5Ftfe" resolve="expression" />
               </node>
               <node concept="liA8E" id="3YIJst5FS8W" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$ModuleCallExpression.getModule():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getModule" />
+                <ref role="37wK5l" to="2968:~Abstract$ModuleCallExpression.getModule():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getModule" />
               </node>
             </node>
           </node>
@@ -13672,9 +13673,9 @@
             </node>
             <node concept="liA8E" id="71aF$X5300O" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="Rm8GO" id="71aF$X5300P" role="37wK5m">
-                <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
-                <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+              <node concept="Rm8GO" id="5m7vKvh_7B3" role="37wK5m">
+                <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+                <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
               </node>
             </node>
           </node>
@@ -13695,9 +13696,9 @@
               </node>
               <node concept="liA8E" id="71aF$X5300X" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Rm8GO" id="71aF$X5300Y" role="37wK5m">
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.LEFT_ASSOC" resolve="LEFT_ASSOC" />
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                <node concept="Rm8GO" id="5m7vKvh_7CP" role="37wK5m">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.LEFT_ASSOC" resolve="LEFT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
                 </node>
               </node>
             </node>
@@ -13714,8 +13715,8 @@
       </node>
       <node concept="37vLTG" id="71aF$X53012" role="3clF46">
         <property role="TrG5h" value="a" />
-        <node concept="3uibUv" id="71aF$X53013" role="1tU5fm">
-          <ref role="3uigEE" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+        <node concept="3uibUv" id="5m7vKvh_7yg" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
         </node>
       </node>
       <node concept="2ZThk1" id="71aF$X53014" role="3clF45">
@@ -13799,179 +13800,143 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="71aF$X532TP" role="3clF46">
-        <property role="TrG5h" value="u" />
-        <node concept="3uibUv" id="71aF$X532TQ" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~Universe" resolve="Universe" />
+        <property role="TrG5h" value="t" />
+        <node concept="3uibUv" id="5m7vKvh_8wI" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
         </node>
       </node>
       <node concept="3clFbS" id="71aF$X532TR" role="3clF47">
-        <node concept="3clFbJ" id="71aF$X532TS" role="3cqZAp">
-          <node concept="3clFbS" id="71aF$X532TT" role="3clFbx">
-            <node concept="3cpWs8" id="71aF$X532TU" role="3cqZAp">
-              <node concept="3cpWsn" id="71aF$X532TV" role="3cpWs9">
-                <property role="TrG5h" value="t" />
-                <node concept="3uibUv" id="71aF$X532TW" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                </node>
-                <node concept="10QFUN" id="71aF$X532TX" role="33vP2m">
-                  <node concept="3uibUv" id="71aF$X532TY" role="10QFUM">
-                    <ref role="3uigEE" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                  </node>
-                  <node concept="37vLTw" id="71aF$X532TZ" role="10QFUP">
-                    <ref role="3cqZAo" node="71aF$X532TP" resolve="u" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="71aF$X532U0" role="3cqZAp">
-              <node concept="3clFbS" id="71aF$X532U1" role="3clFbx">
-                <node concept="3cpWs6" id="71aF$X532U2" role="3cqZAp">
-                  <node concept="2c44tf" id="71aF$X532U3" role="3cqZAk">
-                    <node concept="2mT28a" id="71aF$X532U4" role="2c44tc" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbC" id="71aF$X532U5" role="3clFbw">
-                <node concept="10M0yZ" id="71aF$X532U6" role="3uHU7w">
-                  <ref role="3cqZAo" to="thjl:~Universe$Type.PROP" resolve="PROP" />
-                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                </node>
-                <node concept="2OqwBi" id="71aF$X532U7" role="3uHU7B">
-                  <node concept="37vLTw" id="71aF$X532U8" role="2Oq$k0">
-                    <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                  </node>
-                  <node concept="liA8E" id="71aF$X532U9" role="2OqNvi">
-                    <ref role="37wK5l" to="thjl:~Universe$Type.getTruncated():int" resolve="getTruncated" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="71aF$X532Ua" role="3cqZAp">
-              <node concept="3clFbS" id="71aF$X532Ub" role="3clFbx">
-                <node concept="3cpWs6" id="71aF$X532Uc" role="3cqZAp">
-                  <node concept="2c44tf" id="71aF$X532Ud" role="3cqZAk">
-                    <node concept="2mT289" id="71aF$X532Ue" role="2c44tc">
-                      <node concept="2EMmih" id="71aF$X532Uf" role="lGtFl">
-                        <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                        <property role="2qtEX9" value="level" />
-                        <node concept="2YIFZM" id="71aF$X532Ug" role="2c44t1">
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                          <node concept="2OqwBi" id="71aF$X532Uh" role="37wK5m">
-                            <node concept="37vLTw" id="71aF$X532Ui" role="2Oq$k0">
-                              <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                            </node>
-                            <node concept="liA8E" id="71aF$X532Uj" role="2OqNvi">
-                              <ref role="37wK5l" to="thjl:~Universe.getLevel():int" resolve="getLevel" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbC" id="71aF$X532Uk" role="3clFbw">
-                <node concept="2OqwBi" id="71aF$X532Ul" role="3uHU7B">
-                  <node concept="37vLTw" id="71aF$X532Um" role="2Oq$k0">
-                    <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                  </node>
-                  <node concept="liA8E" id="71aF$X532Un" role="2OqNvi">
-                    <ref role="37wK5l" to="thjl:~Universe$Type.getTruncated():int" resolve="getTruncated" />
-                  </node>
-                </node>
-                <node concept="10M0yZ" id="71aF$X532Uo" role="3uHU7w">
-                  <ref role="3cqZAo" to="thjl:~Universe$Type.SET" resolve="SET" />
-                  <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="71aF$X532Up" role="3cqZAp">
-              <node concept="3K4zz7" id="71aF$X532Uq" role="3cqZAk">
-                <node concept="2c44tf" id="71aF$X532Ur" role="3K4GZi">
-                  <node concept="2mT3My" id="71aF$X532Us" role="2c44tc">
-                    <node concept="2EMmih" id="71aF$X532Ut" role="lGtFl">
-                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357809/7154868868705357810" />
-                      <property role="2qtEX9" value="truncLevel" />
-                      <node concept="2YIFZM" id="71aF$X532Uu" role="2c44t1">
-                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                        <node concept="2OqwBi" id="71aF$X532Uv" role="37wK5m">
-                          <node concept="37vLTw" id="71aF$X532Uw" role="2Oq$k0">
-                            <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                          </node>
-                          <node concept="liA8E" id="71aF$X532Ux" role="2OqNvi">
-                            <ref role="37wK5l" to="thjl:~Universe$Type.getTruncated():int" resolve="getTruncated" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2EMmih" id="71aF$X532Uy" role="lGtFl">
-                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                      <property role="2qtEX9" value="level" />
-                      <node concept="2YIFZM" id="71aF$X532Uz" role="2c44t1">
-                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                        <node concept="2OqwBi" id="71aF$X532U$" role="37wK5m">
-                          <node concept="37vLTw" id="71aF$X532U_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                          </node>
-                          <node concept="liA8E" id="71aF$X532UA" role="2OqNvi">
-                            <ref role="37wK5l" to="thjl:~Universe.getLevel():int" resolve="getLevel" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2c44tf" id="71aF$X532UB" role="3K4E3e">
-                  <node concept="2mT3NU" id="71aF$X532UC" role="2c44tc">
-                    <node concept="2EMmih" id="71aF$X532UD" role="lGtFl">
-                      <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
-                      <property role="2qtEX9" value="level" />
-                      <node concept="2YIFZM" id="71aF$X532UE" role="2c44t1">
-                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                        <node concept="2OqwBi" id="71aF$X532UF" role="37wK5m">
-                          <node concept="37vLTw" id="71aF$X532UG" role="2Oq$k0">
-                            <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                          </node>
-                          <node concept="liA8E" id="71aF$X532UH" role="2OqNvi">
-                            <ref role="37wK5l" to="thjl:~Universe.getLevel():int" resolve="getLevel" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbC" id="71aF$X532UI" role="3K4Cdx">
-                  <node concept="10M0yZ" id="71aF$X532UJ" role="3uHU7w">
-                    <ref role="3cqZAo" to="thjl:~Universe$Type.NOT_TRUNCATED" resolve="NOT_TRUNCATED" />
-                    <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
-                  </node>
-                  <node concept="2OqwBi" id="71aF$X532UK" role="3uHU7B">
-                    <node concept="37vLTw" id="71aF$X532UL" role="2Oq$k0">
-                      <ref role="3cqZAo" node="71aF$X532TV" resolve="t" />
-                    </node>
-                    <node concept="liA8E" id="71aF$X532UM" role="2OqNvi">
-                      <ref role="37wK5l" to="thjl:~Universe$Type.getTruncated():int" resolve="getTruncated" />
-                    </node>
-                  </node>
-                </node>
+        <node concept="3clFbJ" id="71aF$X532U0" role="3cqZAp">
+          <node concept="3clFbS" id="71aF$X532U1" role="3clFbx">
+            <node concept="3cpWs6" id="71aF$X532U2" role="3cqZAp">
+              <node concept="2c44tf" id="71aF$X532U3" role="3cqZAk">
+                <node concept="2mT28a" id="71aF$X532U4" role="2c44tc" />
               </node>
             </node>
           </node>
-          <node concept="2ZW3vV" id="71aF$X532UN" role="3clFbw">
-            <node concept="3uibUv" id="71aF$X532UO" role="2ZW6by">
-              <ref role="3uigEE" to="thjl:~Universe$Type" resolve="Universe.Type" />
+          <node concept="2OqwBi" id="5m7vKvh_cHp" role="3clFbw">
+            <node concept="37vLTw" id="5m7vKvh_8QO" role="2Oq$k0">
+              <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
             </node>
-            <node concept="37vLTw" id="71aF$X532UP" role="2ZW6bz">
-              <ref role="3cqZAo" node="71aF$X532TP" resolve="u" />
+            <node concept="liA8E" id="5m7vKvh_cJd" role="2OqNvi">
+              <ref role="37wK5l" to="thjl:~TypeUniverse.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="10M0yZ" id="71aF$X532U6" role="37wK5m">
+                <ref role="3cqZAo" to="thjl:~TypeUniverse.PROP" resolve="PROP" />
+                <ref role="1PxDUh" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="71aF$X532UQ" role="3cqZAp">
-          <node concept="10Nm6u" id="71aF$X532UR" role="3cqZAk" />
+        <node concept="3clFbJ" id="71aF$X532Ua" role="3cqZAp">
+          <node concept="3clFbS" id="71aF$X532Ub" role="3clFbx">
+            <node concept="3cpWs6" id="71aF$X532Uc" role="3cqZAp">
+              <node concept="2c44tf" id="71aF$X532Ud" role="3cqZAk">
+                <node concept="2mT289" id="71aF$X532Ue" role="2c44tc">
+                  <node concept="2EMmih" id="71aF$X532Uf" role="lGtFl">
+                    <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                    <property role="2qtEX9" value="level" />
+                    <node concept="2YIFZM" id="71aF$X532Ug" role="2c44t1">
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <node concept="2OqwBi" id="71aF$X532Uh" role="37wK5m">
+                        <node concept="37vLTw" id="71aF$X532Ui" role="2Oq$k0">
+                          <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+                        </node>
+                        <node concept="liA8E" id="71aF$X532Uj" role="2OqNvi">
+                          <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5m7vKvh_d9l" role="3clFbw">
+            <node concept="37vLTw" id="5m7vKvh_8S2" role="2Oq$k0">
+              <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+            </node>
+            <node concept="liA8E" id="5m7vKvh_djx" role="2OqNvi">
+              <ref role="37wK5l" to="thjl:~TypeUniverse.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="10M0yZ" id="71aF$X532Uo" role="37wK5m">
+                <ref role="3cqZAo" to="thjl:~TypeUniverse.SET" resolve="SET" />
+                <ref role="1PxDUh" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="71aF$X532Up" role="3cqZAp">
+          <node concept="3K4zz7" id="71aF$X532Uq" role="3cqZAk">
+            <node concept="2c44tf" id="71aF$X532Ur" role="3K4GZi">
+              <node concept="2mT3My" id="71aF$X532Us" role="2c44tc">
+                <node concept="2EMmih" id="71aF$X532Ut" role="lGtFl">
+                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357809/7154868868705357810" />
+                  <property role="2qtEX9" value="truncLevel" />
+                  <node concept="2YIFZM" id="71aF$X532Uu" role="2c44t1">
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="2OqwBi" id="71aF$X532Uv" role="37wK5m">
+                      <node concept="37vLTw" id="71aF$X532Uw" role="2Oq$k0">
+                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+                      </node>
+                      <node concept="liA8E" id="71aF$X532Ux" role="2OqNvi">
+                        <ref role="37wK5l" to="thjl:~TypeUniverse.getHLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getHLevel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2EMmih" id="71aF$X532Uy" role="lGtFl">
+                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                  <property role="2qtEX9" value="level" />
+                  <node concept="2YIFZM" id="71aF$X532Uz" role="2c44t1">
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                    <node concept="2OqwBi" id="71aF$X532U$" role="37wK5m">
+                      <node concept="37vLTw" id="71aF$X532U_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+                      </node>
+                      <node concept="liA8E" id="71aF$X532UA" role="2OqNvi">
+                        <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2c44tf" id="71aF$X532UB" role="3K4E3e">
+              <node concept="2mT3NU" id="71aF$X532UC" role="2c44tc">
+                <node concept="2EMmih" id="71aF$X532UD" role="lGtFl">
+                  <property role="P4ACc" value="2db233bb-72db-49c3-adc4-7ae97f87f8dc/7154868868705357734/7154868868705357735" />
+                  <property role="2qtEX9" value="level" />
+                  <node concept="2YIFZM" id="71aF$X532UE" role="2c44t1">
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="2OqwBi" id="71aF$X532UF" role="37wK5m">
+                      <node concept="37vLTw" id="71aF$X532UG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+                      </node>
+                      <node concept="liA8E" id="71aF$X532UH" role="2OqNvi">
+                        <ref role="37wK5l" to="thjl:~TypeUniverse.getPLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getPLevel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5m7vKvh_dJY" role="3K4Cdx">
+              <node concept="2OqwBi" id="71aF$X532UK" role="2Oq$k0">
+                <node concept="37vLTw" id="5m7vKvh_8Tg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="71aF$X532TP" resolve="t" />
+                </node>
+                <node concept="liA8E" id="71aF$X532UM" role="2OqNvi">
+                  <ref role="37wK5l" to="thjl:~TypeUniverse.getHLevel():com.jetbrains.jetpad.vclang.term.expr.LevelExpression" resolve="getHLevel" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5m7vKvh_dUF" role="2OqNvi">
+                <ref role="37wK5l" to="nx2r:~LevelExpression.isInfinity():boolean" resolve="isInfinity" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="71aF$X532US" role="1B3o_S" />
@@ -14276,8 +14241,8 @@
                 <node concept="37vLTw" id="71aF$X53eRS" role="2Oq$k0">
                   <ref role="3cqZAo" node="71aF$X53eSf" resolve="p" />
                 </node>
-                <node concept="2OwXpG" id="71aF$X53eRT" role="2OqNvi">
-                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.priority" resolve="priority" />
+                <node concept="2OwXpG" id="5m7vKvh_7PC" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.priority" resolve="priority" />
                 </node>
               </node>
             </node>
@@ -14286,15 +14251,15 @@
                 <node concept="37vLTw" id="71aF$X53eRW" role="2Oq$k0">
                   <ref role="3cqZAo" node="71aF$X53eSf" resolve="p" />
                 </node>
-                <node concept="2OwXpG" id="71aF$X53eRX" role="2OqNvi">
-                  <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.associativity" resolve="associativity" />
+                <node concept="2OwXpG" id="5m7vKvh_7Nh" role="2OqNvi">
+                  <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.associativity" resolve="associativity" />
                 </node>
               </node>
               <node concept="liA8E" id="71aF$X53eRY" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Rm8GO" id="71aF$X53eRZ" role="37wK5m">
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                <node concept="Rm8GO" id="5m7vKvh_7Fe" role="37wK5m">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
                 </node>
               </node>
             </node>
@@ -14313,8 +14278,8 @@
                     <node concept="37vLTw" id="71aF$X53eS6" role="2Oq$k0">
                       <ref role="3cqZAo" node="71aF$X53eSf" resolve="p" />
                     </node>
-                    <node concept="2OwXpG" id="71aF$X53eS7" role="2OqNvi">
-                      <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.priority" resolve="priority" />
+                    <node concept="2OwXpG" id="5m7vKvh_7TL" role="2OqNvi">
+                      <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.priority" resolve="priority" />
                     </node>
                   </node>
                 </node>
@@ -14330,8 +14295,8 @@
                       <node concept="37vLTw" id="71aF$X53eSc" role="2Oq$k0">
                         <ref role="3cqZAo" node="71aF$X53eSf" resolve="p" />
                       </node>
-                      <node concept="2OwXpG" id="71aF$X53eSd" role="2OqNvi">
-                        <ref role="2Oxat5" to="2968:~Abstract$Definition$Precedence.associativity" resolve="associativity" />
+                      <node concept="2OwXpG" id="5m7vKvh_7Kq" role="2OqNvi">
+                        <ref role="2Oxat5" to="2968:~Abstract$Binding$Precedence.associativity" resolve="associativity" />
                       </node>
                     </node>
                   </node>
@@ -14346,8 +14311,8 @@
       </node>
       <node concept="37vLTG" id="71aF$X53eSf" role="3clF46">
         <property role="TrG5h" value="p" />
-        <node concept="3uibUv" id="71aF$X53eSg" role="1tU5fm">
-          <ref role="3uigEE" to="2968:~Abstract$Definition$Precedence" resolve="Abstract.Definition.Precedence" />
+        <node concept="3uibUv" id="5m7vKvh_7Ho" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$Binding$Precedence" resolve="Abstract.Binding.Precedence" />
         </node>
       </node>
       <node concept="3Tqbb2" id="71aF$X53eSh" role="3clF45">
@@ -16369,8 +16334,8 @@
             <node concept="3cpWs8" id="4hyXZg9GTkD" role="3cqZAp">
               <node concept="3cpWsn" id="4hyXZg9GTkE" role="3cpWs9">
                 <property role="TrG5h" value="def" />
-                <node concept="3uibUv" id="4hyXZg9Hng3" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvh_Y91" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="2OqwBi" id="7BILyjtKh_X" role="33vP2m">
                   <node concept="1PxgMI" id="7BILyjtKhr1" role="2Oq$k0">
@@ -16667,8 +16632,8 @@
       </node>
       <node concept="37vLTG" id="6jPCldhV0Q6" role="3clF46">
         <property role="TrG5h" value="reference" />
-        <node concept="3uibUv" id="6jPCldhV0Q7" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvh_WbS" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6jPCldhV0Q9" role="1B3o_S" />

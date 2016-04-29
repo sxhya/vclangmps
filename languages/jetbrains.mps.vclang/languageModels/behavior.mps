@@ -5342,8 +5342,8 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="47vVwnywpin" role="1B3o_S" />
-      <node concept="3uibUv" id="47vVwnywpip" role="3clF45">
-        <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+      <node concept="3uibUv" id="5m7vKvhzf4T" role="3clF45">
+        <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
       </node>
       <node concept="3clFbS" id="47vVwnywpis" role="3clF47">
         <node concept="3cpWs8" id="47vVwnywKY5" role="3cqZAp">
@@ -5535,10 +5535,10 @@
             <node concept="3uibUv" id="2JC6VYIJ5QD" role="1tU5fm">
               <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
             </node>
-            <node concept="2YIFZM" id="2JC6VYIJ5QE" role="33vP2m">
-              <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-              <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-              <node concept="37vLTw" id="2JC6VYIJ6lo" role="37wK5m">
+            <node concept="2YIFZM" id="5m7vKvhzdsH" role="33vP2m">
+              <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+              <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+              <node concept="37vLTw" id="5m7vKvhzdsI" role="37wK5m">
                 <ref role="3cqZAo" node="2JC6VYIJ65K" resolve="baseDef" />
               </node>
             </node>
@@ -5699,8 +5699,8 @@
       <node concept="3Tqbb2" id="2JC6VYIJ5z7" role="3clF45" />
       <node concept="37vLTG" id="2JC6VYIJ65K" role="3clF46">
         <property role="TrG5h" value="baseDef" />
-        <node concept="3uibUv" id="2JC6VYIJ65J" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzdmp" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
     </node>
@@ -5738,8 +5738,8 @@
               <node concept="3clFbS" id="1egVW$2AA$A" role="3clFbx">
                 <node concept="3cpWs6" id="1egVW$2AA$B" role="3cqZAp">
                   <node concept="10QFUN" id="1egVW$2AA$C" role="3cqZAk">
-                    <node concept="3uibUv" id="4$aXHCJnkrC" role="10QFUM">
-                      <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                    <node concept="3uibUv" id="5m7vKvhzdB7" role="10QFUM">
+                      <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                     </node>
                     <node concept="37vLTw" id="1egVW$2AA$E" role="10QFUP">
                       <ref role="3cqZAo" node="1egVW$2AA$u" resolve="storedAdapter" />
@@ -5748,8 +5748,8 @@
                 </node>
               </node>
               <node concept="2ZW3vV" id="1egVW$2AA$F" role="3clFbw">
-                <node concept="3uibUv" id="4$aXHCJnkrd" role="2ZW6by">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvhzdAG" role="2ZW6by">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="37vLTw" id="1egVW$2AA$H" role="2ZW6bz">
                   <ref role="3cqZAo" node="1egVW$2AA$u" resolve="storedAdapter" />
@@ -5815,8 +5815,8 @@
           <node concept="10Nm6u" id="1egVW$2AA_4" role="3cqZAk" />
         </node>
       </node>
-      <node concept="3uibUv" id="4$aXHCJnl5x" role="3clF45">
-        <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+      <node concept="3uibUv" id="5m7vKvhzdyG" role="3clF45">
+        <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
       </node>
       <node concept="37vLTG" id="1egVW$2AA$o" role="3clF46">
         <property role="TrG5h" value="target" />
@@ -6066,9 +6066,9 @@
             </node>
             <node concept="3clFbS" id="5NQyKEZGs4I" role="3Kbo56">
               <node concept="3cpWs6" id="5NQyKEZGs9W" role="3cqZAp">
-                <node concept="Rm8GO" id="5NQyKEZGscQ" role="3cqZAk">
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                <node concept="Rm8GO" id="5m7vKvhzdH6" role="3cqZAk">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.RIGHT_ASSOC" resolve="RIGHT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
                 </node>
               </node>
             </node>
@@ -6079,18 +6079,18 @@
             </node>
             <node concept="3clFbS" id="5NQyKEZGs61" role="3Kbo56">
               <node concept="3cpWs6" id="5NQyKEZGsdj" role="3cqZAp">
-                <node concept="Rm8GO" id="5NQyKEZGsdY" role="3cqZAk">
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.LEFT_ASSOC" resolve="LEFT_ASSOC" />
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+                <node concept="Rm8GO" id="5m7vKvhzdI4" role="3cqZAk">
+                  <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.LEFT_ASSOC" resolve="LEFT_ASSOC" />
+                  <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3clFbS" id="5NQyKEZGrNW" role="3Kb1Dw">
             <node concept="3cpWs6" id="5NQyKEZGsfO" role="3cqZAp">
-              <node concept="Rm8GO" id="5NQyKEZGsj4" role="3cqZAk">
-                <ref role="Rm8GQ" to="2968:~Abstract$Definition$Associativity.NON_ASSOC" resolve="NON_ASSOC" />
-                <ref role="1Px2BO" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+              <node concept="Rm8GO" id="5m7vKvhzdIW" role="3cqZAk">
+                <ref role="Rm8GQ" to="2968:~Abstract$Binding$Associativity.NON_ASSOC" resolve="NON_ASSOC" />
+                <ref role="1Px2BO" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
               </node>
             </node>
           </node>
@@ -6100,8 +6100,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5NQyKEZGrIB" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZGrJv" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Definition$Associativity" resolve="Abstract.Definition.Associativity" />
+      <node concept="3uibUv" id="5m7vKvhzdF8" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Binding$Associativity" resolve="Abstract.Binding.Associativity" />
       </node>
       <node concept="37vLTG" id="5NQyKEZGrKF" role="3clF46">
         <property role="TrG5h" value="assoc" />
@@ -6118,31 +6118,13 @@
         <node concept="3clFbF" id="1SuY8bUbII1" role="3cqZAp">
           <node concept="2ShNRf" id="1SuY8bUbII2" role="3clFbG">
             <node concept="1pGfFk" id="1SuY8bUbII3" role="2ShVmc">
-              <ref role="37wK5l" to="thjl:~Name.&lt;init&gt;(java.lang.String,com.jetbrains.jetpad.vclang.term.Abstract$Definition$Fixity)" resolve="Name" />
+              <ref role="37wK5l" to="thjl:~Name.&lt;init&gt;(java.lang.String)" resolve="Name" />
               <node concept="2OqwBi" id="1SuY8bUbII4" role="37wK5m">
                 <node concept="37vLTw" id="1SuY8bUbII5" role="2Oq$k0">
                   <ref role="3cqZAo" node="1SuY8bUbIHY" resolve="def" />
                 </node>
                 <node concept="3TrcHB" id="1SuY8bUbII6" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-              <node concept="3K4zz7" id="1SuY8bUbII7" role="37wK5m">
-                <node concept="2OqwBi" id="1SuY8bUbII8" role="3K4Cdx">
-                  <node concept="37vLTw" id="1SuY8bUbII9" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1SuY8bUbIHY" resolve="def" />
-                  </node>
-                  <node concept="2qgKlT" id="1SuY8bUbIIa" role="2OqNvi">
-                    <ref role="37wK5l" node="6oOmj_oc_dk" resolve="isInfix" />
-                  </node>
-                </node>
-                <node concept="Rm8GO" id="1SuY8bUbIIb" role="3K4E3e">
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Fixity.INFIX" resolve="INFIX" />
-                </node>
-                <node concept="Rm8GO" id="1SuY8bUbIIc" role="3K4GZi">
-                  <ref role="1Px2BO" to="2968:~Abstract$Definition$Fixity" resolve="Abstract.Definition.Fixity" />
-                  <ref role="Rm8GQ" to="2968:~Abstract$Definition$Fixity.PREFIX" resolve="PREFIX" />
                 </node>
               </node>
             </node>
@@ -6465,8 +6447,8 @@
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="5NQyKEZGDBk" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZGDBr" role="3clF45">
-        <ref role="3uigEE" to="thjl:~Universe" resolve="Universe" />
+      <node concept="3uibUv" id="5m7vKvhBTaC" role="3clF45">
+        <ref role="3uigEE" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
       </node>
       <node concept="3clFbS" id="5NQyKEZGDBm" role="3clF47" />
     </node>
@@ -6580,8 +6562,8 @@
             <node concept="1pGfFk" id="5NQyKEZGEz7" role="2ShVmc">
               <ref role="37wK5l" to="thjl:~Universe$Type.&lt;init&gt;(int,int)" resolve="Universe.Type" />
               <node concept="10M0yZ" id="7duy_QrSxMr" role="37wK5m">
-                <ref role="1PxDUh" to="thjl:~Universe" resolve="Universe" />
                 <ref role="3cqZAo" to="thjl:~Universe.NO_LEVEL" resolve="NO_LEVEL" />
+                <ref role="1PxDUh" to="thjl:~Universe" resolve="Universe" />
               </node>
               <node concept="10M0yZ" id="5NQyKEZGEWj" role="37wK5m">
                 <ref role="1PxDUh" to="thjl:~Universe$Type" resolve="Universe.Type" />
@@ -6591,8 +6573,8 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="5NQyKEZGEpY" role="3clF45">
-        <ref role="3uigEE" to="thjl:~Universe" resolve="Universe" />
+      <node concept="3uibUv" id="5m7vKvhBWrM" role="3clF45">
+        <ref role="3uigEE" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
       </node>
     </node>
   </node>
@@ -6866,14 +6848,14 @@
     <node concept="13i0hz" id="5NQyKEZHnxj" role="13h7CS">
       <property role="TrG5h" value="toSourcePrecedence" />
       <node concept="3Tm1VV" id="5NQyKEZHnxk" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZHnxr" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Definition$Precedence" resolve="Abstract.Definition.Precedence" />
+      <node concept="3uibUv" id="5m7vKvhBUyX" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Binding$Precedence" resolve="Abstract.Binding.Precedence" />
       </node>
       <node concept="3clFbS" id="5NQyKEZHnxm" role="3clF47">
         <node concept="3clFbF" id="5NQyKEZHny9" role="3cqZAp">
           <node concept="2ShNRf" id="5NQyKEZHnyb" role="3clFbG">
             <node concept="1pGfFk" id="5NQyKEZGsTB" role="2ShVmc">
-              <ref role="37wK5l" to="2968:~Abstract$Definition$Precedence.&lt;init&gt;(com.jetbrains.jetpad.vclang.term.Abstract$Definition$Associativity,byte)" resolve="Abstract.Definition.Precedence" />
+              <ref role="37wK5l" to="2968:~Abstract$Binding$Precedence.&lt;init&gt;(com.jetbrains.jetpad.vclang.term.Abstract$Binding$Associativity,byte)" resolve="Abstract.Binding.Precedence" />
               <node concept="2YIFZM" id="5NQyKEZGzwF" role="37wK5m">
                 <ref role="37wK5l" node="5NQyKEZGrJC" resolve="convertAssoc" />
                 <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
@@ -6946,8 +6928,8 @@
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5NQyKEZJogh" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZJogj" role="3clF45">
-        <ref role="3uigEE" to="thjl:~Universe" resolve="Universe" />
+      <node concept="3uibUv" id="5m7vKvhBQXi" role="3clF45">
+        <ref role="3uigEE" to="thjl:~TypeUniverse" resolve="TypeUniverse" />
       </node>
       <node concept="3clFbS" id="5NQyKEZJogk" role="3clF47">
         <node concept="3clFbF" id="5NQyKEZJogm" role="3cqZAp">
@@ -6962,8 +6944,8 @@
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="5NQyKEZJogo" role="1B3o_S" />
-      <node concept="3uibUv" id="5NQyKEZJogq" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Definition$Precedence" resolve="Abstract.Definition.Precedence" />
+      <node concept="3uibUv" id="5m7vKvhBPgs" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Binding$Precedence" resolve="Abstract.Binding.Precedence" />
       </node>
       <node concept="3clFbS" id="5NQyKEZJogr" role="3clF47">
         <node concept="3clFbF" id="5NQyKEZJpyh" role="3cqZAp">
@@ -6981,8 +6963,8 @@
                 <ref role="37wK5l" node="5NQyKEZHnxj" resolve="toSourcePrecedence" />
               </node>
             </node>
-            <node concept="37vLTw" id="5NQyKEZJpyx" role="3K4E3e">
-              <ref role="3cqZAo" to="2968:~Abstract$Definition.DEFAULT_PRECEDENCE" resolve="DEFAULT_PRECEDENCE" />
+            <node concept="37vLTw" id="5m7vKvhBPFW" role="3K4E3e">
+              <ref role="3cqZAo" to="2968:~Abstract$Binding.DEFAULT_PRECEDENCE" resolve="DEFAULT_PRECEDENCE" />
             </node>
             <node concept="2OqwBi" id="5NQyKEZJpyo" role="3K4Cdx">
               <node concept="2OqwBi" id="5NQyKEZJpyp" role="2Oq$k0">
@@ -7070,8 +7052,8 @@
     <node concept="3uibUv" id="OV0Rn1wNxI" role="EKbjA">
       <ref role="3uigEE" node="OV0Rn1whPA" resolve="AbstractAdapter" />
     </node>
-    <node concept="3uibUv" id="47vVwnywRgt" role="EKbjA">
-      <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+    <node concept="3uibUv" id="5m7vKvhBR5c" role="EKbjA">
+      <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
     </node>
   </node>
   <node concept="312cEu" id="5NQyKEZJtCK">
@@ -7796,8 +7778,8 @@
             <node concept="3cpWs8" id="2lY2EAJHIqR" role="3cqZAp">
               <node concept="3cpWsn" id="2lY2EAJHIqS" role="3cpWs9">
                 <property role="TrG5h" value="def" />
-                <node concept="3uibUv" id="4$aXHCJobY9" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvhBOkQ" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="2YIFZM" id="2lY2EAJHHOy" role="33vP2m">
                   <ref role="37wK5l" node="1egVW$2AA$m" resolve="getAdapterForTarget" />
@@ -9169,8 +9151,8 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="47vVwnywsX8" role="1B3o_S" />
-      <node concept="3uibUv" id="47vVwnywsXa" role="3clF45">
-        <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+      <node concept="3uibUv" id="5m7vKvhzf$T" role="3clF45">
+        <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
       </node>
       <node concept="3clFbS" id="47vVwnywsXd" role="3clF47">
         <node concept="3cpWs8" id="47vVwnywuE$" role="3cqZAp">
@@ -14212,8 +14194,8 @@
         <node concept="3cpWs8" id="4$aXHCJocUw" role="3cqZAp">
           <node concept="3cpWsn" id="4$aXHCJocUx" role="3cpWs9">
             <property role="TrG5h" value="baseDef" />
-            <node concept="3uibUv" id="4$aXHCJocUy" role="1tU5fm">
-              <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+            <node concept="3uibUv" id="5m7vKvhBOMK" role="1tU5fm">
+              <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
             <node concept="2YIFZM" id="2lY2EAJHUbc" role="33vP2m">
               <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
@@ -14340,8 +14322,8 @@
             <node concept="3cpWs8" id="6hsAvJlEYpz" role="3cqZAp">
               <node concept="3cpWsn" id="6hsAvJlEYp$" role="3cpWs9">
                 <property role="TrG5h" value="def" />
-                <node concept="3uibUv" id="4$aXHCJobbt" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                <node concept="3uibUv" id="5m7vKvhBOWx" role="1tU5fm">
+                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                 </node>
                 <node concept="2YIFZM" id="caVRVAzVai" role="33vP2m">
                   <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
@@ -14669,8 +14651,8 @@
         <node concept="3cpWs8" id="6hAnqO0DjFi" role="3cqZAp">
           <node concept="3cpWsn" id="6hAnqO0DjFj" role="3cpWs9">
             <property role="TrG5h" value="def" />
-            <node concept="3uibUv" id="6hAnqO0DjFk" role="1tU5fm">
-              <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+            <node concept="3uibUv" id="5m7vKvhBTEo" role="1tU5fm">
+              <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
             <node concept="2YIFZM" id="6hAnqO0Djkg" role="33vP2m">
               <ref role="37wK5l" node="1egVW$2AA$m" resolve="getAdapterForTarget" />
@@ -14839,8 +14821,8 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="47vVwnywC00" role="1B3o_S" />
-      <node concept="3uibUv" id="47vVwnywC02" role="3clF45">
-        <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+      <node concept="3uibUv" id="5m7vKvhBU5b" role="3clF45">
+        <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
       </node>
       <node concept="3clFbS" id="47vVwnywC03" role="3clF47">
         <node concept="1X3_iC" id="NhfPeCAUH8" role="lGtFl">
@@ -16953,10 +16935,10 @@
                         <node concept="3uibUv" id="1K9ovK7in0e" role="1tU5fm">
                           <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                         </node>
-                        <node concept="2YIFZM" id="1K9ovK7inhW" role="33vP2m">
-                          <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                          <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                          <node concept="37vLTw" id="1K9ovK7kR70" role="37wK5m">
+                        <node concept="2YIFZM" id="5m7vKvhBSNL" role="33vP2m">
+                          <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                          <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                          <node concept="37vLTw" id="5m7vKvhBSNM" role="37wK5m">
                             <ref role="3cqZAo" node="1K9ovK7kPpt" resolve="field" />
                           </node>
                         </node>
@@ -17550,10 +17532,10 @@
                             <node concept="3uibUv" id="75jWvLtmDtX" role="1tU5fm">
                               <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                             </node>
-                            <node concept="2YIFZM" id="75jWvLtmDtY" role="33vP2m">
-                              <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                              <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                              <node concept="37vLTw" id="75jWvLtmEhA" role="37wK5m">
+                            <node concept="2YIFZM" id="5m7vKvhBSW3" role="33vP2m">
+                              <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                              <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                              <node concept="37vLTw" id="5m7vKvhBSW4" role="37wK5m">
                                 <ref role="3cqZAo" node="75jWvLtmCXJ" resolve="field" />
                               </node>
                             </node>
@@ -17814,10 +17796,10 @@
                             <node concept="3uibUv" id="3u3SAVwVYu6" role="1tU5fm">
                               <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                             </node>
-                            <node concept="2YIFZM" id="3u3SAVwVY_M" role="33vP2m">
-                              <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                              <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                              <node concept="37vLTw" id="3u3SAVwVYFO" role="37wK5m">
+                            <node concept="2YIFZM" id="5m7vKvhBT5j" role="33vP2m">
+                              <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                              <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                              <node concept="37vLTw" id="5m7vKvhBT5k" role="37wK5m">
                                 <ref role="3cqZAo" node="3u3SAVwVXT7" resolve="field" />
                               </node>
                             </node>
@@ -19283,8 +19265,8 @@
       </node>
       <node concept="37vLTG" id="4ltge4WCVa8" role="3clF46">
         <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="4ltge4WCVig" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzbJX" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3clFbS" id="4ltge4WCUM$" role="3clF47">
@@ -19437,8 +19419,8 @@
       </node>
       <node concept="37vLTG" id="4ltge4WCxP1" role="3clF46">
         <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="4ltge4WCxP2" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzbYC" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3clFbS" id="4ltge4WCxP3" role="3clF47">
@@ -19470,8 +19452,8 @@
       </node>
       <node concept="37vLTG" id="4ltge4WCxPa" role="3clF46">
         <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="4ltge4WCxPb" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzc4g" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3clFbS" id="4ltge4WCxPc" role="3clF47">
@@ -19504,8 +19486,8 @@
       </node>
       <node concept="37vLTG" id="4ltge4WCxPj" role="3clF46">
         <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="4ltge4WCxPk" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhzc9X" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="3clFbS" id="4ltge4WCxPl" role="3clF47">
@@ -19560,10 +19542,10 @@
                 <node concept="3uibUv" id="5e3Mm6Ul9kF" role="1tU5fm">
                   <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                 </node>
-                <node concept="2YIFZM" id="5e3Mm6Ul9p9" role="33vP2m">
-                  <ref role="37wK5l" to="thjl:~BaseDefinition$Helper.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.BaseDefinition):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
-                  <ref role="1Pybhc" to="thjl:~BaseDefinition$Helper" resolve="BaseDefinition.Helper" />
-                  <node concept="37vLTw" id="5e3Mm6Ul9q4" role="37wK5m">
+                <node concept="2YIFZM" id="5m7vKvhzclm" role="33vP2m">
+                  <ref role="37wK5l" to="eryk:~NamespaceMember.toNamespaceMember(com.jetbrains.jetpad.vclang.term.definition.Referable):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="toNamespaceMember" />
+                  <ref role="1Pybhc" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                  <node concept="37vLTw" id="5m7vKvhzcln" role="37wK5m">
                     <ref role="3cqZAo" node="4ltge4WCxPj" resolve="definition" />
                   </node>
                 </node>
@@ -19595,8 +19577,8 @@
                     <node concept="3cpWs8" id="7cru_WMQV9z" role="3cqZAp">
                       <node concept="3cpWsn" id="7cru_WMQV9$" role="3cpWs9">
                         <property role="TrG5h" value="member" />
-                        <node concept="3uibUv" id="6ur4H5sNA8v" role="1tU5fm">
-                          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+                        <node concept="3uibUv" id="5m7vKvhzcu5" role="1tU5fm">
+                          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
                         </node>
                         <node concept="2OqwBi" id="7cru_WMQVCn" role="33vP2m">
                           <node concept="2OqwBi" id="7cru_WMQVex" role="2Oq$k0">
@@ -19616,7 +19598,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7cru_WMQVIi" role="2OqNvi">
-                            <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.BaseDefinition" resolve="getResolvedDefinition" />
+                            <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedDefinition" />
                           </node>
                         </node>
                       </node>
@@ -19737,8 +19719,8 @@
       </node>
       <node concept="37vLTG" id="4ltge4WCxPu" role="3clF46">
         <property role="TrG5h" value="binOp" />
-        <node concept="3uibUv" id="4ltge4WCxPv" role="1tU5fm">
-          <ref role="3uigEE" to="thjl:~BaseDefinition" resolve="BaseDefinition" />
+        <node concept="3uibUv" id="5m7vKvhBNi4" role="1tU5fm">
+          <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
         </node>
       </node>
       <node concept="37vLTG" id="4ltge4WCxPw" role="3clF46">
