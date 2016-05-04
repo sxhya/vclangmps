@@ -979,6 +979,16 @@
         <ref role="ehGHo" to="51uy:6dbcPfPFLfE" resolve="DefFunction" />
       </node>
     </node>
+    <node concept="Wx3nA" id="4DN62aiSnKM" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="maxLvl" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="4DN62aiSnKN" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4DN62aiSnKO" role="1tU5fm">
+        <ref role="ehGHo" to="51uy:6dbcPfPFLfE" resolve="DefFunction" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="yKHYPNfDm2" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -1679,6 +1689,47 @@
           </node>
         </node>
         <node concept="3clFbH" id="yKHYPNfJf7" role="3cqZAp" />
+        <node concept="3clFbF" id="4DN62aiSmRC" role="3cqZAp">
+          <node concept="37vLTI" id="4DN62aiSmRD" role="3clFbG">
+            <node concept="37vLTw" id="4DN62aiSo2Y" role="37vLTJ">
+              <ref role="3cqZAo" node="4DN62aiSnKM" resolve="maxLvl" />
+            </node>
+            <node concept="1PxgMI" id="4DN62aiSmRE" role="37vLTx">
+              <ref role="1PxNhF" to="51uy:6dbcPfPFLfE" resolve="DefFunction" />
+              <node concept="2OqwBi" id="4DN62aiSmRF" role="1PxMeX">
+                <node concept="2c44tf" id="4DN62aiSmRG" role="2Oq$k0">
+                  <node concept="3BO_ld" id="4DN62aiSoDP" role="2c44tc">
+                    <ref role="3gbGqc" node="yKHYPNfxS0" resolve="maxLvl" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="4DN62aiSmRI" role="2OqNvi">
+                  <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4DN62aiSmRO" role="3cqZAp">
+          <node concept="2OqwBi" id="4DN62aiSmRP" role="3clFbG">
+            <node concept="2JrnkZ" id="4DN62aiSmRQ" role="2Oq$k0">
+              <node concept="37vLTw" id="4DN62aiSo4s" role="2JrQYb">
+                <ref role="3cqZAo" node="4DN62aiSnKM" resolve="maxLvl" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4DN62aiSmRR" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="10M0yZ" id="4DN62aiSmRS" role="37wK5m">
+                <ref role="3cqZAo" to="hhlq:47vVwnywr1P" resolve="adapter" />
+                <ref role="1PxDUh" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              </node>
+              <node concept="10M0yZ" id="4DN62aiSmRT" role="37wK5m">
+                <ref role="1PxDUh" to="2968:~Preprelude" resolve="Preprelude" />
+                <ref role="3cqZAo" to="2968:~Preprelude.MAX_LVL" resolve="MAX_LVL" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4DN62aiSmxN" role="3cqZAp" />
         <node concept="3clFbF" id="yKHYPNfKIn" role="3cqZAp">
           <node concept="37vLTI" id="yKHYPNfKIo" role="3clFbG">
             <node concept="37vLTw" id="yKHYPNfL8z" role="37vLTJ">
@@ -1688,11 +1739,11 @@
               <ref role="1PxNhF" to="51uy:6dbcPfPFLfE" resolve="DefFunction" />
               <node concept="2OqwBi" id="yKHYPNfKIq" role="1PxMeX">
                 <node concept="2c44tf" id="yKHYPNfKIr" role="2Oq$k0">
-                  <node concept="3BO_ld" id="yKHYPNfM_a" role="2c44tc">
+                  <node concept="3BO_ld" id="4DN62aiSozf" role="2c44tc">
                     <ref role="3gbGqc" node="yKHYPNfyna" resolve="maxNat" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="yKHYPNfKIt" role="2OqNvi">
+                <node concept="3TrEf2" id="4DN62aiSqqf" role="2OqNvi">
                   <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" />
                 </node>
               </node>
@@ -2751,6 +2802,26 @@
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="Xl_RD" id="4lpfE_wT24z" role="37wK5m">
                     <property role="Xl_RC" value="maxNat" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4DN62aiSrpp" role="3cqZAp">
+              <node concept="3clFbS" id="4DN62aiSrpq" role="3clFbx">
+                <node concept="3cpWs6" id="4DN62aiSrpr" role="3cqZAp">
+                  <node concept="37vLTw" id="4DN62aiSrUU" role="3cqZAk">
+                    <ref role="3cqZAo" node="4DN62aiSnKM" resolve="maxLvl" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4DN62aiSrps" role="3clFbw">
+                <node concept="37vLTw" id="4DN62aiSrpt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2Rz4aM7pFP4" resolve="substring" />
+                </node>
+                <node concept="liA8E" id="4DN62aiSrpu" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4DN62aiSrpv" role="37wK5m">
+                    <property role="Xl_RC" value="maxLvl" />
                   </node>
                 </node>
               </node>
