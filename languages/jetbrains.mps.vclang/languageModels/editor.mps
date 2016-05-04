@@ -4214,5 +4214,39 @@
       <node concept="l2Vlx" id="3rcTxloRQXC" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="29q9A5tm7Ht">
+    <property role="3GE5qa" value="literal" />
+    <ref role="1XX52x" to="51uy:29q9A5tm7wA" resolve="PolyUniverseExpression" />
+    <node concept="3EZMnI" id="29q9A5tm7Hv" role="2wV5jI">
+      <node concept="3F0ifn" id="29q9A5tm7HE" role="3EZMnx">
+        <property role="3F0ifm" value="Type" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      </node>
+      <node concept="3F0ifn" id="29q9A5tm7HO" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+      </node>
+      <node concept="3F1sOY" id="29q9A5tm7Ik" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:29q9A5tm7wB" />
+      </node>
+      <node concept="3F0ifn" id="29q9A5tm7II" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="29q9A5tm9vY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="29q9A5tm9wR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="29q9A5tm7Id" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:29q9A5tm7wD" />
+      </node>
+      <node concept="3F0ifn" id="29q9A5tm7I1" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="l2Vlx" id="29q9A5tm7Hy" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

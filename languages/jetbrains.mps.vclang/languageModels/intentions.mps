@@ -959,7 +959,7 @@
         </node>
         <node concept="3SKdUt" id="6OKEjRrHwTW" role="3cqZAp">
           <node concept="3SKdUq" id="6OKEjRrHwTY" role="3SKWNk">
-            <property role="3SKdUp" value="but we require them to always be explicit in the mps version" />
+            <property role="3SKdUp" value="but we require them to be explicit in the mps version" />
           </node>
         </node>
         <node concept="3cpWs8" id="3$zNNidw3C" role="3cqZAp">
@@ -3367,15 +3367,29 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5TszRJslg$9" role="3clFbw">
-            <node concept="37vLTw" id="5TszRJslg$a" role="2Oq$k0">
-              <ref role="3cqZAo" node="5TszRJslgzt" resolve="resolvedName" />
+          <node concept="22lmx$" id="yKHYPNfRoO" role="3clFbw">
+            <node concept="2OqwBi" id="5TszRJslg$9" role="3uHU7B">
+              <node concept="37vLTw" id="5TszRJslg$a" role="2Oq$k0">
+                <ref role="3cqZAo" node="5TszRJslgzt" resolve="resolvedName" />
+              </node>
+              <node concept="liA8E" id="5TszRJslg$b" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <node concept="10M0yZ" id="5TszRJslg$c" role="37wK5m">
+                  <ref role="1PxDUh" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                  <ref role="3cqZAo" to="nl56:yKHYPNf_rs" resolve="PREPRELUDE_NAME" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="5TszRJslg$b" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-              <node concept="10M0yZ" id="5TszRJslg$c" role="37wK5m">
-                <ref role="3cqZAo" to="nl56:25RiHgHSzm_" resolve="PRELUDE_NAME" />
-                <ref role="1PxDUh" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
+            <node concept="2OqwBi" id="yKHYPNfRvB" role="3uHU7w">
+              <node concept="37vLTw" id="yKHYPNfRvC" role="2Oq$k0">
+                <ref role="3cqZAo" node="5TszRJslgzt" resolve="resolvedName" />
+              </node>
+              <node concept="liA8E" id="yKHYPNfRvD" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <node concept="10M0yZ" id="yKHYPNfRvE" role="37wK5m">
+                  <ref role="1PxDUh" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                  <ref role="3cqZAo" to="nl56:25RiHgHSzm_" resolve="PRELUDE_NAME" />
+                </node>
               </node>
             </node>
           </node>
