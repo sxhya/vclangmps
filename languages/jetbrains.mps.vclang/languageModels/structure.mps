@@ -1306,5 +1306,17 @@
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1AliP_nUugy">
+    <property role="1pbfSe" value="1904160635" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ModuleCallExpression" />
+    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
+    <node concept="1TJgyj" id="1AliP_nUuMY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <ref role="20ksaX" node="43YHIaBbjCZ" />
+      <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+    </node>
+  </node>
 </model>
 

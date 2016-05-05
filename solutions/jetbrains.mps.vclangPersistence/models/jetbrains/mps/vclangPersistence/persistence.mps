@@ -2261,7 +2261,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="constructedRoots" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="1HJCGTGmKrK" role="1B3o_S" />
+      <node concept="3Tm1VV" id="26UxpxdPSRt" role="1B3o_S" />
       <node concept="2I9FWS" id="1HJCGTGmLeE" role="1tU5fm">
         <ref role="2I9WkF" to="51uy:Z42ctSV31q" resolve="ClassDefinition" />
       </node>
@@ -13560,12 +13560,12 @@
           <node concept="3cpWsn" id="3YIJst5FS8D" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3Tqbb2" id="3YIJst5FS8E" role="1tU5fm">
-              <ref role="ehGHo" to="51uy:43YHIaBbeeJ" resolve="DefExpression" />
+              <ref role="ehGHo" to="51uy:1AliP_nUugy" resolve="ModuleCallExpression" />
             </node>
             <node concept="2ShNRf" id="3YIJst5FS8F" role="33vP2m">
               <node concept="3zrR0B" id="3YIJst5FS8G" role="2ShVmc">
                 <node concept="3Tqbb2" id="3YIJst5FS8H" role="3zrR0E">
-                  <ref role="ehGHo" to="51uy:43YHIaBbeeJ" resolve="DefExpression" />
+                  <ref role="ehGHo" to="51uy:1AliP_nUugy" resolve="ModuleCallExpression" />
                 </node>
               </node>
             </node>
@@ -13600,8 +13600,8 @@
                     <ref role="3cqZAo" node="3YIJst5FS8D" resolve="result" />
                   </node>
                   <node concept="359W_D" id="3YIJst5FS9p" role="37wK5m">
-                    <ref role="359W_E" to="51uy:43YHIaBbeeJ" resolve="DefExpression" />
-                    <ref role="359W_F" to="51uy:43YHIaBbjCZ" />
+                    <ref role="359W_E" to="51uy:1AliP_nUugy" resolve="ModuleCallExpression" />
+                    <ref role="359W_F" to="51uy:1AliP_nUuMY" />
                   </node>
                   <node concept="37vLTw" id="6ur4H5sPTJa" role="37wK5m">
                     <ref role="3cqZAo" node="3YIJst5Gqe8" resolve="targetDef" />
@@ -13711,8 +13711,8 @@
                       <ref role="3cqZAo" node="3YIJst5FS8D" resolve="result" />
                     </node>
                     <node concept="359W_D" id="6jPCldhVPPi" role="37wK5m">
-                      <ref role="359W_E" to="51uy:43YHIaBbeeJ" resolve="DefExpression" />
-                      <ref role="359W_F" to="51uy:43YHIaBbjCZ" />
+                      <ref role="359W_E" to="51uy:1AliP_nUugy" resolve="ModuleCallExpression" />
+                      <ref role="359W_F" to="51uy:1AliP_nUuMY" />
                     </node>
                     <node concept="37vLTw" id="6jPCldhVPPj" role="37wK5m">
                       <ref role="3cqZAo" node="6jPCldhVOGH" resolve="str" />
