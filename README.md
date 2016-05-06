@@ -16,6 +16,10 @@ $MPS_HOME/lib/mps-core.jar/jetbrains/mps/extapi/model/
 
 (here $MPS_HOME stands the home folder of MPS installation).
 
+If you use particular 143.1301 version of MPS then you can replace mps-core.jar with this file:
+
+https://dl.dropboxusercontent.com/u/12890390/mps-core.jar
+
 3. Download the latest plugin build from my dropbox: https://dl.dropboxusercontent.com/u/12890390/vclang_mps.zip
 
 3. Move the archive to $MPS_HOME\plugins\ 
