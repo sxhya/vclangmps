@@ -6,7 +6,6 @@ Vclang frontend for MPS version 0.02
 
 1. Download and install the latest MPS build from here:
 http://buildserver.labs.intellij.net/viewType.html?buildTypeId=MPS_33_DistributionContinuousIntegrationDistribution
-
 The particular plugin version presented here was tested for compatibility with build MPS 143.1301.
 
 2. Patch $MPS_HOME/lib/mps-core.jar at /jetbrains/mps/extapi/model/ with the following class file: 
