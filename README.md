@@ -9,20 +9,16 @@ http://buildserver.labs.intellij.net/viewType.html?buildTypeId=MPS_33_Distributi
 
 The particular plugin version presented here was tested for compatibility with build MPS 143.1301.
 
-2. Download this class file https://dl.dropboxusercontent.com/u/12890390/CustomPersistenceSModel.class
-and patch .jar-file at 
-
-$MPS_HOME/lib/mps-core.jar/jetbrains/mps/extapi/model/ 
-
-(here $MPS_HOME stands the home folder of MPS installation).
-
-If you use particular 143.1301 version of MPS then you can replace mps-core.jar with this file:
-
-https://dl.dropboxusercontent.com/u/12890390/mps-core.jar
+2. Patch $MPS_HOME/lib/mps-core.jar at /jetbrains/mps/extapi/model/ with the following class file: 
+https://dl.dropboxusercontent.com/u/12890390/CustomPersistenceSModel.class
+In other words, you have to open $MPS_HOME/lib/mps-core.jar using some external archive manager, find the specified logical folder in it,
+then remove the old class-file and replace it with this new class-file. Do not attempt manual repacking of the jar-file because this will not work.
+If you use particular 143.1301 version of MPS then instead of manual patching 
+you can replace the whole mps-core.jar with this (patched) jar-file: https://dl.dropboxusercontent.com/u/12890390/mps-core.jar
 
 3. Download the latest plugin build from my dropbox: https://dl.dropboxusercontent.com/u/12890390/vclang_mps.zip
 
-3. Move the archive to $MPS_HOME\plugins\ 
+3. Move the archive to $MPS_HOME\plugins\
 
 4. Unpack the archive so that \vclang_mps directory appears in plugins.
 Check that \META-INF \lib and \languages directories are available in \vclang_mps
@@ -40,7 +36,7 @@ You will need to restart MPS after doing that.
 
 4. Choose directory ./vclang-lib/test/ in the right pane and press "Models" button/checkbox (located in the upper part of the right pane)
 
-5. After you exit this dialog press "Ok" MPS will parse the standard library and will create the corresponding models inside the solution you selected.
+5. Exit this dialog. MPS will parse the standard library and will create the corresponding models inside the solution you selected.
 
 ===== USAGE =====
 
@@ -50,7 +46,8 @@ The typechecking errors will be shown in the messages pane below. All the refere
 Completion menus are working. You can use standard MPS editor commands like Copy/Paste or "Find Usages". Press Ctrl+W to select node's parent.
 
 ===== KNOWN ISSUES =====
- -- Creating new models DOES NOT work at the moment
+
+ -- Creating new models inside the library solution DOES NOT work at the moment; instead, simply create an empty file using some text editor and then modify it using MPS
 
  -- Completion menus for class field access operations are not working (currently, you can't type something like "G.M.S.X");
 
