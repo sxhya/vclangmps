@@ -3487,8 +3487,8 @@
           <node concept="2OqwBi" id="2PAg35e7GsD" role="3clFbG">
             <node concept="2OqwBi" id="2PAg35e7EW1" role="2Oq$k0">
               <node concept="13iPFW" id="2PAg35e7ESB" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2PAg35e7Fb$" role="2OqNvi">
-                <ref role="3TtcxE" to="51uy:6aAUpg3pXd4" />
+              <node concept="3Tsc0h" id="2_jEsYwC4jf" role="2OqNvi">
+                <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
               </node>
             </node>
             <node concept="TSZUe" id="2PAg35e7Ihe" role="2OqNvi">
@@ -4654,12 +4654,9 @@
             <ref role="37wK5l" to="2968:~Abstract$Expression.accept(com.jetbrains.jetpad.vclang.term.expr.visitor.AbstractExpressionVisitor,java.lang.Object):java.lang.Object" resolve="accept" />
             <node concept="2ShNRf" id="5NQyKEZFbDX" role="37wK5m">
               <node concept="1pGfFk" id="5NQyKEZFbOx" role="2ShVmc">
-                <ref role="37wK5l" to="byr7:~PrettyPrintVisitor.&lt;init&gt;(java.lang.StringBuilder,java.util.List,int)" resolve="PrettyPrintVisitor" />
+                <ref role="37wK5l" to="byr7:~PrettyPrintVisitor.&lt;init&gt;(java.lang.StringBuilder,int)" resolve="PrettyPrintVisitor" />
                 <node concept="37vLTw" id="5NQyKEZFbSf" role="37wK5m">
                   <ref role="3cqZAo" node="5NQyKEZF8$O" resolve="builder" />
-                </node>
-                <node concept="37vLTw" id="5NQyKEZFc99" role="37wK5m">
-                  <ref role="3cqZAo" node="5NQyKEZF8$Q" resolve="names" />
                 </node>
                 <node concept="3cmrfG" id="5NQyKEZFcBO" role="37wK5m">
                   <property role="3cmrfH" value="0" />
@@ -4700,15 +4697,9 @@
             <ref role="37wK5l" to="2968:~Abstract$Expression.accept(com.jetbrains.jetpad.vclang.term.expr.visitor.AbstractExpressionVisitor,java.lang.Object):java.lang.Object" resolve="accept" />
             <node concept="2ShNRf" id="5NQyKEZFa9g" role="37wK5m">
               <node concept="1pGfFk" id="5NQyKEZFajQ" role="2ShVmc">
-                <ref role="37wK5l" to="byr7:~PrettyPrintVisitor.&lt;init&gt;(java.lang.StringBuilder,java.util.List,int)" resolve="PrettyPrintVisitor" />
+                <ref role="37wK5l" to="byr7:~PrettyPrintVisitor.&lt;init&gt;(java.lang.StringBuilder,int)" resolve="PrettyPrintVisitor" />
                 <node concept="37vLTw" id="5NQyKEZFaok" role="37wK5m">
                   <ref role="3cqZAo" node="5NQyKEZF9tu" resolve="builder" />
-                </node>
-                <node concept="2ShNRf" id="5NQyKEZFaqk" role="37wK5m">
-                  <node concept="1pGfFk" id="5NQyKEZFa$J" role="2ShVmc">
-                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                    <node concept="17QB3L" id="vFf91iNesv" role="1pMfVU" />
-                  </node>
                 </node>
                 <node concept="3cmrfG" id="5NQyKEZFaU$" role="37wK5m">
                   <property role="3cmrfH" value="0" />
@@ -5097,8 +5088,8 @@
                     <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="IDt3LXGL3M" role="2OqNvi">
-                  <ref role="3TtcxE" to="51uy:6aAUpg3pXd4" />
+                <node concept="3Tsc0h" id="2_jEsYwC3_i" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
                 </node>
               </node>
               <node concept="3$u5V9" id="5NQyKEZFuds" role="2OqNvi">
@@ -7167,8 +7158,8 @@
                     <ref role="3cqZAo" node="OV0Rn1wk2P" resolve="thisNode" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="OV0Rn1wERv" role="2OqNvi">
-                  <ref role="3TtcxE" to="51uy:5NQyKEZHxOO" />
+                <node concept="3Tsc0h" id="2_jEsYwC2_W" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
                 </node>
               </node>
               <node concept="3$u5V9" id="5NQyKEZH$ke" role="2OqNvi">
@@ -7800,8 +7791,8 @@
                     <ref role="3cqZAo" node="OV0Rn1wk2P" resolve="thisNode" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="OV0Rn1wtt0" role="2OqNvi">
-                  <ref role="3TtcxE" to="51uy:5NQyKEZHXn9" />
+                <node concept="3Tsc0h" id="2_jEsYwC0oT" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
                 </node>
               </node>
               <node concept="3$u5V9" id="5NQyKEZI0uU" role="2OqNvi">
@@ -8627,8 +8618,8 @@
                     <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="5NQyKEZKjf_" role="2OqNvi">
-                  <ref role="3TtcxE" to="51uy:6dbcPfPFe56" />
+                <node concept="3Tsc0h" id="2_jEsYwC4J1" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
                 </node>
               </node>
               <node concept="3$u5V9" id="5NQyKEZKlyt" role="2OqNvi">
@@ -8773,7 +8764,7 @@
                 </node>
                 <node concept="1BlSNk" id="24ni4bqe0TQ" role="2OqNvi">
                   <ref role="1BmUXE" to="51uy:6aAUpg3pU9H" resolve="SigmaExpression" />
-                  <ref role="1Bn3mz" to="51uy:6dbcPfPFe56" />
+                  <ref role="1Bn3mz" to="51uy:2_jEsYwBdzu" />
                 </node>
               </node>
             </node>
@@ -13228,8 +13219,8 @@
                           <node concept="1mfA1w" id="3cMDZeG6YkT" role="2OqNvi" />
                         </node>
                       </node>
-                      <node concept="3Tsc0h" id="3cMDZeG71qb" role="2OqNvi">
-                        <ref role="3TtcxE" to="51uy:5NQyKEZHxOO" />
+                      <node concept="3Tsc0h" id="2_jEsYwC1Pk" role="2OqNvi">
+                        <ref role="3TtcxE" to="51uy:2_jEsYwBdzu" />
                       </node>
                     </node>
                     <node concept="3$u5V9" id="3cMDZeG73jX" role="2OqNvi">

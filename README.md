@@ -36,21 +36,26 @@ You will need to restart MPS after doing that.
 
 2. Checkout the latest version of vclang library from https://github.com/valis/vclang-lib to a directory which lies inside this newly created solution.
 
-3. Right-click on the solution icon (in the left project pane), choose "Solution Properties" dialog.
+3. Right-click on the solution icon (in the left project pane), choose "Module Properties" dialog.
 
-4. Choose directory ./vclang-lib/test/ in the right pane press "Models" button.
+4. Choose directory ./vclang-lib/test/ in the right pane and press "Models" button/checkbox (located in the upper part of the right pane)
 
 5. After you exit this dialog press "Ok" MPS will parse the standard library and will create the corresponding models inside the solution you selected.
 
 ===== USAGE =====
 
-You can now use the editor to edit library files. You can typecheck a module by pressing "Alt+Space" and choosing "Typecheck" item in the intentions menu.
+You can now use the editor to edit library files. 
+You can typecheck a module by pressing "Alt+Space" and choosing "Typecheck" item in the intentions menu.
 The typechecking errors will be shown in the messages pane below. All the references which are not highlighted in red are navigable.
 Completion menus are working. You can use standard MPS editor commands like Copy/Paste or "Find Usages". Press Ctrl+W to select node's parent.
 
 ===== KNOWN ISSUES =====
+ -- Creating new models DOES NOT work at the moment
 
  -- Completion menus for class field access operations are not working (currently, you can't type something like "G.M.S.X");
+
  -- Some references are left unresolved and are only resolved later after you run the typechecker;
+
  -- Editor mechanics for patterns is currently rather unsatisfactory;
+
  -- Saving to text file uses standard vclang pretty printer whose output is hardly readable at the moment.

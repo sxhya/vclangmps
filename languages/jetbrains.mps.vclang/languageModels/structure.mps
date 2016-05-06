@@ -120,21 +120,14 @@
     <property role="R4oN_" value="Dependent product type" />
     <property role="1pbfSe" value="1712229368" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-    <node concept="1TJgyj" id="6aAUpg3pXd4" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1..n" />
-      <property role="20kJfa" value="args" />
-      <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
-    </node>
     <node concept="1TJgyj" id="6aAUpg3pXe2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="codomain" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="6FOQVYN5nsD" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    <node concept="PrWs8" id="2_jEsYwBdIh" role="PzmwI">
+      <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pU9E">
@@ -152,15 +145,8 @@
     <property role="R4oN_" value="Dependent sigma type" />
     <property role="1pbfSe" value="1712229377" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-    <node concept="1TJgyj" id="6dbcPfPFe56" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1..n" />
-      <property role="20kJfa" value="typedArgs" />
-      <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
-    </node>
-    <node concept="PrWs8" id="5NQyKEZKmbD" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    <node concept="PrWs8" id="2_jEsYwBdIe" role="PzmwI">
+      <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUa4">
@@ -503,12 +489,6 @@
       <ref role="20ksaX" node="5a9n1m5cUVt" />
       <ref role="20lvS9" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
     </node>
-    <node concept="1TJgyj" id="5NQyKEZHxOO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="typedArgs" />
-      <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
-    </node>
     <node concept="1TJgyj" id="1mwsisV1hnW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
@@ -523,6 +503,9 @@
     </node>
     <node concept="PrWs8" id="3vFRxEzPv14" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="2_jEsYwBdI8" role="PzmwI">
+      <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ubIap">
@@ -542,14 +525,11 @@
     <property role="34LRSv" value="|" />
     <property role="1pbfSe" value="335453354" />
     <ref role="1TJDcQ" node="7nfIx2ubIap" resolve="AbstractConstructor" />
-    <node concept="1TJgyj" id="5NQyKEZHXn9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="typedArgs" />
-      <ref role="20ksaX" node="KzXl40_P0s" />
-      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
-    </node>
     <node concept="PrWs8" id="3ixSrrqDlPz" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
+    </node>
+    <node concept="PrWs8" id="2_jEsYwBdzz" role="PzmwI">
+      <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ucmOG">
@@ -1319,6 +1299,20 @@
       <property role="20kJfa" value="module" />
       <ref role="20ksaX" node="43YHIaBbjCZ" />
       <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2_jEsYwBdqH">
+    <property role="1pbfSe" value="906985348" />
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="HasTypedArguments" />
+    <node concept="1TJgyj" id="2_jEsYwBdzu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typedArgs" />
+      <ref role="20ksaX" node="KzXl40_P0s" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
+    </node>
+    <node concept="PrWs8" id="2_jEsYwBdqI" role="PrDN$">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
     </node>
   </node>
 </model>
