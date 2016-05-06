@@ -118,9 +118,12 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+          <module ref="9c441817-78bb-4808-96cc-731aecf27641(jetpad.vclang)" />
         </dependencies>
         <sources jar="jetbrains.mps.vclangPersistence-src.jar" descriptor="jetbrains.mps.vclangPersistence.msd" />
       </module>
@@ -141,6 +144,46 @@
       </fileset>
       <zipfileset file="${basedir}/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclangPersistence-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclang.pluginSolution.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.vclang.pluginSolution.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.vclang.pluginSolution.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.vclang.pluginSolution" type="solution" uuid="23e07881-6a23-4165-ad0c-68977c12aabc">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="jetbrains.mps.vclang.pluginSolution-src.jar" descriptor="jetbrains.mps.vclang.pluginSolution.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclang.pluginSolution.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/jetbrains.mps.vclang.pluginSolution" />
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.vclang.pluginSolution.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclang.pluginSolution-models">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages/jetbrains.mps.vclang.pluginSolution-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/jetbrains.mps.vclang.pluginSolution.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.vclang.pluginSolution-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/vclang_mps.zip/vclang_mps/languages" />
     <mkdir dir="${build.tmp}/default/jetpad.vclang.jar" />
@@ -181,7 +224,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.jetbrains.mps.vclangPersistence, java.compile.jetbrains.mps.vclang, java.compile.jetbrains.mps.vclang#7108625883772164077" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.jetbrains.mps.vclangPersistence, java.compile.jetbrains.mps.vclang.pluginSolution, java.compile.jetbrains.mps.vclang, java.compile.jetbrains.mps.vclang#7108625883772164077" />
   
   <target name="processResources" />
   
@@ -215,6 +258,7 @@
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.language-design.devkit" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.aspect.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
@@ -251,6 +295,8 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.script.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
+      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
+      <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-api.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
       <library file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -263,6 +309,8 @@
       <library file="${artifacts.mps}/lib/mps-test.jar" />
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
+      <library file="${artifacts.mps}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
@@ -270,10 +318,12 @@
       <library file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
       <chunk bootstrap="true">
         <module file="${basedir}/languages/jetbrains.mps.vclang/jetbrains.mps.vclang.mpl" bootstrap="true" />
-        <module file="${basedir}/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" />
+        <module file="${basedir}/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" bootstrap="true" />
         <module file="${basedir}/solutions/jetpad.vclang/jetpad.vclang.msd" />
       </chunk>
-      <chunk />
+      <chunk>
+        <module file="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/jetbrains.mps.vclang.pluginSolution.msd" />
+      </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -313,9 +363,9 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <fileset file="${lib}/antlr4-runtime-4.5.jar" />
         <fileset file="${lib}/vclang.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
@@ -375,9 +425,9 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <fileset file="${lib}/antlr4-runtime-4.5.jar" />
         <fileset file="${lib}/vclang.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
@@ -392,6 +442,54 @@
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.vclangPersistence">
       <fileset dir="${basedir}/solutions/jetbrains.mps.vclangPersistence/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.jetbrains.mps.vclang.pluginSolution" depends="java.compile.jetbrains.mps.vclang, java.compile.jetbrains.mps.vclangPersistence, fetchDependencies">
+    <mkdir dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/jetbrains.mps.vclang.pluginSolution" />
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang.pluginSolution" fork="false" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclang" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
+        <fileset file="${lib}/vclang.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/jetbrains.mps.vclang.pluginSolution">
+      <fileset dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -461,7 +559,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.jetbrains.mps.vclang#7108625883772164077" depends="java.compile.jetbrains.mps.vclang, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.vclang#7108625883772164077" depends="java.compile.jetbrains.mps.vclang, java.compile.jetbrains.mps.vclangPersistence, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.vclang#7108625883772164077" fork="false" includeantruntime="false" debug="true">
@@ -485,6 +583,7 @@
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclang" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
         <fileset file="${lib}/antlr4-runtime-4.5.jar" />
         <fileset file="${lib}/vclang.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -508,5 +607,6 @@
   
   <target name="cleanSources">
     <delete dir="${basedir}/languages/jetbrains.mps.vclang/generator/source_gen" />
+    <delete dir="${basedir}/solutions/jetbrains.mps.vclang.pluginSolution/source_gen" />
   </target>
 </project>

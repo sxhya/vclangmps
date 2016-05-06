@@ -891,6 +891,9 @@
     <node concept="PrWs8" id="1SuY8bUbZKh" role="PrDN$">
       <ref role="PrY4T" node="1SuY8bUbX4a" resolve="IPattern" />
     </node>
+    <node concept="PrWs8" id="3jPpkPvyfRh" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="PrWs8" id="25RiHgHM$yg" role="PrDN$">
       <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
