@@ -23,7 +23,7 @@ you can replace the whole mps-core.jar with this (patched) jar-file: https://dl.
 Check that \META-INF \lib and \languages directories are available in \vclang_mps
 
 5. After MPS is launched go to "Settings" --> "Plugins" and ensure that the checkbox "Vclang MPS" is checked. 
-You will need to restart MPS after doing that.
+If it has not been checked then check it and restart MPS.
 
 ===== OPEN STANDARD LIBRARY =====
 
@@ -33,7 +33,8 @@ You will need to restart MPS after doing that.
 
 3. Right-click on the solution icon (in the left project pane), choose "Module Properties" dialog.
 
-4. Choose directory ./vclang-lib/test/ in the right pane and press "Models" button/checkbox (located in the upper part of the right pane)
+4. Choose directory ./vclang-lib/test/ in the right pane and press "Models" button/checkbox (located in the upper part of the right pane).
+It is essential that you choose exactly the root folder for the library and not its parent folder, because the plugin derives package names from these relative paths.
 
 5. Exit this dialog. MPS will parse the standard library and will create the corresponding models inside the solution you selected.
 
@@ -42,7 +43,8 @@ You will need to restart MPS after doing that.
 You can now use the editor to edit library files. 
 You can typecheck a module by pressing "Alt+Space" and choosing "Typecheck" item in the intentions menu.
 The typechecking errors will be shown in the messages pane below. All the references which are not highlighted in red are navigable.
-Completion menus are working. You can use standard MPS editor commands like Copy/Paste or "Find Usages". Press Ctrl+W to select node's parent.
+Completion menus are working. You can use standard MPS editor commands like Copy/Paste or "Find Usages". 
+Press Ctrl+W to select node's parent.
 
 ===== KNOWN ISSUES =====
 
