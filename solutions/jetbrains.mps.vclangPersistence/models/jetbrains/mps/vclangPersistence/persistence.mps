@@ -14006,7 +14006,7 @@
                 </node>
                 <node concept="10M0yZ" id="1K1qkmWUwrI" role="3uHU7w">
                   <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-                  <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.PROP" resolve="PROP" />
+                  <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.SET" resolve="SET" />
                 </node>
               </node>
             </node>
