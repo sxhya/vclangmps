@@ -508,25 +508,17 @@
       <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7nfIx2ubIap">
-    <property role="3GE5qa" value="def" />
-    <property role="TrG5h" value="AbstractConstructor" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="335453353" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
-    <node concept="PrWs8" id="14pT6cv9BWC" role="PzmwI">
-      <ref role="PrY4T" node="14pT6cv9ApE" resolve="IDataTypeConstructor" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7nfIx2ubIaq">
     <property role="3GE5qa" value="def.data_constructor" />
     <property role="TrG5h" value="Constructor" />
     <property role="34LRSv" value="|" />
     <property role="1pbfSe" value="335453354" />
-    <ref role="1TJDcQ" node="7nfIx2ubIap" resolve="AbstractConstructor" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
     <node concept="PrWs8" id="3ixSrrqDlPz" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
+    </node>
+    <node concept="PrWs8" id="CSjh4a7Xtf" role="PzmwI">
+      <ref role="PrY4T" node="14pT6cv9ApE" resolve="IDataTypeConstructor" />
     </node>
     <node concept="PrWs8" id="2_jEsYwBdzz" role="PzmwI">
       <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
@@ -840,7 +832,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="cons" />
       <ref role="20ksaX" node="1dats513lFl" />
-      <ref role="20lvS9" node="7nfIx2ubIap" resolve="AbstractConstructor" />
+      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
     </node>
     <node concept="PrWs8" id="1SuY8bUbX4e" role="PzmwI">
       <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
@@ -888,7 +880,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="constructors" />
-      <ref role="20lvS9" node="7nfIx2ubIap" resolve="AbstractConstructor" />
+      <ref role="20lvS9" node="7nfIx2ubIaq" resolve="Constructor" />
     </node>
     <node concept="PrWs8" id="14pT6cv9ApM" role="PzmwI">
       <ref role="PrY4T" node="14pT6cv9ApE" resolve="IDataTypeConstructor" />
@@ -1287,6 +1279,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="hlevel" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="CSjh4a7hgR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="1AliP_nUugy">

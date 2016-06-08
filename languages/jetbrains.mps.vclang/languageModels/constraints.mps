@@ -523,35 +523,6 @@
     <property role="3GE5qa" value="def" />
     <ref role="1M2myG" to="51uy:7GSxIwvCsQY" resolve="StaticModifier" />
   </node>
-  <node concept="1M2fIO" id="7GSxIwvCK5R">
-    <property role="3GE5qa" value="def" />
-    <ref role="1M2myG" to="51uy:7nfIx2ubIap" resolve="AbstractConstructor" />
-    <ref role="1MND4H" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
-    <node concept="nKS2y" id="7GSxIwvCK5S" role="1MLUbF">
-      <node concept="3clFbS" id="7GSxIwvCK5T" role="2VODD2">
-        <node concept="3clFbF" id="7GSxIwvCKaO" role="3cqZAp">
-          <node concept="22lmx$" id="531uUs8$Zul" role="3clFbG">
-            <node concept="2OqwBi" id="531uUs8$ZDs" role="3uHU7w">
-              <node concept="nLn13" id="531uUs8$Z$P" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="531uUs8$ZOa" role="2OqNvi">
-                <node concept="chp4Y" id="531uUs8$ZX5" role="cj9EA">
-                  <ref role="cht4Q" to="51uy:14pT6cv9ApD" resolve="ConstructorWithPatterns" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7GSxIwvCKgR" role="3uHU7B">
-              <node concept="nLn13" id="7GSxIwvCKaN" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="7GSxIwvCKqe" role="2OqNvi">
-                <node concept="chp4Y" id="7GSxIwvCKy5" role="cj9EA">
-                  <ref role="cht4Q" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="2jcrgspDEAB">
     <property role="3GE5qa" value="def" />
     <ref role="1M2myG" to="51uy:5Hyh$MjdShy" resolve="OverrideModifier" />
@@ -1778,6 +1749,34 @@
                       <node concept="2jxLKc" id="1AliP_nYI7B" role="1tU5fm" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="CSjh4a7XIf">
+    <property role="3GE5qa" value="def.data_constructor" />
+    <ref role="1M2myG" to="51uy:7nfIx2ubIaq" resolve="Constructor" />
+    <node concept="nKS2y" id="CSjh4a7XIg" role="1MLUbF">
+      <node concept="3clFbS" id="CSjh4a7XIh" role="2VODD2">
+        <node concept="3clFbF" id="CSjh4a7XIR" role="3cqZAp">
+          <node concept="22lmx$" id="531uUs8$Zul" role="3clFbG">
+            <node concept="2OqwBi" id="531uUs8$ZDs" role="3uHU7w">
+              <node concept="nLn13" id="531uUs8$Z$P" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="531uUs8$ZOa" role="2OqNvi">
+                <node concept="chp4Y" id="531uUs8$ZX5" role="cj9EA">
+                  <ref role="cht4Q" to="51uy:14pT6cv9ApD" resolve="ConstructorWithPatterns" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7GSxIwvCKgR" role="3uHU7B">
+              <node concept="nLn13" id="7GSxIwvCKaN" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7GSxIwvCKqe" role="2OqNvi">
+                <node concept="chp4Y" id="7GSxIwvCKy5" role="cj9EA">
+                  <ref role="cht4Q" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
                 </node>
               </node>
             </node>
