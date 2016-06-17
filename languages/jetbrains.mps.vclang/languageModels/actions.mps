@@ -1787,6 +1787,50 @@
   <node concept="3UOs0u" id="5a9n1m5cPN3">
     <property role="TrG5h" value="DefinitionSideTransforms" />
     <property role="3GE5qa" value="def" />
+    <node concept="3UNGvq" id="5qWxn$tyOyk" role="3UOs0v">
+      <ref role="3UNGvu" to="51uy:Z42ctSV31q" resolve="ClassDefinition" />
+      <node concept="tYCnQ" id="5qWxn$tyUVM" role="_1QTJ">
+        <ref role="uz4UX" to="51uy:XSZc31Jhnz" resolve="ClassRefExpression" />
+        <node concept="Cmt7Y" id="5qWxn$tyV2n" role="uz6Si">
+          <node concept="Cnhdc" id="5qWxn$tyV2o" role="Cncma">
+            <node concept="3clFbS" id="5qWxn$tyV2p" role="2VODD2">
+              <node concept="3clFbF" id="5qWxn$tyV39" role="3cqZAp">
+                <node concept="2OqwBi" id="5qWxn$tyWpb" role="3clFbG">
+                  <node concept="2OqwBi" id="5qWxn$tyV8V" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="5qWxn$tyV38" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="5qWxn$tyVlq" role="2OqNvi">
+                      <ref role="3TtcxE" to="51uy:XSZc31JhnE" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="5qWxn$tyXOM" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="5qWxn$tyV32" role="Cn2iK">
+            <property role="2h1i$Z" value="extends" />
+          </node>
+          <node concept="2h1dTh" id="5qWxn$tyV36" role="Cn6ar">
+            <property role="2h1i$Z" value="Extend another class" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kRJcU" id="5qWxn$tyPhW" role="3kShCk">
+        <node concept="3clFbS" id="5qWxn$tyPhX" role="2VODD2">
+          <node concept="3clFbF" id="5qWxn$tyPj2" role="3cqZAp">
+            <node concept="2OqwBi" id="5qWxn$tyRtD" role="3clFbG">
+              <node concept="2OqwBi" id="5qWxn$tyPpp" role="2Oq$k0">
+                <node concept="Cj7Ep" id="5qWxn$tyPj1" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5qWxn$tyQpE" role="2OqNvi">
+                  <ref role="3TtcxE" to="51uy:XSZc31JhnE" />
+                </node>
+              </node>
+              <node concept="1v1jN8" id="5qWxn$tySQL" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3UNGvq" id="3ixSrrqHayB" role="3UOs0v">
       <ref role="3UNGvu" to="51uy:3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
       <node concept="3kRJcU" id="3ixSrrqHbbf" role="3kShCk">

@@ -246,6 +246,12 @@
       <property role="20kJfa" value="statements" />
       <ref role="20lvS9" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
+    <node concept="1TJgyj" id="XSZc31JhnE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="extendedClasses" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="XSZc31Jhnz" resolve="ClassRefExpression" />
+    </node>
     <node concept="PrWs8" id="1$0zzZHWjid" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -268,9 +274,6 @@
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
     <node concept="PrWs8" id="24ni4bq0due" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="5NQyKEZH5rE" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
     </node>
     <node concept="PrWs8" id="5NQyKEZH5rO" role="PzmwI">
       <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
@@ -433,6 +436,9 @@
     </node>
     <node concept="PrWs8" id="5a9n1m5cUVF" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
+    </node>
+    <node concept="PrWs8" id="XSZc31JgM1" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
     </node>
     <node concept="PrWs8" id="3vFRxEzPv0V" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
@@ -1078,6 +1084,9 @@
     <node concept="PrWs8" id="3ixSrrqshD0" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
     </node>
+    <node concept="PrWs8" id="XSZc31JgLH" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    </node>
     <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
@@ -1308,6 +1317,17 @@
     </node>
     <node concept="PrWs8" id="2_jEsYwBdqI" role="PrDN$">
       <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XSZc31Jhnz">
+    <property role="1pbfSe" value="784985437" />
+    <property role="TrG5h" value="ClassRefExpression" />
+    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
+    <node concept="1TJgyj" id="XSZc31Jhn$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classRef" />
+      <ref role="20ksaX" node="43YHIaBbjCZ" />
+      <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
     </node>
   </node>
 </model>
