@@ -476,6 +476,7 @@
       <concept id="3358009230508699637" name="jetbrains.mps.baseLanguage.collections.structure.PopOperation" flags="nn" index="2AryhJ" />
       <concept id="3358009230508699932" name="jetbrains.mps.baseLanguage.collections.structure.PushOperation" flags="nn" index="2ArzE6" />
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1226934395923" name="jetbrains.mps.baseLanguage.collections.structure.ClearSetOperation" flags="nn" index="2EZike" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -15625,7 +15626,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3vC38yc8lVp" role="3cqZAp" />
+        <node concept="3clFbH" id="4ATG9YDDm07" role="3cqZAp" />
+        <node concept="3clFbF" id="4ATG9YDDbMf" role="3cqZAp">
+          <node concept="2OqwBi" id="4ATG9YDDdb8" role="3clFbG">
+            <node concept="10M0yZ" id="4ATG9YDDbMe" role="2Oq$k0">
+              <ref role="1PxDUh" node="7wSp95B_t2E" resolve="MyReference" />
+              <ref role="3cqZAo" node="7wSp95BA1xn" resolve="locker" />
+            </node>
+            <node concept="2EZike" id="2k21wBsPhP0" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="LVbVRPoIzs" role="3cqZAp">
+          <node concept="2YIFZM" id="LVbVRPoOxb" role="3clFbG">
+            <ref role="37wK5l" to="wru8:~Root.initialize():void" resolve="initialize" />
+            <ref role="1Pybhc" to="wru8:~Root" resolve="Root" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4ATG9YDDmET" role="3cqZAp" />
         <node concept="3cpWs8" id="6otXYHBgt3a" role="3cqZAp">
           <node concept="3cpWsn" id="6otXYHBgt39" role="3cpWs9">
             <property role="TrG5h" value="sModel" />
