@@ -430,6 +430,24 @@
           <ref role="3bR37D" node="Yuz1zXkOr8" resolve="jetpad.vclang" />
         </node>
       </node>
+      <node concept="1SiIV0" id="7$3LlN1q6y9" role="3bR37C">
+        <node concept="3bR9La" id="7$3LlN1q6ya" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7DVEmjoSY6T" role="3bR37C">
+        <node concept="3bR9La" id="7DVEmjoSY6U" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1RyXo9isPuX" role="3bR37C">
+        <node concept="3bR9La" id="1RyXo9isPuY" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="Yuz1zXkOr8" role="3989C9">
       <property role="BnDLt" value="true" />
