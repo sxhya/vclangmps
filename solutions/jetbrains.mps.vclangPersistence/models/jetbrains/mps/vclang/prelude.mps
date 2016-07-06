@@ -225,6 +225,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -235,10 +239,7 @@
         <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
         <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1015,8 +1016,8 @@
                         <node concept="3cpWs3" id="YiFSmVbfHQ" role="3uHU7B">
                           <node concept="2OqwBi" id="YiFSmVbfbv" role="3uHU7B">
                             <node concept="1PxgMI" id="YiFSmVbf1S" role="2Oq$k0">
-                              <ref role="1PxNhF" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
-                              <node concept="2OqwBi" id="YiFSmVbeJl" role="1PxMeX">
+                              <ref role="1m5ApE" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
+                              <node concept="2OqwBi" id="YiFSmVbeJl" role="1m5AlR">
                                 <node concept="37vLTw" id="YiFSmVbeEq" role="2Oq$k0">
                                   <ref role="3cqZAo" node="YiFSmVbdET" resolve="target" />
                                 </node>
