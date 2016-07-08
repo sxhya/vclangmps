@@ -4,18 +4,11 @@ Vclang frontend for MPS version 0.02
 
 ===== INSTALLATION FROM BINARIES =====
 
-1. Download and install the latest MPS build from here:
-http://buildserver.labs.intellij.net/viewType.html?buildTypeId=MPS_33_DistributionContinuousIntegrationDistribution
-The particular plugin version presented here was tested for compatibility with build MPS 143.1301.
+1. Download and install the latest MPS 3.4 build from here:
+https://teamcity.jetbrains.com/project.html?projectId=MPS_34
+The particular plugin version presented here was tested for compatibility with build MPS 163.333
 
-2. Patch $MPS_HOME/lib/mps-core.jar at /jetbrains/mps/extapi/model/ with the following class file: 
-https://dl.dropboxusercontent.com/u/12890390/CustomPersistenceSModel.class
-In other words, you have to open $MPS_HOME/lib/mps-core.jar using some external archive manager, find the specified logical folder in it,
-then remove the old class-file and replace it with this new class-file. Do not attempt manual repacking of the jar-file because this will not work.
-If you use particular 143.1301 version of MPS then instead of manual patching 
-you can replace the whole mps-core.jar with this (patched) jar-file: https://dl.dropboxusercontent.com/u/12890390/mps-core.jar
-
-3. Download the latest plugin build from my dropbox: https://dl.dropboxusercontent.com/u/12890390/vclang_mps.zip
+2. Download the latest plugin build from my dropbox: https://dl.dropboxusercontent.com/u/12890390/vclang_mps.zip
 
 3. Move the archive to $MPS_HOME\plugins\
 
@@ -40,11 +33,7 @@ It is essential that you choose exactly the root folder for the library and not 
 
 ===== USAGE =====
 
-You can now use the editor to edit library files. 
-You can typecheck a module by pressing "Alt+Space" and choosing "Typecheck" item in the intentions menu.
-The typechecking errors will be shown in the messages pane below. All the references which are not highlighted in red are navigable.
-Completion menus are working. You can use standard MPS editor commands like Copy/Paste or "Find Usages". 
-Press Ctrl+W to select node's parent.
+You can now use the editor to edit library files. You can typecheck a module or any its member by pressing "Ctrl+Alt+Shift+Y" or choosing "Do Typechecking" item in the popup menu (right-click on the name of a function/class/module). The typechecking errors will be shown in the messages pane below. All the references which are not highlighted in red are navigable. Completion menus are working. You can use standard MPS features like Copy/Paste or "Find Usages". Press Ctrl+W to select node's parent.
 
 ===== KNOWN ISSUES =====
 
@@ -54,6 +43,4 @@ Press Ctrl+W to select node's parent.
 
  -- Some references are left unresolved and are only resolved later after you run the typechecker;
 
- -- Editor mechanics for patterns is currently rather unsatisfactory;
-
- -- Saving to text file uses standard vclang pretty printer whose output is hardly readable at the moment.
+ -- Editor mechanics for patterns is currently rather awkward;
