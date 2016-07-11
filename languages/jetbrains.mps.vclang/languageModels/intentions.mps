@@ -268,7 +268,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -497,15 +496,14 @@
             <node concept="3uibUv" id="1CLk1M3QbXI" role="1tU5fm">
               <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
             </node>
-            <node concept="10QFUN" id="1CLk1M3QbXJ" role="33vP2m">
-              <node concept="3uibUv" id="1CLk1M3QbXK" role="10QFUM">
+            <node concept="10QFUN" id="7LxnQdaTzcH" role="33vP2m">
+              <node concept="3uibUv" id="7LxnQdaTzcF" role="10QFUM">
                 <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
               </node>
-              <node concept="2OqwBi" id="1CLk1M3QbXL" role="10QFUP">
-                <node concept="2qgKlT" id="1CLk1M3QbXN" role="2OqNvi">
-                  <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
-                </node>
-                <node concept="37vLTw" id="7wSp95B_Lf5" role="2Oq$k0">
+              <node concept="2YIFZM" id="7LxnQdaTyg$" role="10QFUP">
+                <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+                <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <node concept="37vLTw" id="7wSp95B_Lf5" role="37wK5m">
                   <ref role="3cqZAo" node="1kbVov0Iovc" resolve="root" />
                 </node>
               </node>
@@ -767,15 +765,14 @@
             <node concept="3uibUv" id="3$zNNidzYy" role="1tU5fm">
               <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
             </node>
-            <node concept="10QFUN" id="3$zNNid$dm" role="33vP2m">
-              <node concept="3uibUv" id="3$zNNid$dk" role="10QFUM">
+            <node concept="10QFUN" id="7LxnQdaTzsU" role="33vP2m">
+              <node concept="3uibUv" id="7LxnQdaTzsV" role="10QFUM">
                 <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
               </node>
-              <node concept="2OqwBi" id="3$zNNidzqG" role="10QFUP">
-                <node concept="2qgKlT" id="3$zNNidzCs" role="2OqNvi">
-                  <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
-                </node>
-                <node concept="37vLTw" id="2Hg30Nse48b" role="2Oq$k0">
+              <node concept="2YIFZM" id="7LxnQdaTzsW" role="10QFUP">
+                <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+                <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <node concept="37vLTw" id="7LxnQdaTzwm" role="37wK5m">
                   <ref role="3cqZAo" node="2Hg30Nse2vk" resolve="rootNode" />
                 </node>
               </node>
@@ -846,12 +843,16 @@
                 <node concept="3uibUv" id="4ydIhjRyygt" role="HW$YZ">
                   <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
                 </node>
-                <node concept="2OqwBi" id="1crMcEZrrMS" role="HW$Y0">
-                  <node concept="37vLTw" id="1crMcEZrrEh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1dats510v1i" resolve="node" />
+                <node concept="10QFUN" id="7LxnQdaT$Jy" role="HW$Y0">
+                  <node concept="3uibUv" id="7LxnQdaTBkX" role="10QFUM">
+                    <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
                   </node>
-                  <node concept="2qgKlT" id="1crMcEZrs39" role="2OqNvi">
-                    <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                  <node concept="2YIFZM" id="7LxnQdaT$J$" role="10QFUP">
+                    <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+                    <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                    <node concept="37vLTw" id="7LxnQdaT$XU" role="37wK5m">
+                      <ref role="3cqZAo" node="1dats510v1i" resolve="node" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3150,28 +3151,6 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="R63D0j_D74" role="3cqZAp" />
-                    <node concept="1X3_iC" id="4DN62aiSGx$" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3cpWs8" id="R63D0j_Dvx" role="8Wnug">
-                        <node concept="3cpWsn" id="R63D0j_Dvy" role="3cpWs9">
-                          <property role="TrG5h" value="drsmv" />
-                          <node concept="3uibUv" id="R63D0j_Dvz" role="1tU5fm">
-                            <ref role="3uigEE" to="wuj5:~DefinitionResolveStaticModVisitor" resolve="DefinitionResolveStaticModVisitor" />
-                          </node>
-                          <node concept="2ShNRf" id="R63D0j_DFf" role="33vP2m">
-                            <node concept="1pGfFk" id="R63D0j_DF1" role="2ShVmc">
-                              <ref role="37wK5l" to="wuj5:~DefinitionResolveStaticModVisitor.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.staticmodresolver.StaticModListener)" resolve="DefinitionResolveStaticModVisitor" />
-                              <node concept="2ShNRf" id="R63D0j_DGu" role="37wK5m">
-                                <node concept="HV5vD" id="R63D0j_DVP" role="2ShVmc">
-                                  <ref role="HV5vE" to="xq8z:R63D0j_C34" resolve="MPSStaticModListener" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbH" id="R63D0j_DWy" role="3cqZAp" />
                     <node concept="3cpWs8" id="25D8tARTkwd" role="3cqZAp">
                       <node concept="3cpWsn" id="25D8tARTkwe" role="3cpWs9">
@@ -3299,15 +3278,11 @@
                               <node concept="3uibUv" id="25D8tARTGz6" role="10QFUM">
                                 <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
                               </node>
-                              <node concept="2OqwBi" id="25D8tARTFQE" role="10QFUP">
-                                <node concept="1PxgMI" id="25D8tARTFJ2" role="2Oq$k0">
-                                  <ref role="1m5ApE" to="51uy:Z42ctSV31q" resolve="ClassDefinition" />
-                                  <node concept="37vLTw" id="26UxpxdQkpu" role="1m5AlR">
-                                    <ref role="3cqZAo" node="2Q1MlF6LKw" resolve="root" />
-                                  </node>
-                                </node>
-                                <node concept="2qgKlT" id="25D8tARTG4N" role="2OqNvi">
-                                  <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                              <node concept="2YIFZM" id="7LxnQdaTXW_" role="10QFUP">
+                                <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+                                <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                                <node concept="37vLTw" id="7LxnQdaTXZP" role="37wK5m">
+                                  <ref role="3cqZAo" node="2Q1MlF6LKw" resolve="root" />
                                 </node>
                               </node>
                             </node>

@@ -8,8 +8,8 @@
   <imports>
     <import index="nsz5" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.statement.visitor(jetpad.vclang/)" />
     <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
+    <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="51uy" ref="r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)" implicit="true" />
-    <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" implicit="true" />
     <import index="2968" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term(jetpad.vclang/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -86,9 +86,6 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -111,14 +108,13 @@
       <node concept="3clFbS" id="4vNNaRh7ILM" role="2VODD2">
         <node concept="3clFbF" id="4vNNaRh864j" role="3cqZAp">
           <node concept="2OqwBi" id="4vNNaRh86rI" role="3clFbG">
-            <node concept="2OqwBi" id="4vNNaRh86bg" role="2Oq$k0">
-              <node concept="117lpO" id="4vNNaRh864i" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4vNNaRh86pK" role="2OqNvi">
-                <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
-              </node>
-            </node>
             <node concept="liA8E" id="4vNNaRh86y0" role="2OqNvi">
               <ref role="37wK5l" to="2968:~Abstract$Binding.getName():java.lang.String" resolve="getName" />
+            </node>
+            <node concept="2YIFZM" id="7LxnQdaTUep" role="2Oq$k0">
+              <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+              <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+              <node concept="117lpO" id="7LxnQdaTUR5" role="37wK5m" />
             </node>
           </node>
         </node>

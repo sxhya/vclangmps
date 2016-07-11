@@ -16445,15 +16445,16 @@
             <node concept="3uibUv" id="5m7vKvh_Y91" role="1tU5fm">
               <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
             </node>
-            <node concept="2OqwBi" id="7BILyjtKh_X" role="33vP2m">
-              <node concept="1PxgMI" id="7BILyjtKhr1" role="2Oq$k0">
-                <ref role="1m5ApE" to="51uy:Z42ctSV31q" resolve="ClassDefinition" />
-                <node concept="37vLTw" id="7BILyjtKhg3" role="1m5AlR">
+            <node concept="10QFUN" id="7LxnQdaT$Jy" role="33vP2m">
+              <node concept="3uibUv" id="7LxnQdaTBkX" role="10QFUM">
+                <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+              </node>
+              <node concept="2YIFZM" id="7LxnQdaT$J$" role="10QFUP">
+                <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
+                <node concept="37vLTw" id="7LxnQdaTO33" role="37wK5m">
                   <ref role="3cqZAo" node="4vNNaRh7TFH" resolve="root" />
                 </node>
-              </node>
-              <node concept="2qgKlT" id="7BILyjtKhPB" role="2OqNvi">
-                <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
               </node>
             </node>
           </node>
