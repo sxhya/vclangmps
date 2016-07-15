@@ -21,7 +21,7 @@ Installation from sources:
 
 3. Create /lib directory in the root of the checkout project
 
-4. Modify the contents of script.sh so that MPSPATH variable points to the correct location of MPS 3.4 distribution.
+4. Modify the contents of rebuild.sh so that MPSPATH variable points to the correct location of MPS 3.4 distribution.
 
 5. Run "update-vclang.sh" script. It should make the console vclang project usign maven and then move the resulting jar package to the /lib folder
 
