@@ -2,6 +2,40 @@
 
 Vclang frontend for MPS version 0.02
 
+===== INSTALLATION FROM SOURCES =====
+
+Prerequisites:
+
+1. The latest working MPS 3.4 build which you can download from here:
+   https://teamcity.jetbrains.com/project.html?projectId=MPS
+2. JDK 1.8
+3. You will need both maven and antlr installed.
+
+
+Installation from sources:
+
+1. Checkout vclangMPS project from https://github.com/sxhya/vclangmps
+
+2. Checkout all project submodules by running 
+   git submodule foreach git pull
+
+3. Create /lib directory in the root of the checkout project
+
+4. Modify the contents of script.sh so that MPSPATH variable points to the correct location of MPS 3.4 distribution.
+
+5. Run "update-vclang.sh" script. It should make the console vclang project usign maven and then move the resulting jar package to the /lib folder
+
+6. Manually locate "antlr4-runtime-4.5.jar" package and move it to the "/lib" folder. It should be automatically installed by maven on the previous step. This package should be located in
+~/.m2/repository/org/antlr/antlr4-runtime/4.5/
+
+7. Now open vclangMPS project with MPS.
+
+8. Open "jetpad.vclang" solution properties and make sure that "vclang.jar" and "antlr4-runtime-4.5.jar" are imported from /lib folder; make sure also that these jars are included as libraries on the "Java" tab
+
+9. Restart MPS and rebuild all the solutions
+
+10. Run "rebuild.sh" script
+
 ===== INSTALLATION FROM BINARIES =====
 
 1. Download and install the latest MPS 3.4 build from here:
