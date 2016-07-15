@@ -16449,11 +16449,12 @@
               <node concept="3uibUv" id="7LxnQdaTBkX" role="10QFUM">
                 <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
               </node>
-              <node concept="2YIFZM" id="7LxnQdaT$J$" role="10QFUP">
-                <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
-                <ref role="37wK5l" to="hhlq:1egVW$2AA$m" resolve="getAdapterForTarget" />
-                <node concept="37vLTw" id="7LxnQdaTO33" role="37wK5m">
+              <node concept="2OqwBi" id="1nocdXv_MW3" role="10QFUP">
+                <node concept="37vLTw" id="1nocdXv_MGZ" role="2Oq$k0">
                   <ref role="3cqZAo" node="4vNNaRh7TFH" resolve="root" />
+                </node>
+                <node concept="2qgKlT" id="1nocdXv_Nec" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
                 </node>
               </node>
             </node>

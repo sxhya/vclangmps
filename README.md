@@ -9,7 +9,7 @@ Prerequisites:
 1. The latest working MPS 3.4 build which you can download from here:
    https://teamcity.jetbrains.com/project.html?projectId=MPS
 2. JDK 1.8
-3. You will need both maven and antlr installed.
+3. You will need both maven and ant installed.
 
 
 Installation from sources:
