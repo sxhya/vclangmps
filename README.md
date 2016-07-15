@@ -17,7 +17,7 @@ Installation from sources:
 1. Checkout vclangMPS project from https://github.com/sxhya/vclangmps
 
 2. Checkout all project submodules by running 
-   git submodule foreach git pull
+   git submodule init && git submodule update
 
 3. Create /lib directory in the root of the checkout project
 
@@ -30,11 +30,13 @@ Installation from sources:
 
 7. Now open vclangMPS project with MPS.
 
-8. Open "jetpad.vclang" solution properties and make sure that "vclang.jar" and "antlr4-runtime-4.5.jar" are imported from /lib folder; make sure also that these jars are included as libraries on the "Java" tab
+8. Open "jetpad.vclang" solution properties and make sure that "vclang.jar" and "antlr4-runtime-4.5.jar" are imported from /lib folder; also make sure that these jars are included as libraries on the "Java" tab
 
-9. Restart MPS and rebuild all the solutions
+9. Go to vclang_mps.build solution, open vclang_mps build project and ensure that mps_home variable points to the correct location of MPS 3.4 distribution.
 
-10. Run "rebuild.sh" script
+9. Rebuild all the solutions
+
+10. Run "rebuild.sh" script to build and install the plugin
 
 ===== INSTALLATION FROM BINARIES =====
 
