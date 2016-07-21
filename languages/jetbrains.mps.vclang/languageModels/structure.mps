@@ -730,14 +730,6 @@
     <property role="EcuMT" value="6698694374041332824" />
     <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
   </node>
-  <node concept="1TIwiD" id="5NQyKEZEQ4l">
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="ImplicitArgument" />
-    <property role="34LRSv" value="{" />
-    <property role="R4oN_" value="Implicit argument" />
-    <property role="EcuMT" value="6698694374041805077" />
-    <ref role="1TJDcQ" node="7nfIx2ucogv" resolve="BracketExpression" />
-  </node>
   <node concept="1TIwiD" id="3vFRxEzPfTW">
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="OpenScopeCommand" />

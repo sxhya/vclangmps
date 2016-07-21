@@ -190,9 +190,6 @@
         <child id="7108625883772462818" name="varNames" index="1xKkXQ" />
       </concept>
       <concept id="7108625883772462820" name="jetbrains.mps.vclang.structure.Variable" flags="ng" index="1xKkXK" />
-      <concept id="7108625883772462676" name="jetbrains.mps.vclang.structure.TupleExpression" flags="ng" index="1xKkZ0">
-        <child id="8489208403152958515" name="fields" index="3FZGSz" />
-      </concept>
       <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.VariableExpression" flags="ng" index="1xKkZ5" />
       <concept id="7108625883772462670" name="jetbrains.mps.vclang.structure.ApplicationExpression" flags="ng" index="1xKkZq" />
       <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedArgument" flags="ng" index="3zkEti" />
@@ -1695,9 +1692,9 @@
                 <property role="TrG5h" value="l'" />
               </node>
             </node>
-            <node concept="1xKkZq" id="yKHYPNfyb0" role="2mT3wk">
-              <node concept="1xKkZ0" id="yKHYPNfyc2" role="3FZH5U">
-                <node concept="1xKkZq" id="yKHYPNfycv" role="3FZGSz">
+            <node concept="1xKkZq" id="46qNiAJWpRM" role="2mT3wk">
+              <node concept="3FZzSf" id="46qNiAJWpRI" role="3FZH5U">
+                <node concept="1xKkZq" id="yKHYPNfycv" role="1D_SPk">
                   <node concept="1xKkZ5" id="yKHYPNfycs" role="3FZH5U">
                     <ref role="3gbGqc" node="yKHYPNfy9W" resolve="l'" />
                   </node>
@@ -1833,9 +1830,9 @@
                 <property role="TrG5h" value="n'" />
               </node>
             </node>
-            <node concept="1xKkZq" id="yKHYPNfyxI" role="2mT3wk">
-              <node concept="1xKkZ0" id="yKHYPNfyz0" role="3FZH5U">
-                <node concept="1xKkZq" id="yKHYPNfyzt" role="3FZGSz">
+            <node concept="1xKkZq" id="46qNiAJWpTr" role="2mT3wk">
+              <node concept="3FZzSf" id="46qNiAJWpTn" role="3FZH5U">
+                <node concept="1xKkZq" id="yKHYPNfyzt" role="1D_SPk">
                   <node concept="1xKkZ5" id="yKHYPNfyzq" role="3FZH5U">
                     <ref role="3gbGqc" node="yKHYPNfyvz" resolve="n'" />
                   </node>
