@@ -1,5 +1,10 @@
 *.MF
+*.iml
 /.mps/workspace.xml
 classes_gen
 source_gen
 source_gen.caches
+.idea
+lib
+out
+build
