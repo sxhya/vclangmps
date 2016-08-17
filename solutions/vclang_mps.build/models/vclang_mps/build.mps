@@ -10,23 +10,8 @@
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
-      <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
-        <property id="2133624044437898910" name="doctypeName" index="29q25t" />
-        <child id="2133624044438029120" name="externalId" index="29qyi3" />
-      </concept>
-      <concept id="2133624044438029119" name="jetbrains.mps.core.xml.structure.XmlExternalId" flags="ng" index="29qyjW">
-        <property id="2133624044438029123" name="publicId" index="29qyi0" />
-        <property id="2133624044438029125" name="isPublic" index="29qyi6" />
-        <property id="2133624044438029124" name="systemId" index="29qyi7" />
-      </concept>
-      <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
-        <child id="6666499814681515201" name="document" index="2pMbU3" />
-      </concept>
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
-      </concept>
-      <concept id="6666499814681299057" name="jetbrains.mps.core.xml.structure.XmlProlog" flags="ng" index="2pNm8N">
-        <child id="7604553062773674214" name="elements" index="BGLLu" />
       </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
@@ -40,10 +25,6 @@
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
         <property id="1622293396948953704" name="value" index="3o6i5n" />
-      </concept>
-      <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
-        <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
-        <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
       </concept>
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -263,6 +244,15 @@
             <property role="2pNUuO" value="className" />
             <node concept="2pMdtt" id="3CWROv2M2Fi" role="2pMdts">
               <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="1BzrUxSG1de" role="3o6s8t">
+          <property role="2pNNFO" value="mps.LanguageLibrary" />
+          <node concept="2pNUuL" id="1BzrUxSG1eL" role="2pNNFR">
+            <property role="2pNUuO" value="dir" />
+            <node concept="2pMdtt" id="1BzrUxSG1f9" role="2pMdts">
+              <property role="2pMdty" value="/lib" />
             </node>
           </node>
         </node>
@@ -598,108 +588,6 @@
     </node>
     <node concept="2igEWh" id="7MHOjQ9Sbis" role="1hWBAP">
       <property role="2igJW4" value="true" />
-    </node>
-  </node>
-  <node concept="2pMbU2" id="4ymH5IilJl5">
-    <property role="TrG5h" value="plugin" />
-    <node concept="3rIKKV" id="4ymH5IilJl6" role="2pMbU3">
-      <node concept="2pNm8N" id="4ymH5IilJln" role="2pNm8Q">
-        <node concept="29q25o" id="7ZoWiKceytc" role="BGLLu">
-          <property role="29q25t" value="idea-plugin" />
-          <node concept="29qyjW" id="7ZoWiKceytr" role="29qyi3">
-            <property role="29qyi6" value="true" />
-            <property role="29qyi0" value="Plugin/DTD" />
-            <property role="29qyi7" value="http://plugins.intellij.net/plugin.dtd" />
-          </node>
-        </node>
-      </node>
-      <node concept="2pNNFK" id="7ZoWiKceyt5" role="2pNm8H">
-        <property role="2pNNFO" value="idea-plugin" />
-        <node concept="2pNNFK" id="7ZoWiKceyu8" role="3o6s8t">
-          <property role="2pNNFO" value="id" />
-          <node concept="3o6iSG" id="7ZoWiKceyul" role="3o6s8t">
-            <property role="3o6i5n" value="vclang_mps" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="7ZoWiKceyur" role="3o6s8t">
-          <property role="2pNNFO" value="name" />
-          <node concept="3o6iSG" id="7ZoWiKceyuE" role="3o6s8t">
-            <property role="3o6i5n" value="Vclang MPS" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="7ZoWiKceyuW" role="3o6s8t">
-          <property role="2pNNFO" value="description" />
-          <node concept="3o6iSG" id="7ZoWiKceyvi" role="3o6s8t" />
-          <node concept="3o6iSG" id="7ZoWiKceyuX" role="3o6s8t">
-            <property role="3o6i5n" value="Vclang custom MPS persistence" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="7ZoWiKceywi" role="3o6s8t">
-          <property role="2pNNFO" value="version" />
-          <node concept="3o6iSG" id="7ZoWiKceywr" role="3o6s8t">
-            <property role="3o6i5n" value="0.01" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="7ZoWiKceywU" role="3o6s8t">
-          <property role="2pNNFO" value="vendor" />
-          <node concept="2pNUuL" id="7ZoWiKceyx5" role="2pNNFR">
-            <property role="2pNUuO" value="url" />
-            <node concept="2pMdtt" id="7ZoWiKceyxq" role="2pMdts">
-              <property role="2pMdty" value="http://www.jetbrains.com/mps/" />
-            </node>
-          </node>
-          <node concept="3o6iSG" id="7ZoWiKceyy4" role="3o6s8t">
-            <property role="3o6i5n" value="JetBrains" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="7ZoWiKcey$B" role="3o6s8t">
-          <property role="2pNNFO" value="depends" />
-          <node concept="3o6iSG" id="7ZoWiKcey$U" role="3o6s8t">
-            <property role="3o6i5n" value="jetbrains.mps.core" />
-          </node>
-        </node>
-        <node concept="3o6iSG" id="7ZoWiKcey_n" role="3o6s8t" />
-        <node concept="2pNNFK" id="7lhEbQoU0Bk" role="3o6s8t">
-          <property role="2pNNFO" value="extensions" />
-          <node concept="2pNNFK" id="7lhEbQoU0CD" role="3o6s8t">
-            <property role="2pNNFO" value="mps.ModelFactoryProvider" />
-            <property role="qg3DV" value="true" />
-            <node concept="2pNUuL" id="7lhEbQoU0CU" role="2pNNFR">
-              <property role="2pNUuO" value="implementationClass" />
-              <node concept="2pMdtt" id="7lhEbQoU0CX" role="2pMdts">
-                <property role="2pMdty" value="jetbrains.mps.vclangPersistence.peristence.VclangModelFactory" />
-              </node>
-            </node>
-          </node>
-          <node concept="2pNNFK" id="7lhEbQoU0Dn" role="3o6s8t">
-            <property role="2pNNFO" value="mps.LanguageLibrary" />
-            <property role="qg3DV" value="true" />
-            <node concept="2pNUuL" id="7lhEbQoU0Dz" role="2pNNFR">
-              <property role="2pNUuO" value="dir" />
-            </node>
-          </node>
-          <node concept="2pNUuL" id="7lhEbQoU0C6" role="2pNNFR">
-            <property role="2pNUuO" value="defayktExtensionNs" />
-            <node concept="2pMdtt" id="7lhEbQoU0C9" role="2pMdts">
-              <property role="2pMdty" value="com.intellij" />
-            </node>
-          </node>
-        </node>
-        <node concept="3o6iSG" id="7lhEbQoU0_S" role="3o6s8t" />
-        <node concept="2pNNFK" id="Yuz1zXkPQY" role="3o6s8t">
-          <property role="2pNNFO" value="application-components" />
-          <node concept="2pNNFK" id="Yuz1zXkPQZ" role="3o6s8t">
-            <property role="2pNNFO" value="component" />
-            <node concept="2pNNFK" id="Yuz1zXkPR0" role="3o6s8t">
-              <property role="2pNNFO" value="implementation-class" />
-              <node concept="3o6iSG" id="Yuz1zXkPR1" role="3o6s8t">
-                <property role="3o6i5n" value="jetbrains.mps.vclangPersistence.persistence.VclangPersistence" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3o6iSG" id="4ymH5IilLgM" role="3o6s8t" />
-      </node>
     </node>
   </node>
 </model>

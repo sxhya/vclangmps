@@ -44,6 +44,7 @@
         </application-components>
         <extensions defaultExtensionNs="com.intellij">
           <mps.modelRootEntry rootType="vclang_articles" className="jetbrains.mps.vclangPersistence.persistence.VclangArticlesModelRootEntryFactory" />
+          <mps.LanguageLibrary dir="/lib" />
         </extensions>
         
         <extensions defaultExtensionNs="com.intellij">
