@@ -8,7 +8,7 @@ Prerequisites:
 
 1. The latest working MPS 3.4 build which you can download from here:
    https://teamcity.jetbrains.com/project.html?projectId=MPS
-2. JDK 1.8
+2. JDK 1.7
 3. You will need both maven and ant installed.
 
 
@@ -19,24 +19,12 @@ Installation from sources:
 2. Checkout all project submodules by running 
    git submodule init && git submodule update
 
-3. Create /lib directory in the root of the checkout project
+3. Open in a text editor solutions/jetpad.vclang/jetpad.vclang.msd
+   Edit modelRoot contentPath and stubModelEntry path in such a way that they point to /lib subdirectory within the project
+   Notice that both /lib directory and the corresponding .jar files do not exist yet!
+   They will be created later during the build process
 
-4. Modify the contents of rebuild.sh so that MPSPATH variable points to the correct location of MPS 3.4 distribution.
-
-5. Run "update-vclang.sh" script. It should make the console vclang project usign maven and then move the resulting jar package to the /lib folder
-
-6. Manually locate "antlr4-runtime-4.5.jar" package and move it to the "/lib" folder. It should be automatically installed by maven on the previous step. This package should be located in
-~/.m2/repository/org/antlr/antlr4-runtime/4.5/
-
-7. Now open vclangMPS project with MPS.
-
-8. Open "jetpad.vclang" solution properties and make sure that "vclang.jar" and "antlr4-runtime-4.5.jar" are imported from /lib folder; also make sure that these jars are included as libraries on the "Java" tab
-
-9. Go to vclang_mps.build solution, open vclang_mps build project and ensure that mps_home variable points to the correct location of MPS 3.4 distribution.
-
-9. Rebuild all the solutions
-
-10. Run "rebuild.sh" script to build and install the plugin
+4. Run install.sh script with bash
 
 ===== INSTALLATION FROM BINARIES =====
 
