@@ -19,7 +19,7 @@ Installation from sources:
 2. Checkout all project submodules by running 
    git submodule init && git submodule update
 
-3. Run bash install.sh
+3. Run install.sh script
 
 ===== INSTALLATION FROM BINARIES =====
 

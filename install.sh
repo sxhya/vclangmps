@@ -13,13 +13,13 @@ else
 fi
 
 #Get path of MPS distribution
-read -p "Enter valid path to MPS 3.4 binaries: " -i "$HOME" -e MPSHOME
+read -p "Enter valid path to MPS 3.4 root folder: " -i "$HOME" -e MPSHOME
 if [ ! -f "${MPSHOME}/lib/mps-core.jar" ]; then
     echo "There is no MPS distribution at the specified location"
     exit 1
 fi
 
-# STEP 1: Build vclang from sources using maven and move corresponding jar files to /lib
+# STEP 1: Build vclang from sources using maven and move corresponding jar files to ./solutions/jetpad.vclang/vclang/target
 # Building jetpad.vclang package
 mvn clean -f ./solutions/jetpad.vclang/vclang/
 mvn package -Dmaven.test.skip=true -f ./solutions/jetpad.vclang/vclang/
