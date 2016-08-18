@@ -363,6 +363,14 @@
                                 <ref role="2WH_rO" node="4gHJ1I50nHb" resolve="node" />
                               </node>
                             </node>
+                            <node concept="2OqwBi" id="7WXv9gpjID" role="37wK5m">
+                              <node concept="2WthIp" id="7WXv9gpjIG" role="2Oq$k0">
+                                <ref role="32nkFo" node="4gHJ1I508aC" resolve="DoTypecheck" />
+                              </node>
+                              <node concept="1DTwFV" id="7WXv9gpjII" role="2OqNvi">
+                                <ref role="2WH_rO" node="4KDfkUwM9vE" resolve="project" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -705,6 +713,14 @@
                                   <ref role="37wK5l" to="f93o:1dats510u9a" resolve="doTypechecking" />
                                   <node concept="37vLTw" id="7$3LlN1nhut" role="37wK5m">
                                     <ref role="3cqZAo" node="7$3LlN1nh8B" resolve="def" />
+                                  </node>
+                                  <node concept="2OqwBi" id="7WXv9gpkNB" role="37wK5m">
+                                    <node concept="2WthIp" id="7WXv9gpkNE" role="2Oq$k0">
+                                      <ref role="32nkFo" node="7$3LlN1n1Ld" resolve="ComputeType" />
+                                    </node>
+                                    <node concept="1DTwFV" id="7WXv9gpkNG" role="2OqNvi">
+                                      <ref role="2WH_rO" node="7$3LlN1n1MK" resolve="project" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
