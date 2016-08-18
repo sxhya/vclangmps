@@ -1,3 +1,4 @@
+#!/bin/bash
 #Ensure that both ant and maven are installed
 command -v ant >/dev/null 2>&1 || { echo >&2 "Ant seems to be not installed. Aborting."; exit 1; }
 command -v mvn >/dev/null 2>&1 || { echo >&2 "Maven seems to be not installed. Aborting."; exit 1; }
@@ -19,14 +20,9 @@ if [ ! -f "${MPSHOME}/lib/mps-core.jar" ]; then
 fi
 
 # STEP 1: Build vclang from sources using maven and move corresponding jar files to /lib
-rm -rf lib
-mkdir -p lib
-
 # Building jetpad.vclang package
-cd ./solutions/jetpad.vclang/vclang/
-mvn clean && mvn package -Dmaven.test.skip=true
-cd ../../../
-mv ./solutions/jetpad.vclang/vclang/target/vclang-1.0-SNAPSHOT.jar ./lib/vclang.jar
+mvn clean -f ./solutions/jetpad.vclang/vclang/
+mvn package -Dmaven.test.skip=true -f ./solutions/jetpad.vclang/vclang/
 
 # Anltr runtime should be installed automatically while executing the previous command
 # At this momemnt we should be able to locate it within maven repo
@@ -38,7 +34,7 @@ else
     echo "Found anltr runtime at $ANTLR_RUNTIME"
 fi
 
-cp $ANTLR_RUNTIME lib/
+cp $ANTLR_RUNTIME ./solutions/jetpad.vclang/vclang/target
 
 # STEP 2: Make vclang_mps project
 MPSHOME_ESC=$(sed 's/[\/\\\.]/\\&/g' <<<"$MPSHOME")

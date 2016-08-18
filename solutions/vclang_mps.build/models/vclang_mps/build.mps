@@ -158,10 +158,19 @@
       </node>
     </node>
     <node concept="398rNT" id="7MHOjQ9Snn$" role="1l3spd">
-      <property role="TrG5h" value="lib" />
-      <node concept="55IIr" id="7MHOjQ9SnPP" role="398pKh">
-        <node concept="2Ry0Ak" id="7MHOjQ9SnPV" role="iGT6I">
-          <property role="2Ry0Am" value="lib" />
+      <property role="TrG5h" value="target" />
+      <node concept="55IIr" id="5tYTOPMTVhD" role="398pKh">
+        <node concept="2Ry0Ak" id="5tYTOPMTViQ" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="5tYTOPMTVjd" role="2Ry0An">
+            <property role="2Ry0Am" value="jetpad.vclang" />
+            <node concept="2Ry0Ak" id="52Rh5Cb2xcD" role="2Ry0An">
+              <property role="2Ry0Am" value="vclang" />
+              <node concept="2Ry0Ak" id="52Rh5Cb2xeO" role="2Ry0An">
+                <property role="2Ry0Am" value="target" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -188,7 +197,7 @@
             </node>
             <node concept="28jJK3" id="7MHOjQ9Srma" role="39821P">
               <node concept="398BVA" id="7MHOjQ9Srm_" role="28jJRO">
-                <ref role="398BVh" node="7MHOjQ9Snn$" resolve="lib" />
+                <ref role="398BVh" node="7MHOjQ9Snn$" resolve="target" />
                 <node concept="2Ry0Ak" id="7MHOjQ9Srn2" role="iGT6I">
                   <property role="2Ry0Am" value="antlr4-runtime-4.5.jar" />
                 </node>
@@ -196,9 +205,9 @@
             </node>
             <node concept="28jJK3" id="7MHOjQ9Srnw" role="39821P">
               <node concept="398BVA" id="7MHOjQ9Srnx" role="28jJRO">
-                <ref role="398BVh" node="7MHOjQ9Snn$" resolve="lib" />
-                <node concept="2Ry0Ak" id="7MHOjQ9Sro0" role="iGT6I">
-                  <property role="2Ry0Am" value="vclang.jar" />
+                <ref role="398BVh" node="7MHOjQ9Snn$" resolve="target" />
+                <node concept="2Ry0Ak" id="52Rh5Cb2xh4" role="iGT6I">
+                  <property role="2Ry0Am" value="vclang-1.0-SNAPSHOT.jar" />
                 </node>
               </node>
             </node>
@@ -476,7 +485,7 @@
       <node concept="1SiIV0" id="Yuz1zXkOrj" role="3bR37C">
         <node concept="1BurEX" id="Yuz1zXkOrk" role="1SiIV1">
           <node concept="398BVA" id="Yuz1zXkOrl" role="1BurEY">
-            <ref role="398BVh" node="7MHOjQ9Snn$" resolve="lib" />
+            <ref role="398BVh" node="7MHOjQ9Snn$" resolve="target" />
             <node concept="2Ry0Ak" id="Yuz1zXkOrm" role="iGT6I">
               <property role="2Ry0Am" value="antlr4-runtime-4.5.jar" />
             </node>
@@ -486,9 +495,9 @@
       <node concept="1SiIV0" id="Yuz1zXkOrn" role="3bR37C">
         <node concept="1BurEX" id="Yuz1zXkOro" role="1SiIV1">
           <node concept="398BVA" id="Yuz1zXkOrp" role="1BurEY">
-            <ref role="398BVh" node="7MHOjQ9Snn$" resolve="lib" />
-            <node concept="2Ry0Ak" id="Yuz1zXkOrq" role="iGT6I">
-              <property role="2Ry0Am" value="vclang.jar" />
+            <ref role="398BVh" node="7MHOjQ9Snn$" resolve="target" />
+            <node concept="2Ry0Ak" id="52Rh5Cb2xgA" role="iGT6I">
+              <property role="2Ry0Am" value="vclang-1.0-SNAPSHOT.jar" />
             </node>
           </node>
         </node>

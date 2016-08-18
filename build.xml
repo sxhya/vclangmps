@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/vclang_mps" />
   <property name="build.layout" location="${build.dir}/artifacts/vclang_mps" />
   <property name="mps_home" location="${basedir}/../MPS 3.4 EAP" />
-  <property name="lib" location="${basedir}/lib" />
+  <property name="target" location="${basedir}/solutions/jetpad.vclang/vclang/target" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -193,7 +193,7 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
         </dependencies>
         <library jar="../lib/antlr4-runtime-4.5.jar" />
-        <library jar="../lib/vclang.jar" />
+        <library jar="../lib/vclang-1.0-SNAPSHOT.jar" />
         <sources jar="jetpad.vclang-src.jar" descriptor="jetpad.vclang.msd" />
       </module>
     </echoxml>
@@ -205,8 +205,8 @@
       <zipfileset file="${basedir}/solutions/jetpad.vclang/jetpad.vclang.msd" prefix="module" />
     </jar>
     <zip destfile="${build.layout}/vclang_mps.zip">
-      <zipfileset file="${lib}/antlr4-runtime-4.5.jar" prefix="vclang_mps/lib" />
-      <zipfileset file="${lib}/vclang.jar" prefix="vclang_mps/lib" />
+      <zipfileset file="${target}/antlr4-runtime-4.5.jar" prefix="vclang_mps/lib" />
+      <zipfileset file="${target}/vclang-1.0-SNAPSHOT.jar" prefix="vclang_mps/lib" />
       <fileset dir="${build.tmp}/default/vclang_mps.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
@@ -329,7 +329,7 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
-      <macro name="lib" path="${lib}" />
+      <macro name="target" path="${target}" />
     </generate>
   </target>
   
@@ -366,8 +366,8 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
-        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
-        <fileset file="${lib}/vclang.jar" />
+        <fileset file="${target}/antlr4-runtime-4.5.jar" />
+        <fileset file="${target}/vclang-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -434,8 +434,8 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
-        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
-        <fileset file="${lib}/vclang.jar" />
+        <fileset file="${target}/antlr4-runtime-4.5.jar" />
+        <fileset file="${target}/vclang-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -487,8 +487,8 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
-        <fileset file="${lib}/vclang.jar" />
+        <fileset file="${target}/antlr4-runtime-4.5.jar" />
+        <fileset file="${target}/vclang-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -535,8 +535,8 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
-        <fileset file="${lib}/antlr4-runtime-4.5.jar" />
-        <fileset file="${lib}/vclang.jar" />
+        <fileset file="${target}/antlr4-runtime-4.5.jar" />
+        <fileset file="${target}/vclang-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/junit-4.12.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.3.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.3.jar" />

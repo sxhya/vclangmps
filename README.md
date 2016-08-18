@@ -19,12 +19,7 @@ Installation from sources:
 2. Checkout all project submodules by running 
    git submodule init && git submodule update
 
-3. Open in a text editor solutions/jetpad.vclang/jetpad.vclang.msd
-   Edit modelRoot contentPath and stubModelEntry path in such a way that they point to /lib subdirectory within the project
-   Notice that both /lib directory and the corresponding .jar files do not exist yet!
-   They will be created later during the build process
-
-4. Run install.sh script with bash
+3. Run bash install.sh
 
 ===== INSTALLATION FROM BINARIES =====
 
