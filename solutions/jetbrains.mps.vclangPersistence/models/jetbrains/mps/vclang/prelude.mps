@@ -13,6 +13,7 @@
     <import index="2968" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term(jetpad.vclang/)" />
     <import index="thjl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.definition(jetpad.vclang/)" />
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
+    <import index="h2pl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.namespace(jetpad.vclang/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -248,8 +249,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -963,7 +974,7 @@
                     <ref role="2Gs0qQ" node="3$WH5S1JD35" resolve="item" />
                   </node>
                   <node concept="3TrEf2" id="YiFSmVbdTM" role="2OqNvi">
-                    <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" />
+                    <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" resolve="def" />
                   </node>
                 </node>
               </node>
@@ -1043,7 +1054,7 @@
                 </node>
                 <node concept="1BlSNk" id="YiFSmVbesV" role="2OqNvi">
                   <ref role="1BmUXE" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
-                  <ref role="1Bn3mz" to="51uy:7nfIx2ubXrQ" />
+                  <ref role="1Bn3mz" to="51uy:7nfIx2ubXrQ" resolve="constructors" />
                 </node>
               </node>
             </node>
@@ -1051,38 +1062,34 @@
             <node concept="3cpWs8" id="YiFSmVbAHK" role="3cqZAp">
               <node concept="3cpWsn" id="YiFSmVbAHL" role="3cpWs9">
                 <property role="TrG5h" value="nmPrelude" />
-                <node concept="3uibUv" id="5L__jOZsiha" role="1tU5fm">
-                  <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+                <node concept="3uibUv" id="2pSwPJZCgnc" role="1tU5fm">
+                  <ref role="3uigEE" to="h2pl:~SimpleNamespace" resolve="SimpleNamespace" />
                 </node>
-                <node concept="2OqwBi" id="YiFSmVbA9m" role="33vP2m">
-                  <node concept="10M0yZ" id="YiFSmVbA8c" role="2Oq$k0">
-                    <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
-                    <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
-                  </node>
-                  <node concept="liA8E" id="YiFSmVbAaI" role="2OqNvi">
-                    <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
-                    <node concept="37vLTw" id="YiFSmVbAbq" role="37wK5m">
-                      <ref role="3cqZAo" node="YiFSmVbbRR" resolve="name" />
-                    </node>
-                  </node>
+                <node concept="10M0yZ" id="YiFSmVbA8c" role="33vP2m">
+                  <ref role="1PxDUh" to="2968:~Prelude" resolve="Prelude" />
+                  <ref role="3cqZAo" to="2968:~Prelude.PRELUDE" resolve="PRELUDE" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="YiFSmVbAUE" role="3cqZAp">
-              <node concept="3cpWsn" id="YiFSmVbAUF" role="3cpWs9">
-                <property role="TrG5h" value="nmPreprelude" />
-                <node concept="3uibUv" id="5L__jOZsijl" role="1tU5fm">
-                  <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
-                </node>
-                <node concept="2OqwBi" id="YiFSmVbB0m" role="33vP2m">
-                  <node concept="10M0yZ" id="YiFSmVbAZ7" role="2Oq$k0">
-                    <ref role="3cqZAo" to="2968:~Preprelude.PRE_PRELUDE" resolve="PRE_PRELUDE" />
-                    <ref role="1PxDUh" to="2968:~Preprelude" resolve="Preprelude" />
+            <node concept="1X3_iC" id="2pSwPJZCgfv" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3cpWs8" id="YiFSmVbAUE" role="8Wnug">
+                <node concept="3cpWsn" id="YiFSmVbAUF" role="3cpWs9">
+                  <property role="TrG5h" value="nmPreprelude" />
+                  <node concept="3uibUv" id="5L__jOZsijl" role="1tU5fm">
+                    <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
                   </node>
-                  <node concept="liA8E" id="YiFSmVbB1D" role="2OqNvi">
-                    <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
-                    <node concept="37vLTw" id="YiFSmVbB2j" role="37wK5m">
-                      <ref role="3cqZAo" node="YiFSmVbbRR" resolve="name" />
+                  <node concept="2OqwBi" id="YiFSmVbB0m" role="33vP2m">
+                    <node concept="10M0yZ" id="YiFSmVbAZ7" role="2Oq$k0">
+                      <ref role="3cqZAo" to="2968:~Preprelude.PRE_PRELUDE" resolve="PRE_PRELUDE" />
+                      <ref role="1PxDUh" to="2968:~Preprelude" resolve="Preprelude" />
+                    </node>
+                    <node concept="liA8E" id="YiFSmVbB1D" role="2OqNvi">
+                      <ref role="37wK5l" to="eryk:~Namespace.getMember(java.lang.String):com.jetbrains.jetpad.vclang.naming.NamespaceMember" resolve="getMember" />
+                      <node concept="37vLTw" id="YiFSmVbB2j" role="37wK5m">
+                        <ref role="3cqZAo" node="YiFSmVbbRR" resolve="name" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1091,8 +1098,8 @@
             <node concept="3cpWs8" id="3$WH5S1JBGT" role="3cqZAp">
               <node concept="3cpWsn" id="3$WH5S1JBGU" role="3cpWs9">
                 <property role="TrG5h" value="def" />
-                <node concept="3uibUv" id="3$WH5S1JBGV" role="1tU5fm">
-                  <ref role="3uigEE" to="thjl:~Referable" resolve="Referable" />
+                <node concept="3uibUv" id="2pSwPJZCgwX" role="1tU5fm">
+                  <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
                 </node>
                 <node concept="10Nm6u" id="3$WH5S1JBRE" role="33vP2m" />
               </node>
@@ -1107,7 +1114,10 @@
                         <ref role="3cqZAo" node="YiFSmVbAHL" resolve="nmPrelude" />
                       </node>
                       <node concept="liA8E" id="5L__jOZsiR6" role="2OqNvi">
-                        <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedDefinition" />
+                        <ref role="37wK5l" to="h2pl:~SimpleNamespace.resolveName(java.lang.String):com.jetbrains.jetpad.vclang.term.Abstract$Definition" resolve="resolveName" />
+                        <node concept="37vLTw" id="2pSwPJZCguf" role="37wK5m">
+                          <ref role="3cqZAo" node="YiFSmVbbRR" resolve="name" />
+                        </node>
                       </node>
                     </node>
                     <node concept="37vLTw" id="3$WH5S1JBLg" role="37vLTJ">
@@ -1124,28 +1134,32 @@
               </node>
             </node>
             <node concept="3clFbH" id="YiFSmVbAjU" role="3cqZAp" />
-            <node concept="3clFbJ" id="YiFSmVbEfu" role="3cqZAp">
-              <node concept="3clFbS" id="YiFSmVbEfv" role="3clFbx">
-                <node concept="3clFbF" id="YiFSmVbEfw" role="3cqZAp">
-                  <node concept="37vLTI" id="YiFSmVbEfx" role="3clFbG">
-                    <node concept="2OqwBi" id="5L__jOZsiSa" role="37vLTx">
-                      <node concept="37vLTw" id="YiFSmVbEq2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="YiFSmVbAUF" resolve="nmPreprelude" />
+            <node concept="1X3_iC" id="2pSwPJZCgA1" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbJ" id="YiFSmVbEfu" role="8Wnug">
+                <node concept="3clFbS" id="YiFSmVbEfv" role="3clFbx">
+                  <node concept="3clFbF" id="YiFSmVbEfw" role="3cqZAp">
+                    <node concept="37vLTI" id="YiFSmVbEfx" role="3clFbG">
+                      <node concept="2OqwBi" id="5L__jOZsiSa" role="37vLTx">
+                        <node concept="37vLTw" id="YiFSmVbEq2" role="2Oq$k0">
+                          <ref role="3cqZAo" node="YiFSmVbAUF" resolve="nmPreprelude" />
+                        </node>
+                        <node concept="liA8E" id="5L__jOZsiT$" role="2OqNvi">
+                          <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedDefinition" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="5L__jOZsiT$" role="2OqNvi">
-                        <ref role="37wK5l" to="eryk:~NamespaceMember.getResolvedDefinition():com.jetbrains.jetpad.vclang.term.definition.Referable" resolve="getResolvedDefinition" />
+                      <node concept="37vLTw" id="3$WH5S1JBLX" role="37vLTJ">
+                        <ref role="3cqZAo" node="3$WH5S1JBGU" resolve="def" />
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="3$WH5S1JBLX" role="37vLTJ">
-                      <ref role="3cqZAo" node="3$WH5S1JBGU" resolve="def" />
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="3y3z36" id="YiFSmVbEf_" role="3clFbw">
-                <node concept="10Nm6u" id="YiFSmVbEfA" role="3uHU7w" />
-                <node concept="37vLTw" id="YiFSmVbEoP" role="3uHU7B">
-                  <ref role="3cqZAo" node="YiFSmVbAUF" resolve="nmPreprelude" />
+                <node concept="3y3z36" id="YiFSmVbEf_" role="3clFbw">
+                  <node concept="10Nm6u" id="YiFSmVbEfA" role="3uHU7w" />
+                  <node concept="37vLTw" id="YiFSmVbEoP" role="3uHU7B">
+                    <ref role="3cqZAo" node="YiFSmVbAUF" resolve="nmPreprelude" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1393,7 +1407,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="YiFSmVbGDQ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" />
+                  <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" resolve="def" />
                 </node>
               </node>
             </node>

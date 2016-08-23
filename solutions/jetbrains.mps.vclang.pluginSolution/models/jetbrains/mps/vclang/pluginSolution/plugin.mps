@@ -27,6 +27,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
+    <import index="ssyg" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking(jetpad.vclang/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -361,6 +362,11 @@
                               <node concept="2WthIp" id="7yCUndyVHK9" role="2Oq$k0" />
                               <node concept="3gHZIF" id="7yCUndyVHUY" role="2OqNvi">
                                 <ref role="2WH_rO" node="4gHJ1I50nHb" resolve="node" />
+                              </node>
+                            </node>
+                            <node concept="2ShNRf" id="2pSwPJZG$7t" role="37wK5m">
+                              <node concept="1pGfFk" id="2pSwPJZGzUu" role="2ShVmc">
+                                <ref role="37wK5l" to="ssyg:~TypecheckerState.&lt;init&gt;()" resolve="TypecheckerState" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="7WXv9gpjID" role="37wK5m">
@@ -713,6 +719,11 @@
                                   <ref role="37wK5l" to="f93o:1dats510u9a" resolve="doTypechecking" />
                                   <node concept="37vLTw" id="7$3LlN1nhut" role="37wK5m">
                                     <ref role="3cqZAo" node="7$3LlN1nh8B" resolve="def" />
+                                  </node>
+                                  <node concept="2ShNRf" id="2pSwPJZGdBh" role="37wK5m">
+                                    <node concept="1pGfFk" id="2pSwPJZGdrp" role="2ShVmc">
+                                      <ref role="37wK5l" to="ssyg:~TypecheckerState.&lt;init&gt;()" resolve="TypecheckerState" />
+                                    </node>
                                   </node>
                                   <node concept="2OqwBi" id="7WXv9gpkNB" role="37wK5m">
                                     <node concept="2WthIp" id="7WXv9gpkNE" role="2Oq$k0">
