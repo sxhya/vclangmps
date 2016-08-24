@@ -1794,7 +1794,7 @@
         <node concept="3clFbF" id="24ni4bq5Upm" role="3cqZAp">
           <node concept="2OqwBi" id="24ni4bq5Upj" role="3clFbG">
             <node concept="13iAh5" id="24ni4bq5Upk" role="2Oq$k0">
-              <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+              <ref role="3eA5LN" to="51uy:KzXl40_P0r" resolve="HasArguments" />
             </node>
             <node concept="2qgKlT" id="24ni4bq5Upl" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
@@ -6864,7 +6864,7 @@
         <node concept="3clFbF" id="iEspzHEr_P" role="3cqZAp">
           <node concept="2OqwBi" id="iEspzHEr_M" role="3clFbG">
             <node concept="13iAh5" id="iEspzHEr_N" role="2Oq$k0">
-              <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+              <ref role="3eA5LN" to="51uy:2_jEsYwBdqH" resolve="HasTypedArguments" />
             </node>
             <node concept="2qgKlT" id="iEspzHEr_O" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
