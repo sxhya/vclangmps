@@ -20106,7 +20106,7 @@
                         <node concept="17QB3L" id="7Vm3Z_fI_lM" role="1tU5fm" />
                         <node concept="2OqwBi" id="7Vm3Z_fI$Kd" role="33vP2m">
                           <node concept="2GrUjf" id="7Vm3Z_fI$zT" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="7Vm3Z_fI70M" resolve="dependecy" />
+                            <ref role="2Gs0qQ" node="7Vm3Z_fI70M" resolve="dependency" />
                           </node>
                           <node concept="2qgKlT" id="7Vm3Z_fI_1W" role="2OqNvi">
                             <ref role="37wK5l" node="6OKEjRrHW3v" resolve="getResolveInfo" />
@@ -20118,7 +20118,7 @@
                       <node concept="37vLTI" id="7Vm3Z_fIKif" role="3clFbG">
                         <node concept="2OqwBi" id="7Vm3Z_fII0f" role="37vLTJ">
                           <node concept="2GrUjf" id="7Vm3Z_fIHF2" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="7Vm3Z_fI70M" resolve="dependecy" />
+                            <ref role="2Gs0qQ" node="7Vm3Z_fI70M" resolve="dependency" />
                           </node>
                           <node concept="3TrEf2" id="7Vm3Z_fIJPv" role="2OqNvi">
                             <ref role="3Tt5mk" to="51uy:43YHIaBbjCZ" resolve="def" />
@@ -20144,7 +20144,7 @@
                     </node>
                   </node>
                   <node concept="2GrKxI" id="7Vm3Z_fI70M" role="2Gsz3X">
-                    <property role="TrG5h" value="dependecy" />
+                    <property role="TrG5h" value="dependency" />
                   </node>
                 </node>
               </node>
