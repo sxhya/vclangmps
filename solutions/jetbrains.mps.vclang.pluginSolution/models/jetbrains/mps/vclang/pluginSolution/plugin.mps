@@ -364,11 +364,6 @@
                                 <ref role="2WH_rO" node="4gHJ1I50nHb" resolve="node" />
                               </node>
                             </node>
-                            <node concept="2ShNRf" id="2pSwPJZG$7t" role="37wK5m">
-                              <node concept="1pGfFk" id="2pSwPJZGzUu" role="2ShVmc">
-                                <ref role="37wK5l" to="ssyg:~TypecheckerState.&lt;init&gt;()" resolve="TypecheckerState" />
-                              </node>
-                            </node>
                             <node concept="2OqwBi" id="7WXv9gpjID" role="37wK5m">
                               <node concept="2WthIp" id="7WXv9gpjIG" role="2Oq$k0">
                                 <ref role="32nkFo" node="4gHJ1I508aC" resolve="DoTypecheck" />
@@ -719,11 +714,6 @@
                                   <ref role="37wK5l" to="f93o:1dats510u9a" resolve="doTypechecking" />
                                   <node concept="37vLTw" id="7$3LlN1nhut" role="37wK5m">
                                     <ref role="3cqZAo" node="7$3LlN1nh8B" resolve="def" />
-                                  </node>
-                                  <node concept="2ShNRf" id="2pSwPJZGdBh" role="37wK5m">
-                                    <node concept="1pGfFk" id="2pSwPJZGdrp" role="2ShVmc">
-                                      <ref role="37wK5l" to="ssyg:~TypecheckerState.&lt;init&gt;()" resolve="TypecheckerState" />
-                                    </node>
                                   </node>
                                   <node concept="2OqwBi" id="7WXv9gpkNB" role="37wK5m">
                                     <node concept="2WthIp" id="7WXv9gpkNE" role="2Oq$k0">
