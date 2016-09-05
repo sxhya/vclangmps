@@ -20,6 +20,7 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="8t77" ref="r:25de5eb6-5d37-4d04-a372-65d20c0f47b3(jetbrains.mps.vclang.actions)" />
+    <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
@@ -6747,9 +6748,9 @@
                             <node concept="Xl_RD" id="621pCXxqEL_" role="3uHU7B">
                               <property role="Xl_RC" value="Add new clause after \&quot;" />
                             </node>
-                            <node concept="2YIFZM" id="621pCXxqELA" role="3uHU7w">
-                              <ref role="37wK5l" to="hhlq:43kXnz9n2ox" resolve="exprFirstLine" />
-                              <ref role="1Pybhc" to="hhlq:5NQyKEZGqyC" resolve="AdapterUtils" />
+                            <node concept="2YIFZM" id="6VQGK2Sx0CW" role="3uHU7w">
+                              <ref role="37wK5l" to="xq8z:43kXnz9n2ox" resolve="exprFirstLine" />
+                              <ref role="1Pybhc" to="xq8z:5NQyKEZGqyC" resolve="AdapterUtils" />
                               <node concept="1PxgMI" id="621pCXxqELB" role="37wK5m">
                                 <ref role="1m5ApE" to="51uy:KzXl40_QXs" resolve="Expression" />
                                 <node concept="37vLTw" id="621pCXxqELC" role="1m5AlR">
