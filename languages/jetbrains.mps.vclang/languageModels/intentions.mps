@@ -4832,10 +4832,10 @@
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="foreignNode" />
-      <node concept="37vLTG" id="1CLk1M3PtKr" role="3clF46">
-        <property role="TrG5h" value="member" />
-        <node concept="3uibUv" id="1CLk1M3PtKs" role="1tU5fm">
-          <ref role="3uigEE" to="eryk:~NamespaceMember" resolve="NamespaceMember" />
+      <node concept="37vLTG" id="55NawVYfMRh" role="3clF46">
+        <property role="TrG5h" value="def" />
+        <node concept="3uibUv" id="55NawVYfMWM" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
         </node>
       </node>
       <node concept="37vLTG" id="1CLk1M3PtKt" role="3clF46">

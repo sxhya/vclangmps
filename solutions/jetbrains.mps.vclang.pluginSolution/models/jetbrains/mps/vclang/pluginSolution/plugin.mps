@@ -20,14 +20,9 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
-    <import index="ssyg" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking(jetpad.vclang/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -344,8 +339,8 @@
                       <node concept="3clFbS" id="7yCUndyVClJ" role="3clF47">
                         <node concept="3clFbF" id="7up1Jbrldg2" role="3cqZAp">
                           <node concept="2YIFZM" id="OV0Rn1$naY" role="3clFbG">
-                            <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initRefs" />
                             <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                            <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
                           </node>
                         </node>
                         <node concept="3clFbF" id="69COVOSrbUf" role="3cqZAp">
@@ -662,8 +657,8 @@
                             <node concept="3clFbS" id="7$3LlN1ngzd" role="3clF47">
                               <node concept="3clFbF" id="7$3LlN1ngze" role="3cqZAp">
                                 <node concept="2YIFZM" id="7$3LlN1ngzf" role="3clFbG">
-                                  <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initRefs" />
                                   <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
+                                  <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
                                 </node>
                               </node>
                               <node concept="3clFbF" id="7$3LlN1ngzg" role="3cqZAp">
