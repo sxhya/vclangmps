@@ -23,6 +23,7 @@
     <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
     <import index="ssyg" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking(jetpad.vclang/)" />
+    <import index="8ewh" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.source.file(jetpad.vclang/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1471,7 +1472,7 @@
           <node concept="37vLTI" id="55NawVYjCZE" role="3clFbG">
             <node concept="2ShNRf" id="55NawVYjDi0" role="37vLTx">
               <node concept="1pGfFk" id="55NawVYjDhL" role="2ShVmc">
-                <ref role="37wK5l" to="wru8:~FileModuleID.&lt;init&gt;(com.jetbrains.jetpad.vclang.module.ModulePath)" resolve="FileModuleID" />
+                <ref role="37wK5l" to="8ewh:~FileModuleSourceId.&lt;init&gt;(com.jetbrains.jetpad.vclang.module.ModulePath)" resolve="FileModuleSourceId" />
                 <node concept="2ShNRf" id="55NawVYjDUj" role="37wK5m">
                   <node concept="1pGfFk" id="55NawVYjDU4" role="2ShVmc">
                     <ref role="37wK5l" to="wru8:~ModulePath.&lt;init&gt;(java.lang.String)" resolve="ModulePath" />

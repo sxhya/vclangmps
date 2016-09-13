@@ -343,12 +343,6 @@
                             <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
                           </node>
                         </node>
-                        <node concept="3clFbF" id="69COVOSrbUf" role="3cqZAp">
-                          <node concept="2YIFZM" id="69COVOSrbUR" role="3clFbG">
-                            <ref role="1Pybhc" to="wru8:~Root" resolve="Root" />
-                            <ref role="37wK5l" to="wru8:~Root.initialize():void" resolve="initialize" />
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="2gnWiAeVDwH" role="3cqZAp">
                           <node concept="2YIFZM" id="gJblk0vQR7" role="3clFbG">
                             <ref role="37wK5l" to="f93o:1dats510u9a" resolve="doTypechecking" />
@@ -659,12 +653,6 @@
                                 <node concept="2YIFZM" id="7$3LlN1ngzf" role="3clFbG">
                                   <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
                                   <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
-                                </node>
-                              </node>
-                              <node concept="3clFbF" id="7$3LlN1ngzg" role="3cqZAp">
-                                <node concept="2YIFZM" id="7$3LlN1ngzh" role="3clFbG">
-                                  <ref role="37wK5l" to="wru8:~Root.initialize():void" resolve="initialize" />
-                                  <ref role="1Pybhc" to="wru8:~Root" resolve="Root" />
                                 </node>
                               </node>
                               <node concept="3cpWs8" id="7$3LlN1nh8$" role="3cqZAp">
