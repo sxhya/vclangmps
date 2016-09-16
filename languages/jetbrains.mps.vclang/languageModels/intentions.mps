@@ -219,6 +219,7 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -3356,6 +3357,9 @@
     </node>
     <node concept="3uibUv" id="QI2IBrAA_d" role="1zkMxy">
       <ref role="3uigEE" to="wru8:~ReportingModuleLoader" resolve="ReportingModuleLoader" />
+      <node concept="3uibUv" id="4VMxViQt3Cx" role="11_B2D">
+        <ref role="3uigEE" to="ujtl:~ModuleSourceId" resolve="ModuleSourceId" />
+      </node>
     </node>
   </node>
   <node concept="2S6QgY" id="25D8tART0Fy">
@@ -3799,6 +3803,9 @@
     </node>
     <node concept="3uibUv" id="QI2IBrxZjS" role="1zkMxy">
       <ref role="3uigEE" to="wru8:~ReportingModuleLoader" resolve="ReportingModuleLoader" />
+      <node concept="3uibUv" id="4VMxViQt4ha" role="11_B2D">
+        <ref role="3uigEE" to="ujtl:~ModuleSourceId" resolve="ModuleSourceId" />
+      </node>
     </node>
     <node concept="2tJIrI" id="QI2IBry0d7" role="jymVt" />
     <node concept="3clFb_" id="QI2IBrxZv3" role="jymVt">

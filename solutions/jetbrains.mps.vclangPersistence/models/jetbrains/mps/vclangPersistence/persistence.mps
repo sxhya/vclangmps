@@ -2449,6 +2449,9 @@
     <node concept="3Tm1VV" id="3mtwAqFSuU5" role="1B3o_S" />
     <node concept="3uibUv" id="QI2IBrIzCn" role="1zkMxy">
       <ref role="3uigEE" to="wru8:~ReportingModuleLoader" resolve="ReportingModuleLoader" />
+      <node concept="3uibUv" id="4VMxViQsxJn" role="11_B2D">
+        <ref role="3uigEE" to="ujtl:~ModuleSourceId" resolve="ModuleSourceId" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4BYu3Ubt5Ap">
@@ -30814,7 +30817,7 @@
           <node concept="3cpWsn" id="47vVwnywuE_" role="3cpWs9">
             <property role="TrG5h" value="target" />
             <node concept="3Tqbb2" id="47vVwnywuEA" role="1tU5fm">
-              <ref role="ehGHo" to="51uy:1rh2nYs79n8" resolve="BaseVcConcept" />
+              <ref role="ehGHo" to="51uy:1rh2nYs7gK9" resolve="IVcConcept" />
             </node>
             <node concept="10Nm6u" id="47vVwnywuEB" role="33vP2m" />
           </node>
