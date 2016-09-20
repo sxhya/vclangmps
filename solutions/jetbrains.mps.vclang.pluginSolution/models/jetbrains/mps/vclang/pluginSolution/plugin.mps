@@ -337,12 +337,6 @@
                       <node concept="3Tm1VV" id="7yCUndyVClG" role="1B3o_S" />
                       <node concept="3cqZAl" id="7yCUndyVClI" role="3clF45" />
                       <node concept="3clFbS" id="7yCUndyVClJ" role="3clF47">
-                        <node concept="3clFbF" id="7up1Jbrldg2" role="3cqZAp">
-                          <node concept="2YIFZM" id="OV0Rn1$naY" role="3clFbG">
-                            <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
-                            <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="2gnWiAeVDwH" role="3cqZAp">
                           <node concept="2YIFZM" id="gJblk0vQR7" role="3clFbG">
                             <ref role="37wK5l" to="f93o:1dats510u9a" resolve="doTypechecking" />
@@ -649,12 +643,6 @@
                             <node concept="3Tm1VV" id="7$3LlN1ngzb" role="1B3o_S" />
                             <node concept="3cqZAl" id="7$3LlN1ngzc" role="3clF45" />
                             <node concept="3clFbS" id="7$3LlN1ngzd" role="3clF47">
-                              <node concept="3clFbF" id="7$3LlN1ngze" role="3cqZAp">
-                                <node concept="2YIFZM" id="7$3LlN1ngzf" role="3clFbG">
-                                  <ref role="1Pybhc" to="nl56:2AR5txsw7ZY" resolve="PreludeInitializer" />
-                                  <ref role="37wK5l" to="nl56:2AR5txsw80x" resolve="initPrelude" />
-                                </node>
-                              </node>
                               <node concept="3cpWs8" id="7$3LlN1nh8$" role="3cqZAp">
                                 <node concept="3cpWsn" id="7$3LlN1nh8B" role="3cpWs9">
                                   <property role="TrG5h" value="def" />
