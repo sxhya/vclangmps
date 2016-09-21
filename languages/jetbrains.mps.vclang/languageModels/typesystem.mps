@@ -12,6 +12,7 @@
     <import index="51uy" ref="r:246c3929-daa2-4b6b-b4cd-401ea917e5f6(jetbrains.mps.vclang.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -113,9 +114,9 @@
             </node>
             <node concept="liA8E" id="2u_42IKkRP3" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
-              <node concept="10M0yZ" id="2u_42IKkRPo" role="37wK5m">
-                <ref role="1PxDUh" to="f93o:7jOshQJOqzX" resolve="TypeCheckUtils" />
-                <ref role="3cqZAo" to="f93o:2u_42IKkN4Z" resolve="ERROR" />
+              <node concept="10M0yZ" id="3H$XnTiRtyB" role="37wK5m">
+                <ref role="3cqZAo" to="xq8z:2u_42IKkN4Z" resolve="ERROR" />
+                <ref role="1PxDUh" to="xq8z:7jOshQJOqzX" resolve="TypeCheckUtils" />
               </node>
             </node>
           </node>
@@ -143,9 +144,9 @@
               </node>
               <node concept="liA8E" id="2u_42IKkSbB" role="2OqNvi">
                 <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
-                <node concept="10M0yZ" id="2u_42IKkSbC" role="37wK5m">
-                  <ref role="1PxDUh" to="f93o:7jOshQJOqzX" resolve="TypeCheckUtils" />
-                  <ref role="3cqZAo" to="f93o:2u_42IKkN4Z" resolve="ERROR" />
+                <node concept="10M0yZ" id="3H$XnTiRtyA" role="37wK5m">
+                  <ref role="3cqZAo" to="xq8z:2u_42IKkN4Z" resolve="ERROR" />
+                  <ref role="1PxDUh" to="xq8z:7jOshQJOqzX" resolve="TypeCheckUtils" />
                 </node>
                 <node concept="10Nm6u" id="2u_42IKkSpQ" role="37wK5m" />
               </node>
