@@ -14,7 +14,6 @@
     <orderEntry type="module" module-name="baseLanguage-search" />
     <orderEntry type="module" module-name="baseLanguage-util" />
     <orderEntry type="module" module-name="basePlatform" />
-    <orderEntry type="module" module-name="Closures-runtime" />
     <orderEntry type="module" module-name="collections-runtime" />
     <orderEntry type="module" module-name="components" />
     <orderEntry type="module" module-name="console" />
@@ -50,7 +49,6 @@
     <orderEntry type="module" module-name="migration" />
     <orderEntry type="module" module-name="migrationAssistant" />
     <orderEntry type="module" module-name="migrations-runtime" />
-    <orderEntry type="module" module-name="miscTests" />
     <orderEntry type="module" module-name="modelchecker" />
     <orderEntry type="module" module-name="mps" />
     <orderEntry type="module" module-name="mps-ant" />
@@ -64,8 +62,6 @@
     <orderEntry type="module" module-name="mps-testing" />
     <orderEntry type="module" module-name="mps-ui" />
     <orderEntry type="module" module-name="mps-workbench" />
-    <orderEntry type="module" module-name="mpsmigration" />
-    <orderEntry type="module" module-name="MPSSupport" />
     <orderEntry type="module" module-name="openapi" />
     <orderEntry type="module" module-name="persistence" />
     <orderEntry type="module" module-name="platform" />
@@ -80,16 +76,13 @@
     <orderEntry type="module" module-name="testbench" />
     <orderEntry type="module" module-name="textgen" />
     <orderEntry type="module" module-name="tools" />
-    <orderEntry type="module" module-name="Tuples-runtime" />
     <orderEntry type="module" module-name="typesystemEngine" />
     <orderEntry type="module" module-name="typesystemIntegration" />
     <orderEntry type="module" module-name="typesystemUi" />
-    <orderEntry type="module" module-name="uiTests" />
     <orderEntry type="module" module-name="vcs" />
     <orderEntry type="module" module-name="vcs-core" />
     <orderEntry type="module" module-name="vclang" />
     <orderEntry type="module" module-name="behavior-api" />
-    <orderEntry type="module" module-name="behavior-legacy-api" />
     <orderEntry type="module" module-name="behavior-runtime" />
     <orderEntry type="module" module-name="smodelquery-runtime" />
   </component>
