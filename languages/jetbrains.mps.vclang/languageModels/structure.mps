@@ -970,7 +970,6 @@
     <property role="TrG5h" value="AbstractPattern" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="1421195895770087376" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
   </node>
   <node concept="1TIwiD" id="67S9aw8rSeD">
     <property role="3GE5qa" value="clause.pattern" />
