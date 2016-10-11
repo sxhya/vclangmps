@@ -1132,7 +1132,7 @@
   </node>
   <node concept="1TIwiD" id="3ixSrrqshCZ">
     <property role="3GE5qa" value="def" />
-    <property role="TrG5h" value="AbstractDefinition" />
+    <property role="TrG5h" value="ClassField" />
     <property role="34LRSv" value="abstract" />
     <property role="EcuMT" value="3792560536687811135" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
@@ -1219,7 +1219,7 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2186453511546673537" />
-      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="AbstractDefinition" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="ClassField" />
     </node>
   </node>
   <node concept="1TIwiD" id="3J0mSWJrk4E">
@@ -1435,7 +1435,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="AbstractDefinition" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="ClassField" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JzqlRalNKy">
@@ -1495,6 +1495,95 @@
     </node>
     <node concept="PrWs8" id="7Vm3Z_eZmeh" role="PrDN$">
       <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JC1rJyYX3q">
+    <property role="EcuMT" value="7775471061180338394" />
+    <property role="3GE5qa" value="classExtension" />
+    <property role="TrG5h" value="ClassView" />
+    <property role="34LRSv" value="view" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyj" id="6JC1rJyYX4D" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180338473" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="classDef" />
+      <ref role="20lvS9" node="6JC1rJyYX4w" resolve="ClassDefExpression" />
+    </node>
+    <node concept="1TJgyj" id="6JC1rJyZhFM" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180422898" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="classViewFields" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6JC1rJyYX3r" resolve="ClassViewField" />
+    </node>
+    <node concept="1TJgyj" id="6JC1rJyZV9F" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180592747" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classifyingField" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="ClassField" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" resolve="ref" />
+    </node>
+    <node concept="PrWs8" id="6JC1rJyZW0c" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
+    </node>
+    <node concept="PrWs8" id="5N7S6fCcmNY" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JC1rJyYX3r">
+    <property role="EcuMT" value="7775471061180338395" />
+    <property role="3GE5qa" value="classExtension" />
+    <property role="TrG5h" value="ClassViewField" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyj" id="6JC1rJyZiyk" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180426388" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classField" />
+      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="ClassField" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" resolve="ref" />
+    </node>
+    <node concept="PrWs8" id="6JC1rJyZizv" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
+    </node>
+    <node concept="PrWs8" id="5N7S6fCcmO5" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JC1rJyYX3s">
+    <property role="EcuMT" value="7775471061180338396" />
+    <property role="3GE5qa" value="classExtension" />
+    <property role="TrG5h" value="ClassViewInstance" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyj" id="6JC1rJyZiAb" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180426635" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="term" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6JC1rJyZiBf" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
+    </node>
+    <node concept="PrWs8" id="6JC1rJyZiA9" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
+    </node>
+    <node concept="PrWs8" id="5N7S6fCcmOd" role="PzmwI">
+      <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JC1rJyYX4w">
+    <property role="EcuMT" value="7775471061180338464" />
+    <property role="3GE5qa" value="classExtension" />
+    <property role="TrG5h" value="ClassDefExpression" />
+    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
+    <node concept="1TJgyj" id="6JC1rJyYX4x" role="1TKVEi">
+      <property role="IQ2ns" value="7775471061180338465" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classDef" />
+      <ref role="20ksaX" node="43YHIaBbjCZ" resolve="def" />
+      <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
     </node>
   </node>
 </model>
