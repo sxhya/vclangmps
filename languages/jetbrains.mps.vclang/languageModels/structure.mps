@@ -1148,6 +1148,9 @@
     <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
+    <node concept="PrWs8" id="2jpq9$y3R9f" role="PzmwI">
+      <ref role="PrY4T" node="2jpq9$y3OtL" resolve="IField" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ixSrrqF9BL">
     <property role="3GE5qa" value="expression" />
@@ -1219,7 +1222,11 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2186453511546673537" />
-      <ref role="20lvS9" node="3ixSrrqshCZ" resolve="ClassField" />
+      <ref role="20ksaX" node="5LKdqecnJcJ" resolve="ref" />
+      <ref role="20lvS9" node="2jpq9$y3OtL" resolve="IField" />
+    </node>
+    <node concept="PrWs8" id="Y6hAHufebX" role="PzmwI">
+      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="3J0mSWJrk4E">
@@ -1531,6 +1538,9 @@
     <node concept="PrWs8" id="5N7S6fCcmNY" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
+    <node concept="PrWs8" id="5yCRnzPxe7W" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6JC1rJyYX3r">
     <property role="EcuMT" value="7775471061180338395" />
@@ -1549,6 +1559,12 @@
     </node>
     <node concept="PrWs8" id="5N7S6fCcmO5" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="5yCRnzPxe85" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="2jpq9$y3R93" role="PzmwI">
+      <ref role="PrY4T" node="2jpq9$y3OtL" resolve="IField" />
     </node>
   </node>
   <node concept="1TIwiD" id="6JC1rJyYX3s">
@@ -1572,6 +1588,9 @@
     <node concept="PrWs8" id="5N7S6fCcmOd" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
+    <node concept="PrWs8" id="5yCRnzPxe8f" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6JC1rJyYX4w">
     <property role="EcuMT" value="7775471061180338464" />
@@ -1584,6 +1603,14 @@
       <property role="20kJfa" value="classDef" />
       <ref role="20ksaX" node="43YHIaBbjCZ" resolve="def" />
       <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2jpq9$y3OtL">
+    <property role="EcuMT" value="2655268462222329713" />
+    <property role="3GE5qa" value="classExtension" />
+    <property role="TrG5h" value="IField" />
+    <node concept="PrWs8" id="2jpq9$y3R8W" role="PrDN$">
+      <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
     </node>
   </node>
 </model>
