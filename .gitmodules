@@ -2,5 +2,5 @@
 	path = solutions/jetpad.vclang/vclang
 	url = https://github.com/valis/vclang.git
 [submodule "solutions/vclang-lib"]
-	path = solutions/vclang-lib
+	path = solutions/sandbox/vclang-lib
 	url = https://github.com/valis/vclang-lib.git

@@ -26,8 +26,8 @@ mvn package -Dmaven.test.skip=true -f ./solutions/jetpad.vclang/vclang/
 
 # Anltr runtime should be installed automatically while executing the previous command
 # At this momemnt we should be able to locate it within maven repo
-ANTLR_RUNTIME=$(find $MAVEN_REPO -name 'antlr4-runtime-4.5.jar')
-if [ $? != 0 ] || [ -z $ANTLR_RUNTIME ]; then
+ANTLR_RUNTIME="${MAVEN_REPO}/org/antlr/antlr4-runtime/4.5/antlr4-runtime-4.5.jar"
+if [ ! -f $ANTLR_RUNTIME ]; then
     echo "Was unable to locate antlr4-runtime-4.5.jar within maven repo"
     exit 1
 else
