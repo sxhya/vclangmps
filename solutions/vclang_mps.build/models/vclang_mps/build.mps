@@ -151,8 +151,8 @@
       <node concept="55IIr" id="2gDt65HUZEv" role="398pKh">
         <node concept="2Ry0Ak" id="2gDt65HUZFX" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2vgS0u0$RuQ" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS 3.4 EAP" />
+          <node concept="2Ry0Ak" id="5SG3GMx$Zt9" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS 3.4" />
           </node>
         </node>
       </node>

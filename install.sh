@@ -38,7 +38,7 @@ cp $ANTLR_RUNTIME ./solutions/jetpad.vclang/vclang/target
 
 # STEP 2: Make vclang_mps project
 MPSHOME_ESC=$(sed 's/[\/\\\.]/\\&/g' <<<"$MPSHOME")
-sed -i -e "s/\${basedir}\/..\/MPS 3.4 EAP/$MPSHOME_ESC/" build.xml
+sed -i -e "s/\${basedir}\/..\/MPS 3.4/$MPSHOME_ESC/" build.xml
 rm -rf "${MPSHOME}/plugins/vclang_mps/"
 ant clean && ant generate && ant
 

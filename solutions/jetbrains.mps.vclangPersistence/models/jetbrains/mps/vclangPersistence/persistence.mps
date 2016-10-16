@@ -29623,8 +29623,8 @@
                 <node concept="3cpWs8" id="1TnPY9DNHvm" role="3cqZAp">
                   <node concept="3cpWsn" id="1TnPY9DNHvn" role="3cpWs9">
                     <property role="TrG5h" value="type" />
-                    <node concept="3uibUv" id="2pSwPJZavpv" role="1tU5fm">
-                      <ref role="3uigEE" to="ohsl:~Type" resolve="Type" />
+                    <node concept="3uibUv" id="5SG3GMxw1PN" role="1tU5fm">
+                      <ref role="3uigEE" to="ohsl:~TypeMax" resolve="TypeMax" />
                     </node>
                     <node concept="3K4zz7" id="1TnPY9DNHvp" role="33vP2m">
                       <node concept="10Nm6u" id="1TnPY9DNHvq" role="3K4GZi" />
@@ -29639,7 +29639,7 @@
                           <ref role="3cqZAo" node="1TnPY9DNHvc" resolve="arg" />
                         </node>
                         <node concept="liA8E" id="1TnPY9DNHvw" role="2OqNvi">
-                          <ref role="37wK5l" to="nx2r:~Expression.getType():com.jetbrains.jetpad.vclang.term.expr.type.Type" resolve="getType" />
+                          <ref role="37wK5l" to="nx2r:~Expression.getType():com.jetbrains.jetpad.vclang.term.expr.type.TypeMax" resolve="getType" />
                         </node>
                       </node>
                     </node>
