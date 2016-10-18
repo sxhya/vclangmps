@@ -128,7 +128,7 @@
       </concept>
       <concept id="3792560536691710449" name="jetbrains.mps.vclang.structure.InferHoleExpression" flags="ng" index="3I3nx7" />
       <concept id="3792560536692252668" name="jetbrains.mps.vclang.structure.NameReference" flags="ng" index="3I5jTa" />
-      <concept id="3792560536687811135" name="jetbrains.mps.vclang.structure.AbstractDefinition" flags="ng" index="3IOfI9" />
+      <concept id="3792560536687811135" name="jetbrains.mps.vclang.structure.ClassField" flags="ng" index="3IOfI9" />
       <concept id="7019128712800016657" name="jetbrains.mps.vclang.structure.StaticFieldAccessOperation" flags="ng" index="1Qm6PL" />
       <concept id="7019128712799984494" name="jetbrains.mps.vclang.structure.DotExpression" flags="ng" index="1QmeWe">
         <child id="7019128712799984498" name="leftExpression" index="1QmeWi" />

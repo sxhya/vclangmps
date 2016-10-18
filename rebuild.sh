@@ -1,4 +1,4 @@
-MPSPATH='../MPS 3.4 EAP'
+MPSPATH='../MPS 3.4'
 rm -rf "${MPSPATH}/plugins/vclang_mps/"
 ant clean && ant
 mv ./build/artifacts/vclang_mps/vclang_mps.zip "${MPSPATH}/plugins/"
