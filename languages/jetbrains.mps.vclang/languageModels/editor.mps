@@ -1474,6 +1474,7 @@
       </node>
       <node concept="3F0A7n" id="6dbcPfPFKJq" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6dbcPfPFKGa" resolve="arrow" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
         <node concept="pkWqt" id="4ojGMosuPCl" role="pqm2j">
           <node concept="3clFbS" id="4ojGMosuPCm" role="2VODD2">
             <node concept="3clFbF" id="4ojGMosuPD$" role="3cqZAp">
