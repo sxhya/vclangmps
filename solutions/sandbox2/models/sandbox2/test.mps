@@ -31,7 +31,6 @@
         <child id="3792560536692211452" name="defs" index="3I5tXa" />
       </concept>
       <concept id="4029558497612201596" name="jetbrains.mps.vclang.structure.OpenScopeCommand" flags="ng" index="2kfM1A" />
-      <concept id="4029558497612201600" name="jetbrains.mps.vclang.structure.CloseScopeCommand" flags="ng" index="2kfM2q" />
       <concept id="4305541914300334378" name="jetbrains.mps.vclang.structure.AbstractTypedArgument" flags="ng" index="kFhE_">
         <property id="4305541914300335776" name="isImplicit" index="kFhOJ" />
         <child id="4305541914300335778" name="typeExpr" index="kFhOH" />
@@ -9203,12 +9202,6 @@
     <property role="TrG5h" value="Data-List-Properties" />
     <node concept="2kfM1A" id="1CQ_Pbe3Akd" role="1Ra7oe">
       <ref role="3gbGqc" node="1CQ_Pbe3zcz" resolve="Paths" />
-    </node>
-    <node concept="2kfM2q" id="1CQ_Pbe3Ake" role="1Ra7oe">
-      <ref role="3gbGqc" node="1CQ_Pbe3zcz" resolve="Paths" />
-      <node concept="3I5jTa" id="1CQ_Pbe3EB1" role="3I5tXa">
-        <ref role="3gbGqc" node="1CQ_Pbe3ziF" resolve="concat" />
-      </node>
     </node>
     <node concept="2kfM1A" id="1CQ_Pbe3Akg" role="1Ra7oe">
       <ref role="3gbGqc" node="1CQ_Pbe3_co" resolve="Data-Empty" />

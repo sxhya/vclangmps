@@ -750,6 +750,11 @@
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="4029558497612201599" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
+    <node concept="1TJgyi" id="1cMTyVdX8XW" role="1TKVEl">
+      <property role="IQ2nx" value="1383421124254404476" />
+      <property role="TrG5h" value="isHiding" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="3vFRxEzPg4y" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="classifier" />
@@ -771,14 +776,6 @@
       <property role="IQ2ns" value="3792560536692211452" />
       <ref role="20lvS9" node="3ixSrrqHdZW" resolve="NameReference" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="3vFRxEzPfU0">
-    <property role="3GE5qa" value="def.scope" />
-    <property role="TrG5h" value="CloseScopeCommand" />
-    <property role="34LRSv" value="close" />
-    <property role="R4oN_" value="Close scope" />
-    <property role="EcuMT" value="4029558497612201600" />
-    <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
   </node>
   <node concept="1TIwiD" id="3vFRxEzPfU1">
     <property role="3GE5qa" value="def.scope" />
@@ -1612,6 +1609,16 @@
     <node concept="PrWs8" id="2jpq9$y3R8W" role="PrDN$">
       <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
     </node>
+    <node concept="PrWs8" id="1cMTyVe2TS8" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1cMTyVedO6D">
+    <property role="EcuMT" value="1383421124258775465" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="OmegaExpression" />
+    <property role="34LRSv" value="Type" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
   </node>
 </model>
 

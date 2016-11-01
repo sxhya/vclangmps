@@ -1480,9 +1480,15 @@
         <node concept="3clFbF" id="2JojTvP$dTB" role="3cqZAp">
           <node concept="2YIFZM" id="1JzqlR9BIRN" role="3clFbG">
             <ref role="1Pybhc" to="6lbs:~TypecheckingOrdering" resolve="TypecheckingOrdering" />
-            <ref role="37wK5l" to="6lbs:~TypecheckingOrdering.typecheck(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,java.util.List,com.jetbrains.jetpad.vclang.error.ErrorReporter,boolean):boolean" resolve="typecheck" />
+            <ref role="37wK5l" to="6lbs:~TypecheckingOrdering.typecheck(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,java.util.List,com.jetbrains.jetpad.vclang.error.ErrorReporter,boolean):boolean" resolve="typecheck" />
             <node concept="37vLTw" id="7adjkcfSCs5" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqIQt" resolve="myTypecheckerState" />
+            </node>
+            <node concept="37vLTw" id="7U2UfNKwvYo" role="37wK5m">
+              <ref role="3cqZAo" node="78OOKGWqDgR" resolve="ssnp" />
+            </node>
+            <node concept="37vLTw" id="7U2UfNKwwGY" role="37wK5m">
+              <ref role="3cqZAo" node="78OOKGWqDxq" resolve="sdnp" />
             </node>
             <node concept="2ShNRf" id="1JzqlR9BIRP" role="37wK5m">
               <node concept="Tc6Ow" id="1JzqlR9BIRQ" role="2ShVmc">
