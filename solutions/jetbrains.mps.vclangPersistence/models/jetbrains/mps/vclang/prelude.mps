@@ -1240,21 +1240,6 @@
       </node>
       <node concept="3Tm6S6" id="78OOKGWqReo" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="78OOKGWqIQt" role="jymVt">
-      <property role="TrG5h" value="myTypecheckerState" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="false" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="78OOKGWqIQx" role="1tU5fm">
-        <ref role="3uigEE" to="ssyg:~TypecheckerState" resolve="TypecheckerState" />
-      </node>
-      <node concept="2ShNRf" id="78OOKGWqIQy" role="33vP2m">
-        <node concept="1pGfFk" id="78OOKGWqIQz" role="2ShVmc">
-          <ref role="37wK5l" to="ssyg:~TypecheckerState.&lt;init&gt;()" resolve="TypecheckerState" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="78OOKGWqIQw" role="1B3o_S" />
-    </node>
     <node concept="312cEg" id="78OOKGWqIJC" role="jymVt">
       <property role="TrG5h" value="myPreludeNamespace" />
       <property role="34CwA1" value="false" />
@@ -1293,6 +1278,12 @@
         <property role="TrG5h" value="sdnp" />
         <node concept="3uibUv" id="78OOKGWqDG2" role="1tU5fm">
           <ref role="3uigEE" to="h2pl:~SimpleDynamicNamespaceProvider" resolve="SimpleDynamicNamespaceProvider" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="$YKDbKjg2G" role="3clF46">
+        <property role="TrG5h" value="typecheckerState" />
+        <node concept="3uibUv" id="$YKDbKjgvr" role="1tU5fm">
+          <ref role="3uigEE" to="ssyg:~TypecheckerState" resolve="TypecheckerState" />
         </node>
       </node>
       <node concept="3cqZAl" id="hjYuQZDrEP" role="3clF45" />
@@ -1481,10 +1472,10 @@
           <node concept="2YIFZM" id="1JzqlR9BIRN" role="3clFbG">
             <ref role="1Pybhc" to="6lbs:~TypecheckingOrdering" resolve="TypecheckingOrdering" />
             <ref role="37wK5l" to="6lbs:~TypecheckingOrdering.typecheck(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,java.util.List,com.jetbrains.jetpad.vclang.error.ErrorReporter,boolean):boolean" resolve="typecheck" />
-            <node concept="37vLTw" id="7adjkcfSCs5" role="37wK5m">
-              <ref role="3cqZAo" node="78OOKGWqIQt" resolve="myTypecheckerState" />
+            <node concept="37vLTw" id="$YKDbKjgQ7" role="37wK5m">
+              <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
             </node>
-            <node concept="37vLTw" id="7U2UfNKwvYo" role="37wK5m">
+            <node concept="37vLTw" id="$YKDbKjk3d" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqDgR" resolve="ssnp" />
             </node>
             <node concept="37vLTw" id="7U2UfNKwwGY" role="37wK5m">
@@ -1516,22 +1507,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="hjYuQZDrdO" role="jymVt" />
-    <node concept="3clFb_" id="78OOKGWqI40" role="jymVt">
-      <property role="TrG5h" value="getTypecheckerState" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="2AR5txsw80$" role="3clF47">
-        <node concept="3cpWs6" id="2s5gYCoDKX4" role="3cqZAp">
-          <node concept="37vLTw" id="7adjkcfSCBX" role="3cqZAk">
-            <ref role="3cqZAo" node="78OOKGWqIQt" resolve="myTypecheckerState" />
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="2s5gYCoDI6h" role="3clF45">
-        <ref role="3uigEE" to="ssyg:~TypecheckerState" resolve="TypecheckerState" />
-      </node>
-      <node concept="3Tm1VV" id="2AR5txsw80i" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="hjYuQZDC20" role="jymVt" />
     <node concept="3clFb_" id="hjYuQZDDnW" role="jymVt">
       <property role="1EzhhJ" value="false" />
