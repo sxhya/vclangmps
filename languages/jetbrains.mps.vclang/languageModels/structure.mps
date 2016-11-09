@@ -1525,7 +1525,13 @@
     <property role="EcuMT" value="7775471061180338396" />
     <property role="3GE5qa" value="classExtension" />
     <property role="TrG5h" value="ClassViewInstance" />
+    <property role="34LRSv" value="instance" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyi" id="7iiO5wuHGkV" role="1TKVEl">
+      <property role="IQ2nx" value="8400005331890390331" />
+      <property role="TrG5h" value="default" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6JC1rJyZiAb" role="1TKVEi">
       <property role="IQ2ns" value="7775471061180426635" />
       <property role="20lmBu" value="aggregation" />

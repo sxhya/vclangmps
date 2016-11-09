@@ -36052,8 +36052,18 @@
       <node concept="3Tm1VV" id="Wi1TF0WNPb" role="1B3o_S" />
       <node concept="10P_77" id="Wi1TF0WNPd" role="3clF45" />
       <node concept="3clFbS" id="Wi1TF0WNPg" role="3clF47">
-        <node concept="3clFbF" id="Wi1TF0WNPj" role="3cqZAp">
-          <node concept="3clFbT" id="Wi1TF0WNPi" role="3clFbG" />
+        <node concept="3clFbF" id="7iiO5wuHRou" role="3cqZAp">
+          <node concept="2OqwBi" id="7iiO5wuHSzI" role="3clFbG">
+            <node concept="1PxgMI" id="7iiO5wuHS8M" role="2Oq$k0">
+              <ref role="1m5ApE" to="51uy:6JC1rJyYX3s" resolve="ClassViewInstance" />
+              <node concept="37vLTw" id="7iiO5wuHRos" role="1m5AlR">
+                <ref role="3cqZAo" node="OV0Rn1wk2P" resolve="thisNode" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="7iiO5wuHSZo" role="2OqNvi">
+              <ref role="3TsBF5" to="51uy:7iiO5wuHGkV" resolve="default" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="Wi1TF0WNPh" role="2AJF6D">
