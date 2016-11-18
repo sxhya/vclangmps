@@ -12,15 +12,9 @@
     <import index="hhlq" ref="r:6b9cd0c8-0e0b-4e6d-aed3-291e82435be5(jetbrains.mps.vclang.behavior)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="2968" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term(jetpad.vclang/)" />
-    <import index="thjl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.definition(jetpad.vclang/)" />
-    <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
     <import index="h2pl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.namespace(jetpad.vclang/)" />
     <import index="ciro" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.error(jetpad.vclang/)" />
-    <import index="tqzu" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang(jetpad.vclang/)" />
     <import index="g7em" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.oneshot(jetpad.vclang/)" />
-    <import index="ujtl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.source(jetpad.vclang/)" />
-    <import index="mhwz" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.utils(jetpad.vclang/)" />
-    <import index="f93o" ref="r:318df55d-23ea-4c41-a579-83aead8cbe66(jetbrains.mps.vclang.intentions)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
     <import index="ssyg" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking(jetpad.vclang/)" />
     <import index="8ewh" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.source.file(jetpad.vclang/)" />
@@ -1242,14 +1236,14 @@
       </node>
       <node concept="37vLTG" id="78OOKGWqDgR" role="3clF46">
         <property role="TrG5h" value="ssnp" />
-        <node concept="3uibUv" id="78OOKGWqDww" role="1tU5fm">
-          <ref role="3uigEE" to="h2pl:~SimpleStaticNamespaceProvider" resolve="SimpleStaticNamespaceProvider" />
+        <node concept="3uibUv" id="4hAEUAIX3lA" role="1tU5fm">
+          <ref role="3uigEE" to="h2pl:~StaticNamespaceProvider" resolve="StaticNamespaceProvider" />
         </node>
       </node>
       <node concept="37vLTG" id="78OOKGWqDxq" role="3clF46">
         <property role="TrG5h" value="sdnp" />
-        <node concept="3uibUv" id="78OOKGWqDG2" role="1tU5fm">
-          <ref role="3uigEE" to="h2pl:~SimpleDynamicNamespaceProvider" resolve="SimpleDynamicNamespaceProvider" />
+        <node concept="3uibUv" id="4hAEUAIX3HG" role="1tU5fm">
+          <ref role="3uigEE" to="h2pl:~DynamicNamespaceProvider" resolve="DynamicNamespaceProvider" />
         </node>
       </node>
       <node concept="37vLTG" id="$YKDbKjg2G" role="3clF46">
@@ -1299,29 +1293,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="yXcBUv9JVk" role="3cqZAp" />
-        <node concept="3cpWs8" id="70$rNZWfHdq" role="3cqZAp">
-          <node concept="3cpWsn" id="RHOj$UiAmk" role="3cpWs9">
-            <property role="TrG5h" value="nameResolver" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="RHOj$UiAml" role="1tU5fm">
-              <ref role="3uigEE" to="eryk:~NameResolver" resolve="NameResolver" />
-            </node>
-            <node concept="2ShNRf" id="RHOj$UiAyS" role="33vP2m">
-              <node concept="1pGfFk" id="RHOj$UiAyx" role="2ShVmc">
-                <ref role="37wK5l" to="eryk:~NameResolver.&lt;init&gt;(com.jetbrains.jetpad.vclang.naming.namespace.ModuleNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider)" resolve="NameResolver" />
-                <node concept="37vLTw" id="78OOKGWqGqK" role="37wK5m">
-                  <ref role="3cqZAo" node="78OOKGWqG1J" resolve="smnp" />
-                </node>
-                <node concept="37vLTw" id="78OOKGWqDHI" role="37wK5m">
-                  <ref role="3cqZAo" node="78OOKGWqDgR" resolve="ssnp" />
-                </node>
-                <node concept="37vLTw" id="78OOKGWqDUt" role="37wK5m">
-                  <ref role="3cqZAo" node="78OOKGWqDxq" resolve="sdnp" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="31HPKqicMpf" role="3cqZAp">
           <node concept="3cpWsn" id="RHOj$Ui_lY" role="3cpWs9">
             <property role="TrG5h" value="errorReporter" />
@@ -1385,19 +1356,14 @@
             <node concept="37vLTw" id="78OOKGWqHuC" role="37vLTJ">
               <ref role="3cqZAo" node="78OOKGWqIJC" resolve="myPreludeNamespace" />
             </node>
-            <node concept="10QFUN" id="70$rNZWfGF3" role="37vLTx">
-              <node concept="3uibUv" id="70$rNZWfGF1" role="10QFUM">
-                <ref role="3uigEE" to="h2pl:~SimpleNamespace" resolve="SimpleNamespace" />
+            <node concept="2OqwBi" id="70$rNZWfNul" role="37vLTx">
+              <node concept="37vLTw" id="78OOKGWqEgJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="78OOKGWqDgR" resolve="ssnp" />
               </node>
-              <node concept="2OqwBi" id="70$rNZWfNul" role="10QFUP">
-                <node concept="37vLTw" id="78OOKGWqEgJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="78OOKGWqDgR" resolve="ssnp" />
-                </node>
-                <node concept="liA8E" id="70$rNZWfNF5" role="2OqNvi">
-                  <ref role="37wK5l" to="h2pl:~SimpleStaticNamespaceProvider.forDefinition(com.jetbrains.jetpad.vclang.term.Abstract$Definition):com.jetbrains.jetpad.vclang.naming.namespace.Namespace" resolve="forDefinition" />
-                  <node concept="37vLTw" id="78OOKGWqI0j" role="37wK5m">
-                    <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
-                  </node>
+              <node concept="liA8E" id="70$rNZWfNF5" role="2OqNvi">
+                <ref role="37wK5l" to="h2pl:~StaticNamespaceProvider.forDefinition(com.jetbrains.jetpad.vclang.term.Abstract$Definition):com.jetbrains.jetpad.vclang.naming.namespace.Namespace" resolve="forDefinition" />
+                <node concept="37vLTw" id="78OOKGWqI0j" role="37wK5m">
+                  <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
                 </node>
               </node>
             </node>

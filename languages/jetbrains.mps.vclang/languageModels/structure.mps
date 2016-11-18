@@ -548,6 +548,9 @@
     <node concept="PrWs8" id="2_jEsYwBdI8" role="PzmwI">
       <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
     </node>
+    <node concept="PrWs8" id="37E91bZPrcG" role="PzmwI">
+      <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
+    </node>
     <node concept="PrWs8" id="7Vm3Z_fh239" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -791,20 +794,6 @@
   <node concept="PlHQZ" id="3vFRxEzPv0O">
     <property role="TrG5h" value="IClassMember" />
     <property role="EcuMT" value="4029558497612263476" />
-  </node>
-  <node concept="1TIwiD" id="5Hyh$MjdShy">
-    <property role="3GE5qa" value="def" />
-    <property role="TrG5h" value="OverrideModifier" />
-    <property role="34LRSv" value="override" />
-    <property role="R4oN_" value="Override inherited class member" />
-    <property role="EcuMT" value="6584902899870434402" />
-    <ref role="1TJDcQ" node="6dbcPfPFLfE" resolve="DefFunction" />
-    <node concept="1TJgyj" id="5Hyh$MjdShF" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="overriddenFunction" />
-      <property role="IQ2ns" value="6584902899870434411" />
-      <ref role="20lvS9" node="6dbcPfPFLfE" resolve="DefFunction" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1dats510Hjx">
     <property role="3GE5qa" value="expression" />
@@ -1429,6 +1418,9 @@
     </node>
     <node concept="PrWs8" id="5yCRnzPxe7W" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="37E91bZPpoc" role="PzmwI">
+      <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
     </node>
   </node>
   <node concept="1TIwiD" id="6JC1rJyYX3r">
