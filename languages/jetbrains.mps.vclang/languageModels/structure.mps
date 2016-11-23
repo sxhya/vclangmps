@@ -1106,9 +1106,6 @@
     <node concept="PrWs8" id="3ixSrrqshD0" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
     </node>
-    <node concept="PrWs8" id="XSZc31JgLH" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
-    </node>
     <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
