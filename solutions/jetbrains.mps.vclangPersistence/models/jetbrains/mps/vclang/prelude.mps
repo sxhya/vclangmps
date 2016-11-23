@@ -18,6 +18,8 @@
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
     <import index="ssyg" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking(jetpad.vclang/)" />
     <import index="8ewh" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.source.file(jetpad.vclang/)" />
+    <import index="ujtl" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module.source(jetpad.vclang/)" />
+    <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1222,8 +1224,8 @@
       <property role="TrG5h" value="myPreludeModuleId" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="78OOKGWqLhQ" role="1B3o_S" />
-      <node concept="3uibUv" id="78OOKGWqNgU" role="1tU5fm">
-        <ref role="3uigEE" to="8ewh:~FileModuleSourceId" resolve="FileModuleSourceId" />
+      <node concept="3uibUv" id="6k8L4IMYDnv" role="1tU5fm">
+        <ref role="3uigEE" to="ujtl:~SourceId" resolve="SourceId" />
       </node>
     </node>
     <node concept="2tJIrI" id="YiFSmVb5VQ" role="jymVt" />
@@ -1374,13 +1376,13 @@
             <node concept="37vLTw" id="78OOKGWqO0c" role="37vLTJ">
               <ref role="3cqZAo" node="78OOKGWqNnf" resolve="myPreludeModuleId" />
             </node>
-            <node concept="2ShNRf" id="55NawVYjDi0" role="37vLTx">
-              <node concept="1pGfFk" id="55NawVYjDhL" role="2ShVmc">
-                <ref role="37wK5l" to="8ewh:~FileModuleSourceId.&lt;init&gt;(com.jetbrains.jetpad.vclang.module.ModulePath)" resolve="FileModuleSourceId" />
-                <node concept="2ShNRf" id="55NawVYjDUj" role="37wK5m">
-                  <node concept="1pGfFk" id="55NawVYjDU4" role="2ShVmc">
+            <node concept="2ShNRf" id="QI2IBrQmCF" role="37vLTx">
+              <node concept="1pGfFk" id="dOWAxcD2Br" role="2ShVmc">
+                <ref role="37wK5l" to="xq8z:dOWAxcCzfu" resolve="ModulePathId" />
+                <node concept="2ShNRf" id="dOWAxcD511" role="37wK5m">
+                  <node concept="1pGfFk" id="dOWAxcD5cm" role="2ShVmc">
                     <ref role="37wK5l" to="wru8:~ModulePath.&lt;init&gt;(java.lang.String)" resolve="ModulePath" />
-                    <node concept="Xl_RD" id="55NawVYjDW3" role="37wK5m">
+                    <node concept="Xl_RD" id="dOWAxcD4AX" role="37wK5m">
                       <property role="Xl_RC" value="Prelude" />
                     </node>
                   </node>
@@ -1479,8 +1481,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1ejKpEq$B$X" role="1B3o_S" />
-      <node concept="3uibUv" id="1ejKpEq$CU0" role="3clF45">
-        <ref role="3uigEE" to="8ewh:~FileModuleSourceId" resolve="FileModuleSourceId" />
+      <node concept="3uibUv" id="6k8L4IMYCYy" role="3clF45">
+        <ref role="3uigEE" to="ujtl:~SourceId" resolve="SourceId" />
       </node>
     </node>
     <node concept="2tJIrI" id="1ejKpEq$DSI" role="jymVt" />

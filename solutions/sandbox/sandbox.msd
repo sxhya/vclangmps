@@ -4,6 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="vclang-lib/test" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="vclang_articles" />
   </models>
   <sourcePath />
   <languageVersions>
