@@ -283,6 +283,9 @@
     <node concept="PrWs8" id="3wdrnIK3BVL" role="PzmwI">
       <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
     </node>
+    <node concept="PrWs8" id="NuAgECrb1t" role="PzmwI">
+      <ref role="PrY4T" node="2_jEsYwBdqH" resolve="HasTypedArguments" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Z42ctSV7V8">
     <property role="TrG5h" value="Definition" />
