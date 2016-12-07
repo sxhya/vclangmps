@@ -2977,7 +2977,7 @@
         <node concept="3Tm1VV" id="3Om3gvqa8ln" role="1B3o_S" />
         <node concept="3clFbS" id="3Om3gvqa8lo" role="3clF47">
           <node concept="XkiVB" id="3Om3gvqa9$F" role="3cqZAp">
-            <ref role="37wK5l" to="8ewh:~ParseSource.&lt;init&gt;(com.jetbrains.jetpad.vclang.module.source.SourceId,java.io.InputStream)" resolve="ParseSource" />
+            <ref role="37wK5l" to="8ewh:~ParseSource.&lt;init&gt;(com.jetbrains.jetpad.vclang.module.source.SourceId,java.io.Reader)" resolve="ParseSource" />
             <node concept="2ShNRf" id="QI2IBrQmCF" role="37wK5m">
               <node concept="1pGfFk" id="dOWAxcD2Br" role="2ShVmc">
                 <ref role="37wK5l" node="dOWAxcCzfu" resolve="ModulePathId" />
@@ -2986,16 +2986,21 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5snm5UUgAaH" role="37wK5m">
-              <node concept="37vLTw" id="QI2IBrQqXs" role="2Oq$k0">
-                <ref role="3cqZAo" node="3Om3gvqabCN" resolve="ds" />
-              </node>
-              <node concept="liA8E" id="5snm5UUgAgX" role="2OqNvi">
-                <ref role="37wK5l" to="ends:~FolderDataSource.openInputStream(java.lang.String):java.io.InputStream" resolve="openInputStream" />
-                <node concept="1rXfSq" id="QI2IBrR0jF" role="37wK5m">
-                  <ref role="37wK5l" node="QI2IBrQRaT" resolve="toFileName" />
-                  <node concept="37vLTw" id="QI2IBrR0s4" role="37wK5m">
-                    <ref role="3cqZAo" node="3Om3gvqa8nS" resolve="path" />
+            <node concept="2ShNRf" id="39cNGxUmKrM" role="37wK5m">
+              <node concept="1pGfFk" id="39cNGxUnb2H" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
+                <node concept="2OqwBi" id="5snm5UUgAaH" role="37wK5m">
+                  <node concept="37vLTw" id="QI2IBrQqXs" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Om3gvqabCN" resolve="ds" />
+                  </node>
+                  <node concept="liA8E" id="5snm5UUgAgX" role="2OqNvi">
+                    <ref role="37wK5l" to="ends:~FolderDataSource.openInputStream(java.lang.String):java.io.InputStream" resolve="openInputStream" />
+                    <node concept="1rXfSq" id="QI2IBrR0jF" role="37wK5m">
+                      <ref role="37wK5l" node="QI2IBrQRaT" resolve="toFileName" />
+                      <node concept="37vLTw" id="QI2IBrR0s4" role="37wK5m">
+                        <ref role="3cqZAo" node="3Om3gvqa8nS" resolve="path" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -14952,8 +14957,8 @@
                   <node concept="37vLTw" id="1K1qkmWUvDY" role="2Oq$k0">
                     <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                   </node>
-                  <node concept="2OwXpG" id="1K1qkmWUwxX" role="2OqNvi">
-                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                  <node concept="2OwXpG" id="39cNGxUiuGa" role="2OqNvi">
+                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.hLevel" resolve="hLevel" />
                   </node>
                 </node>
                 <node concept="10M0yZ" id="71aF$X532U6" role="3uHU7w">
@@ -14977,8 +14982,8 @@
                             <node concept="37vLTw" id="1K1qkmWUuTK" role="2Oq$k0">
                               <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                             </node>
-                            <node concept="2OwXpG" id="1K1qkmWUfSZ" role="2OqNvi">
-                              <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                            <node concept="2OwXpG" id="39cNGxUr6ah" role="2OqNvi">
+                              <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.pLevel" resolve="pLevel" />
                             </node>
                           </node>
                         </node>
@@ -14992,8 +14997,8 @@
                   <node concept="37vLTw" id="1K1qkmWUvFj" role="2Oq$k0">
                     <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                   </node>
-                  <node concept="2OwXpG" id="1K1qkmWUwAw" role="2OqNvi">
-                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                  <node concept="2OwXpG" id="39cNGxUiv0m" role="2OqNvi">
+                    <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.hLevel" resolve="hLevel" />
                   </node>
                 </node>
                 <node concept="10M0yZ" id="1K1qkmWUwrI" role="3uHU7w">
@@ -15016,8 +15021,8 @@
                           <node concept="37vLTw" id="1K1qkmWUvzd" role="2Oq$k0">
                             <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                           </node>
-                          <node concept="2OwXpG" id="1K1qkmWUg48" role="2OqNvi">
-                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                          <node concept="2OwXpG" id="39cNGxUivuV" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.hLevel" resolve="hLevel" />
                           </node>
                         </node>
                       </node>
@@ -15032,8 +15037,8 @@
                           <node concept="37vLTw" id="1K1qkmWUvxt" role="2Oq$k0">
                             <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                           </node>
-                          <node concept="2OwXpG" id="1K1qkmWUfYy" role="2OqNvi">
-                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                          <node concept="2OwXpG" id="39cNGxUr6zT" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.pLevel" resolve="pLevel" />
                           </node>
                         </node>
                       </node>
@@ -15052,8 +15057,8 @@
                           <node concept="37vLTw" id="1K1qkmWUvvL" role="2Oq$k0">
                             <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                           </node>
-                          <node concept="2OwXpG" id="1K1qkmWUfN_" role="2OqNvi">
-                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myPLevel" resolve="myPLevel" />
+                          <node concept="2OwXpG" id="39cNGxUr6n5" role="2OqNvi">
+                            <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.pLevel" resolve="pLevel" />
                           </node>
                         </node>
                       </node>
@@ -15065,8 +15070,8 @@
                     <node concept="37vLTw" id="1K1qkmWUv$W" role="2Oq$k0">
                       <ref role="3cqZAo" node="1K1qkmWUuIr" resolve="universe" />
                     </node>
-                    <node concept="2OwXpG" id="1K1qkmWUgvP" role="2OqNvi">
-                      <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.myHLevel" resolve="myHLevel" />
+                    <node concept="2OwXpG" id="39cNGxUiv9G" role="2OqNvi">
+                      <ref role="2Oxat5" to="2968:~Abstract$UniverseExpression$Universe.hLevel" resolve="hLevel" />
                     </node>
                   </node>
                   <node concept="10M0yZ" id="1K1qkmWSsRq" role="3uHU7w">
