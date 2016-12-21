@@ -8987,32 +8987,5 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="1cMTyVeeh2F">
-    <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="51uy:1cMTyVedO6D" resolve="OmegaExpression" />
-    <node concept="13hLZK" id="1cMTyVeeh2G" role="13h7CW">
-      <node concept="3clFbS" id="1cMTyVeeh2H" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1cMTyVeeh2Q" role="13h7CS">
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <property role="TrG5h" value="toSourceExpression" />
-      <ref role="13i0hy" node="5MAGPi0l_c7" resolve="toSourceExpression" />
-      <node concept="3Tm1VV" id="1cMTyVeeh2R" role="1B3o_S" />
-      <node concept="3clFbS" id="1cMTyVeeh2Y" role="3clF47">
-        <node concept="3clFbF" id="1cMTyVeeiSG" role="3cqZAp">
-          <node concept="2ShNRf" id="1cMTyVeeiSE" role="3clFbG">
-            <node concept="1pGfFk" id="1cMTyVeej6p" role="2ShVmc">
-              <ref role="37wK5l" to="xq8z:1cMTyVeeixi" resolve="OmegaExpressionAdapter" />
-              <node concept="13iPFW" id="1cMTyVeejfw" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1cMTyVeeh2Z" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
-      </node>
-    </node>
-  </node>
 </model>
 
