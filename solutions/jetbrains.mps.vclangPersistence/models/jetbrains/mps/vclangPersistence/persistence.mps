@@ -10112,7 +10112,7 @@
                 <ref role="3cqZAo" node="5QGigKLeoSb" resolve="expression" />
               </node>
               <node concept="liA8E" id="4qqSIlQlFY" role="2OqNvi">
-                <ref role="37wK5l" to="2968:~Abstract$BinOpExpression.getResolvedBinOp():com.jetbrains.jetpad.vclang.term.Abstract$Definition" resolve="getResolvedBinOp" />
+                <ref role="37wK5l" to="2968:~Abstract$DefCallExpression.getReferent():com.jetbrains.jetpad.vclang.term.Abstract$Definition" resolve="getReferent" />
               </node>
             </node>
           </node>
@@ -20636,23 +20636,28 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="3hxM_J3wpR8" role="1B3o_S" />
-      <node concept="3uibUv" id="3hxM_J3wpRa" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+      <node concept="3uibUv" id="6No$0o$8jWe" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
       </node>
       <node concept="3clFbS" id="3hxM_J3wpRd" role="3clF47">
         <node concept="3clFbF" id="6JC1rJz038I" role="3cqZAp">
-          <node concept="2YIFZM" id="6JC1rJz038K" role="3clFbG">
-            <ref role="37wK5l" node="1egVW$2AA$m" resolve="getAdapterForTarget" />
-            <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
-            <node concept="2OqwBi" id="1JzqlRa6hTV" role="37wK5m">
-              <node concept="1PxgMI" id="1JzqlRa6iCk" role="2Oq$k0">
-                <ref role="1m5ApE" to="51uy:1JzqlRa6aQ7" resolve="Implementation" />
-                <node concept="37vLTw" id="1JzqlRa6hTW" role="1m5AlR">
-                  <ref role="3cqZAo" node="OV0Rn1wk2P" resolve="thisNode" />
+          <node concept="10QFUN" id="6No$0o$8kyD" role="3clFbG">
+            <node concept="3uibUv" id="6No$0o$8kz3" role="10QFUM">
+              <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
+            </node>
+            <node concept="2YIFZM" id="6JC1rJz038K" role="10QFUP">
+              <ref role="37wK5l" node="1egVW$2AA$m" resolve="getAdapterForTarget" />
+              <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
+              <node concept="2OqwBi" id="1JzqlRa6hTV" role="37wK5m">
+                <node concept="1PxgMI" id="1JzqlRa6iCk" role="2Oq$k0">
+                  <ref role="1m5ApE" to="51uy:1JzqlRa6aQ7" resolve="Implementation" />
+                  <node concept="37vLTw" id="1JzqlRa6hTW" role="1m5AlR">
+                    <ref role="3cqZAo" node="OV0Rn1wk2P" resolve="thisNode" />
+                  </node>
                 </node>
-              </node>
-              <node concept="3TrEf2" id="1JzqlRa6mWz" role="2OqNvi">
-                <ref role="3Tt5mk" to="51uy:1JzqlRa6bGR" resolve="target" />
+                <node concept="3TrEf2" id="1JzqlRa6mWz" role="2OqNvi">
+                  <ref role="3Tt5mk" to="51uy:1JzqlRa6bGR" resolve="target" />
+                </node>
               </node>
             </node>
           </node>
@@ -21534,8 +21539,8 @@
       </node>
       <node concept="37vLTG" id="1JzqlRan_RW" role="3clF46">
         <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="1JzqlRan_RX" role="1tU5fm">
-          <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+        <node concept="3uibUv" id="6No$0o$7XNs" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
         </node>
       </node>
       <node concept="3clFbS" id="1JzqlRan_RY" role="3clF47">
@@ -25717,6 +25722,102 @@
         <node concept="3cpWs6" id="47vVwnywMyw" role="3cqZAp">
           <node concept="10Nm6u" id="47vVwnywM$0" role="3cqZAk" />
         </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="6No$0o$81S8" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getName" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6No$0o$81S9" role="1B3o_S" />
+      <node concept="3uibUv" id="6No$0o$81Sb" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="6No$0o$81Sg" role="3clF47">
+        <node concept="3clFbJ" id="6No$0o$83cS" role="3cqZAp">
+          <node concept="3clFbS" id="6No$0o$83cT" role="3clFbx">
+            <node concept="3cpWs6" id="6No$0o$83cU" role="3cqZAp">
+              <node concept="2OqwBi" id="6No$0o$83cV" role="3cqZAk">
+                <node concept="1PxgMI" id="6No$0o$83cW" role="2Oq$k0">
+                  <ref role="1m5ApE" to="51uy:5LKdqecnJcI" resolve="RefExpression" />
+                  <node concept="37vLTw" id="6No$0o$83cX" role="1m5AlR">
+                    <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6No$0o$83cY" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:5LKdqecnLnC" resolve="getInternalName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6No$0o$83cZ" role="3clFbw">
+            <node concept="37vLTw" id="6No$0o$83d0" role="2Oq$k0">
+              <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
+            </node>
+            <node concept="1mIQ4w" id="6No$0o$83d1" role="2OqNvi">
+              <node concept="chp4Y" id="6No$0o$83d2" role="cj9EA">
+                <ref role="cht4Q" to="51uy:5LKdqecnJcI" resolve="RefExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6No$0o$83dg" role="3cqZAp">
+          <node concept="10Nm6u" id="6No$0o$83dh" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6No$0o$81Sh" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6No$0o$81Sk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getExpression" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6No$0o$81Sl" role="1B3o_S" />
+      <node concept="3uibUv" id="6No$0o$81Sn" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
+      </node>
+      <node concept="3clFbS" id="6No$0o$81Ss" role="3clF47">
+        <node concept="3clFbF" id="6No$0o$81Sv" role="3cqZAp">
+          <node concept="10Nm6u" id="6No$0o$81Su" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6No$0o$81St" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6No$0o$84Sv" role="jymVt" />
+    <node concept="3clFb_" id="6No$0o$81Sw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getReferent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6No$0o$81Sx" role="1B3o_S" />
+      <node concept="3uibUv" id="6No$0o$81Sz" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+      </node>
+      <node concept="3clFbS" id="6No$0o$81SC" role="3clF47">
+        <node concept="3cpWs6" id="6No$0o$88j7" role="3cqZAp">
+          <node concept="2YIFZM" id="6No$0o$88RB" role="3cqZAk">
+            <ref role="37wK5l" node="1egVW$2AA$m" resolve="getAdapterForTarget" />
+            <ref role="1Pybhc" node="5NQyKEZGqyC" resolve="AdapterUtils" />
+            <node concept="2OqwBi" id="6No$0o$8eyA" role="37wK5m">
+              <node concept="1PxgMI" id="6No$0o$8dBj" role="2Oq$k0">
+                <ref role="1m5ApE" to="51uy:7nfIx2ucmOG" resolve="BinOpExpression" />
+                <node concept="37vLTw" id="6No$0o$8c7b" role="1m5AlR">
+                  <ref role="3cqZAo" node="IDt3LXGcYL" resolve="thisNode" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6No$0o$8fv4" role="2OqNvi">
+                <ref role="3Tt5mk" to="51uy:7nfIx2ucmOH" resolve="function" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6No$0o$81SD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
