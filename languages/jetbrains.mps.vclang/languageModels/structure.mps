@@ -530,7 +530,7 @@
       <property role="20kJfa" value="universe" />
       <property role="IQ2ns" value="6698694374042485863" />
       <ref role="20ksaX" node="5a9n1m5cUVt" resolve="type" />
-      <ref role="20lvS9" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="1mwsisV1hnW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1292,6 +1292,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="plevel" />
       <property role="IQ2ns" value="2475333144813271079" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="CSjh4a7hgR" role="PzmwI">
@@ -1499,6 +1500,12 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="OmegaExpression" />
     <property role="34LRSv" value="Type" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6YM8VsVH1HR">
+    <property role="EcuMT" value="8048534753952144247" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="LvlExpression" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
   </node>
 </model>

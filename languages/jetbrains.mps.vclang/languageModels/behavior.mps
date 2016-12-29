@@ -94,9 +94,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
@@ -4775,36 +4772,6 @@
   <node concept="13h7C7" id="5NQyKEZGDcX">
     <property role="3GE5qa" value="literal" />
     <ref role="13h7C2" to="51uy:6dbcPfPFKYA" resolve="LeveledUniverse" />
-    <node concept="13i0hz" id="5NQyKEZGDBj" role="13h7CS">
-      <property role="TrG5h" value="toSourceUniverse" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="5NQyKEZGDBk" role="1B3o_S" />
-      <node concept="3uibUv" id="1K1qkmWPIX0" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-      </node>
-      <node concept="3clFbS" id="5NQyKEZGDBm" role="3clF47" />
-    </node>
-    <node concept="13i0hz" id="vFf91iFZtF" role="13h7CS">
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <property role="TrG5h" value="toSourceExpression" />
-      <ref role="13i0hy" node="5MAGPi0l_c7" resolve="toSourceExpression" />
-      <node concept="3Tm1VV" id="vFf91iFZtG" role="1B3o_S" />
-      <node concept="3clFbS" id="vFf91iFZtN" role="3clF47">
-        <node concept="3clFbF" id="5NQyKEZJN8v" role="3cqZAp">
-          <node concept="2ShNRf" id="5NQyKEZJN8t" role="3clFbG">
-            <node concept="1pGfFk" id="5NQyKEZJNh9" role="2ShVmc">
-              <ref role="37wK5l" to="xq8z:5NQyKEZJMKk" resolve="UniverseExpressionAdapter" />
-              <node concept="13iPFW" id="5NQyKEZJNhI" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="vFf91iFZtO" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
-      </node>
-    </node>
     <node concept="13hLZK" id="5NQyKEZGDcY" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZGDcZ" role="2VODD2" />
     </node>
@@ -4815,35 +4782,6 @@
     <node concept="13hLZK" id="5NQyKEZGDBw" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZGDBx" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="5NQyKEZGDBy" role="13h7CS">
-      <property role="TrG5h" value="toSourceUniverse" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5NQyKEZGDBj" resolve="toSourceUniverse" />
-      <node concept="3Tm1VV" id="5NQyKEZGDBz" role="1B3o_S" />
-      <node concept="3clFbS" id="5NQyKEZGDBA" role="3clF47">
-        <node concept="3clFbF" id="1K1qkmWPLET" role="3cqZAp">
-          <node concept="2ShNRf" id="1K1qkmWPLEV" role="3clFbG">
-            <node concept="1pGfFk" id="1K1qkmWPLEW" role="2ShVmc">
-              <ref role="37wK5l" to="2968:~Abstract$UniverseExpression$Universe.&lt;init&gt;(int,int)" resolve="Abstract.UniverseExpression.Universe" />
-              <node concept="2OqwBi" id="1K1qkmWPLN_" role="37wK5m">
-                <node concept="13iPFW" id="1K1qkmWPLJ8" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1K1qkmWPLWl" role="2OqNvi">
-                  <ref role="3TsBF5" to="51uy:6dbcPfPFKYB" resolve="level" />
-                </node>
-              </node>
-              <node concept="10M0yZ" id="1K1qkmWPLEY" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-                <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.SET" resolve="SET" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1K1qkmWPLwW" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZGE0u">
     <property role="3GE5qa" value="literal" />
@@ -4851,67 +4789,12 @@
     <node concept="13hLZK" id="5NQyKEZGE0v" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZGE0w" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="5NQyKEZGEpw" role="13h7CS">
-      <property role="TrG5h" value="toSourceUniverse" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5NQyKEZGDBj" resolve="toSourceUniverse" />
-      <node concept="3Tm1VV" id="5NQyKEZGEpx" role="1B3o_S" />
-      <node concept="3clFbS" id="5NQyKEZGEp$" role="3clF47">
-        <node concept="3clFbF" id="1K1qkmWPMAH" role="3cqZAp">
-          <node concept="2ShNRf" id="1K1qkmWPMAI" role="3clFbG">
-            <node concept="1pGfFk" id="1K1qkmWPMAJ" role="2ShVmc">
-              <ref role="37wK5l" to="2968:~Abstract$UniverseExpression$Universe.&lt;init&gt;(int,int)" resolve="Abstract.UniverseExpression.Universe" />
-              <node concept="2OqwBi" id="1K1qkmWPMAK" role="37wK5m">
-                <node concept="13iPFW" id="1K1qkmWPMAL" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1K1qkmWPMAM" role="2OqNvi">
-                  <ref role="3TsBF5" to="51uy:6dbcPfPFKYB" resolve="level" />
-                </node>
-              </node>
-              <node concept="10M0yZ" id="1K1qkmWSsRq" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-                <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.NOT_TRUNCATED" resolve="NOT_TRUNCATED" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1K1qkmWPLAj" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZGEpQ">
     <property role="3GE5qa" value="literal" />
     <ref role="13h7C2" to="51uy:6dbcPfPFL5p" resolve="PropUniverse" />
     <node concept="13hLZK" id="5NQyKEZGEpR" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZGEpS" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="5NQyKEZGEpT" role="13h7CS">
-      <property role="TrG5h" value="toSourceUniverse" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5NQyKEZGDBj" resolve="toSourceUniverse" />
-      <node concept="3Tm1VV" id="5NQyKEZGEpU" role="1B3o_S" />
-      <node concept="3clFbS" id="5NQyKEZGEpX" role="3clF47">
-        <node concept="3clFbF" id="1K1qkmWPKML" role="3cqZAp">
-          <node concept="2ShNRf" id="1K1qkmWPKMH" role="3clFbG">
-            <node concept="1pGfFk" id="1K1qkmWPLqz" role="2ShVmc">
-              <ref role="37wK5l" to="2968:~Abstract$UniverseExpression$Universe.&lt;init&gt;(int,int)" resolve="Abstract.UniverseExpression.Universe" />
-              <node concept="3cmrfG" id="1K1qkmWPLtF" role="37wK5m">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="10M0yZ" id="1K1qkmWPLsv" role="37wK5m">
-                <ref role="1PxDUh" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-                <ref role="3cqZAo" to="2968:~Abstract$UniverseExpression$Universe.PROP" resolve="PROP" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1K1qkmWPKHn" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZGTCi">
@@ -5457,37 +5340,6 @@
     <ref role="13h7C2" to="51uy:6dbcPfPFKZL" resolve="TruncatedTypeUniverse" />
     <node concept="13hLZK" id="5NQyKEZKo_q" role="13h7CW">
       <node concept="3clFbS" id="5NQyKEZKo_r" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="5NQyKEZKo_s" role="13h7CS">
-      <property role="TrG5h" value="toSourceUniverse" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="5NQyKEZGDBj" resolve="toSourceUniverse" />
-      <node concept="3Tm1VV" id="5NQyKEZKo_t" role="1B3o_S" />
-      <node concept="3clFbS" id="5NQyKEZKo_w" role="3clF47">
-        <node concept="3clFbF" id="1K1qkmWPM1t" role="3cqZAp">
-          <node concept="2ShNRf" id="1K1qkmWPM1v" role="3clFbG">
-            <node concept="1pGfFk" id="1K1qkmWPM1w" role="2ShVmc">
-              <ref role="37wK5l" to="2968:~Abstract$UniverseExpression$Universe.&lt;init&gt;(int,int)" resolve="Abstract.UniverseExpression.Universe" />
-              <node concept="2OqwBi" id="1K1qkmWPMo4" role="37wK5m">
-                <node concept="13iPFW" id="1K1qkmWPMj$" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1K1qkmWPMxK" role="2OqNvi">
-                  <ref role="3TsBF5" to="51uy:6dbcPfPFKYB" resolve="level" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1K1qkmWPM9o" role="37wK5m">
-                <node concept="13iPFW" id="1K1qkmWPM4W" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1K1qkmWPMic" role="2OqNvi">
-                  <ref role="3TsBF5" to="51uy:6dbcPfPFKZM" resolve="truncLevel" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1K1qkmWPLzY" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$UniverseExpression$Universe" resolve="Abstract.UniverseExpression.Universe" />
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZKDKb">
