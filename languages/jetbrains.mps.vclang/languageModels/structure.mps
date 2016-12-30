@@ -1448,13 +1448,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1cMTyVedO6D">
-    <property role="EcuMT" value="1383421124258775465" />
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="OmegaExpression" />
-    <property role="34LRSv" value="Type" />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="6YM8VsVH1HR">
     <property role="EcuMT" value="8048534753952144247" />
     <property role="3GE5qa" value="expression" />
