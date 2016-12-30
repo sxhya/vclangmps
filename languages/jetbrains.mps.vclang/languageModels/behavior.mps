@@ -4769,34 +4769,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="5NQyKEZGDcX">
-    <property role="3GE5qa" value="literal" />
-    <ref role="13h7C2" to="51uy:6dbcPfPFKYA" resolve="LeveledUniverse" />
-    <node concept="13hLZK" id="5NQyKEZGDcY" role="13h7CW">
-      <node concept="3clFbS" id="5NQyKEZGDcZ" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="5NQyKEZGDBv">
-    <property role="3GE5qa" value="literal" />
-    <ref role="13h7C2" to="51uy:6dbcPfPFL5q" resolve="SetUniverse" />
-    <node concept="13hLZK" id="5NQyKEZGDBw" role="13h7CW">
-      <node concept="3clFbS" id="5NQyKEZGDBx" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="5NQyKEZGE0u">
-    <property role="3GE5qa" value="literal" />
-    <ref role="13h7C2" to="51uy:6dbcPfPFKYD" resolve="TypeUniverse" />
-    <node concept="13hLZK" id="5NQyKEZGE0v" role="13h7CW">
-      <node concept="3clFbS" id="5NQyKEZGE0w" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="5NQyKEZGEpQ">
-    <property role="3GE5qa" value="literal" />
-    <ref role="13h7C2" to="51uy:6dbcPfPFL5p" resolve="PropUniverse" />
-    <node concept="13hLZK" id="5NQyKEZGEpR" role="13h7CW">
-      <node concept="3clFbS" id="5NQyKEZGEpS" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="5NQyKEZGTCi">
     <property role="3GE5qa" value="def" />
     <ref role="13h7C2" to="51uy:7nfIx2ub_Z_" resolve="DefType" />
@@ -5333,13 +5305,6 @@
         <node concept="3Tqbb2" id="24ni4bqe0SP" role="1tU5fm" />
       </node>
       <node concept="10P_77" id="24ni4bqe0SQ" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="5NQyKEZKo_p">
-    <property role="3GE5qa" value="literal" />
-    <ref role="13h7C2" to="51uy:6dbcPfPFKZL" resolve="TruncatedTypeUniverse" />
-    <node concept="13hLZK" id="5NQyKEZKo_q" role="13h7CW">
-      <node concept="3clFbS" id="5NQyKEZKo_r" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZKDKb">

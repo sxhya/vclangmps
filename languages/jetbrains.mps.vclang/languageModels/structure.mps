@@ -386,53 +386,6 @@
     <property role="EcuMT" value="7154868868705357663" />
     <ref role="1TJDcQ" node="6aAUpg3pU9x" resolve="AbstractBinOpExpression" />
   </node>
-  <node concept="1TIwiD" id="6dbcPfPFKYA">
-    <property role="3GE5qa" value="literal" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="LeveledUniverse" />
-    <property role="34LRSv" value="\" />
-    <property role="EcuMT" value="7154868868705357734" />
-    <ref role="1TJDcQ" node="6aAUpg3pU9E" resolve="Literal" />
-    <node concept="1TJgyi" id="6dbcPfPFKYB" role="1TKVEl">
-      <property role="TrG5h" value="level" />
-      <property role="IQ2nx" value="7154868868705357735" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKYD">
-    <property role="3GE5qa" value="literal" />
-    <property role="34LRSv" value="Type" />
-    <property role="TrG5h" value="TypeUniverse" />
-    <property role="EcuMT" value="7154868868705357737" />
-    <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKZL">
-    <property role="3GE5qa" value="literal" />
-    <property role="TrG5h" value="TruncatedTypeUniverse" />
-    <property role="34LRSv" value="-Type" />
-    <property role="EcuMT" value="7154868868705357809" />
-    <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
-    <node concept="1TJgyi" id="6dbcPfPFKZM" role="1TKVEl">
-      <property role="TrG5h" value="truncLevel" />
-      <property role="IQ2nx" value="7154868868705357810" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFL5p">
-    <property role="3GE5qa" value="literal" />
-    <property role="TrG5h" value="PropUniverse" />
-    <property role="34LRSv" value="Prop" />
-    <property role="EcuMT" value="7154868868705358169" />
-    <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFL5q">
-    <property role="3GE5qa" value="literal" />
-    <property role="TrG5h" value="SetUniverse" />
-    <property role="34LRSv" value="Set" />
-    <property role="EcuMT" value="7154868868705358170" />
-    <ref role="1TJDcQ" node="6dbcPfPFKYA" resolve="LeveledUniverse" />
-  </node>
   <node concept="1TIwiD" id="6dbcPfPFLfE">
     <property role="3GE5qa" value="def" />
     <property role="TrG5h" value="DefFunction" />
