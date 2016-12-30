@@ -3664,7 +3664,7 @@
         <ref role="PMmxG" node="4r2Al6x4ZJ7" resolve="ConstructorPatternComponent" />
       </node>
       <node concept="3F0ifn" id="14pT6cv9BWr" role="3EZMnx">
-        <property role="3F0ifm" value="⇒" />
+        <property role="3F0ifm" value="=&gt;" />
         <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
       </node>
       <node concept="3F1sOY" id="3hxM_J3klT$" role="3EZMnx">
