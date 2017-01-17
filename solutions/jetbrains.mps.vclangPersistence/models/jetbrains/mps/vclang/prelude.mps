@@ -178,15 +178,15 @@
         <child id="1390052907877751546" name="argPatterns" index="1ihMWV" />
       </concept>
       <concept id="4683381747095495599" name="jetbrains.mps.vclang.structure.DefExpression" flags="ng" index="3BO_ld" />
-      <concept id="7059432720017893876" name="jetbrains.mps.vclang.structure.ParenthesizedExpression" flags="ng" index="1D_SPs">
-        <child id="7059432720017893884" name="expression" index="1D_SPk" />
-      </concept>
       <concept id="8489208403152790170" name="jetbrains.mps.vclang.structure.Constructor" flags="ng" index="3FSlya" />
       <concept id="8489208403152756709" name="jetbrains.mps.vclang.structure.DefType" flags="ng" index="3FSunP">
         <child id="1558369884378043900" name="conditions" index="IDmjr" />
         <child id="8489208403152852726" name="constructors" index="3FS6NA" />
       </concept>
-      <concept id="8489208403152962591" name="jetbrains.mps.vclang.structure.BracketExpression" flags="ng" index="3FZzSf" />
+      <concept id="8489208403152962591" name="jetbrains.mps.vclang.structure.BracketExpression" flags="ng" index="3FZzSf">
+        <property id="3942936511371557811" name="isImplicit" index="3yw2hI" />
+        <child id="8489208403152962622" name="expression" index="3FZzSI" />
+      </concept>
       <concept id="8489208403152956716" name="jetbrains.mps.vclang.structure.BinOpExpression" flags="ng" index="3FZHsW" />
       <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt">
         <child id="1136042658824486601" name="statements" index="1Ra7oe" />
@@ -342,7 +342,8 @@
       </node>
       <node concept="1xKkZq" id="67S9aw8yHtG" role="2mYRmc">
         <node concept="3FZzSf" id="67S9aw8yHtC" role="3FZH5U">
-          <node concept="1xKkGg" id="67S9aw8yHtL" role="1D_SPk">
+          <property role="3yw2hI" value="false" />
+          <node concept="1xKkGg" id="67S9aw8yHtL" role="3FZzSI">
             <node concept="1xKkXK" id="67S9aw8yHtM" role="cHald">
               <property role="TrG5h" value="_" />
             </node>
@@ -633,7 +634,7 @@
             </node>
             <node concept="1xKkZq" id="1sSRWjCW$6i" role="3FZH5S">
               <node concept="3FZzSf" id="1sSRWjCW$6e" role="3FZH5U">
-                <node concept="1xKkZq" id="1sSRWjCW$6_" role="1D_SPk">
+                <node concept="1xKkZq" id="1sSRWjCW$6_" role="3FZzSI">
                   <node concept="1xKkZ5" id="1sSRWjCW$6E" role="3FZH5U">
                     <ref role="3gbGqc" node="1sSRWjCW$5c" resolve="x" />
                   </node>
@@ -671,7 +672,7 @@
             </node>
             <node concept="1xKkZq" id="1sSRWjCW$9z" role="3FZH5S">
               <node concept="3FZzSf" id="1sSRWjCW$9v" role="3FZH5U">
-                <node concept="1xKkZq" id="1sSRWjCW$9T" role="1D_SPk">
+                <node concept="1xKkZq" id="1sSRWjCW$9T" role="3FZzSI">
                   <node concept="1xKkZ5" id="1sSRWjCW$9Q" role="3FZH5U">
                     <ref role="3gbGqc" node="1sSRWjCW$8Y" resolve="y" />
                   </node>
