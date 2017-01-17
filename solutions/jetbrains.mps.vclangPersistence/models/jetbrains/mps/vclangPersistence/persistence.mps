@@ -21632,27 +21632,26 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1JzqlRanABB" role="jymVt" />
-    <node concept="3clFb_" id="1JzqlRan_S0" role="jymVt">
+    <node concept="3clFb_" id="6HLT83Mh6ol" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="implementResolved" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="1JzqlRan_S1" role="1B3o_S" />
-      <node concept="3cqZAl" id="1JzqlRan_S3" role="3clF45" />
-      <node concept="37vLTG" id="1JzqlRan_S4" role="3clF46">
-        <property role="TrG5h" value="statement" />
-        <node concept="3uibUv" id="3hxM_J2U0qO" role="1tU5fm">
+      <node concept="3Tm1VV" id="6HLT83Mh6om" role="1B3o_S" />
+      <node concept="3cqZAl" id="6HLT83Mh6oo" role="3clF45" />
+      <node concept="37vLTG" id="6HLT83Mh6op" role="3clF46">
+        <property role="TrG5h" value="impl" />
+        <node concept="3uibUv" id="6HLT83Mh6oq" role="1tU5fm">
           <ref role="3uigEE" to="2968:~Abstract$ClassFieldImpl" resolve="Abstract.ClassFieldImpl" />
         </node>
       </node>
-      <node concept="37vLTG" id="1JzqlRan_S6" role="3clF46">
-        <property role="TrG5h" value="definition" />
-        <node concept="3uibUv" id="1JzqlRan_S7" role="1tU5fm">
-          <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+      <node concept="37vLTG" id="6HLT83Mh6or" role="3clF46">
+        <property role="TrG5h" value="field" />
+        <node concept="3uibUv" id="6HLT83Mh6os" role="1tU5fm">
+          <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
         </node>
       </node>
-      <node concept="3clFbS" id="1JzqlRan_S8" role="3clF47">
+      <node concept="3clFbS" id="6HLT83Mh6ot" role="3clF47">
         <node concept="3cpWs8" id="7Vm3Z_eQnUR" role="3cqZAp">
           <node concept="3cpWsn" id="7Vm3Z_eQnUU" role="3cpWs9">
             <property role="TrG5h" value="isa" />
@@ -21662,8 +21661,8 @@
             <node concept="2OqwBi" id="7Vm3Z_eQnUW" role="33vP2m">
               <node concept="1eOMI4" id="7Vm3Z_eQnUX" role="2Oq$k0">
                 <node concept="10QFUN" id="7Vm3Z_eQnUY" role="1eOMHV">
-                  <node concept="37vLTw" id="7Vm3Z_eQnUZ" role="10QFUP">
-                    <ref role="3cqZAo" node="1JzqlRan_S4" resolve="statement" />
+                  <node concept="37vLTw" id="6HLT83Mh7Qz" role="10QFUP">
+                    <ref role="3cqZAo" node="6HLT83Mh6op" resolve="impl" />
                   </node>
                   <node concept="3uibUv" id="7Vm3Z_eQoa9" role="10QFUM">
                     <ref role="3uigEE" node="1TnPY9DDkjx" resolve="ClassFieldImplAdapter" />
@@ -21690,18 +21689,18 @@
                 <ref role="359W_E" to="51uy:1TnPY9DDfKG" resolve="ClassFieldImpl" />
                 <ref role="359W_F" to="51uy:1TnPY9DDhA1" resolve="target" />
               </node>
-              <node concept="37vLTw" id="7Vm3Z_eQzxO" role="37wK5m">
-                <ref role="3cqZAo" node="1JzqlRan_S6" resolve="definition" />
+              <node concept="37vLTw" id="6HLT83Mh8aa" role="37wK5m">
+                <ref role="3cqZAo" node="6HLT83Mh6or" resolve="field" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2AHcQZ" id="1JzqlRan_S9" role="2AJF6D">
+      <node concept="2AHcQZ" id="6HLT83Mh6ou" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4ltge4WCWr5" role="jymVt" />
+    <node concept="2tJIrI" id="1JzqlRanABB" role="jymVt" />
     <node concept="3clFb_" id="4ltge4WCxPm" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="makeBinOp" />
@@ -25630,25 +25629,30 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="1JzqlRa6eNX" role="1B3o_S" />
-      <node concept="3uibUv" id="1JzqlRa6eNZ" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Definition" resolve="Abstract.Definition" />
+      <node concept="3uibUv" id="6HLT83MhbLH" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
       </node>
       <node concept="3clFbS" id="1JzqlRa6eO0" role="3clF47">
         <node concept="3clFbJ" id="2jpq9$y473N" role="3cqZAp">
           <node concept="3clFbS" id="2jpq9$y473P" role="3clFbx">
             <node concept="3cpWs6" id="rMTmFIjSZQ" role="3cqZAp">
-              <node concept="2OqwBi" id="1JzqlRa6h3n" role="3cqZAk">
-                <node concept="2qgKlT" id="1JzqlRa6hv0" role="2OqNvi">
-                  <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+              <node concept="10QFUN" id="6HLT83Mhdh6" role="3cqZAk">
+                <node concept="3uibUv" id="6HLT83Mhdh4" role="10QFUM">
+                  <ref role="3uigEE" to="2968:~Abstract$ClassField" resolve="Abstract.ClassField" />
                 </node>
-                <node concept="1PxgMI" id="2jpq9$y49h1" role="2Oq$k0">
-                  <ref role="1m5ApE" to="51uy:Z42ctSV7V8" resolve="Definition" />
-                  <node concept="2OqwBi" id="2jpq9$y48Ig" role="1m5AlR">
-                    <node concept="37vLTw" id="2jpq9$y48AT" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1TnPY9DDkrp" resolve="thisNode" />
-                    </node>
-                    <node concept="3TrEf2" id="2jpq9$y48Ws" role="2OqNvi">
-                      <ref role="3Tt5mk" to="51uy:1TnPY9DDhA1" resolve="target" />
+                <node concept="2OqwBi" id="1JzqlRa6h3n" role="10QFUP">
+                  <node concept="2qgKlT" id="1JzqlRa6hv0" role="2OqNvi">
+                    <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                  </node>
+                  <node concept="1PxgMI" id="2jpq9$y49h1" role="2Oq$k0">
+                    <ref role="1m5ApE" to="51uy:3ixSrrqshCZ" resolve="ClassField" />
+                    <node concept="2OqwBi" id="2jpq9$y48Ig" role="1m5AlR">
+                      <node concept="37vLTw" id="2jpq9$y48AT" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1TnPY9DDkrp" resolve="thisNode" />
+                      </node>
+                      <node concept="3TrEf2" id="2jpq9$y48Ws" role="2OqNvi">
+                        <ref role="3Tt5mk" to="51uy:1TnPY9DDhA1" resolve="target" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -25665,8 +25669,8 @@
               </node>
             </node>
             <node concept="1mIQ4w" id="2jpq9$y48mi" role="2OqNvi">
-              <node concept="chp4Y" id="2jpq9$y48s7" role="cj9EA">
-                <ref role="cht4Q" to="51uy:Z42ctSV7V8" resolve="Definition" />
+              <node concept="chp4Y" id="6HLT83Mhc88" role="cj9EA">
+                <ref role="cht4Q" to="51uy:3ixSrrqshCZ" resolve="ClassField" />
               </node>
             </node>
           </node>
