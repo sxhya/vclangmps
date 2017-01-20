@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="sandbox" uuid="030f7c9e-7739-487c-96b3-3c583c73c2c2" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="${module}" type="default" />
+    <modelRoot contentPath="${module}" type="vclang_articles">
       <sourceRoot location="vclang-lib/test" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="vclang_articles" />
   </models>
   <sourcePath />
   <languageVersions>

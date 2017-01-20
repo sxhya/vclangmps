@@ -29,9 +29,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -52,6 +49,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -979,36 +979,6 @@
   </node>
   <node concept="312cEu" id="2AR5txsw7ZY">
     <property role="TrG5h" value="PreludeInitializer" />
-    <node concept="Wx3nA" id="1wJKaxHR3u3" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="PROVIDERS" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="1wJKaxHSsNp" role="1B3o_S" />
-      <node concept="3uibUv" id="1wJKaxHR3tS" role="1tU5fm">
-        <ref role="3uigEE" to="5utt:~NamespaceProviders" resolve="NamespaceProviders" />
-      </node>
-      <node concept="2ShNRf" id="1wJKaxHR3HO" role="33vP2m">
-        <node concept="1pGfFk" id="1wJKaxHR3$m" role="2ShVmc">
-          <ref role="37wK5l" to="5utt:~NamespaceProviders.&lt;init&gt;(com.jetbrains.jetpad.vclang.naming.namespace.ModuleNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider)" resolve="NamespaceProviders" />
-          <node concept="2ShNRf" id="77aUYBLRCCO" role="37wK5m">
-            <node concept="HV5vD" id="77aUYBLS3jh" role="2ShVmc">
-              <ref role="HV5vE" to="xq8z:77aUYBLRzj5" resolve="MPSModuleNamespaceProvider" />
-            </node>
-          </node>
-          <node concept="2ShNRf" id="78OOKGWqqK_" role="37wK5m">
-            <node concept="HV5vD" id="4hAEUAIX2yq" role="2ShVmc">
-              <ref role="HV5vE" to="xq8z:4hAEUAIUqWk" resolve="MPSStaticNamespaceProvider" />
-            </node>
-          </node>
-          <node concept="2ShNRf" id="4hAEUAIX03d" role="37wK5m">
-            <node concept="HV5vD" id="4hAEUAIX0X7" role="2ShVmc">
-              <ref role="HV5vE" to="xq8z:4hAEUAIWRO_" resolve="MPSDynamicNamespaceProvider" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="Wx3nA" id="$YKDbKjmCX" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -1036,8 +1006,9 @@
       <node concept="2ShNRf" id="1wJKaxHSqtw" role="33vP2m">
         <node concept="1pGfFk" id="1wJKaxHSqtl" role="2ShVmc">
           <ref role="37wK5l" node="hjYuQZDrEN" resolve="PreludeInitializer" />
-          <node concept="37vLTw" id="1wJKaxHStFg" role="37wK5m">
-            <ref role="3cqZAo" node="1wJKaxHR3u3" resolve="PROVIDERS" />
+          <node concept="10M0yZ" id="2yncQTxcKIe" role="37wK5m">
+            <ref role="3cqZAo" to="xq8z:1wJKaxHR3u3" resolve="PROVIDERS" />
+            <ref role="1PxDUh" to="xq8z:2yncQTxc1e6" resolve="MPSNamespaceProviders" />
           </node>
           <node concept="37vLTw" id="1wJKaxHStG0" role="37wK5m">
             <ref role="3cqZAo" node="$YKDbKjmCX" resolve="TC_STATE" />
