@@ -20,6 +20,7 @@
     <import index="5utt" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend.resolving(jetpad.vclang/)" />
     <import index="6kye" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend(jetpad.vclang/)" />
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
+    <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1224,8 +1225,8 @@
         </node>
         <node concept="3clFbF" id="1wJKaxHS2k9" role="3cqZAp">
           <node concept="2YIFZM" id="1wJKaxHS2QA" role="3clFbG">
-            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.NamespaceProviders,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener,com.jetbrains.jetpad.vclang.error.ErrorReporter):void" resolve="visitModule" />
             <ref role="1Pybhc" to="5utt:~OneshotNameResolver" resolve="OneshotNameResolver" />
+            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.NamespaceProviders,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener):void" resolve="visitModule" />
             <node concept="37vLTw" id="1wJKaxHS7Kw" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
             </node>
@@ -1242,66 +1243,88 @@
             </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
-                <ref role="37wK5l" to="6kye:~ConcreteResolveListener.&lt;init&gt;()" resolve="ConcreteResolveListener" />
+                <ref role="37wK5l" to="6kye:~ConcreteResolveListener.&lt;init&gt;(com.jetbrains.jetpad.vclang.error.ErrorReporter)" resolve="ConcreteResolveListener" />
+                <node concept="37vLTw" id="7Zj$lqew1Dv" role="37wK5m">
+                  <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
+                </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="1wJKaxHSclL" role="37wK5m">
-              <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="2s5gYCoDADn" role="3cqZAp" />
-        <node concept="3clFbF" id="2JojTvP$dTB" role="3cqZAp">
-          <node concept="2YIFZM" id="NuAgECtsca" role="3clFbG">
-            <ref role="37wK5l" to="ssyg:~Typechecking.typecheckModules(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,java.util.Collection,com.jetbrains.jetpad.vclang.error.ErrorReporter,com.jetbrains.jetpad.vclang.typechecking.TypecheckedReporter):void" resolve="typecheckModules" />
-            <ref role="1Pybhc" to="ssyg:~Typechecking" resolve="Typechecking" />
-            <node concept="37vLTw" id="NuAgECtscb" role="37wK5m">
-              <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
+        <node concept="3cpWs8" id="7Zj$lqesfQU" role="3cqZAp">
+          <node concept="3cpWsn" id="7Zj$lqesfQV" role="3cpWs9">
+            <property role="TrG5h" value="t" />
+            <node concept="3uibUv" id="7Zj$lqesfQW" role="1tU5fm">
+              <ref role="3uigEE" to="ssyg:~Typechecking" resolve="Typechecking" />
             </node>
-            <node concept="2OqwBi" id="1wJKaxHS5oS" role="37wK5m">
-              <node concept="37vLTw" id="1wJKaxHS57G" role="2Oq$k0">
-                <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
-              </node>
-              <node concept="2OwXpG" id="1wJKaxHS5Pl" role="2OqNvi">
-                <ref role="2Oxat5" to="5utt:~NamespaceProviders.statics" resolve="statics" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1wJKaxHS6qA" role="37wK5m">
-              <node concept="37vLTw" id="1wJKaxHS68x" role="2Oq$k0">
-                <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
-              </node>
-              <node concept="2OwXpG" id="1wJKaxHS6N9" role="2OqNvi">
-                <ref role="2Oxat5" to="5utt:~NamespaceProviders.dynamics" resolve="dynamics" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="NuAgECtsce" role="37wK5m">
-              <node concept="Tc6Ow" id="NuAgECtscf" role="2ShVmc">
-                <node concept="3uibUv" id="NuAgECtx0q" role="HW$YZ">
-                  <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
+            <node concept="2ShNRf" id="7Zj$lqesg8M" role="33vP2m">
+              <node concept="1pGfFk" id="7Zj$lqesg8N" role="2ShVmc">
+                <ref role="37wK5l" to="ssyg:~Typechecking.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,com.jetbrains.jetpad.vclang.error.ErrorReporter,com.jetbrains.jetpad.vclang.typechecking.TypecheckedReporter,com.jetbrains.jetpad.vclang.typechecking.order.DependencyListener)" resolve="Typechecking" />
+                <node concept="37vLTw" id="7Zj$lqevU64" role="37wK5m">
+                  <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
                 </node>
-                <node concept="10QFUN" id="NuAgECtyEd" role="HW$Y0">
-                  <node concept="2OqwBi" id="NuAgECtzBc" role="10QFUP">
-                    <node concept="37vLTw" id="NuAgECtz8Q" role="2Oq$k0">
-                      <ref role="3cqZAo" node="hjYuQZDweB" resolve="myPreludeClass" />
-                    </node>
-                    <node concept="2qgKlT" id="NuAgECt$Zh" role="2OqNvi">
-                      <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                <node concept="2OqwBi" id="7Zj$lqevUp8" role="37wK5m">
+                  <node concept="37vLTw" id="7Zj$lqevUdJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
+                  </node>
+                  <node concept="2OwXpG" id="7Zj$lqevUD6" role="2OqNvi">
+                    <ref role="2Oxat5" to="5utt:~NamespaceProviders.statics" resolve="statics" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7Zj$lqevUVj" role="37wK5m">
+                  <node concept="37vLTw" id="7Zj$lqevUK7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
+                  </node>
+                  <node concept="2OwXpG" id="7Zj$lqevV61" role="2OqNvi">
+                    <ref role="2Oxat5" to="5utt:~NamespaceProviders.dynamics" resolve="dynamics" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="7Zj$lqevVcP" role="37wK5m">
+                  <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
+                </node>
+                <node concept="2ShNRf" id="NuAgECnanl" role="37wK5m">
+                  <node concept="1pGfFk" id="NuAgECnceq" role="2ShVmc">
+                    <ref role="37wK5l" to="2968:~Prelude$UpdatePreludeReporter.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState)" resolve="Prelude.UpdatePreludeReporter" />
+                    <node concept="37vLTw" id="6zviNjjDfmq" role="37wK5m">
+                      <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
                     </node>
                   </node>
-                  <node concept="3uibUv" id="NuAgECtyPF" role="10QFUM">
+                </node>
+                <node concept="2ShNRf" id="7Zj$lqesg8U" role="37wK5m">
+                  <node concept="1pGfFk" id="7Zj$lqesg8V" role="2ShVmc">
+                    <ref role="37wK5l" to="6lbs:~BaseDependencyListener.&lt;init&gt;()" resolve="BaseDependencyListener" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Zj$lqevVl5" role="3cqZAp">
+          <node concept="2OqwBi" id="7Zj$lqevVD9" role="3clFbG">
+            <node concept="37vLTw" id="7Zj$lqevVl3" role="2Oq$k0">
+              <ref role="3cqZAo" node="7Zj$lqesfQV" resolve="t" />
+            </node>
+            <node concept="liA8E" id="7Zj$lqevW2D" role="2OqNvi">
+              <ref role="37wK5l" to="ssyg:~Typechecking.typecheckModules(java.util.Collection):void" resolve="typecheckModules" />
+              <node concept="2ShNRf" id="NuAgECtsce" role="37wK5m">
+                <node concept="Tc6Ow" id="NuAgECtscf" role="2ShVmc">
+                  <node concept="3uibUv" id="NuAgECtx0q" role="HW$YZ">
                     <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="NuAgECtsck" role="37wK5m">
-              <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
-            </node>
-            <node concept="2ShNRf" id="NuAgECnanl" role="37wK5m">
-              <node concept="1pGfFk" id="NuAgECnceq" role="2ShVmc">
-                <ref role="37wK5l" to="2968:~Prelude$UpdatePreludeReporter.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState)" resolve="Prelude.UpdatePreludeReporter" />
-                <node concept="37vLTw" id="6zviNjjDfmq" role="37wK5m">
-                  <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
+                  <node concept="10QFUN" id="NuAgECtyEd" role="HW$Y0">
+                    <node concept="2OqwBi" id="NuAgECtzBc" role="10QFUP">
+                      <node concept="37vLTw" id="NuAgECtz8Q" role="2Oq$k0">
+                        <ref role="3cqZAo" node="hjYuQZDweB" resolve="myPreludeClass" />
+                      </node>
+                      <node concept="2qgKlT" id="NuAgECt$Zh" role="2OqNvi">
+                        <ref role="37wK5l" to="hhlq:5NQyKEZGoPp" resolve="toSourceDefinition" />
+                      </node>
+                    </node>
+                    <node concept="3uibUv" id="NuAgECtyPF" role="10QFUM">
+                      <ref role="3uigEE" to="2968:~Abstract$ClassDefinition" resolve="Abstract.ClassDefinition" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
