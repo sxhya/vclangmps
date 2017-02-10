@@ -471,6 +471,11 @@
     <property role="R4oN_" value="Inductive type definition" />
     <property role="EcuMT" value="8489208403152756709" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyi" id="3IEYglPvpYh" role="1TKVEl">
+      <property role="IQ2nx" value="4299522596119879569" />
+      <property role="TrG5h" value="isTruncated" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7nfIx2ubXrQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constructors" />
@@ -1112,7 +1117,7 @@
     <node concept="1TJgyj" id="1TnPY9DDfKD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
-      <property role="20kJfa" value="statements" />
+      <property role="20kJfa" value="classImpls" />
       <property role="IQ2ns" value="2186453511546666025" />
       <ref role="20lvS9" node="1TnPY9DDfKG" resolve="ClassFieldImpl" />
     </node>
@@ -1402,6 +1407,12 @@
     <property role="TrG5h" value="ClassViewInstance" />
     <property role="34LRSv" value="instance" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyj" id="3IEYglPi1IR" role="1TKVEi">
+      <property role="IQ2ns" value="4299522596116372407" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classifyingDefinition" />
+      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
+    </node>
     <node concept="1TJgyi" id="7iiO5wuHGkV" role="1TKVEl">
       <property role="IQ2nx" value="8400005331890390331" />
       <property role="TrG5h" value="default" />
@@ -1410,9 +1421,16 @@
     <node concept="1TJgyj" id="6JC1rJyZiAb" role="1TKVEi">
       <property role="IQ2ns" value="7775471061180426635" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="term" />
+      <property role="20kJfa" value="classView" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+      <ref role="20lvS9" node="43YHIaBbeeJ" resolve="DefExpression" />
+    </node>
+    <node concept="1TJgyj" id="3IEYglPhZM_" role="1TKVEi">
+      <property role="IQ2ns" value="4299522596116364453" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="classImpls" />
+      <ref role="20lvS9" node="1TnPY9DDfKG" resolve="ClassFieldImpl" />
     </node>
     <node concept="PrWs8" id="6JC1rJyZiBf" role="PzmwI">
       <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
@@ -1422,9 +1440,6 @@
     </node>
     <node concept="PrWs8" id="5N7S6fCcmOd" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
-    </node>
-    <node concept="PrWs8" id="5yCRnzPxe8f" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
   </node>
   <node concept="PlHQZ" id="2jpq9$y3OtL">
