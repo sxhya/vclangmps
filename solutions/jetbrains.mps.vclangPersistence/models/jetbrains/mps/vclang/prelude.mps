@@ -21,6 +21,7 @@
     <import index="6kye" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend(jetpad.vclang/)" />
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
+    <import index="4y5u" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.scope(jetpad.vclang/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1230,8 +1231,13 @@
             <node concept="37vLTw" id="1wJKaxHS7Kw" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
             </node>
-            <node concept="37vLTw" id="1wJKaxHS7Qw" role="37wK5m">
-              <ref role="3cqZAo" node="78OOKGWqIJC" resolve="myPreludeNamespace" />
+            <node concept="2ShNRf" id="7MNt9XaXtXd" role="37wK5m">
+              <node concept="1pGfFk" id="7MNt9XaXxb8" role="2ShVmc">
+                <ref role="37wK5l" to="4y5u:~NamespaceScope.&lt;init&gt;(com.jetbrains.jetpad.vclang.naming.namespace.Namespace)" resolve="NamespaceScope" />
+                <node concept="37vLTw" id="7MNt9XaXxbt" role="37wK5m">
+                  <ref role="3cqZAo" node="78OOKGWqIJC" resolve="myPreludeNamespace" />
+                </node>
+              </node>
             </node>
             <node concept="2ShNRf" id="1wJKaxHS8$K" role="37wK5m">
               <node concept="1pGfFk" id="1wJKaxHSbKg" role="2ShVmc">
