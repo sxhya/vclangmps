@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/vclang_mps" />
   <property name="build.layout" location="${build.dir}/artifacts/vclang_mps" />
-  <property name="mps_home" location="{basedir}/../MPS 3.4/" />
+  <property name="mps_home" location="${basedir}/../MPS 3.4//" />
   <property name="target" location="${basedir}/solutions/jetpad.vclang/vclang/target" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />

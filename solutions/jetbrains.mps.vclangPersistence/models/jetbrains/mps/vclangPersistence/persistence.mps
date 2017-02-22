@@ -60,8 +60,6 @@
     <import index="3vt1" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.core.pattern(jetpad.vclang/)" />
     <import index="ud13" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend.parser(jetpad.vclang/)" />
     <import index="gcx" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend.resolving.visitor(jetpad.vclang/)" />
-    <import index="wru8" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.module(jetpad.vclang/)" />
-    <import index="5utt" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.frontend.resolving(jetpad.vclang/)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
   </imports>
   <registry>
