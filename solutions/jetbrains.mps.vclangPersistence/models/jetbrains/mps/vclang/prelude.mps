@@ -201,7 +201,7 @@
         <child id="1136042658824486601" name="statements" index="1Ra7oe" />
       </concept>
       <concept id="2475333144813271078" name="jetbrains.mps.vclang.structure.PolyUniverseExpression" flags="ng" index="1Z0_T7">
-        <property id="9207929565715598564" name="hLevel" index="3YwEZ3" />
+        <property id="9207929565715598564" name="_hLevel" index="3YwEZ3" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
