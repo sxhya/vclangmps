@@ -15,7 +15,6 @@
         <property id="7154868868705359135" name="precedence" index="2mT2pc" />
         <property id="7154868868705359133" name="associativity" index="2mT2pe" />
       </concept>
-      <concept id="2725427555800137167" name="jetbrains.mps.vclang.structure.LPExpression" flags="ng" index="Dlpgz" />
       <concept id="5947386030418276056" name="jetbrains.mps.vclang.structure.HasType" flags="ng" index="3nIJbd">
         <child id="5947386030418276061" name="type" index="3nIJb8" />
       </concept>
@@ -23,12 +22,12 @@
       <concept id="1136042658824466522" name="jetbrains.mps.vclang.structure.ClassDefinition" flags="ng" index="1Ra3yt">
         <child id="1136042658824486601" name="statements" index="1Ra7oe" />
       </concept>
-      <concept id="5485788686092088073" name="jetbrains.mps.vclang.structure.MaxLevelExpression" flags="ng" index="3RglMR">
-        <child id="5485788686092094304" name="right" index="3Rgiju" />
-        <child id="5485788686092094302" name="left" index="3Rgijw" />
+      <concept id="5485788686092094354" name="jetbrains.mps.vclang.structure.NumberLevelExpression" flags="ng" index="3RgigG">
+        <property id="5485788686092094355" name="level" index="3RgigH" />
       </concept>
-      <concept id="5485788686092079465" name="jetbrains.mps.vclang.structure.AbstractLevelExpression" flags="ng" index="3RgnVn" />
+      <concept id="5485788686092079557" name="jetbrains.mps.vclang.structure.InfExpression" flags="ng" index="3RgnTV" />
       <concept id="2475333144813271078" name="jetbrains.mps.vclang.structure.PolyUniverseExpression" flags="ng" index="1Z0_T7">
+        <child id="2613944457888399079" name="hLevel" index="2ZjQp5" />
         <child id="2475333144813271079" name="plevel" index="1Z0_T6" />
       </concept>
     </language>
@@ -47,11 +46,11 @@
         <property role="2mT2pe" value="2" />
         <property role="2mT2pc" value="10" />
       </node>
-      <node concept="1Z0_T7" id="29zkiAE30Rc" role="3nIJb8">
-        <node concept="3RglMR" id="29zkiAE5_Ln" role="1Z0_T6">
-          <node concept="Dlpgz" id="29zkiAE5_Lz" role="3Rgijw" />
-          <node concept="3RgnVn" id="29zkiAE5_Lr" role="3Rgiju" />
+      <node concept="1Z0_T7" id="7JRb5CwPNBM" role="3nIJb8">
+        <node concept="3RgigG" id="7JRb5CwU8_d" role="1Z0_T6">
+          <property role="3RgigH" value="10" />
         </node>
+        <node concept="3RgnTV" id="7JRb5CwU8_N" role="2ZjQp5" />
       </node>
     </node>
   </node>
