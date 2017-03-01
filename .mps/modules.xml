@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.vclangPersistence/jetbrains.mps.vclangPersistence.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/jetpad.vclang/jetpad.vclang.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox/sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/sandbox2/sandbox2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/vclang_mps.build/vclang_mps.build.msd" folder="" />
     </projectModules>
   </component>
