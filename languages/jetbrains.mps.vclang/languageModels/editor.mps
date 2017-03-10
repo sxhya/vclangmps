@@ -13722,5 +13722,23 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="aCx22aW4VM">
+    <ref role="1XX52x" to="51uy:aCx22aW4Vv" resolve="VclangScopeWildcardExpression" />
+    <node concept="3EZMnI" id="aCx22aWQAp" role="2wV5jI">
+      <node concept="3F0ifn" id="aCx22aXjF0" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+      </node>
+      <node concept="3F1sOY" id="aCx22aW4VO" role="3EZMnx">
+        <ref role="1NtTu8" to="51uy:aCx22aW4VC" resolve="contents" />
+      </node>
+      <node concept="l2Vlx" id="aCx22aWQAq" role="2iSdaV" />
+      <node concept="ljvvj" id="aCx22aWQBj" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="aCx22aXjwr">
+    <ref role="aqKnT" to="51uy:aCx22aW4Vv" resolve="VclangScopeWildcardExpression" />
+  </node>
 </model>
 

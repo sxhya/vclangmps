@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/vclang_mps" />
   <property name="build.layout" location="${build.dir}/artifacts/vclang_mps" />
-  <property name="mps_home" location="${basedir}/../MPS 3.4//" />
+  <property name="mps_home" location="${basedir}/../MPS 3.4" />
   <property name="target" location="${basedir}/solutions/jetpad.vclang/vclang/target" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -306,6 +306,8 @@
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mps}/plugins/mps-console/lang/jetbrains.mps.console.base.jar" />
+      <library file="${artifacts.mps}/plugins/mps-console/lib/mps-console.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk bootstrap="true">
         <module file="${basedir}/languages/jetbrains.mps.vclang/jetbrains.mps.vclang.mpl" bootstrap="true" />
@@ -456,6 +458,7 @@
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclang" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.vclangPersistence" />
+        <fileset file="${artifacts.mps}/plugins/mps-console/lib/mps-console.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${target}/antlr4-runtime-4.5.jar" />

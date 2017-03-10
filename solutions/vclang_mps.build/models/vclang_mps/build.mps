@@ -447,6 +447,15 @@
           <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
         </node>
       </node>
+      <node concept="1SiIV0" id="4qbwD4j9QKX" role="3bR37C">
+        <node concept="3bR9La" id="4qbwD4j9QKY" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:7gQEwkA7nSV" resolve="jetbrains.mps.console" />
+        </node>
+      </node>
+      <node concept="3bR9La" id="4qbwD4j9QOP" role="3bR37C">
+        <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+      </node>
     </node>
     <node concept="1E1JtA" id="Yuz1zXkOr8" role="3989C9">
       <property role="BnDLt" value="true" />

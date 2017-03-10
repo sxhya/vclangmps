@@ -1514,5 +1514,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="aCx22aW4Vv">
+    <property role="EcuMT" value="191548259468070623" />
+    <property role="TrG5h" value="VclangScopeWildcardExpression" />
+    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <node concept="1TJgyj" id="aCx22aW4VC" role="1TKVEi">
+      <property role="IQ2ns" value="191548259468070632" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="contents" />
+      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="aCx22aWodh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
 </model>
 
