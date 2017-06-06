@@ -3,7 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -298,9 +299,6 @@
       </node>
       <node concept="m$_yB" id="Yuz1zXkOmt" role="m$_yh">
         <ref role="m$_yA" node="Yuz1zXkOqZ" resolve="jetbrains.mps.vclangPersistence" />
-      </node>
-      <node concept="m$_yB" id="5i8jMJ3_LnZ" role="m$_yh">
-        <ref role="m$_yA" node="7vDSFCG1u5P" resolve="jetbrains.mps.vclang.pluginSolution" />
       </node>
       <node concept="m$_yB" id="Yuz1zXkOmW" role="m$_yh">
         <ref role="m$_yA" node="Yuz1zXkOr8" resolve="jetpad.vclang" />
