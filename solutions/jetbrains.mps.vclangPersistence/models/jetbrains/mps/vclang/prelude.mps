@@ -1227,7 +1227,7 @@
         <node concept="3clFbF" id="1wJKaxHS2k9" role="3cqZAp">
           <node concept="2YIFZM" id="1wJKaxHS2QA" role="3clFbG">
             <ref role="1Pybhc" to="5utt:~OneshotNameResolver" resolve="OneshotNameResolver" />
-            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.NamespaceProviders,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener):void" resolve="visitModule" />
+            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener):void" resolve="visitModule" />
             <node concept="37vLTw" id="1wJKaxHS7Kw" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
             </node>
@@ -1241,11 +1241,11 @@
             </node>
             <node concept="2ShNRf" id="1wJKaxHS8$K" role="37wK5m">
               <node concept="1pGfFk" id="1wJKaxHSbKg" role="2ShVmc">
-                <ref role="37wK5l" to="eryk:~NameResolver.&lt;init&gt;()" resolve="NameResolver" />
+                <ref role="37wK5l" to="eryk:~NameResolver.&lt;init&gt;(com.jetbrains.jetpad.vclang.frontend.resolving.NamespaceProviders)" resolve="NameResolver" />
+                <node concept="37vLTw" id="4iHpOZXvJN0" role="37wK5m">
+                  <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
+                </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="1wJKaxHSbYO" role="37wK5m">
-              <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
             </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
