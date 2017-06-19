@@ -1249,7 +1249,7 @@
             </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
-                <ref role="37wK5l" to="6kye:~ConcreteResolveListener.&lt;init&gt;(com.jetbrains.jetpad.vclang.error.ErrorReporter)" resolve="ConcreteResolveListener" />
+                <ref role="37wK5l" to="5utt:~BaseResolveListener.&lt;init&gt;(com.jetbrains.jetpad.vclang.error.ErrorReporter)" resolve="BaseResolveListener" />
                 <node concept="37vLTw" id="7Zj$lqew1Dv" role="37wK5m">
                   <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
                 </node>
