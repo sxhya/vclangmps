@@ -277,9 +277,6 @@
     <node concept="PrWs8" id="3vFRxEzPv1d" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
-    <node concept="PrWs8" id="3wdrnIK3BW4" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
-    </node>
     <node concept="PrWs8" id="3wdrnIK3BVL" role="PzmwI">
       <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
     </node>
@@ -294,8 +291,8 @@
     <property role="3GE5qa" value="def" />
     <property role="EcuMT" value="1136042658824486600" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="PrWs8" id="24ni4bq0due" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="3pMhIDEOJKd" role="PzmwI">
+      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
     <node concept="PrWs8" id="5NQyKEZH5rO" role="PzmwI">
       <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
@@ -392,7 +389,7 @@
     <property role="34LRSv" value="function" />
     <property role="R4oN_" value="Function definition" />
     <property role="EcuMT" value="7154868868705358826" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
     <node concept="1TJgyi" id="2wthDpjSwD4" role="1TKVEl">
       <property role="TrG5h" value="arrow" />
       <property role="IQ2nx" value="2890544147308087876" />
@@ -413,9 +410,6 @@
     </node>
     <node concept="PrWs8" id="3wdrnIK3BVb" role="PzmwI">
       <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
-    </node>
-    <node concept="PrWs8" id="KzXl40AQZi" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
     <node concept="PrWs8" id="5a9n1m5cUVF" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
@@ -497,9 +491,6 @@
       <property role="IQ2ns" value="1558369884378043900" />
       <ref role="20lvS9" node="1mwsisV1fp0" resolve="Condition" />
     </node>
-    <node concept="PrWs8" id="KzXl40BR2Y" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
-    </node>
     <node concept="PrWs8" id="5a9n1m5cUVy" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
     </node>
@@ -521,10 +512,7 @@
     <property role="TrG5h" value="Constructor" />
     <property role="34LRSv" value="|" />
     <property role="EcuMT" value="8489208403152790170" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
-    <node concept="PrWs8" id="3ixSrrqDlPz" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
-    </node>
+    <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
     <node concept="PrWs8" id="CSjh4a7Xtf" role="PzmwI">
       <ref role="PrY4T" node="14pT6cv9ApE" resolve="IDataTypeConstructor" />
     </node>
@@ -1055,15 +1043,12 @@
     <property role="TrG5h" value="ClassField" />
     <property role="34LRSv" value="abstract" />
     <property role="EcuMT" value="3792560536687811135" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
     <node concept="PrWs8" id="3ixSrrqzqBb" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
     <node concept="PrWs8" id="3ixSrrqshD0" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
-    </node>
-    <node concept="PrWs8" id="3ixSrrqwTIq" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALSd" resolve="IValidFunctionalSymbol" />
     </node>
     <node concept="PrWs8" id="2jpq9$y3R9f" role="PzmwI">
       <ref role="PrY4T" node="2jpq9$y3OtL" resolve="IField" />
@@ -1324,7 +1309,7 @@
     <property role="3GE5qa" value="classExtension" />
     <property role="TrG5h" value="ClassView" />
     <property role="34LRSv" value="view" />
-    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
     <node concept="1TJgyj" id="6JC1rJyYX4D" role="1TKVEi">
       <property role="IQ2ns" value="7775471061180338473" />
       <property role="20lmBu" value="aggregation" />
@@ -1353,9 +1338,6 @@
     <node concept="PrWs8" id="5N7S6fCcmNY" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
     </node>
-    <node concept="PrWs8" id="5yCRnzPxe7W" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
-    </node>
     <node concept="PrWs8" id="37E91bZPpoc" role="PzmwI">
       <ref role="PrY4T" node="3wdrnIK3BNw" resolve="VcLangNamespace" />
     </node>
@@ -1377,9 +1359,6 @@
     </node>
     <node concept="PrWs8" id="5N7S6fCcmO5" role="PzmwI">
       <ref role="PrY4T" node="3vFRxEzPv0O" resolve="IClassMember" />
-    </node>
-    <node concept="PrWs8" id="5yCRnzPxe85" role="PzmwI">
-      <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
     <node concept="PrWs8" id="2jpq9$y3R93" role="PzmwI">
       <ref role="PrY4T" node="2jpq9$y3OtL" resolve="IField" />
@@ -1528,6 +1507,13 @@
     <node concept="PrWs8" id="aCx22aWodh" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3pMhIDEONP4">
+    <property role="EcuMT" value="3923276198021643588" />
+    <property role="3GE5qa" value="def" />
+    <property role="TrG5h" value="DefinitionFunctional" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
   </node>
 </model>
 
