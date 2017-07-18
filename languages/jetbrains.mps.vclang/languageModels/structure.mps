@@ -64,7 +64,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="6aAUpg3pIV3">
-    <property role="TrG5h" value="ElimCaseExpression" />
+    <property role="TrG5h" value="CaseExpression" />
     <property role="3GE5qa" value="expression" />
     <property role="EcuMT" value="7108625883772415683" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
@@ -80,18 +80,10 @@
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="clauses" />
       <property role="IQ2ns" value="7154868868705329469" />
-      <ref role="20lvS9" node="6dbcPfPFE4W" resolve="AbstractClause" />
+      <ref role="20lvS9" node="6dbcPfPFE4W" resolve="Clause" />
     </node>
     <node concept="PrWs8" id="1$0zzZHXl30" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="4UsT_r7NTry" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="1TJgyi" id="5NOZh$Vbqxk" role="1TKVEl">
-      <property role="TrG5h" value="kind" />
-      <property role="IQ2nx" value="6698256830615627860" />
-      <ref role="AX2Wp" node="6dbcPfPFDMz" resolve="ElimCaseSwitch" />
     </node>
   </node>
   <node concept="PlHQZ" id="6aAUpg3pIVR">
@@ -306,52 +298,13 @@
     <property role="EcuMT" value="7154868868705214950" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
   </node>
-  <node concept="AxPO7" id="6dbcPfPFDMz">
-    <property role="3GE5qa" value="switches" />
-    <property role="TrG5h" value="ElimCaseSwitch" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="6dbcPfPFDM$" role="M5hS2">
-      <property role="1uS6qo" value="elim" />
-      <property role="1uS6qv" value="0" />
-    </node>
-    <node concept="M4N5e" id="6dbcPfPFDM_" role="M5hS2">
-      <property role="1uS6qo" value="case" />
-      <property role="1uS6qv" value="1" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6dbcPfPFE4W">
     <property role="3GE5qa" value="clause" />
-    <property role="TrG5h" value="AbstractClause" />
-    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="Clause" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7154868868705329468" />
     <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-  </node>
-  <node concept="AxPO7" id="6dbcPfPFKEh">
-    <property role="TrG5h" value="ArrowSwitch" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <property role="3GE5qa" value="switches" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="3vFRxEzMS0v" role="M5hS2">
-      <property role="1uS6qv" value="2" />
-      <property role="1uS6qo" value="&lt;abstract&gt;" />
-    </node>
-    <node concept="M4N5e" id="6dbcPfPFKEi" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="&lt;=" />
-    </node>
-    <node concept="M4N5e" id="KzXl40_pIR" role="M5hS2">
-      <property role="1uS6qo" value="=&gt;" />
-      <property role="1uS6qv" value="1" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dbcPfPFKFe">
-    <property role="3GE5qa" value="clause" />
-    <property role="TrG5h" value="Clause" />
-    <property role="34LRSv" value="|" />
-    <property role="EcuMT" value="7154868868705356494" />
-    <ref role="1TJDcQ" node="6dbcPfPFE4W" resolve="AbstractClause" />
     <node concept="1TJgyj" id="5QGigKLa0a6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="patterns" />
@@ -359,17 +312,19 @@
       <property role="IQ2ns" value="6749850258234671750" />
       <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6dbcPfPFKFe">
+    <property role="3GE5qa" value="clause" />
+    <property role="TrG5h" value="FunctionClause" />
+    <property role="34LRSv" value="|" />
+    <property role="EcuMT" value="7154868868705356494" />
+    <ref role="1TJDcQ" node="6dbcPfPFE4W" resolve="Clause" />
     <node concept="1TJgyj" id="6dbcPfPFKH7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="clauseExpression" />
       <property role="IQ2ns" value="7154868868705356615" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-    </node>
-    <node concept="1TJgyi" id="6dbcPfPFKGa" role="1TKVEl">
-      <property role="TrG5h" value="arrow" />
-      <property role="IQ2nx" value="7154868868705356554" />
-      <ref role="AX2Wp" node="6dbcPfPFKEh" resolve="ArrowSwitch" />
     </node>
     <node concept="PrWs8" id="1$0zzZHVbof" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -390,11 +345,6 @@
     <property role="R4oN_" value="Function definition" />
     <property role="EcuMT" value="7154868868705358826" />
     <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
-    <node concept="1TJgyi" id="2wthDpjSwD4" role="1TKVEl">
-      <property role="TrG5h" value="arrow" />
-      <property role="IQ2nx" value="2890544147308087876" />
-      <ref role="AX2Wp" node="6dbcPfPFKEh" resolve="ArrowSwitch" />
-    </node>
     <node concept="1TJgyj" id="6dbcPfPG4rv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
@@ -775,7 +725,7 @@
   </node>
   <node concept="1TIwiD" id="1dats513lFh">
     <property role="3GE5qa" value="clause.pattern" />
-    <property role="TrG5h" value="PatternId" />
+    <property role="TrG5h" value="NamePattern" />
     <property role="R4oN_" value="Matching variable" />
     <property role="EcuMT" value="1390052907877751505" />
     <ref role="1TJDcQ" node="1eT6ycFBBZg" resolve="AbstractPattern" />
@@ -963,11 +913,6 @@
     </node>
     <node concept="PrWs8" id="iEspzHwVFq" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyi" id="4UsT_r7LJ1s" role="1TKVEl">
-      <property role="TrG5h" value="arrow" />
-      <property role="IQ2nx" value="5664655691718520924" />
-      <ref role="AX2Wp" node="6dbcPfPFKEh" resolve="ArrowSwitch" />
     </node>
   </node>
   <node concept="PlHQZ" id="3wdrnIK3BNw">
