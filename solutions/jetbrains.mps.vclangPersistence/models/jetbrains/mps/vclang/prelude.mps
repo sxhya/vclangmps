@@ -22,6 +22,7 @@
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
     <import index="4y5u" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.scope(jetpad.vclang/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -47,6 +48,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
+        <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -109,6 +113,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -122,6 +127,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
+        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
     </language>
     <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" name="jetbrains.mps.vclang">
       <concept id="874812480891080731" name="jetbrains.mps.vclang.structure.HasArguments" flags="ng" index="cHala">
@@ -142,7 +150,7 @@
         <property id="7154868868705359135" name="precedence" index="2mT2pc" />
         <property id="7154868868705359133" name="associativity" index="2mT2pe" />
       </concept>
-      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.Clause" flags="ng" index="2mT3At">
+      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.FunctionClause" flags="ng" index="2mT3At">
         <property id="7154868868705356554" name="arrow" index="2mT3xp" />
         <child id="7154868868705356615" name="clauseExpression" index="2mT3wk" />
         <child id="6749850258234671750" name="patterns" index="1Gx4Ia" />
@@ -155,13 +163,13 @@
       <concept id="6660882825431937838" name="jetbrains.mps.vclang.structure.RefExpression" flags="ng" index="3gbGqd">
         <reference id="6660882825431937839" name="ref" index="3gbGqc" />
       </concept>
-      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.PatternId" flags="ng" index="1ihMWg" />
+      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.NamePattern" flags="ng" index="1ihMWg" />
       <concept id="1390052907877751504" name="jetbrains.mps.vclang.structure.PatternAny" flags="ng" index="1ihMWh" />
       <concept id="1390052907877751508" name="jetbrains.mps.vclang.structure.PatternConstructor" flags="ng" index="1ihMWl" />
       <concept id="5947386030418276056" name="jetbrains.mps.vclang.structure.HasType" flags="ng" index="3nIJbd">
         <child id="5947386030418276061" name="type" index="3nIJb8" />
       </concept>
-      <concept id="7108625883772415683" name="jetbrains.mps.vclang.structure.ElimCaseExpression" flags="ng" index="1xK0tn">
+      <concept id="7108625883772415683" name="jetbrains.mps.vclang.structure.CaseExpression" flags="ng" index="1xK0tn">
         <property id="6698256830615627860" name="kind" index="1BQlld" />
         <child id="7154868868705356232" name="expressions" index="2mT3Er" />
         <child id="7154868868705329469" name="clauses" index="2mTp9I" />
@@ -180,7 +188,7 @@
         <child id="7108625883772462818" name="varNames" index="1xKkXQ" />
       </concept>
       <concept id="7108625883772462820" name="jetbrains.mps.vclang.structure.Variable" flags="ng" index="1xKkXK" />
-      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.VariableExpression" flags="ng" index="1xKkZ5" />
+      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.ReferenceExpression" flags="ng" index="1xKkZ5" />
       <concept id="7108625883772462670" name="jetbrains.mps.vclang.structure.ApplicationExpression" flags="ng" index="1xKkZq" />
       <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedArgument" flags="ng" index="3zkEti" />
       <concept id="2170445311866032397" name="jetbrains.mps.vclang.structure.IPatternConstructor" flags="ng" index="3$ciAf">
@@ -1298,8 +1306,13 @@
                   </node>
                 </node>
                 <node concept="2ShNRf" id="7Zj$lqesg8U" role="37wK5m">
-                  <node concept="1pGfFk" id="7Zj$lqesg8V" role="2ShVmc">
-                    <ref role="37wK5l" to="6lbs:~BaseDependencyListener.&lt;init&gt;()" resolve="BaseDependencyListener" />
+                  <node concept="YeOm9" id="3hX_lzXJMhe" role="2ShVmc">
+                    <node concept="1Y3b0j" id="3hX_lzXJMhh" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <ref role="1Y3XeK" to="6lbs:~DependencyListener" resolve="DependencyListener" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                      <node concept="3Tm1VV" id="3hX_lzXJMhi" role="1B3o_S" />
+                    </node>
                   </node>
                 </node>
               </node>
