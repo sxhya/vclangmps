@@ -18,7 +18,6 @@
     <orderEntry type="module" module-name="mps-devkit" />
     <orderEntry type="module" module-name="mps-editor" />
     <orderEntry type="module" module-name="mps-icons" />
-    <orderEntry type="module" module-name="mps-java" />
     <orderEntry type="module" module-name="mps-platform" />
     <orderEntry type="module" module-name="mps-testing" />
     <orderEntry type="module" module-name="mps-ui" />
@@ -86,5 +85,29 @@
     <orderEntry type="module" module-name="vcs" />
     <orderEntry type="module" module-name="vcs-core" />
     <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.5" level="project" />
+    <orderEntry type="module" module-name="closures-runtime" />
+    <orderEntry type="module" module-name="editing-runtime" />
+    <orderEntry type="module" module-name="httpsupport" />
+    <orderEntry type="module" module-name="instrumentation" />
+    <orderEntry type="module" module-name="logging" />
+    <orderEntry type="module" module-name="misc-tests" />
+    <orderEntry type="module" module-name="model" />
+    <orderEntry type="module" module-name="module" />
+    <orderEntry type="module" module-name="mps-annotations" />
+    <orderEntry type="module" module-name="mps-idea-make-plugin-api" />
+    <orderEntry type="module" module-name="mps-idea-plugin" />
+    <orderEntry type="module" module-name="mps-java-platform" />
+    <orderEntry type="module" module-name="mps-java-platform-base" />
+    <orderEntry type="module" module-name="mps-java-workbench" />
+    <orderEntry type="module" module-name="mps-messaging" />
+    <orderEntry type="module" module-name="mps-migration" />
+    <orderEntry type="module" module-name="mps-project-excludes" />
+    <orderEntry type="module" module-name="pluginSolution" />
+    <orderEntry type="module" module-name="refactoring" />
+    <orderEntry type="module" module-name="startup-util" />
+    <orderEntry type="module" module-name="tuples-runtime" />
+    <orderEntry type="module" module-name="util-core" />
+    <orderEntry type="module" module-name="vclangLanguage" />
+    <orderEntry type="module" module-name="vfs" />
   </component>
 </module>

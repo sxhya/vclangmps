@@ -217,9 +217,9 @@
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUr1">
     <property role="3GE5qa" value="arguments" />
-    <property role="TrG5h" value="TelescopeArgument" />
+    <property role="TrG5h" value="TelescopeParameter" />
     <property role="EcuMT" value="7108625883772462785" />
-    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
+    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedParameter" />
     <node concept="1TJgyj" id="6aAUpg3pUry" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
@@ -232,7 +232,7 @@
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="Variable" />
     <property role="EcuMT" value="7108625883772462820" />
-    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractParameter" />
     <node concept="PrWs8" id="1eT6ycFBtO6" role="PzmwI">
       <ref role="PrY4T" node="1eT6ycFBtO5" resolve="IVariable" />
     </node>
@@ -294,7 +294,7 @@
   </node>
   <node concept="1TIwiD" id="6dbcPfPFe7A">
     <property role="3GE5qa" value="arguments" />
-    <property role="TrG5h" value="AbstractArgument" />
+    <property role="TrG5h" value="AbstractParameter" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7154868868705214950" />
@@ -322,6 +322,9 @@
     </node>
     <node concept="PrWs8" id="1$0zzZHVbof" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="69J5WIgJ4ov" role="PzmwI">
+      <ref role="PrY4T" node="69J5WIgJ4mG" resolve="IPatternContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dbcPfPFKXv">
@@ -426,7 +429,7 @@
       <property role="20kJfa" value="universe" />
       <property role="IQ2ns" value="6698694374042485863" />
       <ref role="20ksaX" node="5a9n1m5cUVt" resolve="type" />
-      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
+      <ref role="20lvS9" node="29q9A5tm7wA" resolve="PolyUniverseExpression" />
     </node>
     <node concept="PrWs8" id="5a9n1m5cUVy" role="PzmwI">
       <ref role="PrY4T" node="5a9n1m5cUVo" resolve="HasType" />
@@ -543,7 +546,7 @@
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="args" />
       <property role="IQ2ns" value="874812480891080732" />
-      <ref role="20lvS9" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+      <ref role="20lvS9" node="6dbcPfPFe7A" resolve="AbstractParameter" />
     </node>
     <node concept="PrWs8" id="1rh2nYs7uk7" role="PrDN$">
       <ref role="PrY4T" node="1rh2nYs7gK9" resolve="IVcConcept" />
@@ -634,10 +637,10 @@
   </node>
   <node concept="1TIwiD" id="5NQyKEZD2Lo">
     <property role="3GE5qa" value="arguments" />
-    <property role="TrG5h" value="TypedArgument" />
+    <property role="TrG5h" value="TypedParameter" />
     <property role="R4oN_" value="Anonymous typed argument" />
     <property role="EcuMT" value="6698694374041332824" />
-    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
+    <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedParameter" />
   </node>
   <node concept="1TIwiD" id="3vFRxEzPfTW">
     <property role="3GE5qa" value="def.scope" />
@@ -679,14 +682,6 @@
       <property role="IQ2ns" value="3792560536692211452" />
       <ref role="20lvS9" node="3ixSrrqHdZW" resolve="NameReference" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="3vFRxEzPfU1">
-    <property role="3GE5qa" value="def.scope" />
-    <property role="TrG5h" value="ExportScopeCommand" />
-    <property role="34LRSv" value="export" />
-    <property role="R4oN_" value="Export scope" />
-    <property role="EcuMT" value="4029558497612201601" />
-    <ref role="1TJDcQ" node="3vFRxEzPfTZ" resolve="AbstractScopeCommand" />
   </node>
   <node concept="PlHQZ" id="3vFRxEzPv0O">
     <property role="TrG5h" value="IClassMember" />
@@ -1036,10 +1031,10 @@
   </node>
   <node concept="1TIwiD" id="3J0mSWJrk4E">
     <property role="3GE5qa" value="arguments" />
-    <property role="TrG5h" value="AbstractTypedArgument" />
+    <property role="TrG5h" value="AbstractTypedParameter" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="4305541914300334378" />
-    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="1TJDcQ" node="6dbcPfPFe7A" resolve="AbstractParameter" />
     <node concept="1TJgyj" id="3J0mSWJrkqy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typeExpr" />
@@ -1138,9 +1133,6 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4KxrVUVo15D" resolve="AbstractLevelExpression" />
     </node>
-    <node concept="PrWs8" id="CSjh4a7hgR" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1AliP_nUugy">
     <property role="3GE5qa" value="expression" />
@@ -1164,7 +1156,7 @@
       <property role="20kJfa" value="typedArgs" />
       <property role="IQ2ns" value="2977910487839987934" />
       <ref role="20ksaX" node="KzXl40_P0s" resolve="args" />
-      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedArgument" />
+      <ref role="20lvS9" node="3J0mSWJrk4E" resolve="AbstractTypedParameter" />
     </node>
     <node concept="PrWs8" id="2_jEsYwBdqI" role="PrDN$">
       <ref role="PrY4T" node="KzXl40_P0r" resolve="HasArguments" />
@@ -1437,6 +1429,9 @@
       <property role="IQ2ns" value="961394753845735485" />
       <ref role="20lvS9" node="1eT6ycFBBZg" resolve="AbstractPattern" />
     </node>
+    <node concept="PrWs8" id="69J5WIgJ6Ih" role="PzmwI">
+      <ref role="PrY4T" node="69J5WIgJ4mG" resolve="IPatternContainer" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4GFfrvjQQiP">
     <property role="EcuMT" value="5416490836585833653" />
@@ -1506,6 +1501,11 @@
     <node concept="PrWs8" id="4GFfrvkFVuJ" role="PzmwI">
       <ref role="PrY4T" node="4GFfrvjQRBs" resolve="IFunctionBody" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="69J5WIgJ4mG">
+    <property role="EcuMT" value="7092914101205878188" />
+    <property role="3GE5qa" value="abstract" />
+    <property role="TrG5h" value="IPatternContainer" />
   </node>
 </model>
 

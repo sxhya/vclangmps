@@ -827,12 +827,12 @@
                 <node concept="3cpWsn" id="5FayNcfX9ml" role="3cpWs9">
                   <property role="TrG5h" value="ta" />
                   <node concept="3Tqbb2" id="5FayNcfX9mg" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                   </node>
                   <node concept="2ShNRf" id="5FayNcfX9qU" role="33vP2m">
                     <node concept="3zrR0B" id="5FayNcfX9q6" role="2ShVmc">
                       <node concept="3Tqbb2" id="5FayNcfX9q7" role="3zrR0E">
-                        <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                        <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                       </node>
                     </node>
                   </node>
@@ -981,7 +981,7 @@
                       </node>
                       <node concept="1mIQ4w" id="4AGmMAPX4Ec" role="2OqNvi">
                         <node concept="chp4Y" id="4AGmMAPX4PA" role="cj9EA">
-                          <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                          <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                         </node>
                       </node>
                     </node>
@@ -993,7 +993,7 @@
                             <node concept="1mfA1w" id="4AGmMAPXdt8" role="2OqNvi" />
                           </node>
                           <node concept="chp4Y" id="7TjuVkBuAsT" role="3oSUPX">
-                            <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                            <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                           </node>
                         </node>
                         <node concept="3TrEf2" id="3J0mSWJrH09" role="2OqNvi">
@@ -1020,12 +1020,12 @@
                     <node concept="3cpWsn" id="4AGmMAPSRzX" role="3cpWs9">
                       <property role="TrG5h" value="result" />
                       <node concept="3Tqbb2" id="4AGmMAPSRzS" role="1tU5fm">
-                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                       </node>
                       <node concept="2ShNRf" id="4AGmMAPUe4h" role="33vP2m">
                         <node concept="3zrR0B" id="4AGmMAPUe4f" role="2ShVmc">
                           <node concept="3Tqbb2" id="4AGmMAPUe4g" role="3zrR0E">
-                            <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                            <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                           </node>
                         </node>
                       </node>
@@ -1098,7 +1098,7 @@
                       <node concept="3cpWsn" id="6FOQVYN0MPe" role="3cpWs9">
                         <property role="TrG5h" value="parent" />
                         <node concept="3Tqbb2" id="6FOQVYN0MP9" role="1tU5fm">
-                          <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                          <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                         </node>
                         <node concept="1PxgMI" id="4AGmMAPXiAC" role="33vP2m">
                           <node concept="2OqwBi" id="4AGmMAPXiAE" role="1m5AlR">
@@ -1106,7 +1106,7 @@
                             <node concept="1mfA1w" id="4AGmMAPXiAG" role="2OqNvi" />
                           </node>
                           <node concept="chp4Y" id="7TjuVkBuArA" role="3oSUPX">
-                            <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                            <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                           </node>
                         </node>
                       </node>
@@ -1191,7 +1191,7 @@
   </node>
   <node concept="24kQdi" id="6aAUpg3pWKG">
     <property role="3GE5qa" value="arguments" />
-    <ref role="1XX52x" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="1XX52x" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     <node concept="3EZMnI" id="6aAUpg3pWKI" role="2wV5jI">
       <node concept="3F0A7n" id="KzXl40BgvQ" role="3EZMnx">
         <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
@@ -2976,7 +2976,7 @@
   </node>
   <node concept="24kQdi" id="5NQyKEZDeeq">
     <property role="3GE5qa" value="arguments" />
-    <ref role="1XX52x" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+    <ref role="1XX52x" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
     <node concept="3EZMnI" id="5NQyKEZDgIh" role="2wV5jI">
       <node concept="3F0A7n" id="5NQyKEZDOnK" role="3EZMnx">
         <ref role="1k5W1q" to="tpen:75A9veqzBn5" resolve="AngleBracket" />
@@ -3030,7 +3030,7 @@
   <node concept="1h_SRR" id="5FayNcfYdMQ">
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="TelescopeArgument_removeType" />
-    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     <node concept="1hA7zw" id="5FayNcfYdMS" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="5FayNcfYdMT" role="1hA7z_">
@@ -3092,7 +3092,7 @@
   <node concept="1h_SRR" id="5FayNcg1Tgb">
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="TelescopeArgument_removeVars" />
-    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     <node concept="1hA7zw" id="5FayNcg1Tgc" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="5FayNcg1Tgd" role="1hA7z_">
@@ -3103,12 +3103,12 @@
                 <node concept="3cpWsn" id="5FayNcg8Kua" role="3cpWs9">
                   <property role="TrG5h" value="typed" />
                   <node concept="3Tqbb2" id="5FayNcg8Ku5" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                   </node>
                   <node concept="2ShNRf" id="5FayNcg8KuJ" role="33vP2m">
                     <node concept="3zrR0B" id="5FayNcg8KuA" role="2ShVmc">
                       <node concept="3Tqbb2" id="5FayNcg8KuB" role="3zrR0E">
-                        <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                        <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                       </node>
                     </node>
                   </node>
@@ -4697,12 +4697,12 @@
                 <node concept="3cpWsn" id="621pCXxqEwv" role="3cpWs9">
                   <property role="TrG5h" value="tele" />
                   <node concept="3Tqbb2" id="621pCXxqEww" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                   </node>
                   <node concept="2ShNRf" id="621pCXxqEwx" role="33vP2m">
                     <node concept="3zrR0B" id="621pCXxqEwy" role="2ShVmc">
                       <node concept="3Tqbb2" id="621pCXxqEwz" role="3zrR0E">
-                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                       </node>
                     </node>
                   </node>
@@ -4975,7 +4975,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="621pCXxqEyF">
-    <ref role="aqKnT" to="51uy:6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="aqKnT" to="51uy:6dbcPfPFe7A" resolve="AbstractParameter" />
     <node concept="1Qtc8_" id="621pCXxqEyG" role="IW6Ez">
       <node concept="3cWJ9i" id="621pCXxqEyH" role="1Qtc8$">
         <node concept="CtIbL" id="621pCXxqEyI" role="CtIbM">
@@ -5248,7 +5248,7 @@
                 <node concept="2OqwBi" id="621pCXxqE_9" role="3fr31v">
                   <node concept="7Obwk" id="621pCXxqE_c" role="2Oq$k0" />
                   <node concept="1BlSNk" id="621pCXxqE_b" role="2OqNvi">
-                    <ref role="1BmUXE" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                    <ref role="1BmUXE" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                     <ref role="1Bn3mz" to="51uy:6aAUpg3pUry" resolve="varNames" />
                   </node>
                 </node>
@@ -5289,12 +5289,12 @@
                   <node concept="3cpWsn" id="621pCXxqE_u" role="3cpWs9">
                     <property role="TrG5h" value="ta" />
                     <node concept="3Tqbb2" id="621pCXxqE_v" role="1tU5fm">
-                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                     </node>
                     <node concept="2ShNRf" id="621pCXxqE_w" role="33vP2m">
                       <node concept="2fJWfE" id="621pCXxqE_x" role="2ShVmc">
                         <node concept="3Tqbb2" id="621pCXxqE_y" role="3zrR0E">
-                          <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                          <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                         </node>
                       </node>
                     </node>
@@ -5723,7 +5723,7 @@
                 </node>
                 <node concept="1mIQ4w" id="621pCXxqECc" role="2OqNvi">
                   <node concept="chp4Y" id="621pCXxqECd" role="cj9EA">
-                    <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                    <ref role="cht4Q" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                   </node>
                 </node>
               </node>
@@ -5757,7 +5757,7 @@
                 <node concept="3cpWsn" id="621pCXxqECs" role="3cpWs9">
                   <property role="TrG5h" value="tele" />
                   <node concept="3Tqbb2" id="621pCXxqECt" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                   </node>
                   <node concept="10QFUN" id="621pCXxqECu" role="33vP2m">
                     <node concept="2OqwBi" id="621pCXxqECv" role="10QFUP">
@@ -5765,7 +5765,7 @@
                       <node concept="1mfA1w" id="621pCXxqECx" role="2OqNvi" />
                     </node>
                     <node concept="3Tqbb2" id="621pCXxqECy" role="10QFUM">
-                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                     </node>
                   </node>
                 </node>
@@ -5898,7 +5898,7 @@
                   <ref role="3cqZAo" node="621pCXxqEE7" resolve="root" />
                 </node>
                 <node concept="1BlSNk" id="621pCXxqEEh" role="2OqNvi">
-                  <ref role="1BmUXE" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                  <ref role="1BmUXE" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                   <ref role="1Bn3mz" to="51uy:3J0mSWJrkqy" resolve="typeExpr" />
                 </node>
               </node>
@@ -5946,7 +5946,7 @@
                 <node concept="3cpWsn" id="621pCXxqEEB" role="3cpWs9">
                   <property role="TrG5h" value="ta" />
                   <node concept="3Tqbb2" id="621pCXxqEEC" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                    <ref role="ehGHo" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                   </node>
                   <node concept="1PxgMI" id="621pCXxqEED" role="33vP2m">
                     <node concept="2OqwBi" id="621pCXxqEEE" role="1m5AlR">
@@ -5956,7 +5956,7 @@
                       <node concept="1mfA1w" id="621pCXxqEEG" role="2OqNvi" />
                     </node>
                     <node concept="chp4Y" id="7TjuVkBuAs4" role="3oSUPX">
-                      <ref role="cht4Q" to="51uy:5NQyKEZD2Lo" resolve="TypedArgument" />
+                      <ref role="cht4Q" to="51uy:5NQyKEZD2Lo" resolve="TypedParameter" />
                     </node>
                   </node>
                 </node>
@@ -5965,12 +5965,12 @@
                 <node concept="3cpWsn" id="621pCXxqEEI" role="3cpWs9">
                   <property role="TrG5h" value="tele" />
                   <node concept="3Tqbb2" id="621pCXxqEEJ" role="1tU5fm">
-                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                    <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                   </node>
                   <node concept="2ShNRf" id="621pCXxqEEK" role="33vP2m">
                     <node concept="3zrR0B" id="621pCXxqEEL" role="2ShVmc">
                       <node concept="3Tqbb2" id="621pCXxqEEM" role="3zrR0E">
-                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                        <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                       </node>
                     </node>
                   </node>
@@ -9790,7 +9790,7 @@
     <node concept="2VfDsV" id="621pCXxqG61" role="3ft7WO" />
   </node>
   <node concept="3p36aQ" id="621pCXxqG2$">
-    <ref role="aqKnT" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="aqKnT" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     <node concept="2F$Pav" id="621pCXxqG2A" role="3ft7WO">
       <node concept="2ZThk1" id="621pCXxqG2B" role="2ZBHrp">
         <ref role="2ZWj4r" to="51uy:KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
@@ -9812,12 +9812,12 @@
               <node concept="3cpWsn" id="621pCXxqG3b" role="3cpWs9">
                 <property role="TrG5h" value="result" />
                 <node concept="3Tqbb2" id="621pCXxqG3c" role="1tU5fm">
-                  <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                  <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                 </node>
                 <node concept="2ShNRf" id="621pCXxqG3d" role="33vP2m">
                   <node concept="3zrR0B" id="621pCXxqG3e" role="2ShVmc">
                     <node concept="3Tqbb2" id="621pCXxqG3f" role="3zrR0E">
-                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+                      <ref role="ehGHo" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
                     </node>
                   </node>
                 </node>
@@ -9914,7 +9914,7 @@
     </node>
     <node concept="2VfDsV" id="621pCXxqG5X" role="3ft7WO" />
     <node concept="3ft5Ry" id="621pCXxqG5Y" role="3ft7WO">
-      <ref role="4PJHt" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+      <ref role="4PJHt" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     </node>
   </node>
   <node concept="3p36aQ" id="621pCXxqG63">
@@ -12100,7 +12100,7 @@
   </node>
   <node concept="1h_SRR" id="23xoO8GOHNt">
     <property role="TrG5h" value="TelescopeArgument_delete" />
-    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="1h_SK9" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
     <node concept="1hA7zw" id="23xoO8GOHPe" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="23xoO8GOHPf" role="1hA7z_">

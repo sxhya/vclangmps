@@ -1200,7 +1200,7 @@
         <node concept="3clFbF" id="1wJKaxHS2k9" role="3cqZAp">
           <node concept="2YIFZM" id="1wJKaxHS2QA" role="3clFbG">
             <ref role="1Pybhc" to="5utt:~OneshotNameResolver" resolve="OneshotNameResolver" />
-            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener):void" resolve="visitModule" />
+            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.primitive.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,java.util.function.Function,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener,com.jetbrains.jetpad.vclang.error.ErrorReporter):void" resolve="visitModule" />
             <node concept="37vLTw" id="1wJKaxHS7Kw" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
             </node>
@@ -1222,7 +1222,7 @@
             </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
-                <ref role="37wK5l" to="5utt:~BaseResolveListener.&lt;init&gt;(com.jetbrains.jetpad.vclang.error.ErrorReporter)" resolve="BaseResolveListener" />
+                <ref role="37wK5l" to="5utt:~BaseResolveListener.&lt;init&gt;()" resolve="BaseResolveListener" />
                 <node concept="37vLTw" id="7Zj$lqew1Dv" role="37wK5m">
                   <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
                 </node>
@@ -1239,7 +1239,7 @@
             </node>
             <node concept="2ShNRf" id="7Zj$lqesg8M" role="33vP2m">
               <node concept="1pGfFk" id="7Zj$lqesg8N" role="2ShVmc">
-                <ref role="37wK5l" to="ssyg:~Typechecking.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,com.jetbrains.jetpad.vclang.error.ErrorReporter,com.jetbrains.jetpad.vclang.typechecking.TypecheckedReporter,com.jetbrains.jetpad.vclang.typechecking.order.DependencyListener)" resolve="Typechecking" />
+                <ref role="37wK5l" to="ssyg:~Typechecking.&lt;init&gt;(com.jetbrains.jetpad.vclang.typechecking.TypecheckerState,com.jetbrains.jetpad.vclang.naming.namespace.StaticNamespaceProvider,com.jetbrains.jetpad.vclang.naming.namespace.DynamicNamespaceProvider,java.util.function.Function,com.jetbrains.jetpad.vclang.error.ErrorReporter,com.jetbrains.jetpad.vclang.typechecking.TypecheckedReporter,com.jetbrains.jetpad.vclang.typechecking.order.DependencyListener)" resolve="Typechecking" />
                 <node concept="37vLTw" id="7Zj$lqevU64" role="37wK5m">
                   <ref role="3cqZAo" node="$YKDbKjg2G" resolve="typecheckerState" />
                 </node>

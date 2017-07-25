@@ -485,11 +485,11 @@
   </node>
   <node concept="1M2fIO" id="4AGmMAPVwGj">
     <property role="3GE5qa" value="arguments" />
-    <ref role="1M2myG" to="51uy:6aAUpg3pUr1" resolve="TelescopeArgument" />
+    <ref role="1M2myG" to="51uy:6aAUpg3pUr1" resolve="TelescopeParameter" />
   </node>
   <node concept="1M2fIO" id="4AGmMAPWIuC">
     <property role="3GE5qa" value="arguments" />
-    <ref role="1M2myG" to="51uy:6dbcPfPFe7A" resolve="AbstractArgument" />
+    <ref role="1M2myG" to="51uy:6dbcPfPFe7A" resolve="AbstractParameter" />
     <ref role="1MND4H" to="51uy:6aAUpg3pUr$" resolve="Variable" />
   </node>
   <node concept="1M2fIO" id="1eT6ycFB9S$">
@@ -1003,7 +1003,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="7TjuVkBuMl0" role="2OqNvi">
-                          <ref role="37wK5l" to="hhlq:2jcrgspEawz" resolve="getStaticMembersIncludingExported" />
+                          <ref role="37wK5l" to="hhlq:2jcrgspEawz" resolve="getStaticMembers" />
                         </node>
                       </node>
                     </node>
@@ -1417,7 +1417,7 @@
                           <ref role="3cqZAo" node="7TjuVkBuMef" resolve="targetClass" />
                         </node>
                         <node concept="2qgKlT" id="7TjuVkBuMf3" role="2OqNvi">
-                          <ref role="37wK5l" to="hhlq:2jcrgspEawz" resolve="getStaticMembersIncludingExported" />
+                          <ref role="37wK5l" to="hhlq:2jcrgspEawz" resolve="getStaticMembers" />
                         </node>
                       </node>
                       <node concept="3Tm1VV" id="7TjuVkBuMf4" role="1B3o_S" />

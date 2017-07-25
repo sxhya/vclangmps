@@ -13,7 +13,6 @@
     <orderEntry type="module" module-name="ant-mps-common" />
     <orderEntry type="module" module-name="baseLanguage-search" />
     <orderEntry type="module" module-name="baseLanguage-util" />
-    <orderEntry type="module" module-name="basePlatform" />
     <orderEntry type="module" module-name="collections-runtime" />
     <orderEntry type="module" module-name="components" />
     <orderEntry type="module" module-name="console" />

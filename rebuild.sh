@@ -1,4 +1,4 @@
-MPSPATH='/home/user/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/172.984/'
+MPSPATH='/home/user/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/172.984'
 rm -rf "${MPSPATH}/plugins/vclang_mps/"
 ant clean && ant
 mv ./build/artifacts/vclang_mps/vclang_mps.zip "${MPSPATH}/plugins/"
