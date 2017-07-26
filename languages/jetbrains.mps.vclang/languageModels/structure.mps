@@ -288,6 +288,9 @@
     <node concept="PrWs8" id="3pMhIDEOJKd" role="PzmwI">
       <ref role="PrY4T" node="KzXl40ALRS" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="7sDFEcKZIZU" role="PzmwI">
+      <ref role="PrY4T" node="1eT6ycFBtO5" resolve="IVariable" />
+    </node>
     <node concept="PrWs8" id="5NQyKEZH5rO" role="PzmwI">
       <ref role="PrY4T" node="KzXl40AYsE" resolve="HasPrecedence" />
     </node>
@@ -774,6 +777,9 @@
     <node concept="PrWs8" id="25RiHgHM$yg" role="PrDN$">
       <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
+    <node concept="PrWs8" id="K3sBIHmgoJ" role="PrDN$">
+      <ref role="PrY4T" node="69J5WIgJ4mG" resolve="IPatternContainer" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1eT6ycFBtO5">
     <property role="3GE5qa" value="arguments" />
@@ -963,7 +969,7 @@
     <property role="3GE5qa" value="def.scope" />
     <property role="TrG5h" value="NameReference" />
     <property role="EcuMT" value="3792560536692252668" />
-    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
+    <ref role="1TJDcQ" node="6aAUpg3pUph" resolve="ReferenceExpression" />
   </node>
   <node concept="1TIwiD" id="54AIZWS0ZUQ">
     <property role="3GE5qa" value="expression" />
@@ -1048,22 +1054,6 @@
       <ref role="AX2Wp" node="KzXl40BdOt" resolve="ImplicitExplicitSwitch" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1mwsisV1fp0">
-    <property role="TrG5h" value="Condition" />
-    <property role="EcuMT" value="1558369884378035776" />
-    <ref role="1TJDcQ" node="1rh2nYs79n8" resolve="BaseVcConcept" />
-    <node concept="PrWs8" id="1mwsisV1fp8" role="PzmwI">
-      <ref role="PrY4T" node="1SuY8bUbX4d" resolve="IPatternConstructor" />
-    </node>
-    <node concept="1TJgyj" id="1mwsisV1fpc" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="expr" />
-      <property role="IQ2ns" value="1558369884378035788" />
-      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-    </node>
-    <node concept="asaX9" id="4GFfrvjOfoc" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="3rcTxloRQWa">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="BinOpSequenceElem" />
@@ -1074,7 +1064,7 @@
       <property role="20kJfa" value="binOp" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="3948783952656822029" />
-      <ref role="20lvS9" node="43YHIaBbeeJ" resolve="DefExpression" />
+      <ref role="20lvS9" node="6aAUpg3pUph" resolve="ReferenceExpression" />
     </node>
     <node concept="1TJgyj" id="3rcTxloRQWf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1138,13 +1128,13 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="ModuleCallExpression" />
     <property role="EcuMT" value="1843462469577204770" />
-    <ref role="1TJDcQ" node="43YHIaBbeeJ" resolve="DefExpression" />
+    <ref role="1TJDcQ" node="6aAUpg3pUph" resolve="ReferenceExpression" />
     <node concept="1TJgyj" id="1AliP_nUuMY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <property role="IQ2ns" value="1843462469577206974" />
-      <ref role="20ksaX" node="43YHIaBbjCZ" resolve="def" />
       <ref role="20lvS9" node="Z42ctSV31q" resolve="ClassDefinition" />
+      <ref role="20ksaX" node="7nfIx2ucone" resolve="var" />
     </node>
   </node>
   <node concept="PlHQZ" id="2_jEsYwBdqH">
@@ -1281,7 +1271,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="classView" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="43YHIaBbeeJ" resolve="DefExpression" />
+      <ref role="20lvS9" node="6aAUpg3pUph" resolve="ReferenceExpression" />
     </node>
     <node concept="1TJgyj" id="3IEYglPhZM_" role="1TKVEi">
       <property role="IQ2ns" value="4299522596116364453" />
