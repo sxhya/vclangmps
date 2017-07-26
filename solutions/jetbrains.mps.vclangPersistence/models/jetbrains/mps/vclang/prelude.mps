@@ -139,7 +139,7 @@
       <concept id="874812480891381546" name="jetbrains.mps.vclang.structure.HasPrecedence" flags="ng" index="cI19V">
         <child id="874812480891202907" name="precedence" index="cIHwa" />
       </concept>
-      <concept id="4305541914300334378" name="jetbrains.mps.vclang.structure.AbstractTypedParameter" flags="ng" index="kFhE_">
+      <concept id="4305541914300334378" name="jetbrains.mps.vclang.structure.AbstractTypedArgument" flags="ng" index="kFhE_">
         <property id="4305541914300335776" name="isImplicit" index="kFhOJ" />
         <child id="4305541914300335778" name="typeExpr" index="kFhOH" />
       </concept>
@@ -150,7 +150,7 @@
         <property id="7154868868705359135" name="precedence" index="2mT2pc" />
         <property id="7154868868705359133" name="associativity" index="2mT2pe" />
       </concept>
-      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.FunctionClause" flags="ng" index="2mT3At">
+      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.Clause" flags="ng" index="2mT3At">
         <child id="7154868868705356615" name="clauseExpression" index="2mT3wk" />
         <child id="961394753846662129" name="patterns" index="1qCXMu" />
       </concept>
@@ -174,7 +174,7 @@
       <concept id="6660882825431937838" name="jetbrains.mps.vclang.structure.RefExpression" flags="ng" index="3gbGqd">
         <reference id="6660882825431937839" name="ref" index="3gbGqc" />
       </concept>
-      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.NamePattern" flags="ng" index="1ihMWg" />
+      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.PatternId" flags="ng" index="1ihMWg" />
       <concept id="1390052907877751504" name="jetbrains.mps.vclang.structure.PatternAny" flags="ng" index="1ihMWh" />
       <concept id="1390052907877751508" name="jetbrains.mps.vclang.structure.PatternConstructor" flags="ng" index="1ihMWl" />
       <concept id="5947386030418276056" name="jetbrains.mps.vclang.structure.HasType" flags="ng" index="3nIJbd">
@@ -190,13 +190,13 @@
         <child id="8489208403152956264" name="leftArg" index="3FZH5S" />
         <child id="8489208403152956266" name="rightArg" index="3FZH5U" />
       </concept>
-      <concept id="7108625883772462785" name="jetbrains.mps.vclang.structure.TelescopeParameter" flags="ng" index="1xKkXl">
+      <concept id="7108625883772462785" name="jetbrains.mps.vclang.structure.TelescopeArgument" flags="ng" index="1xKkXl">
         <child id="7108625883772462818" name="varNames" index="1xKkXQ" />
       </concept>
       <concept id="7108625883772462820" name="jetbrains.mps.vclang.structure.Variable" flags="ng" index="1xKkXK" />
-      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.ReferenceExpression" flags="ng" index="1xKkZ5" />
+      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.VariableExpression" flags="ng" index="1xKkZ5" />
       <concept id="7108625883772462670" name="jetbrains.mps.vclang.structure.ApplicationExpression" flags="ng" index="1xKkZq" />
-      <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedParameter" flags="ng" index="3zkEti" />
+      <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedArgument" flags="ng" index="3zkEti" />
       <concept id="2170445311866032397" name="jetbrains.mps.vclang.structure.IPatternConstructor" flags="ng" index="3$ciAf">
         <child id="1390052907877751546" name="argPatterns" index="1ihMWV" />
       </concept>
@@ -1200,7 +1200,7 @@
         <node concept="3clFbF" id="1wJKaxHS2k9" role="3cqZAp">
           <node concept="2YIFZM" id="1wJKaxHS2QA" role="3clFbG">
             <ref role="1Pybhc" to="5utt:~OneshotNameResolver" resolve="OneshotNameResolver" />
-            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.primitive.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,java.util.function.Function,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener,com.jetbrains.jetpad.vclang.error.ErrorReporter):void" resolve="visitModule" />
+            <ref role="37wK5l" to="5utt:~OneshotNameResolver.visitModule(com.jetbrains.jetpad.vclang.term.Abstract$ClassDefinition,com.jetbrains.jetpad.vclang.naming.scope.primitive.Scope,com.jetbrains.jetpad.vclang.naming.NameResolver,com.jetbrains.jetpad.vclang.frontend.resolving.ResolveListener,com.jetbrains.jetpad.vclang.error.ErrorReporter):void" resolve="visitModule" />
             <node concept="37vLTw" id="1wJKaxHS7Kw" role="37wK5m">
               <ref role="3cqZAo" node="78OOKGWqRel" resolve="myPrelude" />
             </node>
@@ -1219,10 +1219,6 @@
                   <ref role="3cqZAo" node="1wJKaxHRYNX" resolve="providers" />
                 </node>
               </node>
-            </node>
-            <node concept="10M0yZ" id="3oxjdccxiUD" role="37wK5m">
-              <ref role="3cqZAo" to="xq8z:3oxjdcct$PA" resolve="openGetter" />
-              <ref role="1PxDUh" to="xq8z:QaRw2gXk6u" resolve="NameResolutionUtils" />
             </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
@@ -1263,9 +1259,9 @@
                     <ref role="2Oxat5" to="5utt:~NamespaceProviders.dynamics" resolve="dynamics" />
                   </node>
                 </node>
-                <node concept="10M0yZ" id="3oxjdccxfXK" role="37wK5m">
-                  <ref role="3cqZAo" to="xq8z:3oxjdcct$PA" resolve="openGetter" />
-                  <ref role="1PxDUh" to="xq8z:QaRw2gXk6u" resolve="NameResolutionUtils" />
+                <node concept="10M0yZ" id="2vhwrY476JM" role="37wK5m">
+                  <ref role="3cqZAo" to="5utt:~HasOpens.GET" resolve="GET" />
+                  <ref role="1PxDUh" to="5utt:~HasOpens" resolve="HasOpens" />
                 </node>
                 <node concept="37vLTw" id="7Zj$lqevVcP" role="37wK5m">
                   <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
