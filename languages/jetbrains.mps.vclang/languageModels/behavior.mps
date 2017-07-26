@@ -847,12 +847,9 @@
       <ref role="13i0hy" node="6mU6lSbLceY" resolve="toSourceParameter" />
       <node concept="3Tm1VV" id="6mU6lSbLcFA" role="1B3o_S" />
       <node concept="3clFbS" id="6mU6lSbLcFD" role="3clF47">
-        <node concept="3clFbF" id="4GFfrvl0TYX" role="3cqZAp">
-          <node concept="2ShNRf" id="4GFfrvl0U2g" role="3clFbG">
-            <node concept="1pGfFk" id="4GFfrvl0U2h" role="2ShVmc">
-              <ref role="37wK5l" to="xq8z:5NQyKEZMtyP" resolve="VariableAdapter" />
-              <node concept="13iPFW" id="4GFfrvl0U2i" role="37wK5m" />
-            </node>
+        <node concept="3clFbF" id="eY_yYlNxlK" role="3cqZAp">
+          <node concept="BsUDl" id="eY_yYlNxlF" role="3clFbG">
+            <ref role="37wK5l" node="4GFfrvl0TNb" resolve="getAdapter" />
           </node>
         </node>
       </node>
@@ -863,8 +860,8 @@
     <node concept="13i0hz" id="4GFfrvl0TNb" role="13h7CS">
       <property role="TrG5h" value="getAdapter" />
       <node concept="3Tm1VV" id="4GFfrvl0TNc" role="1B3o_S" />
-      <node concept="3uibUv" id="4GFfrvl0TVE" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$ReferableSourceNode" resolve="Abstract.ReferableSourceNode" />
+      <node concept="3uibUv" id="eY_yYlNy$e" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$NameParameter" resolve="Abstract.NameParameter" />
       </node>
       <node concept="3clFbS" id="4GFfrvl0TNe" role="3clF47">
         <node concept="3clFbF" id="5NQyKEZMtNW" role="3cqZAp">
