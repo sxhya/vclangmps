@@ -30,7 +30,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="xq8z" ref="r:a2363875-08b0-43d1-8b15-6bbfe6478138(jetbrains.mps.vclangPersistence.persistence)" />
     <import index="nl56" ref="r:9b915bc4-617f-4e37-afd2-3de80862c6d1(jetbrains.mps.vclang.prelude)" />
-    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="d7yf" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.term.legacy(jetpad.vclang/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -856,8 +856,8 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="6mU6lSbLee_" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Argument" resolve="Abstract.Argument" />
+      <node concept="3uibUv" id="3oxjdccxkFC" role="3clF45">
+        <ref role="3uigEE" to="2968:~Abstract$Parameter" resolve="Abstract.Parameter" />
       </node>
     </node>
     <node concept="13i0hz" id="4GFfrvl0TNb" role="13h7CS">
@@ -5810,8 +5810,8 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="toSourceStatement" />
       <node concept="3Tm1VV" id="3wdrnIK4lOX" role="1B3o_S" />
-      <node concept="3uibUv" id="3wdrnIK4lPa" role="3clF45">
-        <ref role="3uigEE" to="2968:~Abstract$Statement" resolve="Abstract.Statement" />
+      <node concept="3uibUv" id="3oxjdccqyc7" role="3clF45">
+        <ref role="3uigEE" to="d7yf:~LegacyAbstract$DefineStatement" resolve="LegacyAbstract.DefineStatement" />
       </node>
       <node concept="3clFbS" id="3wdrnIK4lOZ" role="3clF47">
         <node concept="3clFbJ" id="22hZD2CkFGD" role="3cqZAp">

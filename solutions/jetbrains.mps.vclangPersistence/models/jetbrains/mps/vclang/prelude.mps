@@ -22,6 +22,7 @@
     <import index="eryk" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming(jetpad.vclang/)" />
     <import index="6lbs" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.typechecking.order(jetpad.vclang/)" />
     <import index="4y5u" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.scope(jetpad.vclang/)" />
+    <import index="robv" ref="9c441817-78bb-4808-96cc-731aecf27641/java:com.jetbrains.jetpad.vclang.naming.scope.primitive(jetpad.vclang/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1206,7 +1207,7 @@
             </node>
             <node concept="2ShNRf" id="7MNt9XaXtXd" role="37wK5m">
               <node concept="1pGfFk" id="7MNt9XaXxb8" role="2ShVmc">
-                <ref role="37wK5l" to="4y5u:~NamespaceScope.&lt;init&gt;(com.jetbrains.jetpad.vclang.naming.namespace.Namespace)" resolve="NamespaceScope" />
+                <ref role="37wK5l" to="robv:~NamespaceScope.&lt;init&gt;(com.jetbrains.jetpad.vclang.naming.namespace.Namespace)" resolve="NamespaceScope" />
                 <node concept="37vLTw" id="7MNt9XaXxbt" role="37wK5m">
                   <ref role="3cqZAo" node="78OOKGWqIJC" resolve="myPreludeNamespace" />
                 </node>
@@ -1220,13 +1221,17 @@
                 </node>
               </node>
             </node>
+            <node concept="10M0yZ" id="3oxjdccxiUD" role="37wK5m">
+              <ref role="3cqZAo" to="xq8z:3oxjdcct$PA" resolve="openGetter" />
+              <ref role="1PxDUh" to="xq8z:QaRw2gXk6u" resolve="NameResolutionUtils" />
+            </node>
             <node concept="2ShNRf" id="RHOj$UiC_k" role="37wK5m">
               <node concept="1pGfFk" id="RHOj$UiCXe" role="2ShVmc">
                 <ref role="37wK5l" to="5utt:~BaseResolveListener.&lt;init&gt;()" resolve="BaseResolveListener" />
-                <node concept="37vLTw" id="7Zj$lqew1Dv" role="37wK5m">
-                  <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
-                </node>
               </node>
+            </node>
+            <node concept="37vLTw" id="3oxjdccxicU" role="37wK5m">
+              <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
             </node>
           </node>
         </node>
@@ -1258,6 +1263,10 @@
                   <node concept="2OwXpG" id="7Zj$lqevV61" role="2OqNvi">
                     <ref role="2Oxat5" to="5utt:~NamespaceProviders.dynamics" resolve="dynamics" />
                   </node>
+                </node>
+                <node concept="10M0yZ" id="3oxjdccxfXK" role="37wK5m">
+                  <ref role="3cqZAo" to="xq8z:3oxjdcct$PA" resolve="openGetter" />
+                  <ref role="1PxDUh" to="xq8z:QaRw2gXk6u" resolve="NameResolutionUtils" />
                 </node>
                 <node concept="37vLTw" id="7Zj$lqevVcP" role="37wK5m">
                   <ref role="3cqZAo" node="RHOj$Ui_lY" resolve="errorReporter" />
