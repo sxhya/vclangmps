@@ -241,7 +241,7 @@
       <concept id="6660882825431937838" name="jetbrains.mps.vclang.structure.RefExpression" flags="ng" index="3gbGqd">
         <reference id="6660882825431937839" name="ref" index="3gbGqc" />
       </concept>
-      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.VariableExpression" flags="ng" index="1xKkZ5" />
+      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.ReferenceExpression" flags="ng" index="1xKkZ5" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1961,24 +1961,13 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="24ni4bq5VBj" role="3clFbw">
-            <node concept="2OqwBi" id="24ni4bq5UJu" role="3uHU7B">
-              <node concept="37vLTw" id="24ni4bq5UGT" role="2Oq$k0">
-                <ref role="3cqZAo" node="2JrfyI$Q7dT" resolve="kind" />
-              </node>
-              <node concept="2Zo12i" id="24ni4bq5UOU" role="2OqNvi">
-                <node concept="chp4Y" id="24ni4bq5UPV" role="2Zo12j">
-                  <ref role="cht4Q" to="51uy:Z42ctSV7V8" resolve="Definition" />
-                </node>
-              </node>
+          <node concept="2OqwBi" id="24ni4bq5UJu" role="3clFbw">
+            <node concept="37vLTw" id="24ni4bq5UGT" role="2Oq$k0">
+              <ref role="3cqZAo" node="2JrfyI$Q7dT" resolve="kind" />
             </node>
-            <node concept="2OqwBi" id="24ni4bqk5fN" role="3uHU7w">
-              <node concept="37vLTw" id="24ni4bqk5dQ" role="2Oq$k0">
-                <ref role="3cqZAo" node="2JrfyI$Q7dV" resolve="child" />
-              </node>
-              <node concept="1BlSNk" id="24ni4bqk5k$" role="2OqNvi">
-                <ref role="1BmUXE" to="51uy:6dbcPfPFLfE" resolve="DefFunction" />
-                <ref role="1Bn3mz" to="51uy:6dbcPfPG4rv" resolve="expression" />
+            <node concept="2Zo12i" id="24ni4bq5UOU" role="2OqNvi">
+              <node concept="chp4Y" id="24ni4bq5UPV" role="2Zo12j">
+                <ref role="cht4Q" to="51uy:Z42ctSV7V8" resolve="Definition" />
               </node>
             </node>
           </node>

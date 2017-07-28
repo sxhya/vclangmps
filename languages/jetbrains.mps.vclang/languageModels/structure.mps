@@ -9,7 +9,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -56,7 +55,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -209,9 +207,6 @@
       <property role="IQ2ns" value="8489208403152958515" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="7GSxIwvEUbf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6aAUpg3pUr1">
     <property role="3GE5qa" value="arguments" />
@@ -343,13 +338,6 @@
     <property role="R4oN_" value="Function definition" />
     <property role="EcuMT" value="7154868868705358826" />
     <ref role="1TJDcQ" node="3pMhIDEONP4" resolve="DefinitionFunctional" />
-    <node concept="1TJgyj" id="6dbcPfPG4rv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="IQ2ns" value="7154868868705437407" />
-      <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-      <node concept="asaX9" id="4GFfrvkF6uI" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="4GFfrvkF6uK" role="1TKVEi">
       <property role="IQ2ns" value="5416490836599531440" />
       <property role="20lmBu" value="aggregation" />
@@ -484,9 +472,6 @@
     <node concept="PrWs8" id="4is0AtM3vQS" role="PzmwI">
       <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
-    <node concept="PrWs8" id="2wthDpjS0xE" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7nfIx2ucmVD">
     <property role="3GE5qa" value="literal" />
@@ -518,24 +503,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8489208403152962622" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="43YHIaBbeeJ">
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="DefExpression" />
-    <property role="R4oN_" value="Constructor usage" />
-    <property role="EcuMT" value="4683381747095495599" />
-    <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
-    <node concept="1TJgyj" id="43YHIaBbjCZ" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="def" />
-      <property role="IQ2ns" value="4683381747095517759" />
-      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
-      <ref role="20ksaX" node="5LKdqecnJcJ" resolve="ref" />
-    </node>
-    <node concept="PrWs8" id="5LKdqecnJEW" role="PzmwI">
-      <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
     </node>
   </node>
   <node concept="PlHQZ" id="KzXl40_P0r">
@@ -1071,9 +1038,6 @@
       <property role="IQ2ns" value="3948783952656822031" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="3rcTxloRQWb" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3rcTxloRQWi">
     <property role="3GE5qa" value="expression" />
@@ -1161,9 +1125,6 @@
       <property role="20kJfa" value="reference" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="7Vm3Z_eVOx7" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JzqlRa6aQ7">

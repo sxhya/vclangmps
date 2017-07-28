@@ -84,5 +84,6 @@
     <orderEntry type="module" module-name="behavior-api" />
     <orderEntry type="module" module-name="behavior-runtime" />
     <orderEntry type="module" module-name="smodelquery-runtime" />
+    <orderEntry type="module" module-name="vclangPersistence" />
   </component>
 </module>
