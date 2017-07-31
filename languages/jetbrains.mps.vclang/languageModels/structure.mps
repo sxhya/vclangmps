@@ -413,6 +413,11 @@
       <property role="TrG5h" value="isTruncated" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="52XppZkT7Qh" role="1TKVEl">
+      <property role="IQ2nx" value="5817918030778498449" />
+      <property role="TrG5h" value="withIndices" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5NQyKEZHshB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="universe" />

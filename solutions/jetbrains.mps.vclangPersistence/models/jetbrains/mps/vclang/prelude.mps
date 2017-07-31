@@ -139,7 +139,7 @@
       <concept id="874812480891381546" name="jetbrains.mps.vclang.structure.HasPrecedence" flags="ng" index="cI19V">
         <child id="874812480891202907" name="precedence" index="cIHwa" />
       </concept>
-      <concept id="4305541914300334378" name="jetbrains.mps.vclang.structure.AbstractTypedArgument" flags="ng" index="kFhE_">
+      <concept id="4305541914300334378" name="jetbrains.mps.vclang.structure.AbstractTypedParameter" flags="ng" index="kFhE_">
         <property id="4305541914300335776" name="isImplicit" index="kFhOJ" />
         <child id="4305541914300335778" name="typeExpr" index="kFhOH" />
       </concept>
@@ -150,7 +150,7 @@
         <property id="7154868868705359135" name="precedence" index="2mT2pc" />
         <property id="7154868868705359133" name="associativity" index="2mT2pe" />
       </concept>
-      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.Clause" flags="ng" index="2mT3At">
+      <concept id="7154868868705356494" name="jetbrains.mps.vclang.structure.FunctionClause" flags="ng" index="2mT3At">
         <child id="7154868868705356615" name="clauseExpression" index="2mT3wk" />
         <child id="961394753846662129" name="patterns" index="1qCXMu" />
       </concept>
@@ -174,7 +174,7 @@
       <concept id="6660882825431937838" name="jetbrains.mps.vclang.structure.RefExpression" flags="ng" index="3gbGqd">
         <reference id="6660882825431937839" name="ref" index="3gbGqc" />
       </concept>
-      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.PatternId" flags="ng" index="1ihMWg" />
+      <concept id="1390052907877751505" name="jetbrains.mps.vclang.structure.NamePattern" flags="ng" index="1ihMWg" />
       <concept id="1390052907877751504" name="jetbrains.mps.vclang.structure.PatternAny" flags="ng" index="1ihMWh" />
       <concept id="1390052907877751508" name="jetbrains.mps.vclang.structure.PatternConstructor" flags="ng" index="1ihMWl" />
       <concept id="5947386030418276056" name="jetbrains.mps.vclang.structure.HasType" flags="ng" index="3nIJbd">
@@ -190,20 +190,22 @@
         <child id="8489208403152956264" name="leftArg" index="3FZH5S" />
         <child id="8489208403152956266" name="rightArg" index="3FZH5U" />
       </concept>
-      <concept id="7108625883772462785" name="jetbrains.mps.vclang.structure.TelescopeArgument" flags="ng" index="1xKkXl">
+      <concept id="7108625883772462785" name="jetbrains.mps.vclang.structure.TelescopeParameter" flags="ng" index="1xKkXl">
         <child id="7108625883772462818" name="varNames" index="1xKkXQ" />
       </concept>
       <concept id="7108625883772462820" name="jetbrains.mps.vclang.structure.Variable" flags="ng" index="1xKkXK" />
-      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.VariableExpression" flags="ng" index="1xKkZ5" />
+      <concept id="7108625883772462673" name="jetbrains.mps.vclang.structure.ReferenceExpression" flags="ng" index="1xKkZ5" />
       <concept id="7108625883772462670" name="jetbrains.mps.vclang.structure.ApplicationExpression" flags="ng" index="1xKkZq" />
-      <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedArgument" flags="ng" index="3zkEti" />
+      <concept id="6698694374041332824" name="jetbrains.mps.vclang.structure.TypedParameter" flags="ng" index="3zkEti" />
       <concept id="2170445311866032397" name="jetbrains.mps.vclang.structure.IPatternConstructor" flags="ng" index="3$ciAf">
         <child id="1390052907877751546" name="argPatterns" index="1ihMWV" />
       </concept>
       <concept id="8489208403152790170" name="jetbrains.mps.vclang.structure.Constructor" flags="ng" index="3FSlya">
         <child id="5416490836599723274" name="body" index="2vx6yX" />
       </concept>
-      <concept id="8489208403152756709" name="jetbrains.mps.vclang.structure.DefType" flags="ng" index="3FSunP" />
+      <concept id="8489208403152756709" name="jetbrains.mps.vclang.structure.DefType" flags="ng" index="3FSunP">
+        <property id="5817918030778498449" name="withIndices" index="24mhwe" />
+      </concept>
       <concept id="8489208403152962591" name="jetbrains.mps.vclang.structure.BracketExpression" flags="ng" index="3FZzSf">
         <property id="3942936511371557811" name="isImplicit" index="3yw2hI" />
         <child id="8489208403152962622" name="expression" index="3FZzSI" />
@@ -260,6 +262,7 @@
     <property role="TrG5h" value="Prelude" />
     <node concept="3FSunP" id="1Te6WjKRXyZ" role="1Ra7oe">
       <property role="TrG5h" value="Nat" />
+      <property role="24mhwe" value="false" />
       <node concept="2oWQWw" id="PnzQXokkoi" role="2oWcCO">
         <node concept="3FSlya" id="PnzQXokkoj" role="2oWQWJ">
           <property role="TrG5h" value="zero" />
@@ -279,6 +282,7 @@
     </node>
     <node concept="3FSunP" id="6wsTcrVf9wE" role="1Ra7oe">
       <property role="TrG5h" value="I" />
+      <property role="24mhwe" value="false" />
       <node concept="2oWQWw" id="PnzQXnMW_u" role="2oWcCO">
         <node concept="3FSlya" id="PnzQXnMW_v" role="2oWQWJ">
           <property role="TrG5h" value="left" />
@@ -746,6 +750,7 @@
     </node>
     <node concept="3FSunP" id="1q9iNMBIgd5" role="1Ra7oe">
       <property role="TrG5h" value="TrP" />
+      <property role="24mhwe" value="false" />
       <node concept="2oWQWw" id="PnzQXnPOnn" role="2oWcCO">
         <node concept="3FSlya" id="PnzQXnPOq6" role="2oWQWJ">
           <property role="TrG5h" value="inP" />
@@ -819,6 +824,7 @@
     </node>
     <node concept="3FSunP" id="1q9iNMBIg87" role="1Ra7oe">
       <property role="TrG5h" value="TrS" />
+      <property role="24mhwe" value="false" />
       <node concept="2oWQWw" id="PnzQXnPOLc" role="2oWcCO">
         <node concept="3FSlya" id="PnzQXnPOLd" role="2oWQWJ">
           <property role="TrG5h" value="inS" />
