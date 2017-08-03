@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="sandbox" uuid="ad269026-4271-46b1-9170-de2741521e3c" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="vclang-lib/test" />
+    <modelRoot contentPath="${module}/vclang-lib/test" type="default">
+      <sourceRoot location="." />
     </modelRoot>
   </models>
   <sourcePath />
