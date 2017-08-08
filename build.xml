@@ -44,6 +44,8 @@
         </application-components>
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/lib" />
+          <mps.DataSourceFactoryRuleProvider implementationClass="jetbrains.mps.vclangPersistence.persistence.VclangSourceFactoryRule"></mps.DataSourceFactoryRuleProvider>
+          <mps.ModelFactoryProvider implementationClass="jetbrains.mps.vclangPersistence.persistence.VclangModelFactory" />
         </extensions>
         
         <extensions defaultExtensionNs="com.intellij">

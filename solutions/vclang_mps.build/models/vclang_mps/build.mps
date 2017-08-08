@@ -304,6 +304,25 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="4vwODMPxmtD" role="3o6s8t">
+          <property role="2pNNFO" value="mps.DataSourceFactoryRuleProvider" />
+          <node concept="2pNUuL" id="4vwODMPxmzU" role="2pNNFR">
+            <property role="2pNUuO" value="implementationClass" />
+            <node concept="2pMdtt" id="4vwODMPxtbr" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangSourceFactoryRule" />
+            </node>
+          </node>
+          <node concept="3o6iSG" id="4vwODMPxmzq" role="3o6s8t" />
+        </node>
+        <node concept="2pNNFK" id="1EO8IEyWbGB" role="3o6s8t">
+          <property role="2pNNFO" value="mps.ModelFactoryProvider" />
+          <node concept="2pNUuL" id="1EO8IEyWexk" role="2pNNFR">
+            <property role="2pNUuO" value="implementationClass" />
+            <node concept="2pMdtt" id="1EO8IEyWexM" role="2pMdts">
+              <property role="2pMdty" value="jetbrains.mps.vclangPersistence.persistence.VclangModelFactory" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3_J27D" id="7ZoWiKcez98" role="m$_yQ">
         <node concept="3Mxwew" id="7ZoWiKcez9x" role="3MwsjC">
