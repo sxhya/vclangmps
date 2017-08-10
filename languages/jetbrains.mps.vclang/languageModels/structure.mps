@@ -106,7 +106,7 @@
     <node concept="1TJgyj" id="7nfIx2ucmHE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rightArg" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8489208403152956266" />
       <ref role="20lvS9" node="KzXl40_QXs" resolve="Expression" />
     </node>
@@ -471,8 +471,8 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="function" />
       <property role="IQ2ns" value="8489208403152956717" />
-      <ref role="20lvS9" node="Z42ctSV7V8" resolve="Definition" />
       <ref role="20ksaX" node="5LKdqecnJcJ" resolve="ref" />
+      <ref role="20lvS9" node="1eT6ycFBtO5" resolve="IVariable" />
     </node>
     <node concept="PrWs8" id="4is0AtM3vQS" role="PzmwI">
       <ref role="PrY4T" node="5LKdqecnJcI" resolve="RefExpression" />
