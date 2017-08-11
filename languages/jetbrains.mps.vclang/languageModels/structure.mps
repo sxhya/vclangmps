@@ -386,7 +386,7 @@
   <node concept="AxPO7" id="6dbcPfPFLky">
     <property role="3GE5qa" value="switches" />
     <property role="TrG5h" value="AssociativitySwitch" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="3lZH7k" value="derive_from_presentation" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="6dbcPfPFLkz" role="M5hS2">
       <property role="1uS6qo" value="infixr" />
@@ -452,7 +452,7 @@
     <node concept="1TJgyj" id="4GFfrvkFPka" role="1TKVEi">
       <property role="IQ2ns" value="5416490836599723274" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="body" />
       <ref role="20lvS9" node="4GFfrvkFNpA" resolve="ElimBody" />
     </node>
