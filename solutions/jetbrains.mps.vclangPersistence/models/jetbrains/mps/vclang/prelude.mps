@@ -146,7 +146,6 @@
       </concept>
     </language>
     <language id="2db233bb-72db-49c3-adc4-7ae97f87f8dc" name="jetbrains.mps.vclang">
-      <concept id="874812480891088732" name="jetbrains.mps.vclang.structure.Expression" flags="ng" index="cH9Cd" />
       <concept id="874812480891080731" name="jetbrains.mps.vclang.structure.HasArguments" flags="ng" index="cHala">
         <child id="874812480891080732" name="args" index="cHald" />
       </concept>
@@ -1553,12 +1552,11 @@
               <property role="TrG5h" value="m'" />
             </node>
           </node>
-          <node concept="3FZHsW" id="2i6LzxNWbWK" role="2mT3wk">
+          <node concept="3FZHsW" id="7DO$fRoZ5_E" role="2mT3wk">
             <ref role="3gbGqc" node="2i6LzxNPiQk" resolve="+" />
             <node concept="1xKkZ5" id="2i6LzxNWbVK" role="3FZH5S">
               <ref role="3gbGqc" node="PnzQXombr9" resolve="suc" />
             </node>
-            <node concept="cH9Cd" id="2i6LzxNWbYr" role="3FZH5U" />
           </node>
         </node>
         <node concept="2mT3At" id="2i6LzxNQYDS" role="2oMvr4">
