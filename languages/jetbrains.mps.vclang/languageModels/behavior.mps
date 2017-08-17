@@ -5561,8 +5561,8 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="toSourceStatement" />
       <node concept="3Tm1VV" id="3wdrnIK4lOX" role="1B3o_S" />
-      <node concept="3uibUv" id="3oxjdccqyc7" role="3clF45">
-        <ref role="3uigEE" to="d7yf:~LegacyAbstract$DefineStatement" resolve="LegacyAbstract.DefineStatement" />
+      <node concept="3uibUv" id="7R9BGeC2Ekh" role="3clF45">
+        <ref role="3uigEE" to="d7yf:~LegacyAbstract$Statement" resolve="LegacyAbstract.Statement" />
       </node>
       <node concept="3clFbS" id="3wdrnIK4lOZ" role="3clF47">
         <node concept="3clFbJ" id="22hZD2CkFGD" role="3cqZAp">
@@ -5618,6 +5618,26 @@
       </node>
       <node concept="3Tqbb2" id="24ni4bpKruF" role="3clF45">
         <ref role="ehGHo" to="51uy:Z42ctSV7V8" resolve="Definition" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7R9BGeC2tsh" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="toSourceStatement" />
+      <ref role="13i0hy" node="3wdrnIK4lOW" resolve="toSourceStatement" />
+      <node concept="3Tm1VV" id="7R9BGeC2tsi" role="1B3o_S" />
+      <node concept="3clFbS" id="7R9BGeC2tsz" role="3clF47">
+        <node concept="3clFbF" id="7R9BGeC2$yW" role="3cqZAp">
+          <node concept="2ShNRf" id="7R9BGeC2$yU" role="3clFbG">
+            <node concept="1pGfFk" id="7R9BGeC2CFd" role="2ShVmc">
+              <ref role="37wK5l" to="xq8z:3wdrnIK4zG0" resolve="NamespaceCommandAdapter" />
+              <node concept="13iPFW" id="7R9BGeC2CLV" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="7R9BGeC3X6e" role="3clF45">
+        <ref role="3uigEE" to="d7yf:~LegacyAbstract$Statement" resolve="LegacyAbstract.Statement" />
       </node>
     </node>
   </node>

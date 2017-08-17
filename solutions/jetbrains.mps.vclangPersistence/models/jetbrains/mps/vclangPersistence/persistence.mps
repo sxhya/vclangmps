@@ -12655,22 +12655,33 @@
           <node concept="3clFbS" id="4q8lplF5xX$" role="2LFqv$">
             <node concept="3clFbJ" id="4q8lplF5zas" role="3cqZAp">
               <node concept="3clFbS" id="4q8lplF5zat" role="3clFbx">
-                <node concept="3clFbF" id="3oxjdcctUa1" role="3cqZAp">
-                  <node concept="2OqwBi" id="3oxjdcctXM6" role="3clFbG">
-                    <node concept="2OqwBi" id="3oxjdcctXiX" role="2Oq$k0">
-                      <node concept="2GrUjf" id="3oxjdcctXd0" role="2Oq$k0">
+                <node concept="3cpWs8" id="V$5b4CIjks" role="3cqZAp">
+                  <node concept="3cpWsn" id="V$5b4CIjkt" role="3cpWs9">
+                    <property role="TrG5h" value="s" />
+                    <node concept="3uibUv" id="V$5b4CIjku" role="1tU5fm">
+                      <ref role="3uigEE" to="d7yf:~LegacyAbstract$Statement" resolve="LegacyAbstract.Statement" />
+                    </node>
+                    <node concept="2OqwBi" id="3oxjdcctXiX" role="33vP2m">
+                      <node concept="2GrUjf" id="V$5b4CIkAl" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="4q8lplF5xXy" resolve="statement" />
                       </node>
                       <node concept="2qgKlT" id="3oxjdcctX$o" role="2OqNvi">
                         <ref role="37wK5l" to="hhlq:3wdrnIK4lOW" resolve="toSourceStatement" />
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3oxjdcctUa1" role="3cqZAp">
+                  <node concept="2OqwBi" id="3oxjdcctXM6" role="3clFbG">
                     <node concept="liA8E" id="3oxjdcctYa2" role="2OqNvi">
                       <ref role="37wK5l" to="d7yf:~LegacyAbstract$Statement.accept(com.jetbrains.jetpad.vclang.term.legacy.LegacyAbstractStatementVisitor,java.lang.Object):java.lang.Object" resolve="accept" />
                       <node concept="37vLTw" id="3oxjdcctYpb" role="37wK5m">
                         <ref role="3cqZAo" node="4q8lplF54Fm" resolve="ttv" />
                       </node>
                       <node concept="10Nm6u" id="3oxjdcctZHQ" role="37wK5m" />
+                    </node>
+                    <node concept="37vLTw" id="V$5b4CIl0f" role="2Oq$k0">
+                      <ref role="3cqZAo" node="V$5b4CIjkt" resolve="s" />
                     </node>
                   </node>
                 </node>
@@ -25507,7 +25518,7 @@
       <node concept="3clFbS" id="5NQyKEZL9au" role="3clF47">
         <node concept="3SKdUt" id="25RiHgHf4gE" role="3cqZAp">
           <node concept="3SKdUq" id="25RiHgHf4gG" role="3SKWNk">
-            <property role="3SKdUp" value="t is an instance of either DefExpression or DotExpression or VariableExpression" />
+            <property role="3SKdUp" value="t is an instance of either DotExpression or RefExpression" />
           </node>
         </node>
         <node concept="XkiVB" id="IDt3LXGo_B" role="3cqZAp">
@@ -29559,6 +29570,31 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="dOWAxcCybs" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2xJzIFfUAIL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="toString" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="2xJzIFfUAIM" role="1B3o_S" />
+      <node concept="3uibUv" id="2xJzIFfUAIO" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="2xJzIFfUAIP" role="3clF47">
+        <node concept="3clFbF" id="2xJzIFfUX8d" role="3cqZAp">
+          <node concept="2OqwBi" id="2xJzIFfUXdz" role="3clFbG">
+            <node concept="37vLTw" id="2xJzIFfUX8a" role="2Oq$k0">
+              <ref role="3cqZAo" node="dOWAxcCy8k" resolve="myPath" />
+            </node>
+            <node concept="liA8E" id="2xJzIFfUXpT" role="2OqNvi">
+              <ref role="37wK5l" to="wru8:~ModulePath.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2xJzIFfUAIQ" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
