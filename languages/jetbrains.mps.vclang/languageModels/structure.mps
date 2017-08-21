@@ -237,6 +237,11 @@
     <property role="EcuMT" value="1136042658824466522" />
     <property role="34LRSv" value="class" />
     <ref role="1TJDcQ" node="Z42ctSV7V8" resolve="Definition" />
+    <node concept="1TJgyi" id="T0Rgl40Vub" role="1TKVEl">
+      <property role="IQ2nx" value="1027063729726142347" />
+      <property role="TrG5h" value="useModelName" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="Z42ctSV7V9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
