@@ -65,6 +65,7 @@
     <property role="TrG5h" value="CaseExpression" />
     <property role="3GE5qa" value="expression" />
     <property role="EcuMT" value="7108625883772415683" />
+    <property role="34LRSv" value="case" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
     <node concept="1TJgyj" id="6dbcPfPFKB8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
