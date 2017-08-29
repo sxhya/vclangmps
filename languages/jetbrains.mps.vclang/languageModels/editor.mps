@@ -1335,6 +1335,22 @@
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="51uy:6aAUpg3pU9$" resolve="PiExpression" />
     <node concept="3EZMnI" id="6aAUpg3pXdE" role="2wV5jI">
+      <node concept="3F0ifn" id="5J5B7TkNgXo" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+        <node concept="pkWqt" id="5J5B7TkNgXL" role="pqm2j">
+          <node concept="3clFbS" id="5J5B7TkNgXM" role="2VODD2">
+            <node concept="3clFbF" id="5J5B7TkNh53" role="3cqZAp">
+              <node concept="2OqwBi" id="5J5B7TkNhmR" role="3clFbG">
+                <node concept="pncrf" id="5J5B7TkNh52" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5J5B7TkNhOd" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:2nfHNdzS$N4" resolve="isSurroundedWithBraces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="5QGigKLcwwP" role="3EZMnx">
         <property role="3F0ifm" value="Π" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -1350,6 +1366,22 @@
       </node>
       <node concept="3F1sOY" id="6aAUpg3pXe5" role="3EZMnx">
         <ref role="1NtTu8" to="51uy:6aAUpg3pXe2" resolve="codomain" />
+      </node>
+      <node concept="3F0ifn" id="5J5B7TkNgXC" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+        <node concept="pkWqt" id="5J5B7TkNi84" role="pqm2j">
+          <node concept="3clFbS" id="5J5B7TkNi85" role="2VODD2">
+            <node concept="3clFbF" id="5J5B7TkNi8b" role="3cqZAp">
+              <node concept="2OqwBi" id="5J5B7TkNi8d" role="3clFbG">
+                <node concept="pncrf" id="5J5B7TkNi8e" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5J5B7TkNi8f" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:2nfHNdzS$N4" resolve="isSurroundedWithBraces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="6aAUpg3pXdH" role="2iSdaV" />
     </node>
@@ -1641,6 +1673,22 @@
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="51uy:6aAUpg3pU9H" resolve="SigmaExpression" />
     <node concept="3EZMnI" id="6dbcPfPFc1C" role="2wV5jI">
+      <node concept="3F0ifn" id="5J5B7TkNip3" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+        <node concept="pkWqt" id="5J5B7TkNiOs" role="pqm2j">
+          <node concept="3clFbS" id="5J5B7TkNiOt" role="2VODD2">
+            <node concept="3clFbF" id="5J5B7TkNiVN" role="3cqZAp">
+              <node concept="2OqwBi" id="5J5B7TkNiVP" role="3clFbG">
+                <node concept="pncrf" id="5J5B7TkNiVQ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5J5B7TkNiVR" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:2nfHNdzS$N4" resolve="isSurroundedWithBraces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="5QGigKLcwx2" role="3EZMnx">
         <property role="3F0ifm" value="Σ" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -1651,6 +1699,22 @@
         <node concept="l2Vlx" id="6dbcPfPFe5a" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="6dbcPfPFc1F" role="2iSdaV" />
+      <node concept="3F0ifn" id="5J5B7TkNipf" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+        <node concept="pkWqt" id="5J5B7TkNipm" role="pqm2j">
+          <node concept="3clFbS" id="5J5B7TkNipn" role="2VODD2">
+            <node concept="3clFbF" id="5J5B7TkNiwv" role="3cqZAp">
+              <node concept="2OqwBi" id="5J5B7TkNiwx" role="3clFbG">
+                <node concept="pncrf" id="5J5B7TkNiwy" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5J5B7TkNiwz" role="2OqNvi">
+                  <ref role="37wK5l" to="hhlq:2nfHNdzS$N4" resolve="isSurroundedWithBraces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6dbcPfPFe5v">

@@ -119,6 +119,7 @@
     <property role="R4oN_" value="Dependent product type" />
     <property role="EcuMT" value="7108625883772461668" />
     <ref role="1TJDcQ" node="KzXl40_QXs" resolve="Expression" />
+    <node concept="PrWs8" id="3F9_Wsl6s3b" role="PzmwI" />
     <node concept="1TJgyj" id="6aAUpg3pXe2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="codomain" />
@@ -213,6 +214,7 @@
     <property role="3GE5qa" value="arguments" />
     <property role="TrG5h" value="TelescopeParameter" />
     <property role="EcuMT" value="7108625883772462785" />
+    <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="3J0mSWJrk4E" resolve="AbstractTypedParameter" />
     <node concept="1TJgyj" id="6aAUpg3pUry" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
