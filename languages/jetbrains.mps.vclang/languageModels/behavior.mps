@@ -5246,6 +5246,21 @@
       </node>
       <node concept="10P_77" id="24ni4bqdM7$" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2nrCMPogauO" role="13h7CS">
+      <property role="TrG5h" value="getPriority" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6FOQVYN5Gn2" resolve="getPriority" />
+      <node concept="3Tm1VV" id="2nrCMPogauP" role="1B3o_S" />
+      <node concept="3clFbS" id="2nrCMPogauU" role="3clF47">
+        <node concept="3clFbF" id="2nrCMPogbqk" role="3cqZAp">
+          <node concept="3cmrfG" id="2nrCMPogbqj" role="3clFbG">
+            <property role="3cmrfH" value="-99" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2nrCMPogauV" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5NQyKEZKmIA">
     <property role="3GE5qa" value="expression" />
@@ -7051,6 +7066,31 @@
       <node concept="3uibUv" id="vFf91iFZi0" role="3clF45">
         <ref role="3uigEE" to="2968:~Abstract$Expression" resolve="Abstract.Expression" />
       </node>
+    </node>
+    <node concept="13i0hz" id="2nrCMPog2hj" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isRightMost" />
+      <ref role="13i0hy" node="24ni4bqdMc_" resolve="isRightMost" />
+      <node concept="3Tm1VV" id="2nrCMPog2hm" role="1B3o_S" />
+      <node concept="3clFbS" id="2nrCMPog2hr" role="3clF47">
+        <node concept="3clFbF" id="2nrCMPoga53" role="3cqZAp">
+          <node concept="2OqwBi" id="2nrCMPogad0" role="3clFbG">
+            <node concept="37vLTw" id="2nrCMPoga4Z" role="2Oq$k0">
+              <ref role="3cqZAo" node="2nrCMPog2hs" resolve="child" />
+            </node>
+            <node concept="1BlSNk" id="2nrCMPogajF" role="2OqNvi">
+              <ref role="1BmUXE" to="51uy:4UsT_r7KZvc" resolve="LetExpression" />
+              <ref role="1Bn3mz" to="51uy:4UsT_r7KZvh" resolve="expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2nrCMPog2hs" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3Tqbb2" id="2nrCMPog2ht" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="2nrCMPog2hu" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3wdrnIK3K7l">
