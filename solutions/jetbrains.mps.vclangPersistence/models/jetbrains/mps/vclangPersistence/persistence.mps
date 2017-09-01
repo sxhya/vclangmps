@@ -19020,8 +19020,13 @@
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="5NQyKEZFcwi" role="37wK5m">
-              <ref role="3cqZAo" node="5NQyKEZF8$T" resolve="prec" />
+            <node concept="2ShNRf" id="65VCtcE6EHE" role="37wK5m">
+              <node concept="1pGfFk" id="65VCtcE6FGE" role="2ShVmc">
+                <ref role="37wK5l" to="2968:~Abstract$Precedence.&lt;init&gt;(byte)" resolve="Abstract.Precedence" />
+                <node concept="37vLTw" id="65VCtcE6FLY" role="37wK5m">
+                  <ref role="3cqZAo" node="5NQyKEZF8$T" resolve="prec" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -19063,9 +19068,13 @@
                 </node>
               </node>
             </node>
-            <node concept="10M0yZ" id="5NQyKEZFbkN" role="37wK5m">
-              <ref role="1PxDUh" node="5NQyKEZF8i8" resolve="ExpressionAdapter" />
-              <ref role="3cqZAo" to="2968:~Abstract$Expression.PREC" resolve="PREC" />
+            <node concept="2ShNRf" id="65VCtcE6G4U" role="37wK5m">
+              <node concept="1pGfFk" id="65VCtcE6H$m" role="2ShVmc">
+                <ref role="37wK5l" to="2968:~Abstract$Precedence.&lt;init&gt;(byte)" resolve="Abstract.Precedence" />
+                <node concept="37vLTw" id="65VCtcE6HHn" role="37wK5m">
+                  <ref role="3cqZAo" to="2968:~Abstract$Expression.PREC" resolve="PREC" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
