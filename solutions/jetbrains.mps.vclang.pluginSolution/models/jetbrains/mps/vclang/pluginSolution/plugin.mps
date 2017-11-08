@@ -120,6 +120,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -196,6 +197,11 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1021,6 +1027,10 @@
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
+      <node concept="37vLTG" id="3uQaBuqxHUr" role="3clF46">
+        <property role="TrG5h" value="showError" />
+        <node concept="10P_77" id="3uQaBuqxKHG" role="1tU5fm" />
+      </node>
       <node concept="3clFbS" id="78QF1gqRfOd" role="3clF47">
         <node concept="3cpWs8" id="78QF1gqRg1O" role="3cqZAp">
           <node concept="3cpWsn" id="78QF1gqRg1P" role="3cpWs9">
@@ -1048,9 +1058,18 @@
               <node concept="Xl_RD" id="78QF1gqRg21" role="37wK5m">
                 <property role="Xl_RC" value="Messages" />
               </node>
-              <node concept="10M0yZ" id="78QF1gqRg22" role="37wK5m">
-                <ref role="1PxDUh" to="jkm4:~MessageType" resolve="MessageType" />
-                <ref role="3cqZAo" to="jkm4:~MessageType.INFO" resolve="INFO" />
+              <node concept="3K4zz7" id="3uQaBuqxM0O" role="37wK5m">
+                <node concept="10M0yZ" id="3uQaBuqxMPT" role="3K4E3e">
+                  <ref role="3cqZAo" to="jkm4:~MessageType.ERROR" resolve="ERROR" />
+                  <ref role="1PxDUh" to="jkm4:~MessageType" resolve="MessageType" />
+                </node>
+                <node concept="37vLTw" id="3uQaBuqxLmA" role="3K4Cdx">
+                  <ref role="3cqZAo" node="3uQaBuqxHUr" resolve="showError" />
+                </node>
+                <node concept="10M0yZ" id="78QF1gqRg22" role="3K4GZi">
+                  <ref role="1PxDUh" to="jkm4:~MessageType" resolve="MessageType" />
+                  <ref role="3cqZAo" to="jkm4:~MessageType.INFO" resolve="INFO" />
+                </node>
               </node>
               <node concept="37vLTw" id="78QF1gqRpIV" role="37wK5m">
                 <ref role="3cqZAo" node="78QF1gqRp9x" resolve="str" />
